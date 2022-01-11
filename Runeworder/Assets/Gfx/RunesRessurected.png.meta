@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: ebb0ac38b120afc40885c604d1e71a68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3718847754712205934
+    second: RunesRessurected_0
+  - first:
+      213: -2552480897432956413
+    second: RunesRessurected_1
+  - first:
+      213: -7442393964540017398
+    second: RunesRessurected_2
+  - first:
+      213: 8336604304216195409
+    second: RunesRessurected_3
+  - first:
+      213: 6931640843377145328
+    second: RunesRessurected_4
+  - first:
+      213: 3077929690594762649
+    second: RunesRessurected_5
+  - first:
+      213: -4603917629545212020
+    second: RunesRessurected_6
+  - first:
+      213: 4853411013676753587
+    second: RunesRessurected_7
+  - first:
+      213: 4592974505771934028
+    second: RunesRessurected_8
+  - first:
+      213: 4759195017386779646
+    second: RunesRessurected_9
+  - first:
+      213: 3379115236953837633
+    second: RunesRessurected_10
+  - first:
+      213: 1691133985577052497
+    second: RunesRessurected_11
+  - first:
+      213: 3894889964086395916
+    second: RunesRessurected_12
+  - first:
+      213: -1831992396139425714
+    second: RunesRessurected_13
+  - first:
+      213: -4227217208954179344
+    second: RunesRessurected_14
+  - first:
+      213: -8283411627209778340
+    second: RunesRessurected_15
+  - first:
+      213: 7950203469039393811
+    second: RunesRessurected_16
+  - first:
+      213: -4475722623481322261
+    second: RunesRessurected_17
+  - first:
+      213: 4225330398646405627
+    second: RunesRessurected_18
+  - first:
+      213: 2306201361763287207
+    second: RunesRessurected_19
+  - first:
+      213: 8789838013633995383
+    second: RunesRessurected_20
+  - first:
+      213: 5746144269202759289
+    second: RunesRessurected_21
+  - first:
+      213: 2669906196822413015
+    second: RunesRessurected_22
+  - first:
+      213: -3129087008930472566
+    second: RunesRessurected_23
+  - first:
+      213: -5208732025019213585
+    second: RunesRessurected_24
+  - first:
+      213: 2930987107075883254
+    second: RunesRessurected_25
+  - first:
+      213: -3082728297384145342
+    second: RunesRessurected_26
+  - first:
+      213: 3571867197196782825
+    second: RunesRessurected_27
+  - first:
+      213: -4535145514056611598
+    second: RunesRessurected_28
+  - first:
+      213: 6197574024903680179
+    second: RunesRessurected_29
+  - first:
+      213: 1004199918410308692
+    second: RunesRessurected_30
+  - first:
+      213: -2346610678578321939
+    second: RunesRessurected_31
+  - first:
+      213: 6798143200581714206
+    second: RunesRessurected_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RunesRessurected_0
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 246
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a416164500c9330800000000000000
+      internalID: 3718847754712205934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 246
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302d98cb524c39cd0800000000000000
+      internalID: -2552480897432956413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_2
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 246
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05c419ee1e47b890800000000000000
+      internalID: -7442393964540017398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1518cc9027191b370800000000000000
+      internalID: 8336604304216195409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f575142f92223060800000000000000
+      internalID: 6931640843377145328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f578bfeb007ba20800000000000000
+      internalID: 3077929690594762649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c879ccbfe499b10c0800000000000000
+      internalID: -4603917629545212020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2eb2b3a97ca5340800000000000000
+      internalID: 4853411013676753587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 197
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4126f67af58dbf30800000000000000
+      internalID: 4592974505771934028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3e52c27ae0c0240800000000000000
+      internalID: 4759195017386779646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1405eb9976705ee20800000000000000
+      internalID: 3379115236953837633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15929ed566d187710800000000000000
+      internalID: 1691133985577052497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c048a9c49cd6d0630800000000000000
+      internalID: 3894889964086395916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_13
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4094ec3f947396e0800000000000000
+      internalID: -1831992396139425714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 148
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f03edf5858e555c0800000000000000
+      internalID: -4227217208954179344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b12df23096b0d80800000000000000
+      internalID: -8283411627209778340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cdb20eeebc45e60800000000000000
+      internalID: 7950203469039393811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be46732ccf903e1c0800000000000000
+      internalID: -4475722623481322261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf98afd5c9363aa30800000000000000
+      internalID: 4225330398646405627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a04c647be5410020800000000000000
+      internalID: 2306201361763287207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_20
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77221e35a17cbf970800000000000000
+      internalID: 8789838013633995383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e1af9b4c76ebf40800000000000000
+      internalID: 5746144269202759289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dec63d4a896d0520800000000000000
+      internalID: 2669906196822413015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd869a1ff3394d0800000000000000
+      internalID: -3129087008930472566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_24
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8578ef1ddd6b7b0800000000000000
+      internalID: -5208732025019213585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_25
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0028eae35fca820800000000000000
+      internalID: 2930987107075883254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 50
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e8f5f42f2f735d0800000000000000
+      internalID: -3082728297384145342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecc8c19a42d19130800000000000000
+      internalID: 3571867197196782825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f803f5ee2def01c0800000000000000
+      internalID: -4535145514056611598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_29
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0629f4db4320650800000000000000
+      internalID: 6197574024903680179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_30
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c925c5182afed00800000000000000
+      internalID: 1004199918410308692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_31
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5633d450a2f6fd0800000000000000
+      internalID: -2346610678578321939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunesRessurected_32
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1109ea093bd75e50800000000000000
+      internalID: 6798143200581714206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
