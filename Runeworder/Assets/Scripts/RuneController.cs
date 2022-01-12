@@ -8,6 +8,10 @@ public class RuneController : MonoBehaviour
     public Image background;
     public Image checkmark;
     public Text runeName;
+    public Runes rune;
+
+    public delegate void RuneHandler(Runes rune, bool isOn);
+    public static event RuneHandler OnRuneToggleChanged;
 
     Toggle toggle;
 
@@ -15,11 +19,12 @@ public class RuneController : MonoBehaviour
     {
         toggle = GetComponent<Toggle>();
         toggle.onValueChanged.AddListener(delegate {
-            ToggleValueChanged(toggle);
+            ToggleValueChanged();
         });
     }
-    void ToggleValueChanged(Toggle change)
+    void ToggleValueChanged()
     {
-        print($"{change.name} now is " + toggle.isOn);
+        //print($"{name} now is " + toggle.isOn);
+        OnRuneToggleChanged?.Invoke(rune, toggle.isOn);
     }
 }

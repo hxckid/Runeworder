@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public GameObject runesPanel;
     public GameObject runeUIPrefab;
     public RunesSprites_SO runesSprites;
+    public UserCurrentRunes userRunes;
 
     private void Start()
     {
@@ -16,12 +17,21 @@ public class UIController : MonoBehaviour
         {
             string name = Enum.GetName(typeof(Runes), i);
             Sprite sprite = runesSprites.sprites[i];
-            
             runeUIPrefab.name = name;
             runeUIPrefab.GetComponent<RuneController>().background.sprite = sprite;
             runeUIPrefab.GetComponent<RuneController>().checkmark.sprite = sprite;
             runeUIPrefab.GetComponent<RuneController>().runeName.text = name;
-            Instantiate(runeUIPrefab, runesPanel.transform);
+            runeUIPrefab.GetComponent<RuneController>().rune = (Runes)i;
+            runeUIPrefab.GetComponent<Toggle>().isOn = false;
+            var runeUI = Instantiate(runeUIPrefab, runesPanel.transform);
+            runeUI.name = name;
+            foreach (var rune in userRunes.hasRunes)
+            {
+                if (rune == runeUI.GetComponent<RuneController>().rune)
+                {
+                    runeUI.GetComponent<Toggle>().isOn = true;
+                }
+            }
         }
     }
 }

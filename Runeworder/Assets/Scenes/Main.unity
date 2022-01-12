@@ -241,6 +241,7 @@ MonoBehaviour:
   runesPanel: {fileID: 656342274}
   runeUIPrefab: {fileID: 5731730575425651543, guid: 51964c5b4662f1644a3231f12e75ae8c, type: 3}
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
 --- !u!1 &127871771
 GameObject:
   m_ObjectHideFlags: 0
