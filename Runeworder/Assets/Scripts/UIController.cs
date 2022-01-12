@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -17,10 +18,9 @@ public class UIController : MonoBehaviour
             Sprite sprite = runesSprites.sprites[i];
             
             runeUIPrefab.name = name;
-            runeUIPrefab.GetComponent<RuneData>().background.sprite = sprite;
-            runeUIPrefab.GetComponent<RuneData>().checkmark.sprite = sprite;
-            runeUIPrefab.GetComponent<RuneData>().runeName.text = name;
-
+            runeUIPrefab.GetComponent<RuneController>().background.sprite = sprite;
+            runeUIPrefab.GetComponent<RuneController>().checkmark.sprite = sprite;
+            runeUIPrefab.GetComponent<RuneController>().runeName.text = name;
             Instantiate(runeUIPrefab, runesPanel.transform);
         }
     }
