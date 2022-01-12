@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Strength
+  m_EditorClassIdentifier: 
+  runewordName: Strength
+  runesSequence: AmnTir
+  runes: 0a00000002000000
+  runewordType: 0
+  subtype: 2 Socket Melee Weapons
+  reqLevel: 25
+  statsDesc: '35% Enhanced Damage
+
+    25% Chance Of Crushing Blow
+
+    7% Life
+    Stolen Per Hit
+
+    +2 To Mana After Each Kill
+
+    +20 To Strength
+
+    +10
+    To Vitality'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words

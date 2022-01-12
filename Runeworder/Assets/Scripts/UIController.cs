@@ -9,7 +9,7 @@ public class UIController : MonoBehaviour
     public GameObject runesPanel;
     public GameObject runeUIPrefab;
     public RunesSprites_SO runesSprites;
-    public UserCurrentRunes userRunes;
+    public UserRunes_SO userRunes;
 
     private void Start()
     {
@@ -38,4 +38,4 @@ public class UIController : MonoBehaviour
 
 public enum Runes { El, Eld, Tir, Nef, Eth, Ith, Tal, Ral, Ort, Thul, Amn,
                     Sol, Shael, Dol, Hel, Io, Lum, Ko, Fal, Lem, Pul, Um,
-                    Mal, Ist, Gul, Vex, Ohm, Lo, Sur, Ber, Jah, Cham, Zod}
+                    Mal, Ist, Gul, Vex, Ohm, Lo, Sur, Ber, Jah, Cham, Zod }

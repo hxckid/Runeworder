@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "User Runes DB", menuName = "User Runes DB", order = 2)]
-public class UserCurrentRunes : ScriptableObject
+[CreateAssetMenu(fileName = "User Runes DB", menuName = "Scriptables/Add User Runes DB", order = 2)]
+public class UserRunes_SO : ScriptableObject
 {
     public List<Runes> hasRunes;
 

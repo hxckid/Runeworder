@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Malice
+  m_EditorClassIdentifier: 
+  runewordName: Malice
+  runesSequence: IthElEth
+  runes: 050000000000000004000000
+  runewordType: 0
+  subtype: 3 Socket Melee Weapons
+  reqLevel: 15
+  statsDesc: '+33% Enhanced Damage
+
+    +9 To Maximum Damage
+
+    100% Chance Of
+    Open Wounds
+
+    -25% Target Defense
+
+    -100 To Monster Defense Per Hit
+
+    Prevent
+    Monster Heal
+
+    +50 To Attack Rating
+
+    Drain Life -5'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words

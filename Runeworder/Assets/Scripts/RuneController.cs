@@ -24,7 +24,6 @@ public class RuneController : MonoBehaviour
     }
     void ToggleValueChanged()
     {
-        //print($"{name} now is " + toggle.isOn);
         OnRuneToggleChanged?.Invoke(rune, toggle.isOn);
     }
 }

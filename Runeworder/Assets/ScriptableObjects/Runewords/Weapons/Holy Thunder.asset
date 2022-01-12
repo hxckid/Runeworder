@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Holy Thunder
+  m_EditorClassIdentifier: 
+  runewordName: Holy Thunder
+  runesSequence: EthRalOrtTal
+  runes: 04000000070000000800000006000000
+  runewordType: 0
+  subtype: 4 Socket Scepters
+  reqLevel: 21
+  statsDesc: '+60% Enhanced Damage
+
+    -25% Target Defense
+
+    Adds 5-30 Fire
+    Damage
+
+    Adds 21-110 Lightning Damage
+
+    +75 Poison Damage Over 5 Seconds
+
+    +10
+    To Maximum Damage
+
+    Lightning Resistance +60%
+
+    +5 To Maximum Lightning
+    Resistance
+
+    +3 To Holy Shock (Paladin Only)
+
+    Level 7 Chain Lightning
+    (60 Charges)'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
