@@ -19,7 +19,7 @@ MonoBehaviour:
   subtype: '6 Socket Swords/Hammers/Axes
 
 '
-  reqLevel: 0
+  reqLevel: 65
   statsDesc: '6% Chance To Cast Level 11 Fade When Struck
 
     10% Chance To Cast
