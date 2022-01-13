@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Pride
+  m_EditorClassIdentifier: 
+  runewordName: Pride
+  runesSequence: ChamSurIoLo
+  runes: 1f0000001c0000000f0000001b000000
+  runewordType: 0
+  subtype: '4 Socket Polearms
+
+'
+  reqLevel: 67
+  statsDesc: '25% Chance To Cast Level 17 Fire Wall When Struck
+
+    Level 16-20
+    Concentration Aura When Equipped (varies)
+
+    260-300% Bonus To Attack Rating
+    (varies)
+
+    +1-99% Damage To Demons (Based on Character Level)
+
+    Adds 50-280
+    Lightning Damage
+
+    20% Deadly Strike
+
+    Hit Blinds Target
+
+    Freezes Target
+    +3
+
+    +10 To Vitality
+
+    Replenish Life +8
+
+    1.875-185.625% Extra Gold
+    From Monsters (Based on Character Level)
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

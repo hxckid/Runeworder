@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Rift
+  m_EditorClassIdentifier: 
+  runewordName: Rift
+  runesSequence: HelKoLemGul
+  runes: 0e000000110000001300000018000000
+  runewordType: 0
+  subtype: '4 Socket Polearms/Scepters
+
+'
+  reqLevel: 53
+  statsDesc: '20% Chance To Cast Level 16 Tornado On Striking
+
+    16% Chance To
+    Cast Level 21 Frozen Orb On Attack
+
+    20% Bonus To Attack Rating
+
+    Adds
+    160-250 Magic Damage
+
+    Adds 60-180 Fire Damage
+
+    +5-10 To All Stats (varies)
+
+    +10
+    To Dexterity
+
+    38% Damage Taken Goes To Mana
+
+    75% Extra Gold From Monsters
+
+    Level
+    15 Iron Maiden (40 Charges)
+
+    Requirements -20%
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

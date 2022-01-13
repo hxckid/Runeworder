@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: White
+  m_EditorClassIdentifier: 
+  runewordName: White
+  runesSequence: DolIo
+  runes: 0d0000000f000000
+  runewordType: 0
+  subtype: '2 Socket Wand
+
+'
+  reqLevel: 35
+  statsDesc: 'Hit Causes Monster To Flee 25%
+
+    +10 To Vitality
+
+    +3 To Poison
+    And Bone Skills (Necromancer Only)
+
+    +3 To Bone Armor (Necromancer Only)
+
+    +2
+    To Bone Spear (Necromancer Only)
+
+    +4 To Skeleton Mastery (Necromancer Only)
+
+    Magic
+    Damage Reduced By 4
+
+    20% Faster Cast Rate
+
+    +13 To Mana
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words

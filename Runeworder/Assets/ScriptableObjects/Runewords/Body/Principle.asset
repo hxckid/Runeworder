@@ -10,27 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: Bone
+  m_Name: Principle
   m_EditorClassIdentifier: 
-  runewordName: Bone
-  runesSequence: SolUmUm
-  runes: 0b0000001500000015000000
+  runewordName: Principle
+  runesSequence: RalGulEld
+  runes: 070000001800000001000000
   runewordType: 1
   subtype: 3 Socket BodyArmor
-  reqLevel: 47
-  statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
+  reqLevel: 53
+  statsDesc: '100% Chance To Cast Level 5 Holy Bolt On Striking
 
-    15% Chance
-    To Cast level 10 Bone Spear On Striking
+    +2 To Paladin
+    Skill Levels
 
-    +2 To Necromancer Skill Levels
+    +50% Damage to Undead
 
-    +100-150
-    To Mana (varies)
+    +100-150 To Life (varies)
 
-    All Resistances +30
+    15%
+    Slower Stamina Drain
 
-    Damage Reduced By 7'
+    +5% To Maximum Poison Resist
+
+    Fire Resist +30%
+
+'
   isLadder: 0
-  classItem: 5
+  classItem: 6
   gameVersion: 1.11

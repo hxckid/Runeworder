@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Famine
+  m_EditorClassIdentifier: 
+  runewordName: Famine
+  runesSequence: FalOhmOrtJah
+  runes: 120000001a000000080000001e000000
+  runewordType: 0
+  subtype: '4 Socket Axes/Hammers
+
+'
+  reqLevel: 65
+  statsDesc: '+30% Increased Attack Speed
+
+    +320-370% Enhanced Damage (varies)
+
+    Ignore
+    Target''s Defense
+
+    Adds 180-200 Magic Damage
+
+    Adds 50-200 Fire Damage
+
+    Adds
+    51-250 Lightning Damage
+
+    Adds 50-200 Cold Damage
+
+    12% Life Stolen Per
+    Hit
+
+    Prevent Monster Heal
+
+    +10 To Strength
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10

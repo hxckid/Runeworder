@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Wind
+  m_EditorClassIdentifier: 
+  runewordName: Wind
+  runesSequence: SurEl
+  runes: 1c00000000000000
+  runewordType: 0
+  subtype: '2 Socket Melee Weapons
+
+'
+  reqLevel: 61
+  statsDesc: '10% Chance To Cast Level 9 Tornado On Striking
+
+    +20% Faster Run/Walk
+
+    +40%
+    Increased Attack Speed
+
+    +15% Faster Hit Recovery
+
+    +120-160% Enhanced
+    Damage (varies)
+
+    -50% Target Defense
+
+    +50 To Attack Rating
+
+    Hit Blinds
+    Target
+
+    +1 To Light Radius
+
+    Level 13 Twister (127 Charges)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10

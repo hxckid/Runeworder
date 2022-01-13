@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Destruction
+  m_EditorClassIdentifier: 
+  runewordName: Destruction
+  runesSequence: VexLoBerJahKo
+  runes: 190000001b0000001d0000001e00000011000000
+  runewordType: 0
+  subtype: '5 Socket Polearms/Swords
+
+'
+  reqLevel: 65
+  statsDesc: '23% Chance To Cast Level 12 Volcano On Striking
+
+    5% Chance To Cast
+    Level 23 Molten Boulder On Striking
+
+    100% Chance To Cast level 45 Meteor
+    When You Die
+
+    15% Chance To Cast Level 22 Nova On Attack
+
+    +350% Enhanced
+    Damage
+
+    Ignore Target''s Defense
+
+    Adds 100-180 Magic Damage
+
+    7% Mana
+    Stolen Per Hit
+
+    20% Chance Of Crushing Blow
+
+    20% Deadly Strike
+
+    Prevent
+    Monster Heal
+
+    +10 To Dexterity
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

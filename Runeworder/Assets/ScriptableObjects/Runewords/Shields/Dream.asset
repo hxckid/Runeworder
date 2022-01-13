@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Dream
+  m_EditorClassIdentifier: 
+  runewordName: Dream
+  runesSequence: IoJahPul
+  runes: 0f0000001e00000014000000
+  runewordType: 3
+  subtype: 3 Socket Shields
+  reqLevel: 65
+  statsDesc: '10% Chance To Cast Level 15 Confuse When Struck
+
+    Level 15 Holy
+    Shock Aura When Equipped
+
+    +20-30% Faster Hit Recovery (varies)
+
+    +30%
+    Enhanced Defense
+
+    +150-220 Defense (varies)
+
+    +10 To Vitality
+
+    Increase
+    Maximum Life 5% (Helms Only)
+
+    +50 To Life (Shields Only)
+
+    +0.625-61.875
+    To Mana (Based On Character Level)
+
+    All Resistances +5-20 (varies)
+
+    12-25%
+    Better Chance of Getting Magic Items (varies)
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

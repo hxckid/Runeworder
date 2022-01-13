@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Sanctuary
+  m_EditorClassIdentifier: 
+  runewordName: Sanctuary
+  runesSequence: KoKoMal
+  runes: 110000001100000016000000
+  runewordType: 3
+  subtype: 3 Socket Shields
+  reqLevel: 49
+  statsDesc: '+20% Faster Hit Recovery
+
+    +20% Faster Block Rate
+
+    20% Increased
+    Chance of Blocking
+
+    +130-160% Enhanced Defense (varies)
+
+    +250 Defense
+    vs. Missile
+
+    +20 To Dexterity
+
+    All Resistances +50-70 (varies)
+
+    Magic
+    Damage Reduced By 7
+
+    Level 12 Slow Missiles (60 Charges)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10

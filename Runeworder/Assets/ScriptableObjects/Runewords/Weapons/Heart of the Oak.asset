@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Heart of the Oak
+  m_EditorClassIdentifier: 
+  runewordName: Heart of the Oak
+  runesSequence: KoVexPulThul
+  runes: 11000000190000001400000009000000
+  runewordType: 0
+  subtype: '4 Socket Staves/Maces*
+
+'
+  reqLevel: 55
+  statsDesc: '+3 To All Skills
+
+    +40% Faster Cast Rate
+
+    +75% Damage To Demons
+
+    +100
+    To Attack Rating Against Demons
+
+    Adds 3-14 Cold Damage, 3 sec. Duration (Normal)
+
+    7%
+    Mana Stolen Per Hit
+
+    +10 To Dexterity
+
+    Replenish Life +20
+
+    Increase
+    Maximum Mana 15%
+
+    All Resistances +30-40 (varies)
+
+    Level 4 Oak Sage (25
+    Charges)
+
+    Level 14 Raven (60 Charges)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10

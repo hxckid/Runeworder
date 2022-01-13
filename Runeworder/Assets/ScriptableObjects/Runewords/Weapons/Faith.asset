@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Faith
+  m_EditorClassIdentifier: 
+  runewordName: Faith
+  runesSequence: OhmJahLemEld
+  runes: 1a0000001e0000001300000001000000
+  runewordType: 0
+  subtype: '4 Socket Missile Weapons
+
+'
+  reqLevel: 65
+  statsDesc: 'Level 12-15 Fanaticism Aura When Equipped (varies)
+
+    +1-2 To All
+    Skills (varies)
+
+    +330% Enhanced Damage
+
+    Ignore Target''s Defense
+
+    300%
+    Bonus To Attack Rating
+
+    +75% Damage To Undead
+
+    +50 To Attack Rating Against
+    Undead
+
+    +120 Fire Damage
+
+    All Resistances +15
+
+    10% Reanimate As:
+    Returned
+
+    75% Extra Gold From Monsters
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

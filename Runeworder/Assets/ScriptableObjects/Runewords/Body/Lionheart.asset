@@ -10,27 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: Bone
+  m_Name: Lionheart
   m_EditorClassIdentifier: 
-  runewordName: Bone
-  runesSequence: SolUmUm
-  runes: 0b0000001500000015000000
+  runewordName: LIonheart
+  runesSequence: HelLumFal
+  runes: 0e0000001000000012000000
   runewordType: 1
   subtype: 3 Socket BodyArmor
-  reqLevel: 47
-  statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
+  reqLevel: 41
+  statsDesc: '+20% Enhanced Damage
 
-    15% Chance
-    To Cast level 10 Bone Spear On Striking
+    Requirements -15%
 
-    +2 To Necromancer Skill Levels
+    +25 To Strength
 
-    +100-150
-    To Mana (varies)
+    +10
+    To Energy
 
-    All Resistances +30
+    +20 To Vitality
 
-    Damage Reduced By 7'
+    +15 To Dexterity
+
+    +50 To Life
+
+    All
+    Resistances +30
+
+'
   isLadder: 0
-  classItem: 5
-  gameVersion: 1.11
+  classItem: 0
+  gameVersion: Original Rune Words

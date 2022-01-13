@@ -10,27 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: Bone
+  m_Name: Peace
   m_EditorClassIdentifier: 
-  runewordName: Bone
-  runesSequence: SolUmUm
-  runes: 0b0000001500000015000000
+  runewordName: Peace
+  runesSequence: ShaelThulAmn
+  runes: 0c000000090000000a000000
   runewordType: 1
   subtype: 3 Socket BodyArmor
-  reqLevel: 47
-  statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
+  reqLevel: 29
+  statsDesc: '4% Chance To Cast Level 5 Slow Missiles When Struck
 
-    15% Chance
-    To Cast level 10 Bone Spear On Striking
+    2% Chance
+    To Cast level 15 Valkyrie On Striking
 
-    +2 To Necromancer Skill Levels
+    +2 To Amazon Skill Levels
 
-    +100-150
-    To Mana (varies)
+    +20%
+    Faster Hit Recovery
 
-    All Resistances +30
+    +2 To Critical Strike
 
-    Damage Reduced By 7'
+    Cold Resist +30%
+
+    Attacker
+    Takes Damage of 14
+
+'
   isLadder: 0
-  classItem: 5
+  classItem: 1
   gameVersion: 1.11

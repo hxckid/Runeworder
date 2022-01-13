@@ -25,10 +25,15 @@ public class Runeword_SO : ScriptableObject
             seq += runes[i].ToString();
         }
         runesSequence = seq;
-        if (runewordType != RunewordType.Weapons)
-        {
+        
+        if (runewordType != RunewordType.Weapons && runewordType != RunewordType.Shields)
             subtype = ($"{runes.Count.ToString()} Socket {runewordType}");
-        }
+        
+        if (isLadder)
+            gameVersion = "1.10";
+
+        if (classItem != Classes.Any)
+            gameVersion = "1.11";
     }
 }
 

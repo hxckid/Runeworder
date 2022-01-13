@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Kingslayer
+  m_EditorClassIdentifier: 
+  runewordName: Kingslayer
+  runesSequence: MalUmGulFal
+  runes: 16000000150000001800000012000000
+  runewordType: 0
+  subtype: '4 Socket Swords/Axes
+
+'
+  reqLevel: 53
+  statsDesc: '+30% Increased Attack Speed
+
+    +230-270% Enhanced Damage (varies)
+
+    -25%
+    Target Defense
+
+    20% Bonus To Attack Rating
+
+    33% Chance of Crushing Blow
+
+    50%
+    Chance of Open Wounds
+
+    +1 To Vengeance
+
+    Prevent Monster Heal
+
+    +10
+    To Strength
+
+    40% Extra Gold From Monsters
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10

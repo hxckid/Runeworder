@@ -39,8 +39,8 @@ MonoBehaviour:
 
     +2 To Mana After Each Kill
 
-    Reduces All
-    Vendor Prices 15%!!!*'
+    Reduces All Vendor
+    Prices 15%!!!*'
   isLadder: 1
   classItem: 0
-  gameVersion: '1.10 Rune Words '
+  gameVersion: 1.10

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Oath
+  m_EditorClassIdentifier: 
+  runewordName: Oath
+  runesSequence: ShaelPulMalLum
+  runes: 0c000000140000001600000010000000
+  runewordType: 0
+  subtype: '4 Socket Swords/Axes/Maces
+
+'
+  reqLevel: 49
+  statsDesc: '30% Chance To Cast Level 20 Bone Spirit On Striking
+
+    Indestructible
+
+    +50%
+    Increased Attack Speed
+
+    +210-340% Enhanced Damage (varies)
+
+    +75% Damage
+    To Demons
+
+    +100 To Attack Rating Against Demons
+
+    Prevent Monster Heal
+
+    +10
+    To Energy
+
+    +10-15 Magic Absorb (varies)
+
+    Level 16 Heart Of Wolverine
+    (20 Charges)
+
+    Level 17 Iron Golem (14 Charges)
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10

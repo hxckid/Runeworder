@@ -10,27 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: Bone
+  m_Name: Wealth
   m_EditorClassIdentifier: 
-  runewordName: Bone
-  runesSequence: SolUmUm
-  runes: 0b0000001500000015000000
+  runewordName: Wealth
+  runesSequence: LemKoTir
+  runes: 130000001100000002000000
   runewordType: 1
   subtype: 3 Socket BodyArmor
-  reqLevel: 47
-  statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
+  reqLevel: 43
+  statsDesc: '300% Extra Gold From Monsters
 
-    15% Chance
-    To Cast level 10 Bone Spear On Striking
+    100% Better Chance Of Getting Magic
+    Items
 
-    +2 To Necromancer Skill Levels
+    +2 To Mana After Each Kill
 
-    +100-150
-    To Mana (varies)
+    +10 To Dexterity
 
-    All Resistances +30
-
-    Damage Reduced By 7'
+'
   isLadder: 0
-  classItem: 5
-  gameVersion: 1.11
+  classItem: 0
+  gameVersion: Original Rune Words
