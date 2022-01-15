@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Lionheart
   m_EditorClassIdentifier: 
-  runewordName: LIonheart
+  runewordName: Lionheart
   runesSequence: HelLumFal
   runes: 0e0000001000000012000000
   runewordType: 1
