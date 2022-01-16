@@ -10,4 +10,5 @@ public class ListController : MonoBehaviour
     public List<Text> runes;
     public Text reqLevel;
     public Text type;
+    public Button btn;
 }
