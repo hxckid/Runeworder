@@ -28,6 +28,15 @@ public class RunewordsController : MonoBehaviour
 
     private void UpdateRunewordsList()
     {
+        if (runewordsToShow.Count > 0)
+        {
+            foreach (var rw in runewordsToShow)
+            {
+                Destroy(rw);
+            }
+            runewordsToShow.Clear();
+        }
+
         int odd = 1;
         foreach (var rw in runewordsDB.runewords)
         {
