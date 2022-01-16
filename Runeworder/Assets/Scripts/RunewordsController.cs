@@ -18,15 +18,15 @@ public class RunewordsController : MonoBehaviour
         RuneController.OnRuneToggleChanged += RuneStateChanged;
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
-        UpdateRunewordsList();
+        UpdateRunewordsList(4);
     }
 
     private void RuneStateChanged(Runes rune, bool isOn)
     {
-        UpdateRunewordsList();
+        UpdateRunewordsList(4);
     }
 
-    private void UpdateRunewordsList()
+    public void UpdateRunewordsList(int type)
     {
         if (runewordsToShow.Count > 0)
         {
@@ -37,42 +37,74 @@ public class RunewordsController : MonoBehaviour
             runewordsToShow.Clear();
         }
 
-        int odd = 1;
-        foreach (var rw in runewordsDB.runewords)
+        if (type == 4)
         {
-            ListController lc = runewordPrefab.GetComponent<ListController>();
-            if (odd % 2 == 0)
-                lc.background.color = Color.red;
-            else
-                lc.background.color = Color.white;
-            odd++;
-            lc.runewordName.text = rw.runewordName;
-            foreach (var rune in lc.runes)
+            int odd = 1;
+            foreach (var rw in runewordsDB.runewords)
             {
-                rune.text = "";
-            }
-            for (int i = 0; i < rw.runes.Count; i++)
-            {
-                lc.runes[i].text = rw.runes[i].ToString();
-                lc.runes[i].color = Color.gray;
-                foreach (var rune in userRunes.hasRunes)
+                ListController lc = runewordPrefab.GetComponent<ListController>();
+                if (odd % 2 == 0)
+                    lc.background.color = Color.red;
+                else
+                    lc.background.color = Color.white;
+                odd++;
+                lc.runewordName.text = rw.runewordName;
+                foreach (var rune in lc.runes)
                 {
-                    if (rune == rw.runes[i])
-                        lc.runes[i].color = Color.green;
+                    rune.text = "";
+                }
+                for (int i = 0; i < rw.runes.Count; i++)
+                {
+                    lc.runes[i].text = rw.runes[i].ToString();
+                    lc.runes[i].color = Color.gray;
+                    foreach (var rune in userRunes.hasRunes)
+                    {
+                        if (rune == rw.runes[i])
+                            lc.runes[i].color = Color.green;
+                    }
+                }
+                lc.reqLevel.text = $"Level: {rw.reqLevel}";
+                lc.type.text = $"{rw.runewordType}";
+
+                GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
+                runewordsToShow.Add(inst);
+            }
+        }
+        else
+        {
+            int odd = 1;
+            foreach (var rw in runewordsDB.runewords)
+            {
+                if (rw.runewordType == (RunewordType)type)
+                {
+                    ListController lc = runewordPrefab.GetComponent<ListController>();
+                    if (odd % 2 == 0)
+                        lc.background.color = Color.red;
+                    else
+                        lc.background.color = Color.white;
+                    odd++;
+                    lc.runewordName.text = rw.runewordName;
+                    foreach (var rune in lc.runes)
+                    {
+                        rune.text = "";
+                    }
+                    for (int i = 0; i < rw.runes.Count; i++)
+                    {
+                        lc.runes[i].text = rw.runes[i].ToString();
+                        lc.runes[i].color = Color.gray;
+                        foreach (var rune in userRunes.hasRunes)
+                        {
+                            if (rune == rw.runes[i])
+                                lc.runes[i].color = Color.green;
+                        }
+                    }
+                    lc.reqLevel.text = $"Level: {rw.reqLevel}";
+                    lc.type.text = $"{rw.runewordType}";
+
+                    GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
+                    runewordsToShow.Add(inst);
                 }
             }
-            lc.reqLevel.text = $"Level: {rw.reqLevel}";
-            lc.type.text = $"{rw.runewordType}";
-
-            GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
-            runewordsToShow.Add(inst);
         }
-
-        SortRunewords();
-    }
-
-    private void SortRunewords()
-    {
-        
     }
 }

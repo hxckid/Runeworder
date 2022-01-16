@@ -37,5 +37,5 @@ public class Runeword_SO : ScriptableObject
     }
 }
 
-public enum RunewordType { Weapons, BodyArmor, Helms, Shields }
+public enum RunewordType { Weapons, BodyArmor, Helms, Shields, All }
 public enum Classes { Any, Amazon, Assassin, Barbarian, Druid, Necromancer, Paladin, Sorceress }
