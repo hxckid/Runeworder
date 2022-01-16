@@ -54,12 +54,25 @@ public class RunewordsController : MonoBehaviour
             for (int i = 0; i < rw.runes.Count; i++)
             {
                 lc.runes[i].text = rw.runes[i].ToString();
+                lc.runes[i].color = Color.gray;
+                foreach (var rune in userRunes.hasRunes)
+                {
+                    if (rune == rw.runes[i])
+                        lc.runes[i].color = Color.green;
+                }
             }
-            lc.reqLevel.text = $"Req Lvl: {rw.reqLevel}";
+            lc.reqLevel.text = $"Level: {rw.reqLevel}";
             lc.type.text = $"{rw.runewordType}";
 
             GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
             runewordsToShow.Add(inst);
         }
+
+        SortRunewords();
+    }
+
+    private void SortRunewords()
+    {
+        
     }
 }
