@@ -360,11 +360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
-  txt: {fileID: 1393952264}
-  userData:
-    runes: 
-  json: 
-  key: UserData
 --- !u!1 &180836064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,10 +1978,10 @@ RectTransform:
   m_Father: {fileID: 1695528427}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 540, y: -940.00006}
-  m_SizeDelta: {x: -730.9038, y: 140}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 349.0962, y: 140}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1477961877
 MonoBehaviour:
@@ -2031,7 +2026,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477961878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 47835033}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: UncheckRunes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1477961878
 MonoBehaviour:
   m_ObjectHideFlags: 0

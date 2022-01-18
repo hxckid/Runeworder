@@ -11,7 +11,15 @@ public class UIController : MonoBehaviour
     public RunesSprites_SO runesSprites;
     public UserRunes_SO userRunes;
 
+    [SerializeField] List<GameObject> runesUI;
+
     private void Start()
+    {
+        runesUI = new List<GameObject>();
+        InitRunes();
+    }
+
+    void InitRunes()
     {
         for (int i = 0; i <= 32; i++)
         {
@@ -25,6 +33,7 @@ public class UIController : MonoBehaviour
             runeUIPrefab.GetComponent<Toggle>().isOn = false;
             var runeUI = Instantiate(runeUIPrefab, runesPanel.transform);
             runeUI.name = name;
+            runesUI.Add(runeUI);
             foreach (var rune in userRunes.hasRunes)
             {
                 if (rune == runeUI.GetComponent<RuneController>().rune)
@@ -32,6 +41,14 @@ public class UIController : MonoBehaviour
                     runeUI.GetComponent<Toggle>().isOn = true;
                 }
             }
+        }
+    }
+
+    public void UncheckRunes()
+    {
+        foreach (var rune in runesUI)
+        {
+            rune.GetComponent<Toggle>().isOn = false;
         }
     }
 }

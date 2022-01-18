@@ -16,6 +16,10 @@ public class AppManager : MonoBehaviour
     private void OnEnable()
     {
         RuneController.OnRuneToggleChanged += SaveUserData;
+        json = PlayerPrefs.GetString(key);
+        userData = JsonUtility.FromJson<UserData>(json);
+        userRunes.hasRunes.Clear();
+        userRunes.hasRunes = new List<Runes>(userData.runes);
     }
 
     private void SaveUserData(Runes rune, bool isOn)
@@ -24,14 +28,6 @@ public class AppManager : MonoBehaviour
         json = JsonUtility.ToJson(userData);
         PlayerPrefs.SetString(key, json);
         PlayerPrefs.Save();
-    }
-
-    private void Awake()
-    {
-        json = PlayerPrefs.GetString(key);
-        userData = JsonUtility.FromJson<UserData>(json);
-        userRunes.hasRunes.Clear();
-        userRunes.hasRunes = new List<Runes>(userData.runes);
     }
 }
 
