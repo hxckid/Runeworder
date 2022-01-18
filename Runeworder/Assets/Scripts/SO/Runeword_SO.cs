@@ -9,25 +9,29 @@ public class Runeword_SO : ScriptableObject
     public string runewordName;
     public string runesSequence;
     public List<Runes> runes;
+    public List<Sprite> sprites;
     public RunewordType runewordType = RunewordType.Weapons;
-    [TextArea] public string subtype;
+    [TextArea] public string subType;
     [Range(13,69)]public int reqLevel;
     [TextArea(minLines:6, maxLines: 20)] public string statsDesc;
     public bool isLadder;
     public Classes classItem;
     public string gameVersion = "Original Rune Words";
+    [SerializeField] RunesSprites_SO runesSprites;
 
     private void OnValidate()
     {
+        sprites.Clear();
         string seq = string.Empty;
         for (int i = 0; i < runes.Count; i++)
         {
             seq += runes[i].ToString();
+            sprites.Add(runesSprites.sprites[(int)runes[i]]);
         }
-        runesSequence = seq;
+        runesSequence = $"'{seq}'";
         
         if (runewordType != RunewordType.Weapons && runewordType != RunewordType.Shields)
-            subtype = ($"{runes.Count.ToString()} Socket {runewordType}");
+            subType = ($"{runes.Count} Socket {runewordType}");
         
         if (isLadder)
             gameVersion = "1.10";

@@ -13,22 +13,23 @@ MonoBehaviour:
   m_Name: Phoenix
   m_EditorClassIdentifier: 
   runewordName: Phoenix
-  runesSequence: VexVexLoJah
+  runesSequence: '''VexVexLoJah'''
   runes: 19000000190000001b0000001e000000
+  sprites:
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Weapons
-
-'
+  subType: 
   reqLevel: 65
-  statsDesc: 'Weapons
+  statsDesc: '100% Chance To Cast level 40 Blaze When You Level-up
 
-    100% Chance To Cast level 40 Blaze When You Level-up
+    40% Chance
+    To Cast Level 22 Firestorm On Striking
 
-    40%
-    Chance To Cast Level 22 Firestorm On Striking
-
-    Level 10-15 Redemption Aura
-    When Equipped (varies)
+    Level 10-15 Redemption Aura When
+    Equipped (varies)
 
     +350-400% Enhanced Damage (varies)
 
@@ -51,3 +52,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

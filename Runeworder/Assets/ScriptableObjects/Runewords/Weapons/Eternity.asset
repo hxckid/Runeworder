@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Eternity
   m_EditorClassIdentifier: 
   runewordName: Eternity
-  runesSequence: AmnBerIstSolSur
+  runesSequence: '''AmnBerIstSolSur'''
   runes: 0a0000001d000000170000000b0000001c000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Melee Weapons
-
-'
+  subType: 
   reqLevel: 63
   statsDesc: 'Indestructible
 
@@ -52,3 +56,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Beast
   m_EditorClassIdentifier: 
   runewordName: Beast
-  runesSequence: BerTirUmMalLum
+  runesSequence: '''BerTirUmMalLum'''
   runes: 1d00000002000000150000001600000010000000
+  sprites:
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Axes/Scepters/Hammers
-
-'
+  subType: 
   reqLevel: 63
   statsDesc: 'Level 9 Fanaticism Aura When Equipped
 
@@ -52,3 +56,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

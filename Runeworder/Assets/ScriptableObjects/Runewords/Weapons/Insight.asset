@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Insight
   m_EditorClassIdentifier: 
   runewordName: Insight
-  runesSequence: RalTirTalSol
+  runesSequence: '''RalTirTalSol'''
   runes: 0700000002000000060000000b000000
+  sprites:
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Polearms/Staves
-
-'
+  subType: 
   reqLevel: 27
   statsDesc: 'Level 12-17 Meditation Aura When Equipped (varies)
 
@@ -34,20 +37,20 @@ MonoBehaviour:
 
     Adds 5-30 Fire Damage
 
-    +75 Poison
-    Damage Over 5 Seconds
+    +75 Poison Damage
+    Over 5 Seconds
 
     +1-6 To Critical Strike (varies)
 
-    +5 To All
-    Attributes
+    +5 To All Attributes
 
-    +2 To Mana After Each Kill
+    +2
+    To Mana After Each Kill
 
-    23% Better Chance of Getting
-    Magic Items
+    23% Better Chance of Getting Magic Items
 
 '
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

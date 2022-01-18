@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Malice
   m_EditorClassIdentifier: 
   runewordName: Malice
-  runesSequence: IthElEth
+  runesSequence: '''IthElEth'''
   runes: 050000000000000004000000
+  sprites:
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: 3 Socket Melee Weapons
+  subType: 
   reqLevel: 15
   statsDesc: '+33% Enhanced Damage
 
@@ -38,3 +42,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Delirium
   m_EditorClassIdentifier: 
   runewordName: Delirium
-  runesSequence: LemIstIo
+  runesSequence: '''LemIstIo'''
   runes: 13000000170000000f000000
+  sprites:
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
-  subtype: 3 Socket Helms
+  subType: 3 Socket Helms
   reqLevel: 51
   statsDesc: '1% Chance To Cast Level 50 Delirium* (morph) When Struck
 
@@ -46,3 +50,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

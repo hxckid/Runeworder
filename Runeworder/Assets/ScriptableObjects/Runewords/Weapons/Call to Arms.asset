@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Call to Arms
   m_EditorClassIdentifier: 
   runewordName: Call to Arms
-  runesSequence: AmnRalMalIstOhm
+  runesSequence: '''AmnRalMalIstOhm'''
   runes: 0a0000000700000016000000170000001a000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Weapons
-
-'
+  subType: 
   reqLevel: 51
   statsDesc: '+1 To All Skills
 
@@ -50,3 +54,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

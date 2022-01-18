@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Dream
   m_EditorClassIdentifier: 
   runewordName: Dream
-  runesSequence: IoJahPul
+  runesSequence: '''IoJahPul'''
   runes: 0f0000001e00000014000000
+  sprites:
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
-  subtype: 3 Socket Helms
+  subType: 3 Socket Helms
   reqLevel: 65
   statsDesc: '10% Chance To Cast Level 15 Confuse When Struck
 
@@ -49,3 +53,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

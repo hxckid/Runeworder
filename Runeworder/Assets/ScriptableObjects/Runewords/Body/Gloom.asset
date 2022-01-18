@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Gloom
   m_EditorClassIdentifier: 
   runewordName: Gloom
-  runesSequence: FalUmPul
+  runesSequence: '''FalUmPul'''
   runes: 120000001500000014000000
+  sprites:
+  - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 47
   statsDesc: '15% Chance To Cast Level 3 Dim Vision When Struck
 
@@ -41,3 +45,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

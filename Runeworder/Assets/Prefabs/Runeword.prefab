@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1096,6 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786487836bb8d86478ee8d5fa0eb3d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runeword: {fileID: 0}
   background: {fileID: 6102768536404381601}
   runewordName: {fileID: 6102768534860284208}
   runes:
@@ -1108,6 +1109,9 @@ MonoBehaviour:
   reqLevel: {fileID: 6102768535601134241}
   type: {fileID: 6102768535167515629}
   btn: {fileID: 4418223498359263449}
+  parent: {fileID: 0}
+  tooltip: {fileID: 6580700938638281287, guid: 8419754585f683344b45539c857c8456, type: 3}
+  tooltipRune: {fileID: 4011852680646172614, guid: dd1afce3b83ce114f84a99dc60106237, type: 3}
 --- !u!1 &6102768536404381615
 GameObject:
   m_ObjectHideFlags: 0

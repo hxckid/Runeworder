@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Passion
   m_EditorClassIdentifier: 
   runewordName: Passion
-  runesSequence: DolOrtEldLem
+  runesSequence: '''DolOrtEldLem'''
   runes: 0d000000080000000100000013000000
+  sprites:
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Weapons
-
-'
+  subType: 
   reqLevel: 43
   statsDesc: '+25% Increased Attack Speed
 
@@ -52,3 +55,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

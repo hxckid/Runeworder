@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Ancient's Pledge
   m_EditorClassIdentifier: 
   runewordName: Ancient's Pledge
-  runesSequence: RalOrtTal
+  runesSequence: '''RalOrtTal'''
   runes: 070000000800000006000000
+  sprites:
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
-  subtype: 3 Socket Shields
+  subType: 
   reqLevel: 21
   statsDesc: '+50% Enhanced Defense
 
@@ -33,3 +37,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

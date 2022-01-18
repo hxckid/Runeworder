@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Last Wish
   m_EditorClassIdentifier: 
   runewordName: Last Wish
-  runesSequence: JahMalJahSurJahBer
+  runesSequence: '''JahMalJahSurJahBer'''
   runes: 1e000000160000001e0000001c0000001e0000001d000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '6 Socket Swords/Hammers/Axes
-
-'
+  subType: 
   reqLevel: 65
   statsDesc: '6% Chance To Cast Level 11 Fade When Struck
 
@@ -49,3 +54,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

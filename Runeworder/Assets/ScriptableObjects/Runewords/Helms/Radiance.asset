@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Radiance
   m_EditorClassIdentifier: 
   runewordName: Radiance
-  runesSequence: NefSolIth
+  runesSequence: '''NefSolIth'''
   runes: 030000000b00000005000000
+  sprites:
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
-  subtype: 3 Socket Helms
+  subType: 3 Socket Helms
   reqLevel: 27
   statsDesc: '+75% Enhanced Defense
 
@@ -42,3 +46,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Venom
   m_EditorClassIdentifier: 
   runewordName: Venom
-  runesSequence: TalDolMal
+  runesSequence: '''TalDolMal'''
   runes: 060000000d00000016000000
+  sprites:
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Weapons
-
-'
+  subType: 
   reqLevel: 49
   statsDesc: 'Hit Causes Monster To Flee 25%
 
@@ -41,3 +43,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

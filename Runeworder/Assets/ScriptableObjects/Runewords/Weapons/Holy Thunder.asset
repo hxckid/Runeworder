@@ -13,34 +13,39 @@ MonoBehaviour:
   m_Name: Holy Thunder
   m_EditorClassIdentifier: 
   runewordName: Holy Thunder
-  runesSequence: EthRalOrtTal
+  runesSequence: '''EthRalOrtTal'''
   runes: 04000000070000000800000006000000
+  sprites:
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: 4 Socket Scepters
+  subType: 
   reqLevel: 21
   statsDesc: '+60% Enhanced Damage
 
     -25% Target Defense
 
-    Adds 5-30 Fire
-    Damage
+    Adds 5-30 Fire Damage
 
-    Adds 21-110 Lightning Damage
+    Adds
+    21-110 Lightning Damage
 
     +75 Poison Damage Over 5 Seconds
 
-    +10
-    To Maximum Damage
+    +10 To Maximum
+    Damage
 
     Lightning Resistance +60%
 
-    +5 To Maximum Lightning
-    Resistance
+    +5 To Maximum Lightning Resistance
 
-    +3 To Holy Shock (Paladin Only)
+    +3
+    To Holy Shock (Paladin Only)
 
-    Level 7 Chain Lightning
-    (60 Charges)'
+    Level 7 Chain Lightning (60 Charges)'
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

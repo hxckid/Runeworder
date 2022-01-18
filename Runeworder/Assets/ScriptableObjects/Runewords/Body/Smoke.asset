@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Smoke
   m_EditorClassIdentifier: 
   runewordName: Smoke
-  runesSequence: NefLum
+  runesSequence: '''NefLum'''
   runes: 0300000010000000
+  sprites:
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 2 Socket BodyArmor
+  subType: 2 Socket BodyArmor
   reqLevel: 37
   statsDesc: '+75% Enhanced Defense
 
@@ -29,8 +32,8 @@ MonoBehaviour:
 
     Level 6 Weaken (18 Charges)
 
-    +10
-    To Energy
+    +10 To
+    Energy
 
     -1 To Light Radius
 
@@ -38,3 +41,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

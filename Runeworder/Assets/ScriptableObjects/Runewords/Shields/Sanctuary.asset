@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Sanctuary
   m_EditorClassIdentifier: 
   runewordName: Sanctuary
-  runesSequence: KoKoMal
+  runesSequence: '''KoKoMal'''
   runes: 110000001100000016000000
+  sprites:
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
-  subtype: 3 Socket Shields
+  subType: 
   reqLevel: 49
   statsDesc: '+20% Faster Hit Recovery
 
@@ -43,3 +47,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

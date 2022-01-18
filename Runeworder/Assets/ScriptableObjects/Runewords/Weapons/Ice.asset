@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Ice
   m_EditorClassIdentifier: 
   runewordName: Ice
-  runesSequence: AmnShaelJahLo
+  runesSequence: '''AmnShaelJahLo'''
   runes: 0a0000000c0000001e0000001b000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Missile Weapons
-
-'
+  subType: 
   reqLevel: 65
   statsDesc: '100% Chance To Cast Level 40 Blizzard When You Level-up
 
@@ -51,3 +54,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

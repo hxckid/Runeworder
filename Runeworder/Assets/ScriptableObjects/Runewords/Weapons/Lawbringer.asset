@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Lawbringer
   m_EditorClassIdentifier: 
   runewordName: Lawbringer
-  runesSequence: AmnLemKo
+  runesSequence: '''AmnLemKo'''
   runes: 0a0000001300000011000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Swords/Hammers/Scepters
-
-'
+  subType: 
   reqLevel: 43
   statsDesc: '20% Chance To Cast Level 15 Decrepify On Striking
 
@@ -48,3 +50,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

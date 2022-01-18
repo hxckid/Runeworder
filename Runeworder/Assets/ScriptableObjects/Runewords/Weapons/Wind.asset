@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Wind
   m_EditorClassIdentifier: 
   runewordName: Wind
-  runesSequence: SurEl
+  runesSequence: '''SurEl'''
   runes: 1c00000000000000
+  sprites:
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '2 Socket Melee Weapons
-
-'
+  subType: 
   reqLevel: 61
   statsDesc: '10% Chance To Cast Level 9 Tornado On Striking
 
@@ -47,3 +48,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

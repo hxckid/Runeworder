@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Enigma
   m_EditorClassIdentifier: 
   runewordName: Enigma
-  runesSequence: JahIthBer
+  runesSequence: '''JahIthBer'''
   runes: 1e000000050000001d000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 65
   statsDesc: '+2 To All Skills
 
@@ -46,3 +50,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

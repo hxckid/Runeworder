@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Splendor
   m_EditorClassIdentifier: 
   runewordName: Splendor
-  runesSequence: EthLum
+  runesSequence: '''EthLum'''
   runes: 0400000010000000
+  sprites:
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 2 Socket BodyArmor
+  subType: 2 Socket BodyArmor
   reqLevel: 37
   statsDesc: '+1 To All Skills
 
@@ -43,3 +46,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

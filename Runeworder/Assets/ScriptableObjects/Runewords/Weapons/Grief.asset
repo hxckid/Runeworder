@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Grief
   m_EditorClassIdentifier: 
   runewordName: Grief
-  runesSequence: EthTirLoMalRal
+  runesSequence: '''EthTirLoMalRal'''
   runes: 04000000020000001b0000001600000007000000
+  sprites:
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Swords/Axes
-
-'
+  subType: 
   reqLevel: 59
   statsDesc: '35% Chance To Cast Level 15 Venom On Striking
 
@@ -53,3 +57,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

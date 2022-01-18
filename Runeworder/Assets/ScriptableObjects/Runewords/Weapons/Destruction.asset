@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Destruction
   m_EditorClassIdentifier: 
   runewordName: Destruction
-  runesSequence: VexLoBerJahKo
+  runesSequence: '''VexLoBerJahKo'''
   runes: 190000001b0000001d0000001e00000011000000
+  sprites:
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Polearms/Swords
-
-'
+  subType: 
   reqLevel: 65
   statsDesc: '23% Chance To Cast Level 12 Volcano On Striking
 
@@ -53,3 +57,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

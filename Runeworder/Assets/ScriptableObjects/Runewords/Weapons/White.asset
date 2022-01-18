@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: White
   m_EditorClassIdentifier: 
   runewordName: White
-  runesSequence: DolIo
+  runesSequence: '''DolIo'''
   runes: 0d0000000f000000
+  sprites:
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '2 Socket Wand
-
-'
+  subType: 
   reqLevel: 35
   statsDesc: 'Hit Causes Monster To Flee 25%
 
@@ -45,3 +46,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

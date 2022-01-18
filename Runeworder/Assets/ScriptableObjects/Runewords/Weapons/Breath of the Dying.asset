@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Breath of the Dying
   m_EditorClassIdentifier: 
   runewordName: Breath of the Dying
-  runesSequence: VexHelElEldZodEth
+  runesSequence: '''VexHelElEldZodEth'''
   runes: 190000000e00000000000000010000002000000004000000
+  sprites:
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -4501304641669350739, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '6 Socket Weapons
-
-'
+  subType: 
   reqLevel: 69
   statsDesc: '50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy
 
@@ -57,3 +62,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

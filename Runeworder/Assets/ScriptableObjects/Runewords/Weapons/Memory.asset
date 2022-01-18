@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Memory
   m_EditorClassIdentifier: 
   runewordName: Memory
-  runesSequence: LumIoSolEth
+  runesSequence: '''LumIoSolEth'''
   runes: 100000000f0000000b00000004000000
+  sprites:
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Staves (Not Orbs)
-
-'
+  subType: 
   reqLevel: 37
   statsDesc: '+3 to Sorceress Skill Levels
 
@@ -36,17 +39,17 @@ MonoBehaviour:
 
     +10 To Vitality
 
-    +9 To Minimum
-    Damage
+    +9 To Minimum Damage
 
-    -25% Target Defense
+    -25%
+    Target Defense
 
     Magic Damage Reduced By 7
 
-    +50% Enhanced
-    Defense
+    +50% Enhanced Defense
 
 '
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

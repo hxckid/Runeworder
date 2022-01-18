@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Fury
   m_EditorClassIdentifier: 
   runewordName: Fury
-  runesSequence: JahGulEth
+  runesSequence: '''JahGulEth'''
   runes: 1e0000001800000004000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Melee Weapons
-
-'
+  subType: 
   reqLevel: 65
   statsDesc: '+209% Enhanced Damage
 
@@ -47,3 +49,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

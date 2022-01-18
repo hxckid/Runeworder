@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Chaos
   m_EditorClassIdentifier: 
   runewordName: Chaos
-  runesSequence: FalOhmUm
+  runesSequence: '''FalOhmUm'''
   runes: 120000001a00000015000000
+  sprites:
+  - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Claws
-
-'
+  subType: 
   reqLevel: 57
   statsDesc: '9% Chance To Cast Level 11 Frozen Orb On Striking
 
@@ -46,3 +48,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

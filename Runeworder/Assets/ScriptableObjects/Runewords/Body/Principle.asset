@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Principle
   m_EditorClassIdentifier: 
   runewordName: Principle
-  runesSequence: RalGulEld
+  runesSequence: '''RalGulEld'''
   runes: 070000001800000001000000
+  sprites:
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 53
   statsDesc: '100% Chance To Cast Level 5 Holy Bolt On Striking
 
@@ -38,3 +42,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 6
   gameVersion: 1.11
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -13,28 +13,32 @@ MonoBehaviour:
   m_Name: Steel
   m_EditorClassIdentifier: 
   runewordName: Steel
-  runesSequence: TirEl
+  runesSequence: '''TirEl'''
   runes: 0200000000000000
+  sprites:
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: 2 Socket Swords/Axes/Maces
+  subType: 
   reqLevel: 13
   statsDesc: '20% Enhanced Damage
 
     +3 To Minimum Damage
 
-    +3 To Maximum
-    Damage
+    +3 To Maximum Damage
 
-    +50 To Attack Rating
+    +50
+    To Attack Rating
 
     50% Chance Of Open Wounds
 
-    25% Increased
-    Attack Speed
+    25% Increased Attack Speed
 
-    +2 To Mana After Each Kill
+    +2
+    To Mana After Each Kill
 
     +1 To Light Radius'
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

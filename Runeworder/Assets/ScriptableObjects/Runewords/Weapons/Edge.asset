@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Edge
   m_EditorClassIdentifier: 
   runewordName: Edge
-  runesSequence: TirTalAmn
+  runesSequence: '''TirTalAmn'''
   runes: 02000000060000000a000000
+  sprites:
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: 3 Socket Missile Weapons
+  subType: 
   reqLevel: 25
   statsDesc: 'Level 15 Thorns Aura When Equipped
 
@@ -44,3 +48,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

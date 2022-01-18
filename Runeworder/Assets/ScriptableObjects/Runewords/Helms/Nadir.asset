@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Nadir
   m_EditorClassIdentifier: 
   runewordName: Nadir
-  runesSequence: NefTir
+  runesSequence: '''NefTir'''
   runes: 0300000002000000
+  sprites:
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
-  subtype: 2 Socket Helms
+  subType: 2 Socket Helms
   reqLevel: 13
   statsDesc: '+50% Enhanced Defense
 
@@ -29,12 +32,13 @@ MonoBehaviour:
 
     +2 To Mana After Each Kill
 
-    +5 To
-    Strength
+    +5 To Strength
 
-    -33% Extra Gold From Monsters
+    -33%
+    Extra Gold From Monsters
 
     -3 To Light Radius'
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

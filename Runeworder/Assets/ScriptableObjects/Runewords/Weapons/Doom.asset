@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Doom
   m_EditorClassIdentifier: 
   runewordName: Doom
-  runesSequence: HelOhmUmLoCham
+  runesSequence: '''HelOhmUmLoCham'''
   runes: 0e0000001a000000150000001b0000001f000000
+  sprites:
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 304334863325100338, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Axes/Polearms/Hammers
-
-'
+  subType: 
   reqLevel: 67
   statsDesc: '5% Chance To Cast Level 18 Volcano On Striking
 
@@ -50,3 +54,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

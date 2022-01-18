@@ -13,31 +13,33 @@ MonoBehaviour:
   m_Name: Black
   m_EditorClassIdentifier: 
   runewordName: Black
-  runesSequence: ThulIoNef
+  runesSequence: '''ThulIoNef'''
   runes: 090000000f00000003000000
+  sprites:
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Clubs/Hammers/Maces
-
-'
+  subType: 
   reqLevel: 35
   statsDesc: '+120% Enhanced Damage
 
     40% Chance Of Crushing Blow
 
-    +200
-    To Attack Rating
+    +200 To
+    Attack Rating
 
     Adds 3-14 Cold Damage - Cold Duration 3 Seconds
 
-    +10
-    To Vitality
+    +10 To
+    Vitality
 
     15% Increased Attack Speed
 
     Knockback
 
-    Magic Damage
-    Reduced By 2
+    Magic Damage Reduced
+    By 2
 
     Level 4 Corpse Explosion (12 Charges)
 
@@ -45,3 +47,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

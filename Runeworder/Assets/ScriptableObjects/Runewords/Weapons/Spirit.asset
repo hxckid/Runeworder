@@ -13,40 +13,44 @@ MonoBehaviour:
   m_Name: Spirit
   m_EditorClassIdentifier: 
   runewordName: Spirit
-  runesSequence: TalThulOrtAmn
+  runesSequence: '''TalThulOrtAmn'''
   runes: 0600000009000000080000000a000000
+  sprites:
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Swords
-
-'
+  subType: 
   reqLevel: 30
   statsDesc: '+2 To All Skills
 
     +25-35% Faster Cast Rate (varies)
 
-    +55%
-    Faster Hit Recovery
+    +55% Faster
+    Hit Recovery
 
     Adds 1-50 Lightning Damage
 
-    Adds 3-14 Cold Damage
-    3 Second Duration (Normal)
+    Adds 3-14 Cold Damage 3 Second
+    Duration (Normal)
 
     +75 Poison Damage Over 5 Seconds
 
-    7% Life
-    Stolen Per Hit
+    7% Life Stolen Per
+    Hit
 
     +250 Defense Vs. Missile
 
     +22 To Vitality
 
-    +89-112
-    To Mana (varies)
+    +89-112 To Mana (varies)
 
-    +3-8 Magic Absorb (varies)
+    +3-8
+    Magic Absorb (varies)
 
 '
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

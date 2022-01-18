@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Heart of the Oak
   m_EditorClassIdentifier: 
   runewordName: Heart of the Oak
-  runesSequence: KoVexPulThul
+  runesSequence: '''KoVexPulThul'''
   runes: 11000000190000001400000009000000
+  sprites:
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Staves/Maces*
-
-'
+  subType: 
   reqLevel: 55
   statsDesc: '+3 To All Skills
 
@@ -52,3 +55,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Melody
   m_EditorClassIdentifier: 
   runewordName: Melody
-  runesSequence: ShaelKoNef
+  runesSequence: '''ShaelKoNef'''
   runes: 0c0000001100000003000000
+  sprites:
+  - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '3 Socket Missile Weapons
-
-'
+  subType: 
   reqLevel: 39
   statsDesc: '+50% Enhanced Damage
 
@@ -45,3 +47,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

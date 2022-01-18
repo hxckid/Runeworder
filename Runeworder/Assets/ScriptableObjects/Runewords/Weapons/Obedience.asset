@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Obedience
   m_EditorClassIdentifier: 
   runewordName: Obedience
-  runesSequence: HelKoThulEthFal
+  runesSequence: '''HelKoThulEthFal'''
   runes: 0e00000011000000090000000400000012000000
+  sprites:
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Polearms
-
-'
+  subType: 
   reqLevel: 41
   statsDesc: '30% Chance To Cast Level 21 Enchant When You Kill An Enemy
 
@@ -52,3 +56,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

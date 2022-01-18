@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Bone
   m_EditorClassIdentifier: 
   runewordName: Bone
-  runesSequence: SolUmUm
+  runesSequence: '''SolUmUm'''
   runes: 0b0000001500000015000000
+  sprites:
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 47
   statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
 
@@ -34,3 +38,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 5
   gameVersion: 1.11
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

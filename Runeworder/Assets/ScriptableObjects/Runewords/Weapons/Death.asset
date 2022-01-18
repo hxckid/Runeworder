@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Death
   m_EditorClassIdentifier: 
   runewordName: Death
-  runesSequence: HelElVexOrtGul
+  runesSequence: '''HelElVexOrtGul'''
   runes: 0e00000000000000190000000800000018000000
+  sprites:
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '5 Socket Swords/Axes
-
-'
+  subType: 
   reqLevel: 55
   statsDesc: '100% Chance To Cast Level 44 Chain Lightning When You Die
 
@@ -56,3 +60,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

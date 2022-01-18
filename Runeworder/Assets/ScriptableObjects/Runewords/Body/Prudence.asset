@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Prudence
   m_EditorClassIdentifier: 
   runewordName: Prudence
-  runesSequence: MalTir
+  runesSequence: '''MalTir'''
   runes: 1600000002000000
+  sprites:
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 2 Socket BodyArmor
+  subType: 2 Socket BodyArmor
   reqLevel: 49
   statsDesc: '+25% Faster Hit Recovery
 
@@ -41,3 +44,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

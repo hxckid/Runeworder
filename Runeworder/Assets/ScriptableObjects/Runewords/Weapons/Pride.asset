@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Pride
   m_EditorClassIdentifier: 
   runewordName: Pride
-  runesSequence: ChamSurIoLo
+  runesSequence: '''ChamSurIoLo'''
   runes: 1f0000001c0000000f0000001b000000
+  sprites:
+  - {fileID: 304334863325100338, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Polearms
-
-'
+  subType: 
   reqLevel: 67
   statsDesc: '25% Chance To Cast Level 17 Fire Wall When Struck
 
@@ -51,3 +54,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

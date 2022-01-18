@@ -13,24 +13,27 @@ MonoBehaviour:
   m_Name: Strength
   m_EditorClassIdentifier: 
   runewordName: Strength
-  runesSequence: AmnTir
+  runesSequence: '''AmnTir'''
   runes: 0a00000002000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: 2 Socket Melee Weapons
+  subType: 
   reqLevel: 25
   statsDesc: '35% Enhanced Damage
 
     25% Chance Of Crushing Blow
 
-    7% Life
-    Stolen Per Hit
+    7% Life Stolen
+    Per Hit
 
     +2 To Mana After Each Kill
 
     +20 To Strength
 
-    +10
-    To Vitality'
+    +10 To Vitality'
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

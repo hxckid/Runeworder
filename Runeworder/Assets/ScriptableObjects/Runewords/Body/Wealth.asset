@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Wealth
   m_EditorClassIdentifier: 
   runewordName: Wealth
-  runesSequence: LemKoTir
+  runesSequence: '''LemKoTir'''
   runes: 130000001100000002000000
+  sprites:
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 43
   statsDesc: '300% Extra Gold From Monsters
 
@@ -31,3 +35,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

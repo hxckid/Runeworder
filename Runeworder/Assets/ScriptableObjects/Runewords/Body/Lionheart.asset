@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Lionheart
   m_EditorClassIdentifier: 
   runewordName: Lionheart
-  runesSequence: HelLumFal
+  runesSequence: '''HelLumFal'''
   runes: 0e0000001000000012000000
+  sprites:
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subtype: 3 Socket BodyArmor
+  subType: 3 Socket BodyArmor
   reqLevel: 41
   statsDesc: '+20% Enhanced Damage
 
@@ -40,3 +44,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

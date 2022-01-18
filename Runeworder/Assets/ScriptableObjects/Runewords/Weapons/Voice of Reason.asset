@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Voice of Reason
   m_EditorClassIdentifier: 
   runewordName: Voice of Reason
-  runesSequence: LemKoElEld
+  runesSequence: '''LemKoElEld'''
   runes: 13000000110000000000000001000000
+  sprites:
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Swords/Maces
-
-'
+  subType: 
   reqLevel: 43
   statsDesc: '15% Chance To Cast Level 13 Frozen Orb On Striking
 
@@ -53,3 +56,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

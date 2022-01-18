@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Silence
   m_EditorClassIdentifier: 
   runewordName: Silence
-  runesSequence: DolEldHelIstTirVex
+  runesSequence: '''DolEldHelIstTirVex'''
   runes: 0d000000010000000e000000170000000200000019000000
+  sprites:
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '6 Socket Weapons
-
-'
+  subType: 
   reqLevel: 55
   statsDesc: '200% Enhanced Damage
 
@@ -54,3 +59,4 @@ MonoBehaviour:
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

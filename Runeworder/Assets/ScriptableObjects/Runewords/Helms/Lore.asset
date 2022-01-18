@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Lore
   m_EditorClassIdentifier: 
   runewordName: Lore
-  runesSequence: OrtSol
+  runesSequence: '''OrtSol'''
   runes: 080000000b000000
+  sprites:
+  - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
-  subtype: 2 Socket Helms
+  subType: 2 Socket Helms
   reqLevel: 27
   statsDesc: '+1 To All Skill Levels
 
@@ -29,10 +32,10 @@ MonoBehaviour:
 
     Damage Reduced By 7
 
-    +2 To Light
-    Radius
+    +2 To Light Radius
 
 '
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

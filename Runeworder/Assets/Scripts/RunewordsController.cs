@@ -65,6 +65,7 @@ public class RunewordsController : MonoBehaviour
                 }
                 lc.reqLevel.text = $"Level: {rw.reqLevel}";
                 lc.type.text = $"{rw.runewordType}";
+                lc.runeword = rw;
 
                 GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
                 runewordsToShow.Add(inst);

@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Faith
   m_EditorClassIdentifier: 
   runewordName: Faith
-  runesSequence: OhmJahLemEld
+  runesSequence: '''OhmJahLemEld'''
   runes: 1a0000001e0000001300000001000000
+  sprites:
+  - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Missile Weapons
-
-'
+  subType: 
   reqLevel: 65
   statsDesc: 'Level 12-15 Fanaticism Aura When Equipped (varies)
 
@@ -50,3 +53,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

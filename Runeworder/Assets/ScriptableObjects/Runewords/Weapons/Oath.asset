@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Oath
   m_EditorClassIdentifier: 
   runewordName: Oath
-  runesSequence: ShaelPulMalLum
+  runesSequence: '''ShaelPulMalLum'''
   runes: 0c000000140000001600000010000000
+  sprites:
+  - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subtype: '4 Socket Swords/Axes/Maces
-
-'
+  subType: 
   reqLevel: 49
   statsDesc: '30% Chance To Cast Level 20 Bone Spirit On Striking
 
@@ -50,3 +53,4 @@ MonoBehaviour:
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
