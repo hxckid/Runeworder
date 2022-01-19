@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Weapons
+
+'
   reqLevel: 59
   statsDesc: '20% Chance To Cast Level 15 Chilling Armor when Struck
 

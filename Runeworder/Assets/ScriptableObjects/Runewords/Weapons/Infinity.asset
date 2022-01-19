@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Polearms
+
+'
   reqLevel: 63
   statsDesc: '50% Chance To Cast Level 20 Chain Lightning When You Kill An Enemy
 

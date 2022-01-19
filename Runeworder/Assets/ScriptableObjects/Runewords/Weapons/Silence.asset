@@ -23,7 +23,9 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '6 Socket Weapons
+
+'
   reqLevel: 55
   statsDesc: '200% Enhanced Damage
 

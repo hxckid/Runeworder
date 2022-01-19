@@ -22,7 +22,9 @@ MonoBehaviour:
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '5 Socket Axes/Scepters/Hammers
+
+'
   reqLevel: 63
   statsDesc: 'Level 9 Fanaticism Aura When Equipped
 

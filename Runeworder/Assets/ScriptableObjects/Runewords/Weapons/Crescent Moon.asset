@@ -20,7 +20,9 @@ MonoBehaviour:
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '3 Socket Axes/Swords/Polearms
+
+'
   reqLevel: 47
   statsDesc: '10% Chance To Cast Level 17 Chain Lightning On Striking
 

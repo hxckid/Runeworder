@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Weapons
+
+'
   reqLevel: 43
   statsDesc: '+25% Increased Attack Speed
 

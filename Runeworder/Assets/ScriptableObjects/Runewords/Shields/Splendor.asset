@@ -18,8 +18,10 @@ MonoBehaviour:
   sprites:
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
-  runewordType: 1
-  subType: 2 Socket BodyArmor
+  runewordType: 3
+  subType: '2 Socket Shields
+
+'
   reqLevel: 37
   statsDesc: '+1 To All Skills
 

@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
-  subType: 
+  subType: '4 Socket Paladin Shields (only)
+
+'
   reqLevel: 57
   statsDesc: '15% Chance To Cast Level 5 Life Tap On Striking
 

@@ -22,7 +22,9 @@ MonoBehaviour:
   - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '5 Socket Polearms/Swords
+
+'
   reqLevel: 65
   statsDesc: '23% Chance To Cast Level 12 Volcano On Striking
 

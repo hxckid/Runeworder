@@ -23,7 +23,9 @@ MonoBehaviour:
   - {fileID: -4501304641669350739, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '6 Socket Weapons
+
+'
   reqLevel: 69
   statsDesc: '50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy
 

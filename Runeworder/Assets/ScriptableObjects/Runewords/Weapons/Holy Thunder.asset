@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Scepters
+
+'
   reqLevel: 21
   statsDesc: '+60% Enhanced Damage
 

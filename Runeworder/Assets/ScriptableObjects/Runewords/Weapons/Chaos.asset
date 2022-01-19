@@ -20,7 +20,9 @@ MonoBehaviour:
   - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '3 Socket Claws
+
+'
   reqLevel: 57
   statsDesc: '9% Chance To Cast Level 11 Frozen Orb On Striking
 

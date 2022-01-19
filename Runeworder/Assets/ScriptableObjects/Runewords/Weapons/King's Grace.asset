@@ -20,7 +20,9 @@ MonoBehaviour:
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '3 Socket Swords/Scepters
+
+'
   reqLevel: 25
   statsDesc: '+100% Enhanced Damage
 

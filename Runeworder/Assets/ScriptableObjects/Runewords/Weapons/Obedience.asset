@@ -22,7 +22,9 @@ MonoBehaviour:
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '5 Socket Polearms
+
+'
   reqLevel: 41
   statsDesc: '30% Chance To Cast Level 21 Enchant When You Kill An Enemy
 

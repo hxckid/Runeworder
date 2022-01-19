@@ -23,7 +23,9 @@ MonoBehaviour:
   - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '6 Socket Swords/Hammers/Axes
+
+'
   reqLevel: 65
   statsDesc: '6% Chance To Cast Level 11 Fade When Struck
 

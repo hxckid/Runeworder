@@ -3,7 +3,11 @@ guid: c1ff41cca8181d741b5df60d52310d4e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - userRunes: {instanceID: 0}
+  - runewordsDB: {instanceID: 0}
+  - runewordPrefab: {instanceID: 0}
+  - uiParent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

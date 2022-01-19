@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Staves (Not Orbs)
+
+'
   reqLevel: 37
   statsDesc: '+3 to Sorceress Skill Levels
 

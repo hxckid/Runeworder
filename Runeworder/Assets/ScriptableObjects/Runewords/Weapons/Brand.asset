@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Missile Weapons
+
+'
   reqLevel: 65
   statsDesc: '35% Chance To Cast Level 14 Amplify Damage When Struck
 

@@ -274,7 +274,6 @@ GameObject:
   - component: {fileID: 127871773}
   - component: {fileID: 127871772}
   - component: {fileID: 127871775}
-  - component: {fileID: 127871776}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -361,27 +360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
---- !u!114 &127871776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127871771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720710ec063b2a8409107ab348f4488e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runeIcons: {fileID: 0}
-  rwName: {fileID: 0}
-  rwSeq: {fileID: 0}
-  rwStats: {fileID: 0}
-  rwType: {fileID: 0}
-  rwLevel: {fileID: 0}
-  rwLadder: {fileID: 0}
-  rwClass: {fileID: 0}
-  rwVersion: {fileID: 0}
 --- !u!1 &180836064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,7 +2709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.6773682, y: -42.938354}
+  m_AnchoredPosition: {x: 1.6773682, y: -42.938477}
   m_SizeDelta: {x: -157.44, y: -85.877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1931066113

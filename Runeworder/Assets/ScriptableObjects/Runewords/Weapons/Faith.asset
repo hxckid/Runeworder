@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Missile Weapons
+
+'
   reqLevel: 65
   statsDesc: 'Level 12-15 Fanaticism Aura When Equipped (varies)
 
