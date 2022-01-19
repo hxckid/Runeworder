@@ -21,7 +21,9 @@ MonoBehaviour:
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '4 Socket Swords/Maces
+
+'
   reqLevel: 43
   statsDesc: '15% Chance To Cast Level 13 Frozen Orb On Striking
 

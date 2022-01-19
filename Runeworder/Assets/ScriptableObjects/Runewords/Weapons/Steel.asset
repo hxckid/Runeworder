@@ -19,7 +19,9 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 
+  subType: '2 Socket Swords/Axes/Maces
+
+'
   reqLevel: 13
   statsDesc: '20% Enhanced Damage
 
