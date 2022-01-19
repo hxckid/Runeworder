@@ -12,7 +12,8 @@ public class RunewordsController : MonoBehaviour
     public GameObject uiParent;
 
     [SerializeField] List<GameObject> runewordsToShow;
-    [SerializeField] List<ListController> sortedLc = new List<ListController>();
+    int lastPressed;
+    bool toggle = true;
     private void Start()
     {
         RuneController.OnRuneToggleChanged += RuneStateChanged;
@@ -28,6 +29,8 @@ public class RunewordsController : MonoBehaviour
 
     public void UpdateRunewordsList(int type)
     {
+        lastPressed = type;
+
         if (runewordsToShow.Count > 0)
         {
             foreach (var rw in runewordsToShow)
@@ -53,7 +56,6 @@ public class RunewordsController : MonoBehaviour
                 {
                     rune.text = "";
                 }
-                lc.hasRunes = 0;
                 for (int i = 0; i < rw.runes.Count; i++)
                 {
                     lc.runes[i].text = rw.runes[i].ToString();
@@ -63,7 +65,7 @@ public class RunewordsController : MonoBehaviour
                         if (rune == rw.runes[i])
                         {
                             lc.runes[i].color = Color.green;
-                            lc.hasRunes++;
+                            rw.hasRunes++;
                         }
                     }
                 }
@@ -94,7 +96,10 @@ public class RunewordsController : MonoBehaviour
                     foreach (var rune in userRunes.hasRunes)
                     {
                         if (rune == rw.runes[i])
+                        {
                             lc.runes[i].color = Color.green;
+                            rw.hasRunes++;
+                        }
                     }
                 }
                 lc.reqLevel.text = $"Level: {rw.reqLevel}";
@@ -109,30 +114,41 @@ public class RunewordsController : MonoBehaviour
 
     public void SortRunewordsBy(string type)
     {
-        sortedLc.Clear();
-
-        foreach (var rw in runewordsToShow)
+        if (toggle)
         {
-            sortedLc.Add(rw.GetComponent<ListController>());
+            switch (type)
+            {
+                case "Name":
+                    runewordsDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
+                    break;
+                case "Runes":
+                    runewordsDB.runewords.Sort((b, a) => a.hasRunes.CompareTo(b.hasRunes));
+                    break;
+                case "Level":
+                    runewordsDB.runewords.Sort((a, b) => a.reqLevel.CompareTo(b.reqLevel));
+                    break;
+                default:
+                    break;
+            }
         }
-
-        switch (type)
+        else
         {
-            case "Name":
-                sortedLc.Sort((a, b) => a.runewordName.text.CompareTo(b.runewordName.text));
-                foreach (var lc in sortedLc)
-                {
-                    var inst = Instantiate(lc.gameObject, uiParent.transform);
-                }
-                break;
-            case "Runes":
-                sortedLc.Sort((a, b) => a.hasRunes.CompareTo(b.hasRunes));
-                
-                break;
-            case "Level":
-                break;
-            default:
-                break;
+            switch (type)
+            {
+                case "Name":
+                    runewordsDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
+                    break;
+                case "Runes":
+                    runewordsDB.runewords.Sort((a, b) => a.hasRunes.CompareTo(b.hasRunes));
+                    break;
+                case "Level":
+                    runewordsDB.runewords.Sort((b, a) => a.reqLevel.CompareTo(b.reqLevel));
+                    break;
+                default:
+                    break;
+            }
         }
+        toggle = !toggle;
+        UpdateRunewordsList(lastPressed);
     }
 }

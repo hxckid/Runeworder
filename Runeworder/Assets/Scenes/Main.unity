@@ -261,6 +261,7 @@ MonoBehaviour:
   runewordsDB: {fileID: 11400000, guid: f219ae3fc4ddf414d9bc62a79fdd3f6a, type: 2}
   runewordPrefab: {fileID: 6102768536333666633, guid: 89167f1cc8f61464a8dbbf2269a1162d, type: 3}
   uiParent: {fileID: 1703435608}
+  runewordsToShow: []
 --- !u!1 &127871771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,7 +1614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 853411545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 47835034}
+        m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
+        m_MethodName: SortRunewordsBy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Name
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &853411545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,7 +1905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1053061074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 47835034}
+        m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
+        m_MethodName: SortRunewordsBy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1053061074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3355,7 +3380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1903751368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 47835034}
+        m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
+        m_MethodName: SortRunewordsBy
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Runes
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1903751368
 MonoBehaviour:
   m_ObjectHideFlags: 0

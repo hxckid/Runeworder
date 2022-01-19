@@ -14,7 +14,6 @@ public class ListController : MonoBehaviour
     public Text reqLevel;
     public Text type;
     public Button btn;
-    public int hasRunes;
 
     public Canvas parent;
     public GameObject tooltip;

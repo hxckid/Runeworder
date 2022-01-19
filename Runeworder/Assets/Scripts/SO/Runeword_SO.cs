@@ -18,6 +18,7 @@ public class Runeword_SO : ScriptableObject
     public Classes classItem;
     public string gameVersion = "Original Rune Words";
     [SerializeField] RunesSprites_SO runesSprites;
+    public int hasRunes;
 
     private void OnValidate()
     {
