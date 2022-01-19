@@ -14,6 +14,7 @@ public class ListController : MonoBehaviour
     public Text reqLevel;
     public Text type;
     public Button btn;
+    public int hasRunes;
 
     public Canvas parent;
     public GameObject tooltip;
@@ -42,7 +43,5 @@ public class ListController : MonoBehaviour
         tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Yes" : "Ladder Item: No";
         tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class Specified: {runeword.classItem}" : "Class Specified: Any";
         tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
-
-        
     }
 }

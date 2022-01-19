@@ -1,4 +1,4 @@
-using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +11,8 @@ public class RunewordsController : MonoBehaviour
     public GameObject runewordPrefab;
     public GameObject uiParent;
 
-    List<GameObject> runewordsToShow;
-
+    [SerializeField] List<GameObject> runewordsToShow;
+    [SerializeField] List<ListController> sortedLc = new List<ListController>();
     private void Start()
     {
         RuneController.OnRuneToggleChanged += RuneStateChanged;
@@ -53,6 +53,7 @@ public class RunewordsController : MonoBehaviour
                 {
                     rune.text = "";
                 }
+                lc.hasRunes = 0;
                 for (int i = 0; i < rw.runes.Count; i++)
                 {
                     lc.runes[i].text = rw.runes[i].ToString();
@@ -60,7 +61,10 @@ public class RunewordsController : MonoBehaviour
                     foreach (var rune in userRunes.hasRunes)
                     {
                         if (rune == rw.runes[i])
+                        {
                             lc.runes[i].color = Color.green;
+                            lc.hasRunes++;
+                        }
                     }
                 }
                 lc.reqLevel.text = $"Level: {rw.reqLevel}";
@@ -100,6 +104,35 @@ public class RunewordsController : MonoBehaviour
                 GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
                 runewordsToShow.Add(inst);
             }
+        }
+    }
+
+    public void SortRunewordsBy(string type)
+    {
+        sortedLc.Clear();
+
+        foreach (var rw in runewordsToShow)
+        {
+            sortedLc.Add(rw.GetComponent<ListController>());
+        }
+
+        switch (type)
+        {
+            case "Name":
+                sortedLc.Sort((a, b) => a.runewordName.text.CompareTo(b.runewordName.text));
+                foreach (var lc in sortedLc)
+                {
+                    var inst = Instantiate(lc.gameObject, uiParent.transform);
+                }
+                break;
+            case "Runes":
+                sortedLc.Sort((a, b) => a.hasRunes.CompareTo(b.hasRunes));
+                
+                break;
+            case "Level":
+                break;
+            default:
+                break;
         }
     }
 }
