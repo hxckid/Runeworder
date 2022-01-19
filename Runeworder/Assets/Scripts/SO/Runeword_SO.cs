@@ -32,12 +32,6 @@ public class Runeword_SO : ScriptableObject
         
         if (runewordType != RunewordType.Weapons && runewordType != RunewordType.Shields)
             subType = ($"{runes.Count} Socket {runewordType}");
-        
-        if (isLadder)
-            gameVersion = "1.10";
-
-        if (classItem != Classes.Any)
-            gameVersion = "1.11";
     }
 }
 

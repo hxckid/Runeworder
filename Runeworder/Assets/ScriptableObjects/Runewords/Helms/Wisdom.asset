@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Wisdom
+  m_EditorClassIdentifier: 
+  runewordName: Wisdom
+  runesSequence: '''PulIthEld'''
+  runes: 140000000500000001000000
+  sprites:
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 2
+  subType: 3 Socket Helms
+  reqLevel: 64
+  statsDesc: "+33% Piercing Attack\n+20% Bonus to Attack Rating\n5% Mana Stolen per
+    Hit\n+30% Enhanced Defence\n+10 to Energy\n15% Slower Stamina Drain\nCannot Be
+    Frozen\n+5 Mana After Each Kill \n15% Damage Taken Goes To Mana"
+  isLadder: 1
+  classItem: 0
+  gameVersion: Ressurected
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
