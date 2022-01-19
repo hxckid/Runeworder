@@ -12,18 +12,13 @@ public class RunewordsController : MonoBehaviour
     public GameObject uiParent;
 
     [SerializeField] List<GameObject> runewordsToShow;
-    int lastPressed;
+    int lastPressed = 4;
     bool toggle = true;
+
     private void Start()
     {
-        RuneController.OnRuneToggleChanged += RuneStateChanged;
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
-        UpdateRunewordsList(4);
-    }
-
-    private void RuneStateChanged(Runes rune, bool isOn)
-    {
         UpdateRunewordsList(4);
     }
 
