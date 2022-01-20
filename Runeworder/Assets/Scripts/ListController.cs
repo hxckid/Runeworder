@@ -42,5 +42,6 @@ public class ListController : MonoBehaviour
         tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Yes" : "Ladder Item: No";
         tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class Specified: {runeword.classItem}" : "Class Specified: Any";
         tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
+        tc.rwItem.text = $"Best base item(s):\n{runeword.recomendedItems}";
     }
 }

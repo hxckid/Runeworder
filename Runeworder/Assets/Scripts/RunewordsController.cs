@@ -12,14 +12,13 @@ public class RunewordsController : MonoBehaviour
     public GameObject uiParent;
 
     [SerializeField] List<GameObject> runewordsToShow;
-    int lastPressed = 4;
+    int lastPressed = 0;
     bool toggle = false;
 
     private void Start()
     {
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
-        //UpdateRunewordsList(4);
     }
 
     public void UpdateRunewordsList(int type)
@@ -40,6 +39,7 @@ public class RunewordsController : MonoBehaviour
         {
             if (rw.runewordType == (RunewordType)type || type == 4)
             {
+                rw.hasRunes = 0;
                 ListController lc = runewordPrefab.GetComponent<ListController>();
                 if (odd % 2 == 0)
                     lc.background.color = Color.red;
@@ -73,6 +73,7 @@ public class RunewordsController : MonoBehaviour
             }
             else if (type == 5 && rw.gameVersion == "Ressurected")
             {
+                rw.hasRunes = 0;
                 ListController lc = runewordPrefab.GetComponent<ListController>();
                 if (odd % 2 == 0)
                     lc.background.color = Color.red;
@@ -117,10 +118,18 @@ public class RunewordsController : MonoBehaviour
                     runewordsDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
-                    runewordsDB.runewords.Sort((b, a) => a.hasRunes.CompareTo(b.hasRunes));
+                    runewordsDB.runewords.Sort((a, b) =>
+                    {
+                        int result = a.hasRunes.CompareTo(b.hasRunes);
+                        return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
+                    });
                     break;
                 case "Level":
-                    runewordsDB.runewords.Sort((a, b) => a.reqLevel.CompareTo(b.reqLevel));
+                    runewordsDB.runewords.Sort((a, b) =>
+                    {
+                        int result = a.reqLevel.CompareTo(b.reqLevel);
+                        return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
+                    });
                     break;
             }
         }
@@ -132,10 +141,18 @@ public class RunewordsController : MonoBehaviour
                     runewordsDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
-                    runewordsDB.runewords.Sort((a, b) => a.hasRunes.CompareTo(b.hasRunes));
+                    runewordsDB.runewords.Sort((b, a) =>
+                    {
+                        int result = a.hasRunes.CompareTo(b.hasRunes);
+                        return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
+                    });
                     break;
                 case "Level":
-                    runewordsDB.runewords.Sort((b, a) => a.reqLevel.CompareTo(b.reqLevel));
+                    runewordsDB.runewords.Sort((a, b) =>
+                    {
+                        int result = b.reqLevel.CompareTo(a.reqLevel);
+                        return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
+                    });
                     break;
             }
         }
