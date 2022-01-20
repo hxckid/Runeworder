@@ -13,13 +13,13 @@ public class RunewordsController : MonoBehaviour
 
     [SerializeField] List<GameObject> runewordsToShow;
     int lastPressed = 4;
-    bool toggle = true;
+    bool toggle = false;
 
     private void Start()
     {
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
-        UpdateRunewordsList(4);
+        //UpdateRunewordsList(4);
     }
 
     public void UpdateRunewordsList(int type)
@@ -122,8 +122,6 @@ public class RunewordsController : MonoBehaviour
                 case "Level":
                     runewordsDB.runewords.Sort((a, b) => a.reqLevel.CompareTo(b.reqLevel));
                     break;
-                default:
-                    break;
             }
         }
         else
@@ -138,8 +136,6 @@ public class RunewordsController : MonoBehaviour
                     break;
                 case "Level":
                     runewordsDB.runewords.Sort((b, a) => a.reqLevel.CompareTo(b.reqLevel));
-                    break;
-                default:
                     break;
             }
         }
