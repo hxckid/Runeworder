@@ -49,3 +49,6 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Any Wand that can have 2 Sockets and has the Staff Mod +3 to 
+    Bone Spear

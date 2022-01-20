@@ -58,3 +58,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Flail (Ethereal for style)

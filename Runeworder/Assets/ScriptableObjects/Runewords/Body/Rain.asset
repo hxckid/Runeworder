@@ -44,3 +44,5 @@ MonoBehaviour:
   classItem: 4
   gameVersion: 1.11
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Superior Mage Plate

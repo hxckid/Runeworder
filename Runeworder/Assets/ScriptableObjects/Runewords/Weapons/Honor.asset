@@ -54,3 +54,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 1
+  recomendedItems: Superior Zweihander

@@ -22,6 +22,19 @@ public class AppManager : MonoBehaviour
         userRunes.hasRunes = new List<Runes>(userData.runes);
     }
 
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.Menu))
+            {
+                AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+                activity.Call<bool>("moveTaskToBack", true);
+                Application.Quit();
+            }
+        }
+    }
+
     private void SaveUserData(Runes rune, bool isOn)
     {
         userData = new UserData(userRunes.hasRunes);
