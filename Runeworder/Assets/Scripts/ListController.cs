@@ -19,10 +19,13 @@ public class ListController : MonoBehaviour
     public GameObject tooltip;
     public GameObject tooltipRune;
 
+    Color ressurectedColor;
+
     private void Awake()
     {
         btn.onClick.AddListener(ShowTooltip);
         parent = FindObjectOfType<Canvas>();
+        ressurectedColor = new Color32(236,140,24,255);
     }
 
     private void ShowTooltip()
@@ -39,8 +42,15 @@ public class ListController : MonoBehaviour
         tc.rwStats.text = runeword.statsDesc;
         tc.rwType.text = runeword.subType;
         tc.rwLevel.text = $"Required Level: {runeword.reqLevel}";
-        tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Yes" : "Ladder Item: No";
+        if (runeword.gameVersion != "Ressurected")
+            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Diablo 2 LoD Ladder" : "Ladder Item: No";
+        else
+            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Ressurected Ladder" : "Ladder Item: No";
         tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class Specified: {runeword.classItem}" : "Class Specified: Any";
+        if (runeword.gameVersion == "Ressurected")
+            tc.rwVersion.color = ressurectedColor;
+        else
+            tc.rwVersion.color = Color.white;
         tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
         tc.rwItem.text = $"Best base item(s):\n{runeword.recomendedItems}";
     }
