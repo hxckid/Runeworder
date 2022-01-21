@@ -10,47 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: Mist
+  m_Name: Plague
   m_EditorClassIdentifier: 
-  runewordName: Mist
-  runesSequence: '''ChamShaelGulThulIth'''
-  runes: 1f0000000c000000180000000900000005000000
+  runewordName: Plague
+  runesSequence: '''ChamShaelUm'''
+  runes: 1f0000000c00000015000000
   sprites:
   - {fileID: 304334863325100338, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
-  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
-  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
-  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 5 Socket Bows
+  subType: 3 Socket Sword
   reqLevel: 67
-  statsDesc: 'Level 9 Concentration Aura When Equipped
+  statsDesc: '25% Chance to Cast Level 15 Poison Nova On Striking
 
-    +3 To All Skills
+    20% Chance
+    to Cast Level 12 Lower Resist When Struck
 
-    +20%
-    Increased Attack Speed
+    Level 13-17 Cleansing Aura When
+    Equipped (varies)
 
-    +100% Piercing Attack
+    +1-2 All Skills
 
-    +X Enhanced Damage
+    +20% Increased Attack Speed
 
-    +9
-    Maximum Damage
+    +220-320%
+    Enhanced Damage (varies)
 
-    20% Bonus to Attack Rating
+    -23% To Enemy Poison Resistance
 
-    Adds 3-14 Cold Damage
+    0.3% (0-29.7)
+    Deadly Strike (Based on Character Level)
+
+    25% Chance of Open Wounds
 
     Freezes
-    Target +3
-
-    +24 to Vitality
-
-    All Resistances +40'
+    Target +3'
   isLadder: 1
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 4
+  hasRunes: 0
   recomendedItems: Coming Soon

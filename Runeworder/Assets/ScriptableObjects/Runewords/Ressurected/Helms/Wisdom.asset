@@ -21,10 +21,27 @@ MonoBehaviour:
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
   subType: 3 Socket Helms
-  reqLevel: 64
-  statsDesc: "+33% Piercing Attack\n+20% Bonus to Attack Rating\n5% Mana Stolen per
-    Hit\n+30% Enhanced Defence\n+10 to Energy\n15% Slower Stamina Drain\nCannot Be
-    Frozen\n+5 Mana After Each Kill \n15% Damage Taken Goes To Mana"
+  reqLevel: 45
+  statsDesc: '33% Piercing Attack
+
+    +15-25% Bonus to Attack Rating (varies)
+
+    4-8%
+    mana stolen per hit (varies)
+
+    +30% Enhanced Defense
+
+    +10 Energy
+
+    Lowers
+    Stamina drain by 15%
+
+    Cannot Be Frozen
+
+    +5 mana after each kill
+
+    15%
+    damage taken goes to mana'
   isLadder: 1
   classItem: 0
   gameVersion: Ressurected

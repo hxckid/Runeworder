@@ -24,39 +24,39 @@ MonoBehaviour:
   - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   subType: 6 Socket Sword
-  reqLevel: 63
-  statsDesc: '18% Chance to Cast Level 18 Taunt On Striking
+  reqLevel: 41
+  statsDesc: '18% Chance To Cast Level 18 Taunt On Striking
 
     +3 to Combat Skills
     (Barbarian Only)
 
-    +20% Increased Attack Speed
+    +20-30% Increased Attack Speed (varies)
 
-    +330% Enhanced Damage
+    +300-350%
+    Enhanced Damage
 
-    +9
-    to Maximum Damage
+    +9 to Maximum Damage
 
     +50 to Attack Rating
 
-    +75% Damage to Undead
+    +75
+    Damage to Undead
 
-    +50
-    to Attack Rating Against Undead
+    +50 to Attack Rating Against Undead
 
-    8% Life Stolen per Hit
+    8-10% Life Stolen
+    Per Hit
 
-    Prevent Monster
-    Heal
+    Prevent Monster Heal
 
     +10 to Strength
 
     +10 to Vitality
 
-    Damage Reduced by 8
+    Damage
+    Reduced By 8
 
-    +1
-    to Light Radius
+    +1 to Light Radius
 
     Requirements -20%'
   isLadder: 1

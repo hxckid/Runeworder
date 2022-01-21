@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52d7321d9f48376418c26aef471f3ed9, type: 3}
-  m_Name: Runes Sprites DB
+  m_Name: RunesSpritesDB
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}

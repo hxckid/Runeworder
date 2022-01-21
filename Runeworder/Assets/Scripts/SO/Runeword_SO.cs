@@ -16,7 +16,7 @@ public class Runeword_SO : ScriptableObject
     [TextArea(minLines:6, maxLines: 20)] public string statsDesc;
     public bool isLadder;
     public Classes classItem;
-    public string gameVersion = "Original Rune Words";
+    public string gameVersion = "Ressurected";
     [SerializeField] RunesSprites_SO runesSprites;
     public int hasRunes;
     [TextArea] public string recomendedItems;
@@ -25,10 +25,17 @@ public class Runeword_SO : ScriptableObject
     {
         sprites.Clear();
         string seq = string.Empty;
-        for (int i = 0; i < runes.Count; i++)
+        if (runesSprites == null)
         {
-            seq += runes[i].ToString();
-            sprites.Add(runesSprites.sprites[(int)runes[i]]);
+            Debug.LogWarning("Не назначен RunesSpritesDB");
+        }
+        else
+        {
+            for (int i = 0; i < runes.Count; i++)
+            {
+                seq += runes[i].ToString();
+                sprites.Add(runesSprites.sprites[(int)runes[i]]);
+            }
         }
         runesSequence = $"'{seq}'";
         
