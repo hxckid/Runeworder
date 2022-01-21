@@ -16,6 +16,8 @@ public class AppManager : MonoBehaviour
     public GameObject runewordsTab;
     public GameObject runesTab;
     public GameObject quitText;
+    public GameObject runesBtn;
+    public GameObject runewordsBtn;
 
     UserData userData;
     string json;
@@ -57,6 +59,9 @@ public class AppManager : MonoBehaviour
                         break;
                     case GameState.Runewords:
                         runewordsTab.SetActive(false);
+                        runesTab.SetActive(true);
+                        runewordsBtn.SetActive(true);
+                        runesBtn.SetActive(false);
                         instance.gameState = GameState.Runes;
                         break;
                     case GameState.Tooltip:
