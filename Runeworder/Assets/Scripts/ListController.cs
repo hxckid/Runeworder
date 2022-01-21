@@ -30,6 +30,7 @@ public class ListController : MonoBehaviour
 
     private void ShowTooltip()
     {
+        AppManager.instance.gameState = GameState.Tooltip;
         var inst = Instantiate(tooltip, parent.transform);
         TooltipController tc = inst.GetComponent<TooltipController>();
         for (int i = 0; i < runeword.sprites.Count; i++)
@@ -52,6 +53,6 @@ public class ListController : MonoBehaviour
         else
             tc.rwVersion.color = Color.white;
         tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
-        tc.rwItem.text = $"Best base item(s):\n{runeword.recomendedItems}";
+        tc.rwItem.text = $"{runeword.recomendedItems}";
     }
 }

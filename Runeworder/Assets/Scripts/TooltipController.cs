@@ -18,6 +18,7 @@ public class TooltipController : MonoBehaviour
 
     public void DestroyTooltip()
     {
+        AppManager.instance.gameState = GameState.Runewords;
         Destroy(gameObject);
     }
 
