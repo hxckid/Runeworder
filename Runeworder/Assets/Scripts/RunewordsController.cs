@@ -121,7 +121,7 @@ public class RunewordsController : MonoBehaviour
                     runewordsDB.runewords.Sort((a, b) =>
                     {
                         int result = a.hasRunes.CompareTo(b.hasRunes);
-                        return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
+                        return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
                     });
                     break;
                 case "Level":
@@ -148,10 +148,10 @@ public class RunewordsController : MonoBehaviour
                     });
                     break;
                 case "Level":
-                    runewordsDB.runewords.Sort((a, b) =>
+                    runewordsDB.runewords.Sort((b, a) =>
                     {
-                        int result = b.reqLevel.CompareTo(a.reqLevel);
-                        return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
+                        int result = a.reqLevel.CompareTo(b.reqLevel);
+                        return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
                     });
                     break;
             }

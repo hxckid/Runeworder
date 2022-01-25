@@ -364,6 +364,8 @@ MonoBehaviour:
   runewordsTab: {fileID: 1492795554}
   runesTab: {fileID: 1695528426}
   quitText: {fileID: 7038984762957486110, guid: 330631321f107764cb6f62b737f833d7, type: 3}
+  runesBtn: {fileID: 593837245}
+  runewordsBtn: {fileID: 832876301}
 --- !u!1 &149384708
 GameObject:
   m_ObjectHideFlags: 0
