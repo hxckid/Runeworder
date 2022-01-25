@@ -44,15 +44,23 @@ public class ListController : MonoBehaviour
         tc.rwType.text = runeword.subType;
         tc.rwLevel.text = $"Required Level: {runeword.reqLevel}";
         if (runeword.gameVersion != "Ressurected")
-            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Diablo 2 LoD Ladder" : "Ladder Item: No";
+            tc.rwLadder.text = runeword.isLadder ? "Diablo 2 LoD Ladder Item" : "Non Ladder Item";
         else
-            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Ressurected Ladder" : "Ladder Item: No";
+            tc.rwLadder.text = runeword.isLadder ? "Ressurected Ladder Item" : "Non Ladder Item";
         tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class Specified: {runeword.classItem}" : "Class Specified: Any";
-        if (runeword.gameVersion == "Ressurected")
-            tc.rwVersion.color = ressurectedColor;
-        else
-            tc.rwVersion.color = Color.white;
-        tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
+        tc.rwVersion.color = Color.white;
+        switch (runeword.gameVersion)
+        {
+            case "Ressurected":
+                tc.rwVersion.color = ressurectedColor;
+                break;
+            case "1.10":
+            case "1.11":
+                tc.rwVersion.color = new Color32(222, 222, 150, 255);
+                break;
+        }
+        
+        tc.rwVersion.text = runeword.gameVersion == "Ressurected" ? $"Game version: {runeword.gameVersion}" : $"Game version: {runeword.gameVersion}+ LoD";
         tc.rwItem.text = $"{runeword.recomendedItems}";
     }
 }

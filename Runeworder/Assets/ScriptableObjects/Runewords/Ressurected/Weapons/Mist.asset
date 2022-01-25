@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 5 Socket Bows
+  subType: 5 Socket Bows And Crossbows
   reqLevel: 67
   statsDesc: 'Level 8-12 Concentration Aura When Equipped (varies)
 
@@ -38,20 +38,20 @@ MonoBehaviour:
 
     +9 to Maximum Damage
 
-    20% Bonus to Attack
-    Rating
+    20% Bonus to Attack Rating
 
-    Adds 3-14 Cold Damage
+    Adds
+    3-14 Cold Damage
 
     Freezes Target +3
 
     +24 to Vitality
 
-    All
-    Resistances +40'
+    All Resistances
+    +40'
   isLadder: 1
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 4
+  hasRunes: 1
   recomendedItems: Coming Soon
