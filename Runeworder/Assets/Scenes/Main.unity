@@ -874,6 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bannerPosition: 1
   androidAdUnitId: Banner_Android
+  bannerLoadDelay: 2
 --- !u!114 &480342316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameId: 4580021
-  testMode: 1
+  testMode: 0
 --- !u!4 &480342317
 Transform:
   m_ObjectHideFlags: 0
