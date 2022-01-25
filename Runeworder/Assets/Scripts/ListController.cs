@@ -59,8 +59,12 @@ public class ListController : MonoBehaviour
                 tc.rwVersion.color = new Color32(222, 222, 150, 255);
                 break;
         }
-        
-        tc.rwVersion.text = runeword.gameVersion == "Ressurected" ? $"Game version: {runeword.gameVersion}" : $"Game version: {runeword.gameVersion}+ LoD";
+
+        if (runeword.gameVersion == "1.10" || runeword.gameVersion == "1.11")
+            tc.rwVersion.text = $"Game version: {runeword.gameVersion}+ LoD";
+        else
+            tc.rwVersion.text = $"Game version: {runeword.gameVersion}";
+
         tc.rwItem.text = $"{runeword.recomendedItems}";
     }
 }
