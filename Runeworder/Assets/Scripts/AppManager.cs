@@ -22,7 +22,7 @@ public class AppManager : MonoBehaviour
     UserData userData;
     string json;
     string key = "UserData";
-    int doubleBack = 0;
+    [SerializeField] GameObject txt;
 
     private void OnEnable()
     {
@@ -43,19 +43,23 @@ public class AppManager : MonoBehaviour
     {
         if (Application.platform == RuntimePlatform.Android)
         {
-            if (Input.GetKey(KeyCode.Home))
+            if (Input.GetKeyDown(KeyCode.Home))
             {
                 AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
                 activity.Call<bool>("moveTaskToBack", true);
                 Application.Quit();
             }
-            if (Input.GetKey(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 switch (instance.gameState) {
                     case GameState.Runes:
-                        doubleBack++;
-                        var txt = Instantiate(quitText, runesTab.transform);
-                        StartCoroutine(CheckQiut(txt));
+                        if (txt != null)
+                            Application.Quit();
+                        else
+                        {
+                            txt = Instantiate(quitText, runesTab.transform);
+                            Destroy(txt, 2f);
+                        }
                         break;
                     case GameState.Runewords:
                         runewordsTab.SetActive(false);
@@ -71,20 +75,6 @@ public class AppManager : MonoBehaviour
                         break;
                 }
             }
-        }
-    }
-
-    private IEnumerator CheckQiut(GameObject txt)
-    {
-        yield return new WaitForSeconds(2f);
-        if (doubleBack >= 2)
-        {
-            Application.Quit();
-        }
-        else
-        {
-            doubleBack = 0;
-            Destroy(txt);
         }
     }
 
