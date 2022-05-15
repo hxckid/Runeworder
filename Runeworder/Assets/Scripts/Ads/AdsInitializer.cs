@@ -13,7 +13,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
 
     public void InitializeAds()
     {
-        Advertisement.Initialize(gameId, testMode);
+        Advertisement.Initialize(gameId, testMode); // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CHange FALSE FOR testMode variable here before development !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
 
     public void OnInitializationComplete()
