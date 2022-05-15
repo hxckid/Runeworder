@@ -49,6 +49,7 @@ public class AppManager : MonoBehaviour
                 activity.Call<bool>("moveTaskToBack", true);
                 Application.Quit();
             }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 switch (instance.gameState) {
