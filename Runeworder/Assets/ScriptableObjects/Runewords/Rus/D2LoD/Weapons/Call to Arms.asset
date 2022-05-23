@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Call to Arms
+  m_EditorClassIdentifier: 
+  runewordName: Call to Arms
+  runesSequence: '''AmnRalMalIstOhm'''
+  runes: 0a0000000700000016000000170000001a000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '5 Socket Weapons
+
+'
+  reqLevel: 51
+  statsDesc: '+1 To All Skills
+
+    +40% Increased Attack Speed
+
+    +250-290% Enhanced
+    Damage (varies)
+
+    Adds 5-30 Fire Damage
+
+    7% Life Stolen Per Hit
+
+    +2-6
+    To Battle Command (varies)*
+
+    +1-6 To Battle Orders (varies)*
+
+    +1-4 To
+    Battle Cry (varies)*
+
+    Prevent Monster Heal
+
+    Replenish Life +12
+
+    30%
+    Better Chance of Getting Magic Items
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 4
+  recomendedItems: 'Flail
+
+    Crystal Sword'

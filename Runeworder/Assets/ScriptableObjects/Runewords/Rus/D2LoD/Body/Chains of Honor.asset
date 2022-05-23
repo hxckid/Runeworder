@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Chains of Honor
+  m_EditorClassIdentifier: 
+  runewordName: Chains of Honor
+  runesSequence: '''DolUmBerIst'''
+  runes: 0d000000150000001d00000017000000
+  sprites:
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 4 Socket BodyArmor
+  reqLevel: 63
+  statsDesc: '+2 To All Skills
+
+    +200% Damage To Demons
+
+    +100% Damage To Undead
+
+    8%
+    Life Stolen Per Hit
+
+    +70% Enhanced Defense
+
+    +20 To Strength
+
+    Replenish
+    Life +7
+
+    All Resistances +65
+
+    Damage Reduced By 8%
+
+    25% Better Chance
+    of Getting Magic Items
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: 'Superior Archon Plate
+
+    Superior Dusk Shroud'

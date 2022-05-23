@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d9a9284653f8a24da06cd0c60337d26, type: 3}
-  m_Name: RunewordsDB
+  m_Name: RunewordsDBEng
   m_EditorClassIdentifier: 
   runewords:
   - {fileID: 11400000, guid: e7a312c49747aea47b012e2bbc6b58a8, type: 2}

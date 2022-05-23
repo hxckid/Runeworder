@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Lawbringer
+  m_EditorClassIdentifier: 
+  runewordName: Lawbringer
+  runesSequence: '''AmnLemKo'''
+  runes: 0a0000001300000011000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '3 Socket Swords/Hammers/Scepters
+
+'
+  reqLevel: 43
+  statsDesc: '20% Chance To Cast Level 15 Decrepify On Striking
+
+    Level 16-18
+    Sanctuary Aura When Equipped (varies)
+
+    -50% Target Defense
+
+    Adds 150-210
+    Fire Damage
+
+    Adds 130-180 Cold Damage
+
+    7% Life Stolen Per Hit
+
+    Slain
+    Monsters Rest In Peace
+
+    +200-250 Defense Vs. Missile (varies)
+
+    +10 To
+    Dexterity
+
+    75% Extra Gold From Monsters
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: 'Crystal Sword (Act 3 Mercenary)
+
+    Superior Legend Sword (Act
+    5 Mercenary)
+
+    Superior Phase Blade'

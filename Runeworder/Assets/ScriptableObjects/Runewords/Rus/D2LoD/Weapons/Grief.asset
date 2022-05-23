@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Grief
+  m_EditorClassIdentifier: 
+  runewordName: Grief
+  runesSequence: '''EthTirLoMalRal'''
+  runes: 04000000020000001b0000001600000007000000
+  sprites:
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '5 Socket Swords/Axes
+
+'
+  reqLevel: 59
+  statsDesc: '35% Chance To Cast Level 15 Venom On Striking
+
+    +30-40% Increased
+    Attack Speed (varies)
+
+    Damage +340-400 (varies)
+
+    Ignore Target''s Defense
+
+    -25%
+    Target Defense
+
+    +(1.875 per character level) 1.875-185.625% Damage To Demons
+    (Based on Character Level)
+
+    Adds 5-30 Fire Damage
+
+    -20-25% To Enemy Poison
+    Resistance (varies)
+
+    20% Deadly Strike
+
+    Prevent Monster Heal
+
+    +2
+    To Mana After Each Kill
+
+    +10-15 Life After Each Kill (varies)
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Superior Phase Blade

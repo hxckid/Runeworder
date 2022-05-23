@@ -23,8 +23,8 @@ public class AppManager : MonoBehaviour
     public GameObject runewordsBtn;
     public Languages currentLanguage;
     public List<Text> buttonsText;
-    public Font enFont;
-    public Font ruFont;
+    public Font latin;
+    public Font cyrillic;
     Text[] links;
 
     UserData userData;
@@ -45,7 +45,7 @@ public class AppManager : MonoBehaviour
                 OnLanguageChanged?.Invoke(Languages.En);
                 foreach (var button in buttonsText)
                 {
-                    button.font = enFont;
+                    button.font = latin;
                 }
                 buttonsText[0].fontSize = 80;
                 buttonsText[0].text = "Reset";
@@ -76,7 +76,7 @@ public class AppManager : MonoBehaviour
                 OnLanguageChanged?.Invoke(Languages.Ru);
                 foreach (var button in buttonsText)
                 {
-                    button.font = ruFont;
+                    button.font = cyrillic;
                 }
                 buttonsText[0].fontSize = 64;
                 buttonsText[0].text = "—бросить";

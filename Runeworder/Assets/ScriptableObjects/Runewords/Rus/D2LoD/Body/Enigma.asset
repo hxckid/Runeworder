@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Enigma
+  m_EditorClassIdentifier: 
+  runewordName: Enigma
+  runesSequence: '''JahIthBer'''
+  runes: 1e000000050000001d000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 3 Socket BodyArmor
+  reqLevel: 65
+  statsDesc: '+2 To All Skills
+
+    +45% Faster Run/Walk
+
+    +1 To Teleport
+
+    +750-775
+    Defense (varies)
+
+    + (0.75 Per Character Level) +0-74 To Strength (Based On
+    Character Level)
+
+    Increase Maximum Life 5%
+
+    Damage Reduced By 8%
+
+    +14
+    Life After Each Kill
+
+    15% Damage Taken Goes To Mana
+
+    + (1 Per Character
+    Level) +1-99% Better Chance of Getting Magic Items (Based On Character Level)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: 'Superior Archon Plate
+
+    Superior Dusk Shroud'

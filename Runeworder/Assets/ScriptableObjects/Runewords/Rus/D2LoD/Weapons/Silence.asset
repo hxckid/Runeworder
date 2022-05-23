@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Silence
+  m_EditorClassIdentifier: 
+  runewordName: Silence
+  runesSequence: '''DolEldHelIstTirVex'''
+  runes: 0d000000010000000e000000170000000200000019000000
+  sprites:
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '6 Socket Weapons
+
+'
+  reqLevel: 55
+  statsDesc: '200% Enhanced Damage
+
+    +75% Damage To Undead
+
+    Requirements -20%
+
+    20%
+    Increased Attack Speed
+
+    +50 To Attack Rating Against Undead
+
+    +2 To All
+    Skills
+
+    All Resistances +75
+
+    20% Faster Hit Recovery
+
+    11% Mana Stolen
+    Per Hit
+
+    Hit Causes Monster To Flee 25%
+
+    Hit Blinds Target +33
+
+    +2
+    To Mana After Each Kill
+
+    30% Better Chance Of Getting Magic Items
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Superior Phase Blade

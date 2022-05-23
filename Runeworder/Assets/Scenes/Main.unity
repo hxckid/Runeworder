@@ -258,10 +258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
-  runewordsDB: {fileID: 11400000, guid: f219ae3fc4ddf414d9bc62a79fdd3f6a, type: 2}
+  runewordsDBEng: {fileID: 11400000, guid: 21b91fb53dcf06a4594d714526089db9, type: 2}
+  runewordsDBRus: {fileID: 11400000, guid: f219ae3fc4ddf414d9bc62a79fdd3f6a, type: 2}
   runewordPrefab: {fileID: 6102768536333666633, guid: 89167f1cc8f61464a8dbbf2269a1162d, type: 3}
   uiParent: {fileID: 1703435608}
   runewordsToShow: []
+  runewordsDB: {fileID: 0}
 --- !u!1 &127871771
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +368,7 @@ MonoBehaviour:
   quitText: {fileID: 7038984762957486110, guid: 330631321f107764cb6f62b737f833d7, type: 3}
   runesBtn: {fileID: 593837245}
   runewordsBtn: {fileID: 832876301}
-  currentLanguage: 0
+  currentLanguage: 1
   buttonsText:
   - {fileID: 1393952264}
   - {fileID: 1011069164}
@@ -380,8 +382,8 @@ MonoBehaviour:
   - {fileID: 1841159348}
   - {fileID: 2069221987}
   - {fileID: 1516237628}
-  enFont: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-  ruFont: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+  latin: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+  cyrillic: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
 --- !u!1 &149384708
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,8 +626,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 58
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -636,7 +638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shields
+  m_Text: "\u0429\u0438\u0442\u044B"
 --- !u!222 &288940569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -836,8 +838,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 58
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -848,7 +850,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Helms
+  m_Text: "\u0428\u043B\u0435\u043C\u044B"
 --- !u!222 &293244161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1272,8 +1274,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 48
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1284,7 +1286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Patch 2.4
+  m_Text: "\u041F\u0430\u0442\u0447 2.4"
 --- !u!222 &673285249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2001,8 +2003,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 58
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -2013,7 +2015,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: All
+  m_Text: "\u0412\u0441\u0435"
 --- !u!222 &996728526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2080,8 +2082,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 70
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 56
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2092,7 +2094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Show Runewords
+  m_Text: "\u041A \u0440\u0443\u043D\u0432\u043E\u0440\u0434\u0430\u043C"
 --- !u!222 &1011069165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2532,8 +2534,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 80
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
@@ -2544,7 +2546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reset
+  m_Text: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C"
 --- !u!222 &1393952265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2783,8 +2785,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 62
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2795,7 +2797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level
+  m_Text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
 --- !u!222 &1516237629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2862,8 +2864,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 58
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -2874,7 +2876,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Weapons
+  m_Text: "\u041E\u0440\u0443\u0436\u0438\u0435"
 --- !u!222 &1616315496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3398,8 +3400,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 58
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -3410,7 +3412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Armors
+  m_Text: "\u0411\u0440\u043E\u043D\u044F"
 --- !u!222 &1757648985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3477,8 +3479,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 62
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3489,7 +3491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name
+  m_Text: "\u0418\u043C\u044F"
 --- !u!222 &1841159349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3556,8 +3558,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 70
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3568,7 +3570,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Runes
+  m_Text: "\u041D\u0430\u0437\u0430\u0434 \u043A \u0440\u0443\u043D\u0430\u043C"
 --- !u!222 &1887082423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4154,8 +4156,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 62
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -4166,7 +4168,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Runes
+  m_Text: "\u0420\u0443\u043D\u044B"
 --- !u!222 &2069221988
 CanvasRenderer:
   m_ObjectHideFlags: 0

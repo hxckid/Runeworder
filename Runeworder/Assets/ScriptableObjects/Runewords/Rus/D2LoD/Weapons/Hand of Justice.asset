@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Hand of Justice
+  m_EditorClassIdentifier: 
+  runewordName: Hand of Justice
+  runesSequence: '''SurChamAmnLo'''
+  runes: 1c0000001f0000000a0000001b000000
+  sprites:
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 304334863325100338, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '4 Socket Weapons
+
+'
+  reqLevel: 67
+  statsDesc: '100% Chance To Cast Level 36 Blaze When You Level-Up
+
+    100% Chance
+    To Cast Level 48 Meteor When You Die
+
+    Level 16 Holy Fire Aura When Equipped
+
+    +33%
+    Increased Attack Speed
+
+    +280-330% Enhanced Damage (varies)
+
+    Ignore Target''s
+    Defense
+
+    7% Life Stolen Per Hit
+
+    -20% To Enemy Fire Resistance
+
+    20%
+    Deadly Strike
+
+    Hit Blinds Target
+
+    Freezes Target +3
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Superior Phase Blade

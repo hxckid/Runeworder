@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Honor
+  m_EditorClassIdentifier: 
+  runewordName: Honor
+  runesSequence: '''AmnElIthTirSol'''
+  runes: 0a0000000000000005000000020000000b000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '5 Socket Melee Weapons
+
+'
+  reqLevel: 27
+  statsDesc: '+160% Enhanced Damage
+
+    +9 To Minimum Damage
+
+    +9 To Maximum
+    Damage
+
+    25% Deadly Strike
+
+    +250 To Attack Rating
+
+    +1 to All Skills
+
+    7%
+    Life Stolen Per Hit
+
+    Replenish Life +10
+
+    +10 To Strength
+
+    +1 To Light
+    Radius
+
+    +2 To Mana After Each Kill'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 1
+  recomendedItems: Superior Zweihander

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Brand
+  m_EditorClassIdentifier: 
+  runewordName: Brand
+  runesSequence: '''JahLoMalGul'''
+  runes: 1e0000001b0000001600000018000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '4 Socket Missile Weapons
+
+'
+  reqLevel: 65
+  statsDesc: '35% Chance To Cast Level 14 Amplify Damage When Struck
+
+    100% Chance
+    To Cast Level 18 Bone Spear On Striking
+
+    +260-340% Enhanced Damage (varies)
+
+    Ignore
+    Target''s Defense
+
+    20% Bonus to Attack Rating
+
+    +280-330% Damage To Demons
+    (varies)
+
+    20% Deadly Strike
+
+    Prevent Monster Heal
+
+    Knockback
+
+    Fires
+    Explosive Arrows or Bolts (15)
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 1
+  recomendedItems: 'Matriarchal Bow
+
+    Great Bow'

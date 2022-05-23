@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Venom
+  m_EditorClassIdentifier: 
+  runewordName: Venom
+  runesSequence: '''TalDolMal'''
+  runes: 060000000d00000016000000
+  sprites:
+  - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '3 Socket Weapons
+
+'
+  reqLevel: 49
+  statsDesc: 'Hit Causes Monster To Flee 25%
+
+    Prevent Monster Heal
+
+    Ignore
+    Target''s Defense
+
+    7% Mana Stolen Per Hit
+
+    Level 15 Poison Explosion
+    (27 Charges)
+
+    Level 13 Poison Nova (11 Charges)
+
+    +273 Poison Damage Over
+    6 seconds
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 1
+  recomendedItems: Superior Phase Blade

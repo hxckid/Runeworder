@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Prudence
+  m_EditorClassIdentifier: 
+  runewordName: Prudence
+  runesSequence: '''MalTir'''
+  runes: 1600000002000000
+  sprites:
+  - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 2 Socket BodyArmor
+  reqLevel: 49
+  statsDesc: '+25% Faster Hit Recovery
+
+    +140-170% Enhanced Defense (varies)
+
+    All
+    Resistances +25-35 (varies)
+
+    Damage Reduced by 3
+
+    Magic Damage Reduced
+    by 17
+
+    +2 To Mana After Each Kill
+
+    +1 To Light Radius
+
+    Repairs Durability
+    1 In 4 Seconds
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Dusk Shroud

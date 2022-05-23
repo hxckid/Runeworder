@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Enlightenment
+  m_EditorClassIdentifier: 
+  runewordName: Enlightenment
+  runesSequence: '''PulRalSol'''
+  runes: 14000000070000000b000000
+  sprites:
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 3 Socket BodyArmor
+  reqLevel: 45
+  statsDesc: '5% Chance To Cast Level 15 Blaze When Struck
+
+    5% Chance To Cast
+    level 15 Fire Ball On Striking
+
+    +2 To Sorceress Skill Levels
+
+    +1 To Warmth
+
+    +30%
+    Enhanced Defense
+
+    Fire Resist +30%
+
+    Damage Reduced By 7
+
+'
+  isLadder: 0
+  classItem: 7
+  gameVersion: 1.11
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Superior Mage Plate

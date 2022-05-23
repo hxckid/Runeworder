@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Bone
+  m_EditorClassIdentifier: 
+  runewordName: Bone
+  runesSequence: '''SolUmUm'''
+  runes: 0b0000001500000015000000
+  sprites:
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 3 Socket BodyArmor
+  reqLevel: 47
+  statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
+
+    15% Chance
+    To Cast level 10 Bone Spear On Striking
+
+    +2 To Necromancer Skill Levels
+
+    +100-150
+    To Mana (varies)
+
+    All Resistances +30
+
+    Damage Reduced By 7'
+  isLadder: 0
+  classItem: 5
+  gameVersion: 1.11
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 3
+  recomendedItems: Superior Mage Plate

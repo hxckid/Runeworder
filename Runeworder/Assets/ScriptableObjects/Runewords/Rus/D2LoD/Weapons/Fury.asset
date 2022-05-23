@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Fury
+  m_EditorClassIdentifier: 
+  runewordName: Fury
+  runesSequence: '''JahGulEth'''
+  runes: 1e0000001800000004000000
+  sprites:
+  - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '3 Socket Melee Weapons
+
+'
+  reqLevel: 65
+  statsDesc: '+209% Enhanced Damage
+
+    40% Increased Attack Speed
+
+    Prevent
+    Monster Heal
+
+    66% Chance Of Open Wounds
+
+    33% Deadly Strike
+
+    Ignore
+    Target''s Defense
+
+    -25% Target Defense
+
+    20% Bonus To Attack Rating
+
+    6%
+    Life Stolen Per Hit
+
+    +5 To Frenzy (Barbarian Only)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Superior Berserker Axe

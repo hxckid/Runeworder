@@ -24,7 +24,6 @@ public class UIController : MonoBehaviour
     {
         for (int i = 0; i <= 32; i++)
         {
-            string name = Enum.GetName(typeof(RunesEn), i);
             Sprite sprite = runesSprites.sprites[i];
             runeUIPrefab.name = name;
             runeUIPrefab.GetComponent<RuneController>().background.sprite = sprite;
@@ -43,6 +42,7 @@ public class UIController : MonoBehaviour
                 }
             }
         }
+        Localize(AppManager.instance.currentLanguage);
     }
 
     public void Localize(Languages lang)
@@ -57,7 +57,7 @@ public class UIController : MonoBehaviour
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesEn), runesUI.IndexOf(rune));
                         text.fontSize = 60;
-                        text.font = AppManager.instance.enFont;
+                        text.font = AppManager.instance.latin;
                     }
                     break;
                 case Languages.Ru:
@@ -66,7 +66,7 @@ public class UIController : MonoBehaviour
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesRu), runesUI.IndexOf(rune));
                         text.fontSize = 48;
-                        text.font = AppManager.instance.ruFont;
+                        text.font = AppManager.instance.cyrillic;
                     }
                     break;
             }
@@ -92,6 +92,6 @@ public enum RunesEn
 public enum RunesRu
 {
     Эл, Элд, Тир, Неф, Эт, Ит, Тал, Рал, Орт, Тул, Амн,
-    Сол, Шаэль, Дол, Хел, Ио, Лум, Ко, Фал, Лем, Пул, Ум,
+    Сол, Шаэл, Дол, Хел, Ио, Лум, Ко, Фал, Лем, Пул, Ум,
     Мал, Ист, Гул, Векс, Ом, Ло, Сур, Бер, Джа, Чам, Зод
 }

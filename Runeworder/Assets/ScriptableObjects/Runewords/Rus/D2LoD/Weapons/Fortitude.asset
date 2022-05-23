@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Fortitude
+  m_EditorClassIdentifier: 
+  runewordName: Fortitude
+  runesSequence: '''ElSolDolLo'''
+  runes: 000000000b0000000d0000001b000000
+  sprites:
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '4 Socket Weapons
+
+'
+  reqLevel: 59
+  statsDesc: '20% Chance To Cast Level 15 Chilling Armor when Struck
+
+    +25% Faster
+    Cast Rate
+
+    +300% Enhanced Damage
+
+    +9 To Minimum Damage
+
+    +50 To Attack
+    Rating
+
+    20% Deadly Strike
+
+    Hit Causes Monster To Flee 25%
+
+    +200%
+    Enhanced Defense
+
+    +X To Life (Based on Character Level)*
+
+    All Resistances
+    +25-30 (varies)
+
+    12% Damage Taken Goes To Mana
+
+    +1 To Light Radius'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Superior Berserker Axe

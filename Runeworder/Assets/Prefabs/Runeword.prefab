@@ -187,11 +187,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 16
-    m_MaxSize: 45
+    m_MaxSize: 53
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -435,11 +435,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 16
-    m_MaxSize: 45
+    m_MaxSize: 53
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -807,18 +807,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 16
-    m_MaxSize: 45
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 229
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "\u0428\u0430\u044D\u043B\u044C"
 --- !u!1 &6102768536228061599
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,11 +886,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 16
-    m_MaxSize: 45
+    m_MaxSize: 53
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 70, y: 120}
+  m_CellSize: {x: 80, y: 90}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
@@ -1254,11 +1254,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 16
-    m_MaxSize: 45
+    m_MaxSize: 53
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1333,11 +1333,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 16
-    m_MaxSize: 45
+    m_MaxSize: 53
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

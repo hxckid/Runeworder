@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Leaf
+  m_EditorClassIdentifier: 
+  runewordName: Leaf
+  runesSequence: '''TirRal'''
+  runes: 0200000007000000
+  sprites:
+  - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '2 Socket Staves (Not Orbs)
+
+'
+  reqLevel: 19
+  statsDesc: 'Adds 5-30 Fire Damage
+
+    +3 To Fire Skills
+
+    +3 To Fire Bolt (Sorceress
+    Only)
+
+    +3 To Inferno (Sorceress Only)
+
+    +3 To Warmth (Sorceress Only)
+
+    +2
+    To Mana After Each Kill
+
+    + (2 Per Character Level) +2-198 To Defense (Based
+    On Character Level)
+
+    Cold Resist +33%'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: "Short Staff\nFor Sorceress: \nAny Base with +3 to Fire Ball (Sorceress
+    Only)"

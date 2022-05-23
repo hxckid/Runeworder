@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Delirium
+  m_EditorClassIdentifier: 
+  runewordName: Delirium
+  runesSequence: '''LemIstIo'''
+  runes: 13000000170000000f000000
+  sprites:
+  - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 2
+  subType: 3 Socket Helms
+  reqLevel: 51
+  statsDesc: '1% Chance To Cast Level 50 Delirium* (morph) When Struck
+
+    6% Chance
+    To Cast Level 14 Mind Blast When Struck
+
+    14% Chance To Cast Level 13 Terror
+    When Struck
+
+    11% Chance To Cast Level 18 Confuse On Striking
+
+    +2 To All
+    Skills
+
+    +261 Defense
+
+    +10 To Vitality
+
+    50% Extra Gold From Monsters
+
+    25%
+    Better Chance of Getting Magic Items
+
+    Level 17 Attract (60 Charges)
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: 'Superior Bone Visage
+
+    Superior Slayer Guard
+
+    Superior
+    Wolf Head'

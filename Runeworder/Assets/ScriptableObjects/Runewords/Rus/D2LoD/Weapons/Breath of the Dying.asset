@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Breath of the Dying
+  m_EditorClassIdentifier: 
+  runewordName: Breath of the Dying
+  runesSequence: '''VexHelElEldZodEth'''
+  runes: 190000000e00000000000000010000002000000004000000
+  sprites:
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -4501304641669350739, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '6 Socket Weapons
+
+'
+  reqLevel: 69
+  statsDesc: '50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy
+
+    Indestructible
+
+    +60%
+    Increased Attack Speed
+
+    +350-400% Enhanced Damage (varies)
+
+    +200% Damage
+    To Undead
+
+    -25% Target Defense
+
+    +50 To Attack Rating
+
+    +50 To Attack
+    Rating Against Undead
+
+    7% Mana Stolen Per Hit
+
+    12-15% Life Stolen Per
+    Hit (varies)
+
+    Prevent Monster Heal
+
+    +30 To All Attributes
+
+    +1 To
+    Light Radius
+
+    Requirements -20%
+
+'
+  isLadder: 0
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 4
+  recomendedItems: 'Ethereal Superior Berserker Axe
+
+    Superior Hydra Bow
+
+    Ethereal
+    Superior War Pike'

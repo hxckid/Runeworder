@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Dragon
+  m_EditorClassIdentifier: 
+  runewordName: Dragon
+  runesSequence: '''SurLoSol'''
+  runes: 1c0000001b0000000b000000
+  sprites:
+  - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 3 Socket BodyArmor
+  reqLevel: 61
+  statsDesc: '20% Chance to Cast Level 18 Venom When Struck
+
+    12% Chance To Cast
+    Level 15 Hydra On Striking
+
+    Level 14 Holy Fire Aura When Equipped
+
+    +360
+    Defense
+
+    +230 Defense Vs. Missile
+
+    +3-5 To All Attributes (varies)
+
+    +0.375-37.125
+    To Strength (Based on Character Level)
+
+    Increase Maximum Mana 5% (Armor Only)
+
+    +50
+    To Mana (Shields Only)
+
+    +5% To Maximum Lightning Resist
+
+    Damage Reduced
+    by 7
+
+'
+  isLadder: 1
+  classItem: 0
+  gameVersion: 1.10
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 1
+  recomendedItems: 'Superior Archon Plate
+
+    Superior Dusk Shroud'

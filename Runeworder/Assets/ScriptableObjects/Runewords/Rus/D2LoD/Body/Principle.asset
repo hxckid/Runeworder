@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Principle
+  m_EditorClassIdentifier: 
+  runewordName: Principle
+  runesSequence: '''RalGulEld'''
+  runes: 070000001800000001000000
+  sprites:
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  subType: 3 Socket BodyArmor
+  reqLevel: 53
+  statsDesc: '100% Chance To Cast Level 5 Holy Bolt On Striking
+
+    +2 To Paladin
+    Skill Levels
+
+    +50% Damage to Undead
+
+    +100-150 To Life (varies)
+
+    15%
+    Slower Stamina Drain
+
+    +5% To Maximum Poison Resist
+
+    Fire Resist +30%
+
+'
+  isLadder: 0
+  classItem: 6
+  gameVersion: 1.11
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: Superior Mage Plate

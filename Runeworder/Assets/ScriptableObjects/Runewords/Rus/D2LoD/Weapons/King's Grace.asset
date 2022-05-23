@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: King's Grace
+  m_EditorClassIdentifier: 
+  runewordName: King's Grace
+  runesSequence: '''AmnRalThul'''
+  runes: 0a0000000700000009000000
+  sprites:
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  subType: '3 Socket Swords/Scepters
+
+'
+  reqLevel: 25
+  statsDesc: '+100% Enhanced Damage
+
+    +100% Damage To Demons
+
+    +50% Damage
+    To Undead
+
+    Adds 5-30 Fire Damage
+
+    Adds 3-14 Cold Damage - 3 Second Duration
+
+    +150
+    To Attack Rating
+
+    +100 To Attack Rating Against Demons
+
+    +100 To Attack
+    Rating Against Undead
+
+    7% Life Stolen Per Hit'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Original Rune Words
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 0
+  recomendedItems: War Scepter
