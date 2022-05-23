@@ -38,12 +38,12 @@ public class RunewordsController : MonoBehaviour
                     t.font = AppManager.instance.latin;
                 }
                 en[0].fontSize = 55;
-                en[1].fontSize = 48;
-                en[2].fontSize = 48;
-                en[3].fontSize = 48;
-                en[4].fontSize = 48;
-                en[5].fontSize = 48;
-                en[6].fontSize = 48;
+                en[1].fontSize = 46;
+                en[2].fontSize = 46;
+                en[3].fontSize = 46;
+                en[4].fontSize = 46;
+                en[5].fontSize = 46;
+                en[6].fontSize = 46;
                 en[7].fontSize = 45;
                 en[8].fontSize = 45;
                 break;
