@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Pattern
   m_EditorClassIdentifier: 
-  runewordName: Pattern
+  runewordName: "\u0423\u0437\u043E\u0440"
   runesSequence: '''TalOrtThul'''
   runes: 060000000800000009000000
   sprites:
@@ -31,22 +31,22 @@ MonoBehaviour:
 
     Adds 17-62 Fire Damage
 
-    Adds 1-50 Lightning
-    Damage
+    Adds 1-50 Lightning Damage
 
-    Adds 3-14 Cold Damage
+    Adds
+    3-14 Cold Damage
 
     +75 Poison Damage over 5 seconds
 
-    +6
-    to Strength
+    +6 to Strength
 
-    +6 to Dexterity
+    +6
+    to Dexterity
 
     All Resistances +15'
   isLadder: 1
   classItem: 2
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: Coming Soon

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Flickering Flame
   m_EditorClassIdentifier: 
-  runewordName: Flickering Flame
+  runewordName: "\u041C\u0435\u0440\u0446\u0430\u044E\u0449\u0435\u0435 \u043F\u043B\u0430\u043C\u044F"
   runesSequence: '''NefPulVex'''
   runes: 030000001400000019000000
   sprites:
@@ -24,15 +24,15 @@ MonoBehaviour:
   reqLevel: 55
   statsDesc: 'Level 4-8 Resist Fire Aura When Equipped (varies)
 
-    +3 to Fire
-    Skills
+    +3 to Fire Skills
 
-    -10-15% to Enemy Fire Resistance (varies)
+    -10-15%
+    to Enemy Fire Resistance (varies)
 
     +30% Enhanced Defense
 
-    +30
-    Defense vs. Missile
+    +30 Defense
+    vs. Missile
 
     Adds 3-14 Cold Damage
 
@@ -43,11 +43,11 @@ MonoBehaviour:
 
     Half Freeze Duration
 
-    Poison Length Reduced
-    by 50%'
+    Poison Length Reduced by
+    50%'
   isLadder: 1
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: Coming Soon

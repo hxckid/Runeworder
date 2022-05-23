@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Wisdom
   m_EditorClassIdentifier: 
-  runewordName: Wisdom
+  runewordName: "\u041C\u0443\u0434\u0440\u043E\u0441\u0442\u044C "
   runesSequence: '''PulIthEld'''
   runes: 140000000500000001000000
   sprites:
@@ -46,5 +46,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: Coming Soon

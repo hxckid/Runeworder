@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Plague
   m_EditorClassIdentifier: 
-  runewordName: Plague
+  runewordName: "\u0427\u0443\u043C\u0430"
   runesSequence: '''ChamShaelUm'''
   runes: 1f0000000c00000015000000
   sprites:
@@ -50,5 +50,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: Coming Soon

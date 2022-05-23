@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Unbending Will
   m_EditorClassIdentifier: 
-  runewordName: Unbending Will
+  runewordName: "\u041D\u0435\u043F\u0440\u0438\u043A\u043B\u043E\u043D\u043D\u043E\u0441\u0442\u044C"
   runesSequence: '''FalIoIthEldElHel'''
   runes: 120000000f0000000500000001000000000000000e000000
   sprites:
