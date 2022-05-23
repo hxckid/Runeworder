@@ -367,7 +367,19 @@ MonoBehaviour:
   runesBtn: {fileID: 593837245}
   runewordsBtn: {fileID: 832876301}
   currentLanguage: 0
-  canvas: {fileID: 47835032}
+  buttonsText:
+  - {fileID: 1393952264}
+  - {fileID: 1011069164}
+  - {fileID: 1887082422}
+  - {fileID: 996728525}
+  - {fileID: 1616315495}
+  - {fileID: 1757648984}
+  - {fileID: 293244160}
+  - {fileID: 288940568}
+  - {fileID: 673285248}
+  - {fileID: 1841159348}
+  - {fileID: 2069221987}
+  - {fileID: 1516237628}
   enFont: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
   ruFont: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
 --- !u!1 &149384708
@@ -613,11 +625,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 50
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -825,11 +837,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 50
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1236,8 +1248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -30, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &673285248
 MonoBehaviour:
@@ -1261,7 +1273,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 33
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1272,7 +1284,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ressurected
+  m_Text: Patch 2.4
 --- !u!222 &673285249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1990,11 +2002,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 50
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2069,11 +2081,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 14
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 80
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 118
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2772,18 +2784,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 66
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Level \u21C5"
+  m_Text: Level
 --- !u!222 &1516237629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2851,11 +2863,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 50
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3387,11 +3399,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 50
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3466,18 +3478,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 66
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Name \u21C5"
+  m_Text: Name
 --- !u!222 &1841159349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3544,12 +3556,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d0ef9efe01aeedb4ca0969a0c29dcb47, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 64
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3711,7 +3723,7 @@ GameObject:
   - component: {fileID: 1930244926}
   - component: {fileID: 1930244925}
   m_Layer: 5
-  m_Name: Ressurected
+  m_Name: Resurrected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3865,7 +3877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: -90}
+  m_AnchoredPosition: {x: 0.00024414062, y: -89.999756}
   m_SizeDelta: {x: -0.0005, y: -180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1931066113
@@ -4143,18 +4155,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 45
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 66
+    m_MaxSize: 76
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Runes \u21C5"
+  m_Text: Runes
 --- !u!222 &2069221988
 CanvasRenderer:
   m_ObjectHideFlags: 0
