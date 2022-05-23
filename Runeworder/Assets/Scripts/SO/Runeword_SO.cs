@@ -8,7 +8,7 @@ public class Runeword_SO : ScriptableObject
 {
     public string runewordName;
     public string runesSequence;
-    public List<Runes> runes;
+    public List<RunesEn> runes;
     public List<Sprite> sprites;
     public RunewordType runewordType = RunewordType.Weapons;
     [TextArea] public string subType;

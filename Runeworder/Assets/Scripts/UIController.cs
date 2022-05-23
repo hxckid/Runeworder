@@ -17,19 +17,20 @@ public class UIController : MonoBehaviour
     {
         runesUI = new List<GameObject>();
         InitRunes();
+        AppManager.OnLanguageChanged += Localize;
     }
 
     void InitRunes()
     {
         for (int i = 0; i <= 32; i++)
         {
-            string name = Enum.GetName(typeof(Runes), i);
+            string name = Enum.GetName(typeof(RunesEn), i);
             Sprite sprite = runesSprites.sprites[i];
             runeUIPrefab.name = name;
             runeUIPrefab.GetComponent<RuneController>().background.sprite = sprite;
             runeUIPrefab.GetComponent<RuneController>().checkmark.sprite = sprite;
             runeUIPrefab.GetComponent<RuneController>().runeName.text = name;
-            runeUIPrefab.GetComponent<RuneController>().rune = (Runes)i;
+            runeUIPrefab.GetComponent<RuneController>().rune = (RunesEn)i;
             runeUIPrefab.GetComponent<Toggle>().isOn = false;
             var runeUI = Instantiate(runeUIPrefab, runesPanel.transform);
             runeUI.name = name;
@@ -44,6 +45,34 @@ public class UIController : MonoBehaviour
         }
     }
 
+    public void Localize(Languages lang)
+    {
+        if (runesUI.Count > 0)
+        {
+            switch (lang)
+            {
+                case Languages.En:
+                    foreach (var rune in runesUI)
+                    {
+                        Text text = rune.GetComponentInChildren<Text>();
+                        text.text = Enum.GetName(typeof(RunesEn), runesUI.IndexOf(rune));
+                        text.fontSize = 60;
+                        text.font = AppManager.instance.enFont;
+                    }
+                    break;
+                case Languages.Ru:
+                    foreach (var rune in runesUI)
+                    {
+                        Text text = rune.GetComponentInChildren<Text>();
+                        text.text = Enum.GetName(typeof(RunesRu), runesUI.IndexOf(rune));
+                        text.fontSize = 48;
+                        text.font = AppManager.instance.ruFont;
+                    }
+                    break;
+            }
+        }
+    }
+
     public void UncheckRunes()
     {
         foreach (var rune in runesUI)
@@ -53,6 +82,16 @@ public class UIController : MonoBehaviour
     }
 }
 
-public enum Runes { El, Eld, Tir, Nef, Eth, Ith, Tal, Ral, Ort, Thul, Amn,
-                    Sol, Shael, Dol, Hel, Io, Lum, Ko, Fal, Lem, Pul, Um,
-                    Mal, Ist, Gul, Vex, Ohm, Lo, Sur, Ber, Jah, Cham, Zod }
+public enum RunesEn 
+{
+    El, Eld, Tir, Nef, Eth, Ith, Tal, Ral, Ort, Thul, Amn,
+    Sol, Shael, Dol, Hel, Io, Lum, Ko, Fal, Lem, Pul, Um,
+    Mal, Ist, Gul, Vex, Ohm, Lo, Sur, Ber, Jah, Cham, Zod 
+}
+
+public enum RunesRu
+{
+    Эл, Элд, Тир, Неф, Эт, Ит, Тал, Рал, Орт, Тул, Амн,
+    Сол, Шаэль, Дол, Хел, Ио, Лум, Ко, Фал, Лем, Пул, Ум,
+    Мал, Ист, Гул, Векс, Охм, Ло, Сур, Бер, Джа, Чам, Зод
+}

@@ -2,7 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+
+public enum Languages { En, Ru }
 
 public enum GameState { Runes, Runewords, Tooltip }
 
@@ -18,11 +21,43 @@ public class AppManager : MonoBehaviour
     public GameObject quitText;
     public GameObject runesBtn;
     public GameObject runewordsBtn;
+    public Languages currentLanguage;
+    public Canvas canvas;
+
+    public Font enFont;
+    public Font ruFont;
+    Text[] links;
 
     UserData userData;
     string json;
     string key = "UserData";
-    [SerializeField] GameObject txt;
+    GameObject txt;
+
+    public delegate void LanguageHandler(Languages languages);
+    public static event LanguageHandler OnLanguageChanged;
+
+    private void OnValidate()
+    {
+        //links = canvas.GetComponentsInChildren<Text>();
+
+        switch (currentLanguage)
+        {
+            case Languages.En:
+                OnLanguageChanged?.Invoke(Languages.En);
+                //foreach (var text in links)
+                //{
+                //    text.font = enFont;
+                //}
+                break;
+            case Languages.Ru:
+                OnLanguageChanged?.Invoke(Languages.Ru);
+                //foreach (var text in links)
+                //{
+                //    text.font = ruFont;
+                //}
+                break;
+        }
+    }
 
     private void OnEnable()
     {
@@ -35,7 +70,7 @@ public class AppManager : MonoBehaviour
         json = PlayerPrefs.GetString(key);
         userData = JsonUtility.FromJson<UserData>(json);
         userRunes.hasRunes.Clear();
-        userRunes.hasRunes = new List<Runes>(userData.runes);
+        userRunes.hasRunes = new List<RunesEn>(userData.runes);
         gameState = GameState.Runes;
     }
 
@@ -79,7 +114,7 @@ public class AppManager : MonoBehaviour
         }
     }
 
-    private void SaveUserData(Runes rune, bool isOn)
+    private void SaveUserData(RunesEn rune, bool isOn)
     {
         userData = new UserData(userRunes.hasRunes);
         json = JsonUtility.ToJson(userData);
@@ -107,10 +142,10 @@ public class AppManager : MonoBehaviour
 [Serializable]
 public class UserData
 {
-    [SerializeField] public List<Runes> runes;
+    [SerializeField] public List<RunesEn> runes;
 
-    public UserData(List<Runes> list)
+    public UserData(List<RunesEn> list)
     {
-        runes = new List<Runes>(list);
+        runes = new List<RunesEn>(list);
     }
 }

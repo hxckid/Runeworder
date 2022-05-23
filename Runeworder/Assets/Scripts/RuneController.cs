@@ -8,9 +8,9 @@ public class RuneController : MonoBehaviour
     public Image background;
     public Image checkmark;
     public Text runeName;
-    public Runes rune;
+    public RunesEn rune;
 
-    public delegate void RuneHandler(Runes rune, bool isOn);
+    public delegate void RuneHandler(RunesEn rune, bool isOn);
     public static event RuneHandler OnRuneToggleChanged;
 
     Toggle toggle;

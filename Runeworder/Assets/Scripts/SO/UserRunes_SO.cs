@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "User Runes DB", menuName = "Scriptables/Add User Runes DB", order = 2)]
 public class UserRunes_SO : ScriptableObject
 {
-    public List<Runes> hasRunes;
+    public List<RunesEn> hasRunes;
 
     private void OnEnable()
     {
@@ -19,7 +19,7 @@ public class UserRunes_SO : ScriptableObject
         RuneController.OnRuneToggleChanged -= ToggleHandler;
     }
 
-    private void ToggleHandler(Runes rune, bool isOn)
+    private void ToggleHandler(RunesEn rune, bool isOn)
     {
         if (isOn)
         {

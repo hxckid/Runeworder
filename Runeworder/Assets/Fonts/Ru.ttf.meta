@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2de3eb80c0109c24aa1e4be997f037cd
+guid: 6c02e9d15e280ba43b64d02596f5dc08
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - AvalonQuest
+  - DiabloCyr
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
