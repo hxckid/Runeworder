@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Silence
   m_EditorClassIdentifier: 
-  runewordName: Silence
+  runewordName: "\u0422\u0438\u0448\u0438\u043D\u0430"
   runesSequence: '''DolEldHelIstTirVex'''
   runes: 0d000000010000000e000000170000000200000019000000
   sprites:
@@ -62,5 +62,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 5
   recomendedItems: Superior Phase Blade

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Doom
   m_EditorClassIdentifier: 
-  runewordName: Doom
+  runewordName: "\u0413\u0438\u0431\u0435\u043B\u044C"
   runesSequence: '''HelOhmUmLoCham'''
   runes: 0e0000001a000000150000001b0000001f000000
   sprites:
@@ -57,5 +57,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: Superior Berserker Axe

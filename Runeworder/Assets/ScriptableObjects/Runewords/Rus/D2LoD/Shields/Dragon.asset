@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Dragon
   m_EditorClassIdentifier: 
-  runewordName: Dragon
+  runewordName: "\u0414\u0440\u0430\u043A\u043E\u043D"
   runesSequence: '''SurLoSol'''
   runes: 1c0000001b0000000b000000
   sprites:

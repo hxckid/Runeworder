@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Pride
   m_EditorClassIdentifier: 
-  runewordName: Pride
+  runewordName: "\u0413\u043E\u0440\u0434\u043E\u0441\u0442\u044C"
   runesSequence: '''ChamSurIoLo'''
   runes: 1f0000001c0000000f0000001b000000
   sprites:

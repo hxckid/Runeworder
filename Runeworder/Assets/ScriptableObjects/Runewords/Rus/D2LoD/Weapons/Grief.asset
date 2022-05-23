@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Grief
   m_EditorClassIdentifier: 
-  runewordName: Grief
+  runewordName: "\u041F\u0435\u0447\u0430\u043B\u044C"
   runesSequence: '''EthTirLoMalRal'''
   runes: 04000000020000001b0000001600000007000000
   sprites:
@@ -60,5 +60,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 4
   recomendedItems: Superior Phase Blade

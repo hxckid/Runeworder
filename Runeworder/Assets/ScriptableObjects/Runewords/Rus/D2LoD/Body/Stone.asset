@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
-  runewordName: Stone
+  runewordName: "\u041A\u0430\u043C\u0435\u043D\u044C"
   runesSequence: '''ShaelUmPulLum'''
   runes: 0c000000150000001400000010000000
   sprites:

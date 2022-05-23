@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Strength
   m_EditorClassIdentifier: 
-  runewordName: Strength
+  runewordName: "\u0421\u0438\u043B\u0430"
   runesSequence: '''AmnTir'''
   runes: 0a00000002000000
   sprites:
@@ -39,7 +39,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: 'Brandistock (Mercenary)
 
     Scimitar'

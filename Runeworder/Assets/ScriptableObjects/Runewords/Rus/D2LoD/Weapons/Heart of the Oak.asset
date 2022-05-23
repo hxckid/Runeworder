@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Heart of the Oak
   m_EditorClassIdentifier: 
-  runewordName: Heart of the Oak
+  runewordName: "\u0421\u0435\u0440\u0434\u0446\u0435 \u0434\u0443\u0431\u0430"
   runesSequence: '''KoVexPulThul'''
   runes: 11000000190000001400000009000000
   sprites:

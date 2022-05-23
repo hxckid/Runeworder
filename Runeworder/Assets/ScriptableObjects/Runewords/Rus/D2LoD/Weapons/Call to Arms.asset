@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Call to Arms
   m_EditorClassIdentifier: 
-  runewordName: Call to Arms
+  runewordName: "\u041F\u0440\u0438\u0437\u044B\u0432 \u043A \u043E\u0440\u0443\u0436\u0438\u044E"
   runesSequence: '''AmnRalMalIstOhm'''
   runes: 0a0000000700000016000000170000001a000000
   sprites:
@@ -57,7 +57,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 4
+  hasRunes: 5
   recomendedItems: 'Flail
 
     Crystal Sword'

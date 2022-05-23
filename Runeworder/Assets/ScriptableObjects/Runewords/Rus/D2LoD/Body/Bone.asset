@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Bone
   m_EditorClassIdentifier: 
-  runewordName: Bone
+  runewordName: "\u041A\u043E\u0441\u0442\u044C"
   runesSequence: '''SolUmUm'''
   runes: 0b0000001500000015000000
   sprites:

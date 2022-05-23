@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Lionheart
   m_EditorClassIdentifier: 
-  runewordName: Lionheart
+  runewordName: "\u041B\u044C\u0432\u0438\u043D\u043E\u0435 \u0441\u0435\u0440\u0434\u0446\u0435"
   runesSequence: '''HelLumFal'''
   runes: 0e0000001000000012000000
   sprites:

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Stealth
   m_EditorClassIdentifier: 
-  runewordName: Stealth
+  runewordName: "\u041D\u0435\u0437\u0430\u043C\u0435\u0442\u043D\u043E\u0441\u0442\u044C"
   runesSequence: '''TalEth'''
   runes: 0600000004000000
   sprites:
@@ -42,7 +42,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 'Original Rune Words '
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: 'Hard Leather Armor
 
     Leather Armor

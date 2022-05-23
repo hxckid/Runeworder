@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Crescent Moon
   m_EditorClassIdentifier: 
-  runewordName: 'Crescent Moon '
+  runewordName: "\u041F\u043E\u043B\u0443\u043C\u0435\u0441\u044F\u0446"
   runesSequence: '''ShaelUmTir'''
   runes: 0c0000001500000002000000
   sprites:

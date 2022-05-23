@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Rain
   m_EditorClassIdentifier: 
-  runewordName: Rain
+  runewordName: "\u0414\u043E\u0436\u0434\u044C"
   runesSequence: '''OrtMalIth'''
   runes: 080000001600000005000000
   sprites:
@@ -44,5 +44,5 @@ MonoBehaviour:
   classItem: 4
   gameVersion: 1.11
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: Superior Mage Plate

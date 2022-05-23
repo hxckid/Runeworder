@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Insight
   m_EditorClassIdentifier: 
-  runewordName: Insight
+  runewordName: "\u041F\u0440\u043E\u0437\u0440\u0435\u043D\u0438\u0435"
   runesSequence: '''RalTirTalSol'''
   runes: 0700000002000000060000000b000000
   sprites:
@@ -56,7 +56,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 4
   recomendedItems: 'Ethereal Superior Colossus Voulge
 
     Ethereal Superior Giant
@@ -64,5 +64,5 @@ MonoBehaviour:
 
     Ethereal Superior Thresher
 
-    Any Polearm is great for the
-    early game!'
+    Any Polearm is great for the early
+    game!'

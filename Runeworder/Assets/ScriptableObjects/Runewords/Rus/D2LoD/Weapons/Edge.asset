@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Edge
   m_EditorClassIdentifier: 
-  runewordName: Edge
+  runewordName: "\u041E\u0441\u0442\u0440\u0438\u0435"
   runesSequence: '''TirTalAmn'''
   runes: 02000000060000000a000000
   sprites:
@@ -51,7 +51,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: 'Hunter''s Bow
 
     Short Bow'

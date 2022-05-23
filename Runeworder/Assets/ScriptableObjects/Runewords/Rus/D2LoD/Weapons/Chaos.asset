@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Chaos
   m_EditorClassIdentifier: 
-  runewordName: Chaos
+  runewordName: "\u0425\u0430\u043E\u0441"
   runesSequence: '''FalOhmUm'''
   runes: 120000001a00000015000000
   sprites:
@@ -51,5 +51,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: Superior Feral Claws

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Oath
   m_EditorClassIdentifier: 
-  runewordName: Oath
+  runewordName: "\u041A\u043B\u044F\u0442\u0432\u0430"
   runesSequence: '''ShaelPulMalLum'''
   runes: 0c000000140000001600000010000000
   sprites:
@@ -56,5 +56,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 4
   recomendedItems: Superior Balrog Blade

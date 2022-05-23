@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Faith
   m_EditorClassIdentifier: 
-  runewordName: Faith
+  runewordName: "\u0412\u0435\u0440\u0430"
   runesSequence: '''OhmJahLemEld'''
   runes: 1a0000001e0000001300000001000000
   sprites:
@@ -56,7 +56,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 3
   recomendedItems: 'Superior Grand Matron Bow
 
     Great Bow (Mercenary)'

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Ancient's Pledge
   m_EditorClassIdentifier: 
-  runewordName: Ancient's Pledge
+  runewordName: "\u041A\u043B\u044F\u0442\u0432\u0430 \u0414\u0440\u0435\u0432\u043D\u0438\u0445"
   runesSequence: '''RalOrtTal'''
   runes: 070000000800000006000000
   sprites:
@@ -38,7 +38,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: 'Kite Shield
 
     Large Shield'

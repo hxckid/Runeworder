@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Rhyme
   m_EditorClassIdentifier: 
-  runewordName: Rhyme
+  runewordName: "\u0420\u0438\u0444\u043C\u0430"
   runesSequence: '''ShaelEth'''
   runes: 0c00000004000000
   sprites:
@@ -44,7 +44,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 2
   recomendedItems: 'Bone Shield
 
     Preserved Head

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Malice
   m_EditorClassIdentifier: 
-  runewordName: Malice
+  runewordName: "\u0417\u043B\u043E\u0431\u0430"
   runesSequence: '''IthElEth'''
   runes: 050000000000000004000000
   sprites:
@@ -45,5 +45,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: Flail
