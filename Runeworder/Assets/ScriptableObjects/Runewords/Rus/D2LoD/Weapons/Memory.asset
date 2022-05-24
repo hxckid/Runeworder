@@ -21,36 +21,21 @@ MonoBehaviour:
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '4 Socket Staves (Not Orbs)
-
-'
+  subType: "4 Socket \u0414\u0432\u0443\u0440\u0443\u0447\u043D\u044B\u0435 \u043F\u043E\u0441\u043E\u0445\u0438\n"
   reqLevel: 37
-  statsDesc: '+3 to Sorceress Skill Levels
-
-    33% Faster Cast Rate
-
-    Increase
-    Maximum Mana 20%
-
-    +3 Energy Shield (Sorceress Only)
-
-    +2 Static Field
-    (Sorceress Only)
-
-    +10 To Energy
-
-    +10 To Vitality
-
-    +9 To Minimum Damage
-
-    -25%
-    Target Defense
-
-    Magic Damage Reduced By 7
-
-    +50% Enhanced Defense
-
-'
+  statsDesc: "+3 \u043A \u0443\u043C\u0435\u043D\u0438\u044F\u043C \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u0446\u044B\r\n+33%
+    \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F
+    \u0443\u043C\u0435\u043D\u0438\u0439\r\n+9 \u043A \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u043C\u0443
+    \u0443\u0440\u043E\u043D\u0443\r\n-25% \u043A \u0437\u0430\u0449\u0438\u0442\u0435
+    \u0446\u0435\u043B\u0438\r\n+3 \u043A \u0443\u043C\u0435\u043D\u0438\u044E \"\u042D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u0449\u0438\u0442\" (\u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F
+    \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u0446)\r\n+2 \u043A \u0443\u043C\u0435\u043D\u0438\u044E
+    \"\u0421\u0442\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u043F\u043E\u043B\u0435\"
+    (\u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u0446)\r\n+50%
+    \u043A \u0437\u0430\u0449\u0438\u0442\u0435\r\n+10 \u043A \u0436\u0438\u0432\u0443\u0447\u0435\u0441\u0442\u0438\r\n+10
+    \u043A \u044D\u043D\u0435\u0440\u0433\u0438\u0438\r\n+20% \u043A \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0439
+    \u043C\u0430\u043D\u0435\r\n-7 \u043A \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u043C\u0443
+    \u0443\u0440\u043E\u043D\u0443"
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words

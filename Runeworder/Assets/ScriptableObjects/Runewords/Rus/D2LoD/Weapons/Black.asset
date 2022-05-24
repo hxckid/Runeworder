@@ -20,32 +20,18 @@ MonoBehaviour:
   - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '3 Socket Clubs/Hammers/Maces
-
-'
+  subType: "3 Socket \u0414\u0443\u0431\u0438\u043D\u044B/\u041C\u043E\u043B\u043E\u0442\u043A\u0438/\u0411\u0443\u043B\u0430\u0432\u044B\n"
   reqLevel: 35
-  statsDesc: '+120% Enhanced Damage
-
-    40% Chance Of Crushing Blow
-
-    +200 To
-    Attack Rating
-
-    Adds 3-14 Cold Damage - Cold Duration 3 Seconds
-
-    +10 To
-    Vitality
-
-    15% Increased Attack Speed
-
-    Knockback
-
-    Magic Damage Reduced
-    By 2
-
-    Level 4 Corpse Explosion (12 Charges)
-
-'
+  statsDesc: "+15% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0430\u0442\u0430\u043A\u0438\r\n+120%
+    \u043A \u0443\u0440\u043E\u043D\u0443\r\n+200 \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
+    \u0430\u0442\u0430\u043A\u0438\r\n+3-14 \u0443\u0440\u043E\u043D\u0430 \u043E\u0442
+    \u043B\u044C\u0434\u0430\r\n+40% \u043A \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u0438
+    \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u0441\u043E\u043A\u0440\u0443\u0448\u0430\u044E\u0449\u0438\u0439
+    \u0443\u0434\u0430\u0440\r\n\u041E\u0442\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0435\u0442
+    \u0432\u0440\u0430\u0433\u043E\u0432\r\n+10 \u043A \u0436\u0438\u0432\u0443\u0447\u0435\u0441\u0442\u0438\r\n-2
+    \u043A \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u043C\u0443 \u0443\u0440\u043E\u043D\u0443\r\n\"\u0412\u0437\u0440\u044B\u0432
+    \u0442\u0440\u0443\u043F\u0430\" 4-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F
+    (12/12 \u0437\u0430\u0440\u044F\u0434\u043E\u0432)"
   isLadder: 0
   classItem: 0
   gameVersion: Original Rune Words

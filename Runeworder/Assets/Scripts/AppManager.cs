@@ -104,7 +104,6 @@ public class AppManager : MonoBehaviour
                 buttonsText[11].text = "Уровень";
                 break;
         }
-        
     }
 
     private void OnEnable()

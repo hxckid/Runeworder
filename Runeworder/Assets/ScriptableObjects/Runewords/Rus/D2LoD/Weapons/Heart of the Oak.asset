@@ -21,39 +21,22 @@ MonoBehaviour:
   - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '4 Socket Staves/Maces
-
-'
+  subType: "4 Socket \u0414\u0432\u0443\u0440\u0443\u0447\u043D\u044B\u0435 \u043F\u043E\u0441\u043E\u0445\u0438/\u0411\u0443\u043B\u0430\u0432\u044B\n"
   reqLevel: 55
-  statsDesc: '+3 To All Skills
-
-    +40% Faster Cast Rate
-
-    +75% Damage To Demons
-
-    +100
-    To Attack Rating Against Demons
-
-    Adds 3-14 Cold Damage, 3 sec. Duration (Normal)
-
-    7%
-    Mana Stolen Per Hit
-
-    +10 To Dexterity
-
-    Replenish Life +20
-
-    Increase
-    Maximum Mana 15%
-
-    All Resistances +30-40 (varies)
-
-    Level 4 Oak Sage (25
-    Charges)
-
-    Level 14 Raven (60 Charges)
-
-'
+  statsDesc: "+3 \u043A\u043E \u0432\u0441\u0435\u043C \u0443\u043C\u0435\u043D\u0438\u044F\u043C\r\n+40%
+    \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F
+    \u0443\u043C\u0435\u043D\u0438\u0439\r\n+75% \u043A \u0443\u0440\u043E\u043D\u0443
+    \u043F\u043E \u0434\u0435\u043C\u043E\u043D\u0430\u043C\r\n+100 \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
+    \u0430\u0442\u0430\u043A\u0438 \u043F\u0440\u043E\u0442\u0438\u0432 \u0434\u0435\u043C\u043E\u043D\u043E\u0432\r\n+3-14
+    \u0443\u0440\u043E\u043D\u0430 \u043E\u0442 \u043B\u044C\u0434\u0430\r\n\u041F\u043E\u0445\u0438\u0449\u0430\u0435\u0442
+    7% \u043C\u0430\u043D\u044B \u0437\u0430 \u0443\u0434\u0430\u0440\r\n+10 \u043A
+    \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438\r\n\u0412\u043E\u0441\u043F\u043E\u043B\u043D\u044F\u0435\u0442
+    +20 \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F\r\n+15% \u043A \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0439
+    \u043C\u0430\u043D\u0435\r\n+(30-40) \u043A \u0441\u043E\u043F\u0440\u043E\u0442\u0438\u0432\u043B\u0435\u043D\u0438\u044E
+    \u0432\u0441\u0435\u043C \u0432\u0438\u0434\u0430\u043C \u0443\u0440\u043E\u043D\u0430\r\n\"\u0414\u0440\u0435\u0432\u0435\u0441\u043D\u044B\u0439
+    \u0434\u0443\u0445\" 4-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F (25/25
+    \u0437\u0430\u0440\u044F\u0434\u043E\u0432)\r\n\"\u0412\u043E\u0440\u043E\u043D\"
+    14-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F (60/60 \u0437\u0430\u0440\u044F\u0434\u043E\u0432)\n"
   isLadder: 0
   classItem: 0
   gameVersion: 1.10

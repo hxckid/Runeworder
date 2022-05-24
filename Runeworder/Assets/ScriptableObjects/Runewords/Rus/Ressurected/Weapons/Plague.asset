@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 3 Socket Sword
+  subType: "3 Socket \u041C\u0435\u0447\u0438"
   reqLevel: 67
   statsDesc: '25% Chance to Cast Level 15 Poison Nova On Striking
 

@@ -23,44 +23,25 @@ MonoBehaviour:
   - {fileID: -4501304641669350739, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '6 Socket Weapons
-
-'
+  subType: "6 Socket \u041E\u0440\u0443\u0436\u0438\u0435\n"
   reqLevel: 69
-  statsDesc: '50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy
-
-    Indestructible
-
-    +60%
-    Increased Attack Speed
-
-    +350-400% Enhanced Damage (varies)
-
-    +200% Damage
-    To Undead
-
-    -25% Target Defense
-
-    +50 To Attack Rating
-
-    +50 To Attack
-    Rating Against Undead
-
-    7% Mana Stolen Per Hit
-
-    12-15% Life Stolen Per
-    Hit (varies)
-
-    Prevent Monster Heal
-
-    +30 To All Attributes
-
-    +1 To
-    Light Radius
-
-    Requirements -20%
-
-'
+  statsDesc: "\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
+    50% \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0443\u043C\u0435\u043D\u0438\u0435
+    \"\u041A\u043E\u043B\u044C\u0446\u043E \u044F\u0434\u0430\" 20-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F
+    \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435\r\n\u041D\u0435
+    \u0442\u0435\u0440\u044F\u0435\u0442 \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u0438\r\n+60%
+    \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0430\u0442\u0430\u043A\u0438\r\n+(350-400)%
+    \u043A \u0443\u0440\u043E\u043D\u0443\r\n-25% \u043A \u0437\u0430\u0449\u0438\u0442\u0435
+    \u0446\u0435\u043B\u0438\r\n+50 \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
+    \u0430\u0442\u0430\u043A\u0438\r\n+200% \u0443\u0440\u043E\u043D\u0430 \u043F\u043E
+    \u043D\u0435\u0436\u0438\u0442\u0438\r\n+50 \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
+    \u0430\u0442\u0430\u043A\u0438 \u043F\u043E \u043D\u0435\u0436\u0438\u0442\u0438\r\n\u041F\u043E\u0445\u0438\u0449\u0430\u0435\u0442
+    7% \u043C\u0430\u043D\u044B \u0437\u0430 \u0443\u0434\u0430\u0440\r\n\u041F\u043E\u0445\u0438\u0449\u0430\u0435\u0442
+    (12-15)% \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u0437\u0430 \u0443\u0434\u0430\u0440\r\n\u0417\u0430\u043F\u0440\u0435\u0449\u0430\u0435\u0442
+    \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C \u043B\u0435\u0447\u0438\u0442\u044C\u0441\u044F\r\n+30
+    \u043A\u043E \u0432\u0441\u0435\u043C \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430\u043C\r\n+1
+    \u043A \u0440\u0430\u0434\u0438\u0443\u0441\u0443 \u043E\u0431\u0437\u043E\u0440\u0430\r\n\u0422\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F
+    -20%\n"
   isLadder: 0
   classItem: 0
   gameVersion: 1.10

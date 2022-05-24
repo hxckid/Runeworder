@@ -21,34 +21,19 @@ MonoBehaviour:
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '4 Socket Swords/Axes
-
-'
+  subType: "4 Socket \u041C\u0435\u0447\u0438/\u0422\u043E\u043F\u043E\u0440\u044B\n"
   reqLevel: 53
-  statsDesc: '+30% Increased Attack Speed
-
-    +230-270% Enhanced Damage (varies)
-
-    -25%
-    Target Defense
-
-    20% Bonus To Attack Rating
-
-    33% Chance of Crushing Blow
-
-    50%
-    Chance of Open Wounds
-
-    +1 To Vengeance
-
-    Prevent Monster Heal
-
-    +10
-    To Strength
-
-    40% Extra Gold From Monsters
-
-'
+  statsDesc: "+30% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0430\u0442\u0430\u043A\u0438\r\n+(230-270)%
+    \u043A \u0443\u0440\u043E\u043D\u0443\r\n-25% \u043A \u0437\u0430\u0449\u0438\u0442\u0435
+    \u0446\u0435\u043B\u0438\r\n+20% \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
+    \u0430\u0442\u0430\u043A\u0438\r\n+33% \u043A \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u0438
+    \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u0441\u043E\u043A\u0440\u0443\u0448\u0430\u044E\u0449\u0438\u0439
+    \u0443\u0434\u0430\u0440\r\n+50% \u043A \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u0438
+    \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u0443\u044E
+    \u0440\u0430\u043D\u0443\r\n+1 \u043A \u0443\u043C\u0435\u043D\u0438\u044E \"\u0412\u043E\u0437\u043C\u0435\u0437\u0434\u0438\u0435\"\r\n\u0417\u0430\u043F\u0440\u0435\u0449\u0430\u0435\u0442
+    \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C \u043B\u0435\u0447\u0438\u0442\u044C\u0441\u044F\r\n+10
+    \u043A \u0441\u0438\u043B\u0435\r\n+40% \u043A \u0437\u043E\u043B\u043E\u0442\u0443
+    \u0437\u0430 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u043E \u043C\u043E\u043D\u0441\u0442\u0440\u043E\u0432"
   isLadder: 0
   classItem: 0
   gameVersion: 1.10

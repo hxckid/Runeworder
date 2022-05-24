@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: 6 Socket Sword
+  subType: "6 Socket \u041C\u0435\u0447\u0438"
   reqLevel: 41
   statsDesc: '18% Chance To Cast Level 18 Taunt On Striking
 

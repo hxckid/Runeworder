@@ -22,39 +22,25 @@ MonoBehaviour:
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8105461410332785109, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '5 Socket Polearms
-
-'
+  subType: "5 Socket \u0414\u0440\u0435\u0432\u043E\u043A\u043E\u0432\u043E\u0435
+    \u043E\u0440\u0443\u0436\u0438\u0435\n"
   reqLevel: 41
-  statsDesc: '30% Chance To Cast Level 21 Enchant When You Kill An Enemy
-
-    40%
-    Faster Hit Recovery
-
-    +370% Enhanced Damage
-
-    -25% Target Defense
-
-    Adds
-    3-14 Cold Damage 3 Second Duration (Normal)
-
-    -25% To Enemy Fire Resistance
-
-    40%
-    Chance of Crushing Blow
-
-    +200-300 Defense (varies)
-
-    +10 To Strength
-
-    +10
-    To Dexterity
-
-    All Resistances +20-30 (varies)
-
-    Requirements -20%
-
-'
+  statsDesc: "\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
+    30% \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0443\u043C\u0435\u043D\u0438\u0435
+    \"\u0427\u0430\u0440\u044B\" 21-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F
+    \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435\r\n+40% \u043A
+    \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u043D\u043E\u043C\u0443 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044E
+    \u043E\u0442 \u0443\u0434\u0430\u0440\u0430\r\n+370% \u043A \u0443\u0440\u043E\u043D\u0443\r\n-25%
+    \u043A \u0437\u0430\u0449\u0438\u0442\u0435 \u0446\u0435\u043B\u0438\r\n+3-14
+    \u0443\u0440\u043E\u043D\u0430 \u043E\u0442 \u043B\u044C\u0434\u0430\r\n-25%
+    \u043A \u0441\u043E\u043F\u0440\u043E\u0442\u0438\u0432\u043B\u0435\u043D\u0438\u044E
+    \u043E\u0433\u043D\u044E \u0443 \u0432\u0440\u0430\u0433\u0430\r\n+40% \u043A
+    \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u0438 \u043D\u0430\u043D\u0435\u0441\u0442\u0438
+    \u0441\u043E\u043A\u0440\u0443\u0448\u0430\u044E\u0449\u0438\u0439 \u0443\u0434\u0430\u0440\r\n+(200-300)
+    \u043A \u0437\u0430\u0449\u0438\u0442\u0435\r\n+10 \u043A \u0441\u0438\u043B\u0435\r\n+10
+    \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438\r\n+(20-30) \u043A \u0441\u043E\u043F\u0440\u043E\u0442\u0438\u0432\u043B\u0435\u043D\u0438\u044E
+    \u0432\u0441\u0435\u043C \u0432\u0438\u0434\u0430\u043C \u0443\u0440\u043E\u043D\u0430\r\n\u0422\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F
+    -20%"
   isLadder: 1
   classItem: 0
   gameVersion: 1.10

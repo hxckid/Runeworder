@@ -20,33 +20,22 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '3 Socket Missile Weapons
-
-'
+  subType: "3 Socket \u041E\u0440\u0443\u0436\u0438\u0435 \u0434\u0430\u043B\u044C\u043D\u0435\u0433\u043E
+    \u0431\u043E\u044F\n"
   reqLevel: 25
-  statsDesc: 'Level 15 Thorns Aura When Equipped
-
-    +35% Increased Attack Speed
-
-    +320-380%
-    Damage To Demons (varies)
-
-    +280% Damage To Undead
-
-    +75 Poison Damage
-    Over 5 Seconds
-
-    7% Life Stolen Per Hit
-
-    Prevent Monster Heal
-
-    +5-10
-    To All Attributes (varies)
-
-    +2 To Mana After Each Kill
-
-    Reduces All Vendor
-    Prices 15%!!!*'
+  statsDesc: "\u041F\u0440\u0438 \u043D\u0430\u0434\u0435\u0432\u0430\u043D\u0438\u0438
+    \u0434\u0430\u0435\u0442 \u0430\u0443\u0440\u0443 \"\u0428\u0438\u043F\u044B\"
+    15-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F\r\n+35% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438
+    \u0430\u0442\u0430\u043A\u0438\r\n+(320-380)% \u043A \u0443\u0440\u043E\u043D\u0443
+    \u043F\u043E \u0434\u0435\u043C\u043E\u043D\u0430\u043C\r\n+280% \u0443\u0440\u043E\u043D\u0430
+    \u043F\u043E \u043D\u0435\u0436\u0438\u0442\u0438\r\n+75 \u0443\u0440\u043E\u043D\u0430
+    \u043E\u0442 \u044F\u0434\u0430 \u0437\u0430 5 \u0441\u0435\u043A.\r\n\u041F\u043E\u0445\u0438\u0449\u0430\u0435\u0442
+    7% \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u0437\u0430 \u0443\u0434\u0430\u0440\r\n\u0417\u0430\u043F\u0440\u0435\u0449\u0430\u0435\u0442
+    \u043C\u043E\u043D\u0441\u0442\u0440\u0430\u043C \u043B\u0435\u0447\u0438\u0442\u044C\u0441\u044F\r\n+(5-10)
+    \u043A\u043E \u0432\u0441\u0435\u043C \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430\u043C\r\n+2
+    \u043A \u043C\u0430\u043D\u0435 \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435\r\n\u0421\u043D\u0438\u0436\u0430\u0435\u0442
+    \u0446\u0435\u043D\u044B \u0443 \u0442\u043E\u0440\u0433\u043E\u0432\u0446\u0435\u0432
+    \u043D\u0430 15%"
   isLadder: 1
   classItem: 0
   gameVersion: 1.10

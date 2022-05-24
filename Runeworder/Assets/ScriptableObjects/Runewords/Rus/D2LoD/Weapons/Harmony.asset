@@ -21,41 +21,23 @@ MonoBehaviour:
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '4 Socket Missile Weapons
-
-'
+  subType: "4 Socket \u041E\u0440\u0443\u0436\u0438\u0435 \u0434\u0430\u043B\u044C\u043D\u0435\u0433\u043E
+    \u0431\u043E\u044F\n"
   reqLevel: 39
-  statsDesc: 'Level 10 Vigor Aura When Equipped
-
-    +200-275% Enhanced Damage (varies)
-
-    +9
-    To Minimum Damage
-
-    +9 To Maximum Damage
-
-    Adds 55-160 Lightning Damage
-
-    Adds
-    55-160 Fire Damage
-
-    Adds 55-160 Cold Damage
-
-    +2-6 To Valkyrie (varies)
-
-    +10
-    To Dexterity
-
-    Regenerate Mana 20%
-
-    +2 To Mana After Each Kill
-
-    +2
-    To Light Radius
-
-    Level 20 Revive (25 Charges)
-
-'
+  statsDesc: "\u041F\u0440\u0438 \u043D\u0430\u0434\u0435\u0432\u0430\u043D\u0438\u0438
+    \u0434\u0430\u0435\u0442 \u0430\u0443\u0440\u0443 \"\u0411\u043E\u0434\u0440\u043E\u0441\u0442\u044C\"
+    10-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F\r\n+(200-275)% \u043A \u0443\u0440\u043E\u043D\u0443\r\n+9
+    \u043A \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u043C\u0443
+    \u0443\u0440\u043E\u043D\u0443\r\n+9 \u043A \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u043C\u0443
+    \u0443\u0440\u043E\u043D\u0443\r\n+55-160 \u0443\u0440\u043E\u043D\u0430 \u043E\u0442
+    \u043E\u0433\u043D\u044F\r\n+55-160 \u0443\u0440\u043E\u043D\u0430 \u043E\u0442
+    \u043C\u043E\u043B\u043D\u0438\u0438\r\n+55-160 \u0443\u0440\u043E\u043D\u0430
+    \u043E\u0442 \u043B\u044C\u0434\u0430\r\n+(2-6) \u043A \u0443\u043C\u0435\u043D\u0438\u044E
+    \"\u0412\u0430\u043B\u044C\u043A\u0438\u0440\u0438\u044F\"\r\n+10 \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438\r\n\u0412\u043E\u0441\u043F\u043E\u043B\u043D\u044F\u0435\u0442
+    20% \u043C\u0430\u043D\u044B\r\n+2 \u043A \u043C\u0430\u043D\u0435 \u043F\u0440\u0438
+    \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435\r\n+2 \u043A \u0440\u0430\u0434\u0438\u0443\u0441\u0443
+    \u043E\u0431\u0437\u043E\u0440\u0430\r\n\"\u041E\u0436\u0438\u0432\u043B\u0435\u043D\u0438\u0435\"
+    20-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F (25/25 \u0437\u0430\u0440\u044F\u0434\u043E\u0432)\n"
   isLadder: 1
   classItem: 0
   gameVersion: 1.10
