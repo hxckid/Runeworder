@@ -15,6 +15,7 @@ public class TooltipController : MonoBehaviour
     public Text rwClass;
     public Text rwVersion;
     public Text rwItem;
+    public Text bestItemLabel;
 
     public void DestroyTooltip()
     {

@@ -818,7 +818,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0428\u0430\u044D\u043B\u044C"
+  m_Text: 
 --- !u!1 &6102768536228061599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1108,7 @@ MonoBehaviour:
   - {fileID: 6102768536684714447}
   reqLevel: {fileID: 6102768535601134241}
   type: {fileID: 6102768535167515629}
+  bestItemLabel: {fileID: 0}
   btn: {fileID: 4418223498359263449}
   parent: {fileID: 0}
   tooltip: {fileID: 6580700938638281287, guid: 8419754585f683344b45539c857c8456, type: 3}

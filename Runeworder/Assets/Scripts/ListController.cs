@@ -20,7 +20,6 @@ public class ListController : MonoBehaviour
     public GameObject tooltipRune;
 
     Color ressurectedColor;
-    
 
     private void Awake()
     {
@@ -64,12 +63,12 @@ public class ListController : MonoBehaviour
                 case 3:
                 case 4:
                     if (tc.rwType.text.Contains("Socket"))
-                        tc.rwType.text = tc.rwType.text.Replace("Socket", "Гнезда");
+                        tc.rwType.text = tc.rwType.text.Replace("Socket", "Гнезда:");
                     break;
                 case 5:
                 case 6:
                     if (tc.rwType.text.Contains("Socket"))
-                        tc.rwType.text = tc.rwType.text.Replace("Socket", "Гнезд");
+                        tc.rwType.text = tc.rwType.text.Replace("Socket", "Гнезд:");
                     break;
 
             }
@@ -102,6 +101,7 @@ public class ListController : MonoBehaviour
                 tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}+ LoD";
             else
                 tc.rwVersion.text = $"Версия игры: Для всех версий";
+            tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
         
         tc.rwVersion.color = Color.white;
