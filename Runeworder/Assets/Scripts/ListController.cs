@@ -96,11 +96,37 @@ public class ListController : MonoBehaviour
                 tc.rwLadder.text = runeword.isLadder ? "Ладдерный предмет Diablo 2 LoD " : "Не Ладдерный Предмет";
             else
                 tc.rwLadder.text = runeword.isLadder ? "Ладдерный предмет Ressurected" : "Не Ладдерный Предмет";
+
             tc.rwClass.text = runeword.classItem != Classes.Any ? $"Класс: {runeword.classItem}" : "Класс: Любой";
+            switch (tc.rwClass.text)
+            {
+                case "Класс: Amazon":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Amazon", "Амазонка");
+                    break;
+                case "Класс: Assassin":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Assassin", "Убийца");
+                    break;
+                case "Класс: Barbarian":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Barbarian", "Варвар");
+                    break;
+                case "Класс: Druid":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Druid", "Друид");
+                    break;
+                case "Класс: Necromancer":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Necromancer", "Некромант");
+                    break;
+                case "Класс: Paladin":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Paladin", "Паладин");
+                    break;
+                case "Класс: Sorceress":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Sorceress", "Волшебница");
+                    break;
+            }
+            
             if (runeword.gameVersion == "1.10" || runeword.gameVersion == "1.11")
-                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}+ LoD";
+                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}+ (LoD)";
             else
-                tc.rwVersion.text = $"Версия игры: Для всех версий";
+                tc.rwVersion.text = $"Версия игры: Любая";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
         
