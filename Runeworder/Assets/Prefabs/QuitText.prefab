@@ -66,7 +66,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -78,4 +78,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Back again to Quit
+  m_Text: "Press Back again to Quit\n\u041D\u0430\u0437\u0430\u0434 \u0447\u0442\u043E\u0431\u044B
+    \u0432\u044B\u0439\u0442\u0438"
