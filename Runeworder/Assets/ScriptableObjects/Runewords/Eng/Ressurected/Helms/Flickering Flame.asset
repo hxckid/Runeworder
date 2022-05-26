@@ -24,15 +24,15 @@ MonoBehaviour:
   reqLevel: 55
   statsDesc: 'Level 4-8 Resist Fire Aura When Equipped (varies)
 
-    +3 to Fire
-    Skills
+    +3 to Fire Skills
 
-    -10-15% to Enemy Fire Resistance (varies)
+    -10-15%
+    to Enemy Fire Resistance (varies)
 
     +30% Enhanced Defense
 
-    +30
-    Defense vs. Missile
+    +30 Defense
+    vs. Missile
 
     Adds 3-14 Cold Damage
 
@@ -43,11 +43,13 @@ MonoBehaviour:
 
     Half Freeze Duration
 
-    Poison Length Reduced
-    by 50%'
+    Poison Length Reduced by
+    50%'
   isLadder: 1
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 0
-  recomendedItems: Coming Soon
+  recomendedItems: 'Diadem
+
+    Superior Wolf Head'
