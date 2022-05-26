@@ -38,4 +38,4 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: Hunter's Bow
+  recomendedItems: "\u041E\u0445\u043E\u0442\u043D\u0438\u0447\u0438\u0439 \u041B\u0443\u043A"

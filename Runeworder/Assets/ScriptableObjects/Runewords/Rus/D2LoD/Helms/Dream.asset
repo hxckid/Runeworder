@@ -44,4 +44,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: Superior Bone Visage
+  recomendedItems: "\u041F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u043D\u0430\u044F
+    \u041A\u043E\u0441\u0442\u044F\u043D\u0430\u044F \u041B\u0438\u0447\u0438\u043D\u0430"

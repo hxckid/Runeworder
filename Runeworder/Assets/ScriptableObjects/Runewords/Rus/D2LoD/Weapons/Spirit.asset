@@ -40,4 +40,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 4
-  recomendedItems: Crystal Sword
+  recomendedItems: "\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u041C\u0435\u0447"

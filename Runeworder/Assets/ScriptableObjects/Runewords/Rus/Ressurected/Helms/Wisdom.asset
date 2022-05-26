@@ -36,8 +36,5 @@ MonoBehaviour:
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 3
-  recomendedItems: 'Crown
-
-    Diadem
-
-    Carnage Helm'
+  recomendedItems: "\u041A\u043E\u0440\u043E\u043D\u0430\r\n\u0414\u0438\u0430\u0434\u0435\u043C\u0430\r\n\u041C\u044F\u0441\u043D\u0438\u0446\u043A\u0438\u0439
+    \u0428\u043B\u0435\u043C\r\n"

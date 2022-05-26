@@ -34,4 +34,4 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: Cap
+  recomendedItems: "\u041D\u0430\u0433\u043E\u043B\u043E\u0432\u043D\u0438\u043A"

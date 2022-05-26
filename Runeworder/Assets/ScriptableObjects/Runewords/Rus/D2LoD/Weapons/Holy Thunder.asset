@@ -42,4 +42,4 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 4
-  recomendedItems: War Scepter
+  recomendedItems: "\u0412\u043E\u0438\u043D\u0441\u043A\u0438\u0439 \u0421\u043A\u0438\u043F\u0435\u0442\u0440"

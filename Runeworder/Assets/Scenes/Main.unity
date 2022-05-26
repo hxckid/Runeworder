@@ -368,7 +368,7 @@ MonoBehaviour:
   quitText: {fileID: 7038984762957486110, guid: 330631321f107764cb6f62b737f833d7, type: 3}
   runesBtn: {fileID: 593837245}
   runewordsBtn: {fileID: 832876301}
-  currentLanguage: 1
+  currentLanguage: 0
   buttonsText:
   - {fileID: 1393952264}
   - {fileID: 1011069164}
@@ -384,6 +384,7 @@ MonoBehaviour:
   - {fileID: 1516237628}
   latin: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
   cyrillic: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+  langText: {fileID: 1319346797}
 --- !u!1 &149384708
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,8 +627,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -638,7 +639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0429\u0438\u0442\u044B"
+  m_Text: Shields
 --- !u!222 &288940569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -838,8 +839,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -850,7 +851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0428\u043B\u0435\u043C\u044B"
+  m_Text: Helms
 --- !u!222 &293244161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1274,8 +1275,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1286,7 +1287,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u0430\u0442\u0447 2.4"
+  m_Text: Patch 2.4
 --- !u!222 &673285249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2003,8 +2004,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 58
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -2015,7 +2016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0441\u0435"
+  m_Text: All
 --- !u!222 &996728526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2082,8 +2083,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 56
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2094,7 +2095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041A \u0440\u0443\u043D\u0432\u043E\u0440\u0434\u0430\u043C"
+  m_Text: Show Runewords
 --- !u!222 &1011069165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2476,6 +2477,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292741922}
   m_CullTransparentMesh: 1
+--- !u!1 &1319346795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319346796}
+  - component: {fileID: 1319346798}
+  - component: {fileID: 1319346797}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1319346796
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319346795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2043947809}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1319346797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319346795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6132076, g: 0.41279614, b: 0.1533019, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 55
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: RUS
+--- !u!222 &1319346798
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319346795}
+  m_CullTransparentMesh: 1
 --- !u!1 &1393952262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,8 +2614,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
@@ -2546,7 +2626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C"
+  m_Text: Reset
 --- !u!222 &1393952265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2785,8 +2865,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2797,7 +2877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+  m_Text: "\u2195 Level"
 --- !u!222 &1516237629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2864,8 +2944,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -2876,7 +2956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041E\u0440\u0443\u0436\u0438\u0435"
+  m_Text: Weapons
 --- !u!222 &1616315496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2914,6 +2994,7 @@ RectTransform:
   m_Children:
   - {fileID: 656342275}
   - {fileID: 1477961876}
+  - {fileID: 2043947809}
   m_Father: {fileID: 47835029}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3400,8 +3481,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -3412,7 +3493,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u043E\u043D\u044F"
+  m_Text: Armors
 --- !u!222 &1757648985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3479,8 +3560,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3491,7 +3572,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0418\u043C\u044F"
+  m_Text: "\u2195 Name"
 --- !u!222 &1841159349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3558,8 +3639,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 52
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3570,7 +3651,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0437\u0430\u0434 \u043A \u0440\u0443\u043D\u0430\u043C"
+  m_Text: Back to Runes
 --- !u!222 &1887082423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4098,6 +4179,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010521918}
   m_CullTransparentMesh: 1
+--- !u!1 &2043947808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043947809}
+  - component: {fileID: 2043947812}
+  - component: {fileID: 2043947811}
+  - component: {fileID: 2043947810}
+  m_Layer: 5
+  m_Name: LangButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2043947809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043947808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1319346796}
+  m_Father: {fileID: 1695528427}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &2043947810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043947808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2043947811}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 127871775}
+        m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
+        m_MethodName: ChangeLanguage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2043947811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043947808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.11764706}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2043947812
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043947808}
+  m_CullTransparentMesh: 1
 --- !u!1 &2069221985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,8 +4370,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6c02e9d15e280ba43b64d02596f5dc08, type: 3}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -4168,7 +4382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0420\u0443\u043D\u044B"
+  m_Text: "\u2195 Runes"
 --- !u!222 &2069221988
 CanvasRenderer:
   m_ObjectHideFlags: 0

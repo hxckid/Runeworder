@@ -46,11 +46,7 @@ MonoBehaviour:
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: 'Crystal Sword
-
-    Phase Blade
-
-    Kris
-
-    Claws with +x
-    to Skills used on your build'
+  recomendedItems: "\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u041C\u0435\u0447\n\u0412\u044B\u0441\u043E\u043A\u043E\u0433\u043E\u0440\u043D\u044B\u0439
+    \u041C\u0435\u0447\n\u041A\u0440\u0438\u0441\nClaws with +x to Skills used on
+    your build"

@@ -33,6 +33,5 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 3
-  recomendedItems: 'Kite Shield
-
-    Large Shield'
+  recomendedItems: "\u041A\u0430\u043F\u043B\u0435\u0432\u0438\u0434\u043D\u044B\u0439
+    \u0429\u0438\u0442\n\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0429\u0438\u0442"

@@ -35,5 +35,7 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: "Short Staff\nFor Sorceress: \nAny Base with +3 to Fire Ball (Sorceress
-    Only)"
+  recomendedItems: "\u041A\u043E\u0440\u043E\u0442\u043A\u0438\u0439 \u041F\u043E\u0441\u043E\u0445\n\u0414\u043B\u044F
+    \u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u0446: \n\u041B\u044E\u0431\u0430\u044F
+    \u0431\u0430\u0437\u0430 \u0441 +3 \u043A \u041E\u0433\u043D\u0435\u043D\u043D\u043E\u043C\u0443
+    \u0428\u0430\u0440\u0443 (\u0422\u043E\u043B\u044C\u043A\u043E \u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u0446\u044B)"

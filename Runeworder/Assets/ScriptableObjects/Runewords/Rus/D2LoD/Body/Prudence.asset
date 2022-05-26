@@ -36,4 +36,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: Dusk Shroud
+  recomendedItems: "\u0421\u0443\u043C\u0435\u0440\u0435\u0447\u043D\u0430\u044F
+    \u041F\u0435\u043B\u0435\u043D\u0430"

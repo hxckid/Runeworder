@@ -45,6 +45,6 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 1
-  recomendedItems: 'Superior Troll Nest
-
-    Superior Sacred Targe'
+  recomendedItems: "\u041F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u043D\u043E\u0435
+    \u0422\u0440\u043E\u043B\u044C\u0435 \u0413\u043D\u0435\u0437\u0434\u043E\n\u041F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u043D\u044B\u0439
+    \u0421\u0432\u044F\u0449\u0435\u043D\u043D\u044B\u0439 \u0422\u0430\u0440\u0434\u0436\u0435\u0442"

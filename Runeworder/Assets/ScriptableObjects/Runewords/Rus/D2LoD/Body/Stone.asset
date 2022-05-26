@@ -39,4 +39,6 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 4
-  recomendedItems: Ethereal Dusk Shroud (Mercenary)
+  recomendedItems: "\u0411\u0435\u0441\u043F\u043B\u043E\u0442\u043D\u0430\u044F
+    \u0421\u0443\u043C\u0435\u0440\u0435\u0447\u043D\u0430\u044F \u041F\u0435\u043B\u0435\u043D\u0430
+    (\u041D\u0430\u0435\u043C\u043D\u0438\u043A)"

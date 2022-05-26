@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +25,7 @@ public class AppManager : MonoBehaviour
     public List<Text> buttonsText;
     public Font latin;
     public Font cyrillic;
+    public Text langText;
     Text[] links;
 
     UserData userData;
@@ -32,16 +33,20 @@ public class AppManager : MonoBehaviour
     string key = "UserData";
     GameObject txt;
 
-    
-
     public delegate void LanguageHandler(Languages languages);
     public static event LanguageHandler OnLanguageChanged;
 
-    private void OnValidate()
+    public void ChangeLanguage()
     {
+        if (currentLanguage == Languages.Ru)
+            currentLanguage = Languages.En;
+        else
+            currentLanguage = Languages.Ru;
+
         switch (currentLanguage)
         {
             case Languages.En:
+                langText.text = "RUS";
                 OnLanguageChanged?.Invoke(Languages.En);
                 foreach (var button in buttonsText)
                 {
@@ -63,45 +68,46 @@ public class AppManager : MonoBehaviour
                 buttonsText[6].text = "Helms";
                 buttonsText[7].fontSize = 54;
                 buttonsText[7].text = "Shields";
-                buttonsText[8].fontSize = 54;
+                buttonsText[8].fontSize = 48;
                 buttonsText[8].text = "Patch 2.4";
-                buttonsText[9].fontSize = 62;
-                buttonsText[9].text = "Name";
-                buttonsText[10].fontSize = 62;
-                buttonsText[10].text = "Runes";
-                buttonsText[11].fontSize = 62;
-                buttonsText[11].text = "Level";
+                buttonsText[9].fontSize = 55;
+                buttonsText[9].text = "в†• Name";
+                buttonsText[10].fontSize = 55;
+                buttonsText[10].text = "в†• Runes";
+                buttonsText[11].fontSize = 55;
+                buttonsText[11].text = "в†• Level";
                 break;
             case Languages.Ru:
+                langText.text = "ENG";
                 OnLanguageChanged?.Invoke(Languages.Ru);
                 foreach (var button in buttonsText)
                 {
                     button.font = cyrillic;
                 }
                 buttonsText[0].fontSize = 64;
-                buttonsText[0].text = "Сбросить";
+                buttonsText[0].text = "РЎР±СЂРѕСЃРёС‚СЊ";
                 buttonsText[1].fontSize = 56;
-                buttonsText[1].text = "К рунвордам";
+                buttonsText[1].text = "РќР°Р№С‚Рё СЂСѓРЅРІРѕСЂРґС‹";
                 buttonsText[2].fontSize = 52;
-                buttonsText[2].text = "Назад к рунам";
+                buttonsText[2].text = "РќР°Р·Р°Рґ Рє СЂСѓРЅР°Рј";
                 buttonsText[3].fontSize = 46;
-                buttonsText[3].text = "Все";
+                buttonsText[3].text = "Р’СЃРµ";
                 buttonsText[4].fontSize = 46;
-                buttonsText[4].text = "Оружие";
+                buttonsText[4].text = "РћСЂСѓР¶РёРµ";
                 buttonsText[5].fontSize = 46;
-                buttonsText[5].text = "Броня";
+                buttonsText[5].text = "Р‘СЂРѕРЅСЏ";
                 buttonsText[6].fontSize = 46;
-                buttonsText[6].text = "Шлемы";
+                buttonsText[6].text = "РЁР»РµРјС‹";
                 buttonsText[7].fontSize = 46;
-                buttonsText[7].text = "Щиты";
+                buttonsText[7].text = "Р©РёС‚С‹";
                 buttonsText[8].fontSize = 40;
-                buttonsText[8].text = "Патч 2.4";
+                buttonsText[8].text = "РџР°С‚С‡ 2.4";
                 buttonsText[9].fontSize = 46;
-                buttonsText[9].text = "Имя";
+                buttonsText[9].text = "в†• РРјСЏ";
                 buttonsText[10].fontSize = 46;
-                buttonsText[10].text = "Руны";
+                buttonsText[10].text = "в†• Р СѓРЅС‹";
                 buttonsText[11].fontSize = 46;
-                buttonsText[11].text = "Уровень";
+                buttonsText[11].text = "в†• РЈСЂРѕРІРµРЅСЊ";
                 break;
         }
     }

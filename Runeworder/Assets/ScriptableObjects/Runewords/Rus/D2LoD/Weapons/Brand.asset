@@ -47,6 +47,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: 'Matriarchal Bow
-
-    Great Bow'
+  recomendedItems: "\u041C\u0430\u0442\u0440\u0438\u0430\u0440\u0448\u0438\u0439
+    \u041B\u0443\u043A\r\n\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u041B\u0443\u043A"

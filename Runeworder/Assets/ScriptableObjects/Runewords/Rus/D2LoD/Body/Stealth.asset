@@ -36,11 +36,8 @@ MonoBehaviour:
   gameVersion: 'Original Rune Words '
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: 'Hard Leather Armor
-
-    Leather Armor
-
-    Quilted Armor
-
-    Studded
-    Leather'
+  recomendedItems: "\u041F\u043B\u043E\u0442\u043D\u044B\u0439 \u041A\u043E\u0436\u0430\u043D\u044B\u0439
+    \u0414\u043E\u0441\u043F\u0435\u0445\n\u041A\u043E\u0436\u0430\u043D\u044B\u0439
+    \u0414\u043E\u0441\u043F\u0435\u0445\n\u041A\u043B\u0435\u043F\u0430\u043D\u044B\u0439
+    \u041A\u043E\u0436\u0430\u043D\u044B\u0439 \u0414\u043E\u0441\u043F\u0435\u0445\nStudded
+    Leather"

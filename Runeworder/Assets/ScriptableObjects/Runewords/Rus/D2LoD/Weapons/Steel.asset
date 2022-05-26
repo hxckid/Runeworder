@@ -35,6 +35,5 @@ MonoBehaviour:
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: 'Flail
-
-    Scimitar'
+  recomendedItems: "\u041A\u0438\u0441\u0442\u0435\u043D\u044C\n\u041A\u0440\u0438\u0432\u0430\u044F
+    \u0421\u0430\u0431\u043B\u044F"

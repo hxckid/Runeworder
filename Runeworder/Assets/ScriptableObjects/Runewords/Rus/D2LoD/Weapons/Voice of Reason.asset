@@ -47,4 +47,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 4
-  recomendedItems: Superior Phase Blade
+  recomendedItems: "\u041F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u043D\u044B\u0439
+    \u0412\u044B\u0441\u043E\u043A\u043E\u0433\u043E\u0440\u043D\u044B\u0439 \u041C\u0435\u0447"

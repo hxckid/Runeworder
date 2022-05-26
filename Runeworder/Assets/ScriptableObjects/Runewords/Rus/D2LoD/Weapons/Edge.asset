@@ -41,6 +41,5 @@ MonoBehaviour:
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 3
-  recomendedItems: 'Hunter''s Bow
-
-    Short Bow'
+  recomendedItems: "\u041E\u0445\u043E\u0442\u043D\u0438\u0447\u0438\u0439 \u041B\u0443\u043A\n\u041A\u043E\u0440\u043E\u0442\u043A\u0438\u0439
+    \u041B\u0443\u043A"
