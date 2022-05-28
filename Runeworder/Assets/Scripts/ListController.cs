@@ -42,6 +42,9 @@ public class ListController : MonoBehaviour
         tc.rwName.text = runeword.runewordName;
         tc.rwSeq.text = runeword.runesSequence;
         tc.rwStats.text = runeword.statsDesc;
+        tc.rwStats.resizeTextForBestFit = true;
+        tc.rwStats.resizeTextMaxSize = 55;
+        tc.rwStats.resizeTextMinSize = 45;
         tc.rwType.text = runeword.subType;
         tc.rwLevel.text = $"Required level: {runeword.reqLevel}";
         if (runeword.gameVersion != "Ressurected")
@@ -74,6 +77,10 @@ public class ListController : MonoBehaviour
                 tc.rwSeq.text = tc.rwSeq.text.Replace($"{Enum.GetName(typeof(RunesEn), i)}", $"{Enum.GetName(typeof(RunesRu), i)}");
             }
 
+            tc.rwStats.resizeTextForBestFit = true;
+            tc.rwStats.resizeTextMaxSize = 45;
+            tc.rwStats.resizeTextMinSize = 40;
+
             foreach (var txt in txts)
             {
                 txt.font = AppManager.instance.cyrillic;
@@ -104,8 +111,10 @@ public class ListController : MonoBehaviour
                 tc.rwType.text = tc.rwType.text.Replace("Shields", "ўиты");
             txts[0].fontSize = 90; //Name
             txts[1].fontSize = 58; //RuneSeq
-            txts[2].fontSize = 46; //Stats
-            txts[3].fontSize = 50; //Type
+            //txts[2].fontSize = 40; //Stats
+            txts[3].resizeTextForBestFit = true; //Type
+            txts[3].resizeTextMaxSize = 45; //Type
+            txts[3].resizeTextMinSize = 40; //Type
             txts[4].fontSize = 46; //Best Item Label
             txts[5].fontSize = 40; //Best Item Field
             txts[6].fontSize = 46; //Lvl
