@@ -37,15 +37,15 @@ public class RunewordsController : MonoBehaviour
                 {
                     t.font = AppManager.instance.latin;
                 }
-                en[0].fontSize = 55;
-                en[1].fontSize = 46;
-                en[2].fontSize = 46;
-                en[3].fontSize = 46;
-                en[4].fontSize = 46;
-                en[5].fontSize = 46;
-                en[6].fontSize = 46;
-                en[7].fontSize = 45;
-                en[8].fontSize = 45;
+                en[0].fontSize = 55; //Name
+                en[1].fontSize = 44; //Rune
+                en[2].fontSize = 44; //Rune
+                en[3].fontSize = 44; //Rune
+                en[4].fontSize = 44; //Rune
+                en[5].fontSize = 44; //Rune
+                en[6].fontSize = 44; //Rune 
+                en[7].fontSize = 44; //Lvl
+                en[8].fontSize = 44; //Type
                 break;
             case Languages.Ru:
                 runewordsDB = runewordsDBRus;
@@ -54,15 +54,15 @@ public class RunewordsController : MonoBehaviour
                 {
                     t.font = AppManager.instance.cyrillic;
                 }
-                ru[0].fontSize = 44;
-                ru[1].fontSize = 36;
-                ru[2].fontSize = 36;
-                ru[3].fontSize = 36;
-                ru[4].fontSize = 36;
-                ru[5].fontSize = 36;
-                ru[6].fontSize = 36;
-                ru[7].fontSize = 36;
-                ru[8].fontSize = 40;
+                ru[0].fontSize = 40; //Name
+                ru[1].fontSize = 36; //Rune
+                ru[2].fontSize = 36; //Rune
+                ru[3].fontSize = 36; //Rune
+                ru[4].fontSize = 36; //Rune
+                ru[5].fontSize = 36; //Rune
+                ru[6].fontSize = 36; //Rune
+                ru[7].fontSize = 34; //Lvl
+                ru[8].fontSize = 36; //Type
                 break;
         }
         UpdateRunewordsList(lastPressed);

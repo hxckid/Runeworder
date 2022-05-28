@@ -266,11 +266,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2de3eb80c0109c24aa1e4be997f037cd, type: 3}
-    m_FontSize: 50
+    m_FontSize: 55
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 55
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 73
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1108,7 +1108,6 @@ MonoBehaviour:
   - {fileID: 6102768536684714447}
   reqLevel: {fileID: 6102768535601134241}
   type: {fileID: 6102768535167515629}
-  bestItemLabel: {fileID: 0}
   btn: {fileID: 4418223498359263449}
   parent: {fileID: 0}
   tooltip: {fileID: 6580700938638281287, guid: 8419754585f683344b45539c857c8456, type: 3}

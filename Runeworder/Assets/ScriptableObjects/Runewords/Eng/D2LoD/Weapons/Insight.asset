@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  subType: '4 Socket Polearms/Staves
+  subType: '4 Socket Polearms/Staves/Missile Weapons
 
 '
   reqLevel: 27
@@ -56,7 +56,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 4
   recomendedItems: 'Ethereal Superior Colossus Voulge
 
     Ethereal Superior Giant
@@ -64,5 +64,7 @@ MonoBehaviour:
 
     Ethereal Superior Thresher
 
-    Any Polearm is great for the
-    early game!'
+    Matriarchal Bow
+
+    Any Polearm
+    is great for the early game!'

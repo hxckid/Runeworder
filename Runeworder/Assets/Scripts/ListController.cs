@@ -43,6 +43,29 @@ public class ListController : MonoBehaviour
         tc.rwSeq.text = runeword.runesSequence;
         tc.rwStats.text = runeword.statsDesc;
         tc.rwType.text = runeword.subType;
+        tc.rwLevel.text = $"Required level: {runeword.reqLevel}";
+        if (runeword.gameVersion != "Ressurected")
+            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Diablo 2 (LoD)" : "Ladder Item: No";
+        else
+            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Ressurected" : "Ladder Item: No";
+        tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class specified: {runeword.classItem}" : "Class specified: Any";
+        if (runeword.gameVersion == "1.10" || runeword.gameVersion == "1.11")
+            tc.rwVersion.text = $"Game version: {runeword.gameVersion}+ (LoD)";
+        else
+            tc.rwVersion.text = $"Game Version: Resurrected";
+
+        tc.rwVersion.color = Color.white;
+        switch (runeword.gameVersion)
+        {
+            case "Ressurected":
+                tc.rwVersion.color = ressurectedColor;
+                break;
+            case "1.10":
+            case "1.11":
+                tc.rwVersion.color = new Color32(222, 222, 150, 255);
+                break;
+        }
+        tc.rwItem.text = $"{runeword.recomendedItems}";
 
         if (AppManager.instance.currentLanguage == Languages.Ru)
         {
@@ -79,23 +102,23 @@ public class ListController : MonoBehaviour
                 tc.rwType.text = tc.rwType.text.Replace("Helms", "Шлемы");
             if (tc.rwType.text.Contains("Shields"))
                 tc.rwType.text = tc.rwType.text.Replace("Shields", "Щиты");
-            txts[0].fontSize = 90;
-            txts[1].fontSize = 56;
-            txts[2].fontSize = 44;
-            txts[3].fontSize = 44;
-            txts[4].fontSize = 44;
-            txts[5].fontSize = 44;
-            txts[6].fontSize = 44;
-            txts[7].fontSize = 36;
-            txts[8].fontSize = 36;
-            txts[9].fontSize = 36;
-            txts[10].fontSize = 56;
+            txts[0].fontSize = 90; //Name
+            txts[1].fontSize = 58; //RuneSeq
+            txts[2].fontSize = 46; //Stats
+            txts[3].fontSize = 50; //Type
+            txts[4].fontSize = 46; //Best Item Label
+            txts[5].fontSize = 40; //Best Item Field
+            txts[6].fontSize = 46; //Lvl
+            txts[7].fontSize = 40; //Ladder
+            txts[8].fontSize = 40; //Class
+            txts[9].fontSize = 40; //Version
+            txts[10].fontSize = 56; //X
 
             tc.rwLevel.text = $"Требуемый уровень: {runeword.reqLevel}";
             if (runeword.gameVersion != "Ressurected")
-                tc.rwLadder.text = runeword.isLadder ? "Ладдерный предмет Diablo 2 LoD " : "Не Ладдерный Предмет";
+                tc.rwLadder.text = runeword.isLadder ? "Ладдер: Diablo 2 LoD " : "Ладдерный Предмет: Нет";
             else
-                tc.rwLadder.text = runeword.isLadder ? "Ладдерный предмет Ressurected" : "Не Ладдерный Предмет";
+                tc.rwLadder.text = runeword.isLadder ? "Ладдер: Ressurected" : "Ладдерный Предмет: Нет";
 
             tc.rwClass.text = runeword.classItem != Classes.Any ? $"Класс: {runeword.classItem}" : "Класс: Любой";
             switch (tc.rwClass.text)
@@ -129,19 +152,5 @@ public class ListController : MonoBehaviour
                 tc.rwVersion.text = $"Версия игры: Любая";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
-        
-        tc.rwVersion.color = Color.white;
-        switch (runeword.gameVersion)
-        {
-            case "Ressurected":
-                tc.rwVersion.color = ressurectedColor;
-                break;
-            case "1.10":
-            case "1.11":
-                tc.rwVersion.color = new Color32(222, 222, 150, 255);
-                break;
-        }
-
-        tc.rwItem.text = $"{runeword.recomendedItems}";
     }
 }
