@@ -263,8 +263,6 @@ MonoBehaviour:
   workflowDB: {fileID: 11400000, guid: 2cae43a528a60c1478d2d612534fc969, type: 2}
   runewordPrefab: {fileID: 6102768536333666633, guid: 89167f1cc8f61464a8dbbf2269a1162d, type: 3}
   uiParent: {fileID: 1703435608}
-  runewordsToShow: []
-  currentDB: {fileID: 0}
 --- !u!1 &127871771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3169,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Amazon Spears
+          m_StringArgument: Weapons
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1721700324

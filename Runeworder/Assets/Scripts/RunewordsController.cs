@@ -14,10 +14,10 @@ public class RunewordsController : MonoBehaviour
     public GameObject runewordPrefab;
     public GameObject uiParent;
 
-    [SerializeField] List<GameObject> runewordsToShow;
-    int lastPressed = 0;
+    List<GameObject> runewordsToShow;
+    string lastPressed = string.Empty;
     bool toggle = false;
-    [SerializeField] RunewordsDB_SO currentDB;
+    RunewordsDB_SO currentDB;
 
     private void Start()
     {
@@ -25,6 +25,7 @@ public class RunewordsController : MonoBehaviour
         runewordsToShow.Clear();
         AppManager.OnLanguageChanged += SetFont;
         SetFont(AppManager.instance.currentLanguage);
+        lastPressed = "All";
     }
 
     private void SetFont(Languages lang)
@@ -66,7 +67,6 @@ public class RunewordsController : MonoBehaviour
                 ru[8].fontSize = 36; //Type
                 break;
         }
-        UpdateRunewordsList(lastPressed);
     }
 
     public void FilterRunewords(string type)
@@ -114,6 +114,13 @@ public class RunewordsController : MonoBehaviour
                         workflowDB.runewords.Add(rw);
                 }
                 break;
+            case "Weapons":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.runewordType == RunewordType.Weapons)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
             case "Amazon Spears":
                 foreach (var rw in currentDB.runewords)
                 {
@@ -122,6 +129,7 @@ public class RunewordsController : MonoBehaviour
                 }
                 break;
         }
+        lastPressed = type;
         FillRunewordList();
     }
 
@@ -210,146 +218,6 @@ public class RunewordsController : MonoBehaviour
         }
     }
 
-    public void UpdateRunewordsList(int type)
-    {
-        lastPressed = type;
-
-        if (runewordsToShow.Count > 0)
-        {
-            foreach (var rw in runewordsToShow)
-            {
-                Destroy(rw);
-            }
-            runewordsToShow.Clear();
-        }
-
-        int odd = 1;
-        foreach (var rw in currentDB.runewords)
-        {
-            if (rw.runewordType == (RunewordType)type || type == 4)
-            {
-                rw.hasRunes = 0;
-                ListController lc = runewordPrefab.GetComponent<ListController>();
-                if (odd % 2 == 0)
-                    lc.background.color = Color.red;
-                else
-                    lc.background.color = Color.white;
-                odd++;
-                lc.runewordName.text = rw.runewordName;
-                foreach (var rune in lc.runes)
-                {
-                    rune.text = "";
-                }
-                for (int i = 0; i < rw.runes.Count; i++)
-                {
-                    switch (AppManager.instance.currentLanguage)
-                    {
-                        case Languages.En:
-                            lc.runes[i].text = rw.runes[i].ToString();
-                            lc.reqLevel.text = $"Level: {rw.reqLevel}";
-                            lc.type.text = $"{rw.runewordType}";
-                            break;
-                        case Languages.Ru:
-                            RunesRu rus = (RunesRu)rw.runes[i];
-                            lc.runes[i].text = rus.ToString();
-                            lc.reqLevel.text = $"Уровень: {rw.reqLevel}";
-                            switch (rw.runewordType)
-                            {
-                                case RunewordType.Weapons:
-                                    lc.type.text = $"Оружие";
-                                    break;
-                                case RunewordType.BodyArmor:
-                                    lc.type.text = $"Броня";
-                                    break;
-                                case RunewordType.Helms:
-                                    lc.type.text = $"Шлемы";
-                                    break;
-                                case RunewordType.Shields:
-                                    lc.type.text = $"Щиты";
-                                    break;
-                            }
-                            break;
-                    }
-                    
-                    lc.runes[i].color = Color.gray;
-                    foreach (var rune in userRunes.hasRunes)
-                    {
-                        if (rune == rw.runes[i])
-                        {
-                            lc.runes[i].color = Color.green;
-                            rw.hasRunes++;
-                        }
-                    }
-                }
-
-                lc.runeword = rw;
-
-                GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
-                runewordsToShow.Add(inst);
-            }
-            else if (type == 5 && rw.gameVersion == "Ressurected")
-            {
-                rw.hasRunes = 0;
-                ListController lc = runewordPrefab.GetComponent<ListController>();
-                if (odd % 2 == 0)
-                    lc.background.color = Color.red;
-                else
-                    lc.background.color = Color.white;
-                odd++;
-                lc.runewordName.text = rw.runewordName;
-                foreach (var rune in lc.runes)
-                {
-                    rune.text = "";
-                }
-                for (int i = 0; i < rw.runes.Count; i++)
-                {
-                    switch (AppManager.instance.currentLanguage)
-                    {
-                        case Languages.En:
-                            lc.runes[i].text = rw.runes[i].ToString();
-                            lc.reqLevel.text = $"Level: {rw.reqLevel}";
-                            lc.type.text = $"{rw.runewordType}";
-                            break;
-                        case Languages.Ru:
-                            RunesRu rus = (RunesRu)rw.runes[i];
-                            lc.runes[i].text = rus.ToString();
-                            lc.reqLevel.text = $"Уровень: {rw.reqLevel}";
-                            switch (rw.runewordType)
-                            {
-                                case RunewordType.Weapons:
-                                    lc.type.text = $"Оружие";
-                                    break;
-                                case RunewordType.BodyArmor:
-                                    lc.type.text = $"Броня";
-                                    break;
-                                case RunewordType.Helms:
-                                    lc.type.text = $"Шлемы";
-                                    break;
-                                case RunewordType.Shields:
-                                    lc.type.text = $"Щиты";
-                                    break;
-                            }
-                            break;
-                    }
-
-                    lc.runes[i].color = Color.gray;
-                    foreach (var rune in userRunes.hasRunes)
-                    {
-                        if (rune == rw.runes[i])
-                        {
-                            lc.runes[i].color = Color.green;
-                            rw.hasRunes++;
-                        }
-                    }
-                }
-                lc.runeword = rw;
-
-                GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
-                runewordsToShow.Add(inst);
-            }
-        }
-    }
-
     public void SortRunewordsBy(string type)
     {
         if (toggle)
@@ -357,7 +225,7 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    currentDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
+                    currentDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
                     currentDB.runewords.Sort((a, b) =>
@@ -380,7 +248,7 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    currentDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
+                    currentDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
                     currentDB.runewords.Sort((b, a) =>
@@ -399,6 +267,6 @@ public class RunewordsController : MonoBehaviour
             }
         }
         toggle = !toggle;
-        UpdateRunewordsList(lastPressed);
+        FilterRunewords(lastPressed);
     }
 }
