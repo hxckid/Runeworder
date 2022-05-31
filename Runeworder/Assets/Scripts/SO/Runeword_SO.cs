@@ -42,7 +42,31 @@ public class Runeword_SO : ScriptableObject
         
         if (runewordType != RunewordType.Weapons && runewordType != RunewordType.Shields)
             subType = ($"{runes.Count} Socket {runewordType}");
-
+        if (runewordType == RunewordType.Weapons)
+        {
+            string bases = string.Empty;
+            foreach (var item in weaponBases)
+            {
+                switch (item)
+                {
+                    case RunewordWeaponBases.AmazonSpears:
+                        bases += "Amazon Spears, ";
+                        break;
+                    case RunewordWeaponBases.MeleeWeapons:
+                        bases += "Melee Weapons, ";
+                        break;
+                    case RunewordWeaponBases.MissileWeapons:
+                        bases += "Missile Weapons, ";
+                        break;
+                    default:
+                        bases += item.ToString() + ", ";
+                        break;
+                }
+            }
+            bases = bases.Remove(bases.Length - 1);
+            bases = bases.Remove(bases.Length - 1);
+            subType = ($"{runes.Count} Socket {bases}");
+        }
     }
 }
 

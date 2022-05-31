@@ -109,6 +109,39 @@ public class ListController : MonoBehaviour
                 tc.rwType.text = tc.rwType.text.Replace("Helms", "Шлемы");
             if (tc.rwType.text.Contains("Shields"))
                 tc.rwType.text = tc.rwType.text.Replace("Shields", "Щиты");
+            if (tc.rwType.text.Contains("Amazon Spears"))
+                tc.rwType.text = tc.rwType.text.Replace("Amazon Spears", "Копья Амазонки");
+            if (tc.rwType.text.Contains("Axes"))
+                tc.rwType.text = tc.rwType.text.Replace("Axes", "Топоры");
+            if (tc.rwType.text.Contains("Claws"))
+                tc.rwType.text = tc.rwType.text.Replace("Claws", "Когти");
+            if (tc.rwType.text.Contains("Clubs"))
+                tc.rwType.text = tc.rwType.text.Replace("Clubs", "Дубинки");
+            if (tc.rwType.text.Contains("Daggers"))
+                tc.rwType.text = tc.rwType.text.Replace("Daggers", "Кинжалы");
+            if (tc.rwType.text.Contains("Hammers"))
+                tc.rwType.text = tc.rwType.text.Replace("Hammers", "Молоты");
+            if (tc.rwType.text.Contains("Maces"))
+                tc.rwType.text = tc.rwType.text.Replace("Maces", "Булавы");
+            if (tc.rwType.text.Contains("Melee Weapons"))
+                tc.rwType.text = tc.rwType.text.Replace("Melee Weapons", "Оружие ближнего боя");
+            if (tc.rwType.text.Contains("Missile Weapons"))
+                tc.rwType.text = tc.rwType.text.Replace("Missile Weapons", "Оружие дальнего боя");
+            if (tc.rwType.text.Contains("Polearms"))
+                tc.rwType.text = tc.rwType.text.Replace("Polearms", "Древковое Оружие");
+            if (tc.rwType.text.Contains("Scepters"))
+                tc.rwType.text = tc.rwType.text.Replace("Scepters", "Скипетры");
+            if (tc.rwType.text.Contains("Spears"))
+                tc.rwType.text = tc.rwType.text.Replace("Spears", "Копья");
+            if (tc.rwType.text.Contains("Staves"))
+                tc.rwType.text = tc.rwType.text.Replace("Staves", "Двуручные Посохи");
+            if (tc.rwType.text.Contains("Swords"))
+                tc.rwType.text = tc.rwType.text.Replace("Swords", "Мечи");
+            if (tc.rwType.text.Contains("Wands"))
+                tc.rwType.text = tc.rwType.text.Replace("Wands", "Жезлы Некроманта");
+            if (tc.rwType.text.Contains("Weapons"))
+                tc.rwType.text = tc.rwType.text.Replace("Weapons", "Любое оружие");
+
             txts[0].fontSize = 90; //Name
             txts[1].fontSize = 58; //RuneSeq
             //txts[2].fontSize = 40; //Stats
