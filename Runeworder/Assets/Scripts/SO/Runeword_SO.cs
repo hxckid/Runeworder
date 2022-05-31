@@ -11,6 +11,7 @@ public class Runeword_SO : ScriptableObject
     public List<RunesEn> runes;
     public List<Sprite> sprites;
     public RunewordType runewordType = RunewordType.Weapons;
+    public RunewordWeaponBases[] weaponBases;
     [TextArea] public string subType;
     [Range(13,69)]public int reqLevel;
     [TextArea(minLines:6, maxLines: 20)] public string statsDesc;
@@ -41,8 +42,10 @@ public class Runeword_SO : ScriptableObject
         
         if (runewordType != RunewordType.Weapons && runewordType != RunewordType.Shields)
             subType = ($"{runes.Count} Socket {runewordType}");
+
     }
 }
 
 public enum RunewordType { Weapons, BodyArmor, Helms, Shields, All }
+public enum RunewordWeaponBases { AmazonSpears, Axes, Claws, Clubs, Daggers, Hammers, Maces, MeleeWeapons, MissileWeapons, Polearms, Scepters, Spears, Staves, Swords, Wands, Weapons }
 public enum Classes { Any, Amazon, Assassin, Barbarian, Druid, Necromancer, Paladin, Sorceress }

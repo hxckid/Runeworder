@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 07000000
   subType: "3 Socket \u041E\u0440\u0443\u0436\u0438\u0435 \u0431\u043B\u0438\u0436\u043D\u0435\u0433\u043E
     \u0431\u043E\u044F\n"
   reqLevel: 65

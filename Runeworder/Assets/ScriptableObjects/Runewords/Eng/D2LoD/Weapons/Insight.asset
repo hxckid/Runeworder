@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 090000000c00000008000000
   subType: '4 Socket Polearms/Staves/Missile Weapons
 
 '

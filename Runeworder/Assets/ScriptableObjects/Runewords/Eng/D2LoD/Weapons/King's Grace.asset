@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0d0000000a000000
   subType: '3 Socket Swords/Scepters
 
 '
@@ -48,5 +49,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: War Scepter

@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 07000000
   subType: '2 Socket Melee Weapons
 
 '
@@ -51,5 +52,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 1
   recomendedItems: Superior Phase Blade

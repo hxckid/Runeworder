@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0d000000050000000a000000
   subType: '3 Socket Swords/Hammers/Scepters
 
 '
@@ -53,7 +54,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: 'Crystal Sword (Act 3 Mercenary)
 
     Superior Legend Sword (Act

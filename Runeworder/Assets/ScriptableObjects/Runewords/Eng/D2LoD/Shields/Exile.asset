@@ -21,9 +21,8 @@ MonoBehaviour:
   - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
-  subType: '4 Socket Paladin Shields (only)
-
-'
+  weaponBases: 
+  subType: 4 Socket Paladin Shields (Only)
   reqLevel: 57
   statsDesc: '15% Chance To Cast Level 5 Life Tap On Striking
 
@@ -56,7 +55,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 3
   recomendedItems: 'Superior Sacred Targe
 
     Superior Vortex Shield'

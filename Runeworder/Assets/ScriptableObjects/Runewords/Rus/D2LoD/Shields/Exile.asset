@@ -21,7 +21,8 @@ MonoBehaviour:
   - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
-  subType: "4 Socket Shields \u041F\u0430\u043B\u0430\u0434\u0438\u043D\u0430 (\u0442\u043E\u043B\u044C\u043A\u043E)\n"
+  weaponBases: 
+  subType: "4 Socket Shields \u041F\u0430\u043B\u0430\u0434\u0438\u043D\u0430 (\u0422\u043E\u043B\u044C\u043A\u043E)"
   reqLevel: 57
   statsDesc: "\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
     15% \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0443\u043C\u0435\u043D\u0438\u0435

@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0d0000000100000006000000
   subType: '2 Socket Swords/Axes/Maces
 
 '
@@ -44,7 +45,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: 'Flail
 
     Scimitar'

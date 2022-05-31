@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 010000000a00000005000000
   subType: '5 Socket Axes/Scepters/Hammers
 
 '
@@ -59,5 +60,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 4
   recomendedItems: Superior Berserker Axe

@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0c000000
   subType: "2 Socket \u0414\u0432\u0443\u0440\u0443\u0447\u043D\u044B\u0435 \u043F\u043E\u0441\u043E\u0445\u0438\n"
   reqLevel: 19
   statsDesc: "+3 \u043A \u0443\u043C\u0435\u043D\u0438\u044F\u043C \u043E\u0433\u043D\u044F\r\n+5-30

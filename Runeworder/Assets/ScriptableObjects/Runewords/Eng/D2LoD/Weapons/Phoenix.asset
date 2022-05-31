@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0f000000
   subType: '4 Socket Weapons
 
 '

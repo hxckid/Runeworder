@@ -146,7 +146,6 @@ public class AppManager : MonoBehaviour
                             Application.Quit();
                         else
                         {
-                            string msg;
                             switch (currentLanguage)
                             {
                                 case Languages.En:

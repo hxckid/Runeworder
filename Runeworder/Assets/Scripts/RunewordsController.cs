@@ -68,6 +68,11 @@ public class RunewordsController : MonoBehaviour
         UpdateRunewordsList(lastPressed);
     }
 
+    public void FillRunewordList()
+    {
+
+    }
+
     public void UpdateRunewordsList(int type)
     {
         lastPressed = type;

@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0d00000001000000
   subType: '5 Socket Swords/Axes
 
 '

@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 030000000500000006000000
   subType: '3 Socket Clubs/Hammers/Maces
 
 '

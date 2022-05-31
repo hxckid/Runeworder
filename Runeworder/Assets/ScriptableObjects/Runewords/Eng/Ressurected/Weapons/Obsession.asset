@@ -23,6 +23,7 @@ MonoBehaviour:
   - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
+  weaponBases: 0c000000
   subType: 6 Socket Staff
   reqLevel: 69
   statsDesc: 'Indestructible
@@ -58,5 +59,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Ressurected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 5
   recomendedItems: Archon Staff with +x to Skills (depending on your build)
