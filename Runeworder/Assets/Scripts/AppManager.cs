@@ -146,8 +146,18 @@ public class AppManager : MonoBehaviour
                             Application.Quit();
                         else
                         {
+                            string msg;
+                            switch (currentLanguage)
+                            {
+                                case Languages.En:
+                                    quitText.GetComponent<Text>().text = "Press Back again to Quit";
+                                    break;
+                                case Languages.Ru:
+                                    quitText.GetComponent<Text>().text = "Нажмите Назад для выхода";
+                                    break;
+                            }
                             txt = Instantiate(quitText, runesTab.transform);
-                            Destroy(txt, 2f);
+                            Destroy(txt, 4f);
                         }
                         break;
                     case GameState.Runewords:
