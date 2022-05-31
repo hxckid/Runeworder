@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 3 Socket Helms
   reqLevel: 45
   statsDesc: "+33% \u043A \u043F\u0440\u043E\u043D\u0437\u0430\u044E\u0449\u0438\u043C
@@ -33,7 +34,7 @@ MonoBehaviour:
     \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430 \u043C\u0430\u043D\u0443"
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 3
   recomendedItems: "\u041A\u043E\u0440\u043E\u043D\u0430\r\n\u0414\u0438\u0430\u0434\u0435\u043C\u0430\r\n\u041C\u044F\u0441\u043D\u0438\u0446\u043A\u0438\u0439

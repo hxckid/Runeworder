@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0c000000
-  subType: "6 Socket \u0414\u0432\u0443\u0440\u0443\u0447\u043D\u044B\u0435 \u043F\u043E\u0441\u043E\u0445\u0438"
+  subType: 6 Socket Staves
   reqLevel: 69
   statsDesc: "\u041D\u0435 \u0442\u0435\u0440\u044F\u0435\u0442 \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u0438\r\n\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
     \u0432 24% \u043F\u0440\u0438 \u0430\u0442\u0430\u043A\u0435 \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C
@@ -47,7 +47,7 @@ MonoBehaviour:
     \u043F\u0440\u0435\u0434\u043C\u0435\u0442"
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 5
   recomendedItems: "\u0410\u0440\u0445\u043E\u043D\u0442\u043E\u0432 \u041F\u043E\u0441\u043E\u0445

@@ -21,10 +21,8 @@ MonoBehaviour:
   - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
-  weaponBases: 09000000
-  subType: '4 Socket Polearms
-
-'
+  weaponBases: 00000000090000000b000000
+  subType: 4 Socket Amazon Spears, Polearms, Spears
   reqLevel: 67
   statsDesc: '25% Chance To Cast Level 17 Fire Wall When Struck
 

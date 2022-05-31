@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 3 Socket Helms
   reqLevel: 45
   statsDesc: '33% Piercing Attack
@@ -44,9 +45,9 @@ MonoBehaviour:
     damage taken goes to mana'
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 3
   recomendedItems: 'Crown
 
     Diadem

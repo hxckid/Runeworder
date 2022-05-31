@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 3 Socket Helms
   reqLevel: 55
   statsDesc: 'Level 4-8 Resist Fire Aura When Equipped (varies)
@@ -47,9 +48,9 @@ MonoBehaviour:
     50%'
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: 'Diadem
 
     Superior Wolf Head'

@@ -49,7 +49,7 @@ MonoBehaviour:
     Target +3'
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
   recomendedItems: 'Crystal Sword

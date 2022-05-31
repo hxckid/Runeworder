@@ -260,10 +260,11 @@ MonoBehaviour:
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
   runewordsDBEng: {fileID: 11400000, guid: 21b91fb53dcf06a4594d714526089db9, type: 2}
   runewordsDBRus: {fileID: 11400000, guid: f219ae3fc4ddf414d9bc62a79fdd3f6a, type: 2}
+  workflowDB: {fileID: 11400000, guid: 2cae43a528a60c1478d2d612534fc969, type: 2}
   runewordPrefab: {fileID: 6102768536333666633, guid: 89167f1cc8f61464a8dbbf2269a1162d, type: 3}
   uiParent: {fileID: 1703435608}
   runewordsToShow: []
-  runewordsDB: {fileID: 0}
+  currentDB: {fileID: 0}
 --- !u!1 &127871771
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,14 +734,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: All
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &290606311
@@ -1729,14 +1730,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: Name
+          m_StringArgument: All
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 832876301}
@@ -2429,14 +2430,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Helms
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1292741925
@@ -3163,14 +3164,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Amazon Spears
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1721700324
@@ -3296,14 +3297,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Armors
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1722322796
@@ -3878,14 +3879,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Resurrected
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1930244926
@@ -4131,14 +4132,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 47835034}
         m_TargetAssemblyTypeName: RunewordsController, Assembly-CSharp
-        m_MethodName: UpdateRunewordsList
-        m_Mode: 3
+        m_MethodName: FilterRunewords
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Shields
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2010521921

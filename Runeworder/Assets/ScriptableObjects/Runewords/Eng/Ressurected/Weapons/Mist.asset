@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 08000000
-  subType: 5 Socket Bows And Crossbows
+  subType: 5 Socket Missile Weapons
   reqLevel: 67
   statsDesc: 'Level 8-12 Concentration Aura When Equipped (varies)
 
@@ -52,7 +52,7 @@ MonoBehaviour:
     +40'
   isLadder: 1
   classItem: 0
-  gameVersion: Ressurected
+  gameVersion: Resurrected
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 4
   recomendedItems: 'Superior Matriarchal Bow
