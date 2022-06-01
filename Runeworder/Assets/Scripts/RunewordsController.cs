@@ -72,6 +72,7 @@ public class RunewordsController : MonoBehaviour
     public void FilterRunewords(string type)
     {
         ClearWorkflowDB();
+
         switch (type)
         {
             case "Armors":
@@ -114,22 +115,120 @@ public class RunewordsController : MonoBehaviour
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Weapons":
+            case "Amazon":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Amazon") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Axes":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Axes") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Claws":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Claws") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Clubs":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Clubs") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Daggers":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Daggers") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Hammers":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Hammers") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Maces":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Maces") && rw.runes.Count <= 5 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 5)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Melee":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (!rw.subType.Contains("Missile") && !rw.subType.Contains("Armor") && !rw.subType.Contains("Helms") && !rw.subType.Contains("Shields"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Missile":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Missile") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Melee"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Polearms":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Polearms") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Scepters":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Scepters") && rw.runes.Count <= 5 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 5)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Spears":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Spears") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Staves":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Staves") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Swords":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Swords") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "Wands":
+                foreach (var rw in currentDB.runewords)
+                {
+                    if (rw.subType.Contains("Wands") && rw.runes.Count <= 2 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 2)
+                        workflowDB.runewords.Add(rw);
+                }
+                break;
+            case "AllWeapons":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.runewordType == RunewordType.Weapons)
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Amazon Spears":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Amazon Spears"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
         }
-        lastPressed = type;
+        lastPressed = type; //AmazonSpears, Axes, Claws, Clubs, Daggers, Hammers, Maces, MeleeWeapons, MissileWeapons, Polearms, Scepters, Spears, Staves, Swords, Wands, Weapons
         FillRunewordList();
     }
 

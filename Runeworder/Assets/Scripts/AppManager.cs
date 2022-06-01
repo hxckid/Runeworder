@@ -76,6 +76,15 @@ public class AppManager : MonoBehaviour
                 buttonsText[10].text = "↕ Runes";
                 buttonsText[11].fontSize = 55;
                 buttonsText[11].text = "↕ Level";
+                for (int i = 12; i < 28; i++)
+                {
+                    buttonsText[i].fontSize = 54;
+                    buttonsText[i].text = Enum.GetName(typeof(RunewordWeaponBases), i-12);
+                }
+                buttonsText[12].text = "Amazon";
+                buttonsText[19].text = "Melee";
+                buttonsText[20].text = "Missile";
+                buttonsText[27].text = "All";
                 break;
             case Languages.Ru:
                 langText.text = "ENG";
@@ -108,6 +117,26 @@ public class AppManager : MonoBehaviour
                 buttonsText[10].text = "↕ Руны";
                 buttonsText[11].fontSize = 46;
                 buttonsText[11].text = "↕ Уровень";
+                for (int i = 12; i < 28; i++)
+                {
+                    buttonsText[i].fontSize = 42;
+                }
+                buttonsText[12].text = "Амазонки"; 
+                buttonsText[13].text = "Топоры";
+                buttonsText[14].text = "Когти";
+                buttonsText[15].text = "Дубины";
+                buttonsText[16].text = "Кинжалы";
+                buttonsText[17].text = "Молоты";
+                buttonsText[18].text = "Булавы";
+                buttonsText[19].text = "Ближнего боя";
+                buttonsText[20].text = "Дальнего боя";
+                buttonsText[21].text = "Древковое";
+                buttonsText[22].text = "Скипетры";
+                buttonsText[23].text = "Копья";
+                buttonsText[24].text = "Посохи";
+                buttonsText[25].text = "Мечи";
+                buttonsText[26].text = "Жезлы";
+                buttonsText[27].text = "Все оружие";
                 break;
         }
     }
