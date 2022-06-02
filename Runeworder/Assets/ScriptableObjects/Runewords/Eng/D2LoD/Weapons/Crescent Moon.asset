@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
   m_Name: Crescent Moon
   m_EditorClassIdentifier: 
-  runewordName: 'Crescent Moon '
+  runewordName: 'Crescent  Moon '
   runesSequence: '''ShaelUmTir'''
   runes: 0c0000001500000002000000
   sprites:
@@ -21,9 +21,7 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 010000000d00000009000000
-  subType: '3 Socket Axes/Swords/Polearms
-
-'
+  subType: 3 Socket Axes, Swords, Polearms
   reqLevel: 47
   statsDesc: '10% Chance To Cast Level 17 Chain Lightning On Striking
 

@@ -23,8 +23,6 @@ public class AppManager : MonoBehaviour
     public GameObject runewordsBtn;
     public Languages currentLanguage;
     public List<Text> buttonsText;
-    public Font latin;
-    public Font cyrillic;
     public Text langText;
     Text[] links;
 
@@ -48,79 +46,42 @@ public class AppManager : MonoBehaviour
             case Languages.En:
                 langText.text = "RUS";
                 OnLanguageChanged?.Invoke(Languages.En);
-                foreach (var button in buttonsText)
-                {
-                    button.font = latin;
-                }
-                buttonsText[0].fontSize = 80;
                 buttonsText[0].text = "Reset";
-                buttonsText[1].fontSize = 70;
                 buttonsText[1].text = "Show Runewords";
-                buttonsText[2].fontSize = 70;
                 buttonsText[2].text = "Back to Runes";
-                buttonsText[3].fontSize = 58;
                 buttonsText[3].text = "All";
-                buttonsText[4].fontSize = 54;
                 buttonsText[4].text = "Weapons";
-                buttonsText[5].fontSize = 54;
                 buttonsText[5].text = "Armors";
-                buttonsText[6].fontSize = 54;
                 buttonsText[6].text = "Helms";
-                buttonsText[7].fontSize = 54;
                 buttonsText[7].text = "Shields";
-                buttonsText[8].fontSize = 48;
                 buttonsText[8].text = "Patch 2.4";
-                buttonsText[9].fontSize = 55;
                 buttonsText[9].text = "↕ Name";
-                buttonsText[10].fontSize = 55;
                 buttonsText[10].text = "↕ Runes";
-                buttonsText[11].fontSize = 55;
                 buttonsText[11].text = "↕ Level";
                 for (int i = 12; i < 28; i++)
-                {
-                    buttonsText[i].fontSize = 54;
                     buttonsText[i].text = Enum.GetName(typeof(RunewordWeaponBases), i-12);
-                }
                 buttonsText[12].text = "Amazon";
                 buttonsText[19].text = "Melee";
                 buttonsText[20].text = "Missile";
                 buttonsText[27].text = "All";
+                buttonsText[28].text = "Current Filter: ";
                 break;
+
             case Languages.Ru:
                 langText.text = "ENG";
                 OnLanguageChanged?.Invoke(Languages.Ru);
-                foreach (var button in buttonsText)
-                {
-                    button.font = cyrillic;
-                }
-                buttonsText[0].fontSize = 64;
-                buttonsText[0].text = "Сбросить";
-                buttonsText[1].fontSize = 56;
+                buttonsText[0].text = "Сброс";
                 buttonsText[1].text = "Найти рунворды";
-                buttonsText[2].fontSize = 52;
                 buttonsText[2].text = "Назад к рунам";
-                buttonsText[3].fontSize = 46;
                 buttonsText[3].text = "Все";
-                buttonsText[4].fontSize = 46;
                 buttonsText[4].text = "Оружие";
-                buttonsText[5].fontSize = 46;
                 buttonsText[5].text = "Броня";
-                buttonsText[6].fontSize = 46;
                 buttonsText[6].text = "Шлемы";
-                buttonsText[7].fontSize = 46;
                 buttonsText[7].text = "Щиты";
-                buttonsText[8].fontSize = 40;
                 buttonsText[8].text = "Патч 2.4";
-                buttonsText[9].fontSize = 46;
                 buttonsText[9].text = "↕ Имя";
-                buttonsText[10].fontSize = 46;
                 buttonsText[10].text = "↕ Руны";
-                buttonsText[11].fontSize = 46;
                 buttonsText[11].text = "↕ Уровень";
-                for (int i = 12; i < 28; i++)
-                {
-                    buttonsText[i].fontSize = 42;
-                }
                 buttonsText[12].text = "Амазонки"; 
                 buttonsText[13].text = "Топоры";
                 buttonsText[14].text = "Когти";
@@ -137,6 +98,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[25].text = "Мечи";
                 buttonsText[26].text = "Жезлы";
                 buttonsText[27].text = "Все оружие";
+                buttonsText[28].text = "Текущий фильтр: ";
                 break;
         }
     }

@@ -13,6 +13,7 @@ public class RunewordsController : MonoBehaviour
     public RunewordsDB_SO workflowDB;
     public GameObject runewordPrefab;
     public GameObject uiParent;
+    public Text status;
 
     List<GameObject> runewordsToShow;
     string lastPressed = string.Empty;
@@ -23,48 +24,20 @@ public class RunewordsController : MonoBehaviour
     {
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
-        AppManager.OnLanguageChanged += SetFont;
-        SetFont(AppManager.instance.currentLanguage);
+        AppManager.OnLanguageChanged += InitDB;
+        InitDB(AppManager.instance.currentLanguage);
         lastPressed = "All";
     }
 
-    private void SetFont(Languages lang)
+    private void InitDB(Languages lang)
     {
         switch (lang)
         {
             case Languages.En:
                 currentDB = runewordsDBEng;
-                Text[] en = runewordPrefab.GetComponentsInChildren<Text>();
-                foreach (var t in en)
-                {
-                    t.font = AppManager.instance.latin;
-                }
-                en[0].fontSize = 55; //Name
-                en[1].fontSize = 44; //Rune
-                en[2].fontSize = 44; //Rune
-                en[3].fontSize = 44; //Rune
-                en[4].fontSize = 44; //Rune
-                en[5].fontSize = 44; //Rune
-                en[6].fontSize = 44; //Rune 
-                en[7].fontSize = 44; //Lvl
-                en[8].fontSize = 44; //Type
                 break;
             case Languages.Ru:
                 currentDB = runewordsDBRus;
-                Text[] ru = runewordPrefab.GetComponentsInChildren<Text>();
-                foreach (var t in ru)
-                {
-                    t.font = AppManager.instance.cyrillic;
-                }
-                ru[0].fontSize = 40; //Name
-                ru[1].fontSize = 36; //Rune
-                ru[2].fontSize = 36; //Rune
-                ru[3].fontSize = 36; //Rune
-                ru[4].fontSize = 36; //Rune
-                ru[5].fontSize = 36; //Rune
-                ru[6].fontSize = 36; //Rune
-                ru[7].fontSize = 34; //Lvl
-                ru[8].fontSize = 36; //Type
                 break;
         }
     }
@@ -78,7 +51,7 @@ public class RunewordsController : MonoBehaviour
             case "Armors":
                 foreach (var rw in currentDB.runewords)
                 {
-                    if (rw.runewordType == RunewordType.BodyArmor)
+                    if (rw.runewordType == RunewordType.Armor)
                     {
                         workflowDB.runewords.Add(rw);
                     }
@@ -102,20 +75,20 @@ public class RunewordsController : MonoBehaviour
                     }
                 }
                 break;
-            case "All":
+            case "All Runewords":
                 foreach (var rw in currentDB.runewords)
                 {
                     workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Resurrected":
+            case "Resurrected (Patch 2.4)":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.gameVersion == "Resurrected")
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Amazon":
+            case "Amazon Spears":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.subType.Contains("Amazon") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
@@ -164,14 +137,14 @@ public class RunewordsController : MonoBehaviour
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Melee":
+            case "Melee Weapons":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (!rw.subType.Contains("Missile") && !rw.subType.Contains("Armor") && !rw.subType.Contains("Helms") && !rw.subType.Contains("Shields"))
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Missile":
+            case "Missile Weapons":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.subType.Contains("Missile") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Melee"))
@@ -199,7 +172,7 @@ public class RunewordsController : MonoBehaviour
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Staves":
+            case "Staves (Not Orbs)":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.subType.Contains("Staves") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
@@ -220,7 +193,7 @@ public class RunewordsController : MonoBehaviour
                         workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "AllWeapons":
+            case "All Weapons":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.runewordType == RunewordType.Weapons)
@@ -228,7 +201,13 @@ public class RunewordsController : MonoBehaviour
                 }
                 break;
         }
-        lastPressed = type; //AmazonSpears, Axes, Claws, Clubs, Daggers, Hammers, Maces, MeleeWeapons, MissileWeapons, Polearms, Scepters, Spears, Staves, Swords, Wands, Weapons
+        
+        lastPressed = type;
+        if (AppManager.instance.currentLanguage == Languages.En)
+            status.text = lastPressed;
+        else
+            Localize(type);
+        
         FillRunewordList();
     }
 
@@ -287,7 +266,7 @@ public class RunewordsController : MonoBehaviour
                             case RunewordType.Weapons:
                                 lc.type.text = $"Оружие";
                                 break;
-                            case RunewordType.BodyArmor:
+                            case RunewordType.Armor:
                                 lc.type.text = $"Броня";
                                 break;
                             case RunewordType.Helms:
@@ -317,7 +296,7 @@ public class RunewordsController : MonoBehaviour
         }
     }
 
-    public void SortRunewordsBy(string type)
+    private void SortRunewordsBy(string type)
     {
         if (toggle)
         {
@@ -367,5 +346,75 @@ public class RunewordsController : MonoBehaviour
         }
         toggle = !toggle;
         FilterRunewords(lastPressed);
+    }
+
+    private void Localize(string type)
+    {
+        switch (type)
+        {
+            case "Armors":
+                status.text = "Броня";
+                break;
+            case "Helms":
+                status.text = "Шлемы";
+                break;
+            case "Shields":
+                status.text = "Щиты";
+                break;
+            case "All Runewords":
+                status.text = "Все Рунворды";
+                break;
+            case "Resurrected (Patch 2.4)":
+                status.text = "Resurrected (Патч 2.4)";
+                break;
+            case "Amazon Spears":
+                status.text = "Копья Амазонки";
+                break;
+            case "Axes":
+                status.text = "Топоры";
+                break;
+            case "Claws":
+                status.text = "Когти";
+                break;
+            case "Clubs":
+                status.text = "Дубины";
+                break;
+            case "Daggers":
+                status.text = "Кинжалы";
+                break;
+            case "Hammers":
+                status.text = "Молоты";
+                break;
+            case "Maces":
+                status.text = "Булавы";
+                break;
+            case "Melee Weapons":
+                status.text = "Оружие ближнего боя";
+                break;
+            case "Missile Weapons":
+                status.text = "Оружие дальнего боя";
+                break;
+            case "Polearms":
+                status.text = "Древковое оружие";
+                break;
+            case "Scepters":
+                status.text = "Скипетры";
+                break;
+            case "Spears":
+                status.text = "Копья";
+                break;
+            case "Staves (Not Orbs)":
+                status.text = "Двуручные Посохи (Не Сферы)";
+                break;
+            case "Swords":
+                status.text = "Мечи";
+                break;
+            case "Wands":
+                status.text = "Жезлы Некроманта";
+                break;
+            case "All Weapons":
+                status.text = "Все оружие";
+                break;
+        }
     }
 }

@@ -56,8 +56,6 @@ public class UIController : MonoBehaviour
                     {
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesEn), runesUI.IndexOf(rune));
-                        text.fontSize = 60;
-                        text.font = AppManager.instance.latin;
                     }
                     break;
                 case Languages.Ru:
@@ -65,8 +63,6 @@ public class UIController : MonoBehaviour
                     {
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesRu), runesUI.IndexOf(rune));
-                        text.fontSize = 48;
-                        text.font = AppManager.instance.cyrillic;
                     }
                     break;
             }

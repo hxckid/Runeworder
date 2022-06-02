@@ -70,6 +70,6 @@ public class Runeword_SO : ScriptableObject
     }
 }
 
-public enum RunewordType { Weapons, BodyArmor, Helms, Shields, All }
+public enum RunewordType { Weapons, Armor, Helms, Shields, All }
 public enum RunewordWeaponBases { AmazonSpears, Axes, Claws, Clubs, Daggers, Hammers, Maces, MeleeWeapons, MissileWeapons, Polearms, Scepters, Spears, Staves, Swords, Wands, Weapons }
 public enum Classes { Any, Amazon, Assassin, Barbarian, Druid, Necromancer, Paladin, Sorceress }
