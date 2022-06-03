@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class RunewordsController : MonoBehaviour
 {
@@ -39,6 +40,38 @@ public class RunewordsController : MonoBehaviour
             case Languages.Ru:
                 currentDB = runewordsDBRus;
                 break;
+        }
+    }
+
+    public void SearchByName(TMP_InputField runewordName)
+    {
+        //if (runewordName.text.Length == 0)
+        //    return;
+
+        bool found = false;
+        
+        ClearWorkflowDB();
+
+        foreach (var rw in currentDB.runewords)
+        {
+            if (rw.runewordName.ToUpper().Contains(runewordName.text.ToUpper()))
+            {
+                workflowDB.runewords.Add(rw);
+                status.text = $"{runewordName.text} ({workflowDB.runewords.Count}):";
+                found = true;
+            }
+        }
+
+        if (!found)
+        {
+            if (AppManager.instance.currentLanguage == Languages.En)
+                status.text = $"{runewordName.text} not found!";
+            else
+                status.text = $"{runewordName.text} не найден!";
+        }
+        else
+        {
+            FillRunewordList();
         }
     }
 

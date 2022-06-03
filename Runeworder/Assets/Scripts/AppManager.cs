@@ -64,7 +64,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[19].text = "Melee";
                 buttonsText[20].text = "Missile";
                 buttonsText[27].text = "All";
-                buttonsText[28].text = "Current Filter: ";
+                buttonsText[28].text = "We are searching for:";
                 break;
 
             case Languages.Ru:
@@ -73,7 +73,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[0].text = "Сброс";
                 buttonsText[1].text = "Найти рунворды";
                 buttonsText[2].text = "Назад к рунам";
-                buttonsText[3].text = "Все";
+                buttonsText[3].text = "Поиск";
                 buttonsText[4].text = "Оружие";
                 buttonsText[5].text = "Броня";
                 buttonsText[6].text = "Шлемы";
@@ -98,7 +98,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[25].text = "Мечи";
                 buttonsText[26].text = "Жезлы";
                 buttonsText[27].text = "Все оружие";
-                buttonsText[28].text = "Текущий фильтр: ";
+                buttonsText[28].text = "Мы ищем рунное слово:";
                 break;
         }
     }
@@ -116,6 +116,14 @@ public class AppManager : MonoBehaviour
         userRunes.hasRunes.Clear();
         userRunes.hasRunes = new List<RunesEn>(userData.runes);
         gameState = GameState.Runes;
+        switch (Application.systemLanguage)
+        {
+            case SystemLanguage.Belarusian:
+            case SystemLanguage.Russian:
+            case SystemLanguage.Ukrainian:
+                ChangeLanguage();
+                break;
+        }
     }
 
     void Update()
