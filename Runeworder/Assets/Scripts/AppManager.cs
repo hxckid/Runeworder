@@ -49,7 +49,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[0].text = "Reset";
                 buttonsText[1].text = "Show Runewords";
                 buttonsText[2].text = "Back to Runes";
-                buttonsText[3].text = "All";
+                buttonsText[3].text = "Search";
                 buttonsText[4].text = "Weapons";
                 buttonsText[5].text = "Armors";
                 buttonsText[6].text = "Helms";
