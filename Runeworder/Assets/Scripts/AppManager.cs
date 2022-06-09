@@ -65,6 +65,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[20].text = "Missile";
                 buttonsText[27].text = "All";
                 buttonsText[28].text = "We are searching for:";
+                buttonsText[29].text = "All";
                 break;
 
             case Languages.Ru:
@@ -99,6 +100,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[26].text = "Жезлы";
                 buttonsText[27].text = "Все оружие";
                 buttonsText[28].text = "Мы ищем рунное слово:";
+                buttonsText[29].text = "Все";
                 break;
         }
     }

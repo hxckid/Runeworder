@@ -114,7 +114,7 @@ public class RunewordsController : MonoBehaviour
                     workflowDB.runewords.Add(rw);
                 }
                 break;
-            case "Resurrected (Patch 2.4)":
+            case "Patch 2.4":
                 foreach (var rw in currentDB.runewords)
                 {
                     if (rw.gameVersion == "Resurrected")
@@ -397,8 +397,8 @@ public class RunewordsController : MonoBehaviour
             case "All Runewords":
                 status.text = "Все Рунворды";
                 break;
-            case "Resurrected (Patch 2.4)":
-                status.text = "Resurrected (Патч 2.4)";
+            case "Patch 2.4":
+                status.text = "Патч 2.4";
                 break;
             case "Amazon Spears":
                 status.text = "Копья Амазонки";
