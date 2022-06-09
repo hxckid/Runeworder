@@ -91,8 +91,8 @@ public class ListController : MonoBehaviour
 
             }
 
-            if (tc.rwType.text.Contains("BodyArmor"))
-                tc.rwType.text = tc.rwType.text.Replace("BodyArmor", "Броня");
+            if (tc.rwType.text.Contains("Armor"))
+                tc.rwType.text = tc.rwType.text.Replace("Armor", "Броня");
             if (tc.rwType.text.Contains("Helms"))
                 tc.rwType.text = tc.rwType.text.Replace("Helms", "Шлемы");
             if (tc.rwType.text.Contains("Shields"))
