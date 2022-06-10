@@ -290,7 +290,7 @@ MonoBehaviour:
     rgba: 4294967295
   highlighted:
     serializedVersion: 2
-    rgba: 4282466625
+    rgba: 4278190335
 --- !u!1 &72220302
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,11 +14,9 @@ public class ButtonsBehaviour : MonoBehaviour
     {
         foreach (var btn in buttons)
         {
-            btn.enabled = true;
             btn.gameObject.GetComponent<Image>().color = normal;
         }
 
-        buttons[number].enabled = false;
         buttons[number].gameObject.GetComponent<Image>().color = highlighted;
 
         if (number == 5 || number == 6)
