@@ -43,11 +43,14 @@ public class RunewordsController : MonoBehaviour
         }
     }
 
+    public void FilterLast()
+    {
+        string res = lastPressed == "All" ? "All Runewords" : lastPressed;
+        FilterRunewords(res);
+    }
+
     public void SearchByName(TMP_InputField runewordName)
     {
-        //if (runewordName.text.Length == 0)
-        //    return;
-
         bool found = false;
         
         ClearWorkflowDB();
