@@ -66,6 +66,14 @@ public class AppManager : MonoBehaviour
                 buttonsText[27].text = "All";
                 buttonsText[28].text = "We are searching for:";
                 buttonsText[29].text = "All";
+                buttonsText[30].text = "Horadric Cube Recipes";
+                buttonsText[31].text = "Runewords";
+                buttonsText[32].text = $"Current Version: {Application.version}";
+                buttonsText[33].text = $"Back";
+                buttonsText[34].text = $"Horadric Cube Recipes will be added soon!\n\n" +
+                    $"But right now you can help us leaving a feedback on Google Play Store and drop there some stars! " +
+                    $"We highly appreciate your trust and your feedback let us growth to ubers level!" +
+                    $"We wish you a best possible loot and a good day!\n\nSee you in Sanctuary!\n\n\n\n\nSincerely yours, Sisyphean Labor Team.";
                 break;
 
             case Languages.Ru:
@@ -101,6 +109,14 @@ public class AppManager : MonoBehaviour
                 buttonsText[27].text = "Все оружие";
                 buttonsText[28].text = "Мы ищем рунное слово:";
                 buttonsText[29].text = "Все";
+                buttonsText[30].text = "Рецепты Куба";
+                buttonsText[31].text = "Рунворды";
+                buttonsText[32].text = $"Текущая версия: {Application.version}";
+                buttonsText[33].text = $"Назад";
+                buttonsText[34].text = $"Мы уже в процессе добавления рецептов для куба!\n\n" +
+                    $"Но прямо сейчас вы можете помочь нам, оставив отзыв в Google Play Store и поставив нам несколько звездочек! " +
+                    $"Мы очень ценим ваше доверие, и ваши отзывы позволяют нам расти до убер уровня!" +
+                    $" Желаем вам наилучшего лута и хорошего дня!\n\nДо встречи в Санктуарии!\n\n\n\n\nИскренне Ваша, команда Sisyphean Labor.";
                 break;
         }
     }
