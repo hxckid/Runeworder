@@ -38,15 +38,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.collab-proxy": {
-      "version": "1.15.17",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.services.core": "1.0.1"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.device-simulator": {
       "version": "3.0.3-preview",
       "depth": 0,
@@ -62,7 +53,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.15",
+      "version": "2.0.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -90,15 +81,6 @@
       "source": "registry",
       "dependencies": {
         "com.unity.modules.androidjni": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.core": {
-      "version": "1.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
