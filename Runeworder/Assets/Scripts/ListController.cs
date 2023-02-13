@@ -44,20 +44,23 @@ public class ListController : MonoBehaviour
         tc.rwStats.text = runeword.statsDesc;
         tc.rwType.text = runeword.subType;
         tc.rwLevel.text = $"Required level: {runeword.reqLevel}";
-        if (runeword.gameVersion != "Resurrected")
-            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Diablo 2 (LoD)" : "Ladder Item: No";
+        if (runeword.gameVersion.Contains("Resurrected"))
+            tc.rwLadder.text = runeword.isLadder ? $"Ladder Item: Yes, {runeword.gameVersion}" : "Ladder Item: No";
         else
-            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Resurrected" : "Ladder Item: No";
+            tc.rwLadder.text = runeword.isLadder ? "Ladder Item: Yes, Diablo 2 (LoD)" : "Ladder Item: No";
+
+
         tc.rwClass.text = runeword.classItem != Classes.Any ? $"Class specified: {runeword.classItem}" : "Class specified: Any";
-        if (runeword.gameVersion == "1.10" || runeword.gameVersion == "1.11")
-            tc.rwVersion.text = $"Game version: {runeword.gameVersion}+ (LoD)";
+        if (runeword.gameVersion.Contains("1.10") || runeword.gameVersion.Contains("1.11"))
+            tc.rwVersion.text = $"Game version: {runeword.gameVersion} + (LoD)";
         else
-            tc.rwVersion.text = $"Game Version: Resurrected";
+            tc.rwVersion.text = $"Game Version: {runeword.gameVersion}";
 
         tc.rwVersion.color = Color.white;
         switch (runeword.gameVersion)
         {
-            case "Resurrected":
+            case "Resurrected 2.4":
+            case "Resurrected 2.6":
                 tc.rwVersion.color = ressurectedColor;
                 break;
             case "1.10":
@@ -131,10 +134,10 @@ public class ListController : MonoBehaviour
                 tc.rwType.text = tc.rwType.text.Replace("Weapons", "Любое оружие");
 
             tc.rwLevel.text = $"Требуемый уровень: {runeword.reqLevel}";
-            if (runeword.gameVersion != "Resurrected")
-                tc.rwLadder.text = runeword.isLadder ? "Ладдер: Diablo 2 LoD " : "Ладдерный Предмет: Нет";
+            if (runeword.gameVersion.Contains("Resurrected"))
+                tc.rwLadder.text = runeword.isLadder ? $"Ладдер: Да, {runeword.gameVersion}" : "Ладдер: Нет";
             else
-                tc.rwLadder.text = runeword.isLadder ? "Ладдер: Resurrected" : "Ладдерный Предмет: Нет";
+                tc.rwLadder.text = runeword.isLadder ? "Ладдер: Да, Diablo 2 (LoD)" : "Ладдер: Нет";
 
             tc.rwClass.text = runeword.classItem != Classes.Any ? $"Класс: {runeword.classItem}" : "Класс: Любой";
             switch (tc.rwClass.text)
@@ -161,11 +164,11 @@ public class ListController : MonoBehaviour
                     tc.rwClass.text = tc.rwClass.text.Replace("Sorceress", "Волшебница");
                     break;
             }
-            
-            if (runeword.gameVersion == "1.10" || runeword.gameVersion == "1.11")
-                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}+ (LoD)";
+
+            if (runeword.gameVersion.Contains("1.10") || runeword.gameVersion.Contains("1.11"))
+                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion} + (LoD)";
             else
-                tc.rwVersion.text = $"Версия игры: Resurrected";
+                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
     }

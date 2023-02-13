@@ -87,7 +87,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[5].text = "Броня";
                 buttonsText[6].text = "Шлемы";
                 buttonsText[7].text = "Щиты";
-                buttonsText[8].text = "Патч 2.4";
+                buttonsText[8].text = "Патч 2.6";
                 buttonsText[9].text = "↕ Имя";
                 buttonsText[10].text = "↕ Руны";
                 buttonsText[11].text = "↕ Уровень";

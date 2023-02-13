@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Flickering Flame
+  m_EditorClassIdentifier: 
+  runewordName: Flickering Flame
+  runesSequence: '''NefPulVex'''
+  runes: 030000001400000019000000
+  sprites:
+  - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 602322258887530144, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 2
+  weaponBases: 
+  subType: 3 Socket Helms
+  reqLevel: 55
+  statsDesc: 'Level 4-8 Resist Fire Aura When Equipped (varies)
+
+    +3 to Fire Skills
+
+    -10-15%
+    to Enemy Fire Resistance (varies)
+
+    +30% Enhanced Defense
+
+    +30 Defense
+    vs. Missile
+
+    Adds 3-14 Cold Damage
+
+    +50-75 to Mana (varies)
+
+    +5%
+    to Maximum Fire Resist
+
+    Half Freeze Duration
+
+    Poison Length Reduced by
+    50%'
+  isLadder: 0
+  classItem: 0
+  gameVersion: Resurrected 2.4
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: 'Diadem
+
+    Superior Wolf Head'
