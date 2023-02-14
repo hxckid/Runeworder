@@ -54,7 +54,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[5].text = "Armors";
                 buttonsText[6].text = "Helms";
                 buttonsText[7].text = "Shields";
-                buttonsText[8].text = "Patch 2.4";
+                buttonsText[8].text = "Patch 2.6";
                 buttonsText[9].text = "↕ Name";
                 buttonsText[10].text = "↕ Runes";
                 buttonsText[11].text = "↕ Level";
