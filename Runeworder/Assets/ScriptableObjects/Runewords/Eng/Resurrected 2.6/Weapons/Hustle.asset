@@ -23,19 +23,22 @@ MonoBehaviour:
   weaponBases: 0f000000
   subType: 3 Socket Weapons
   reqLevel: 39
-  statsDesc: '5% Chance to cast level nine Burst of Speed on striking
+  statsDesc: 'Level 1  Fanaticism Aura When Equipped
 
-    +30%
-    Increased Attack Speed
+    5% Chance to cast level
+    1  Burst of Speed on striking
 
-    +130-150% Enhanced Damage
+    +30% Increased Attack Speed
+
+    +180-200%
+    Enhanced Damage
 
     +75% Damage to Undead
 
-    +50
-    to Attack Rating against Undead
+    +50 Attack Rating Against Undead
 
-    +10 to Dexterity'
+    +10
+    to Dexterity'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6

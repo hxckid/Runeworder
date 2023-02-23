@@ -23,25 +23,35 @@ MonoBehaviour:
   weaponBases: 02000000
   subType: 3 Socket Claws
   reqLevel: 53
-  statsDesc: '+50% chance for finishing moves to not consume charges
+  statsDesc: '50% chance for finishing moves to not consume charges
 
-    +2 to
-    Martial Arts (Assassin only)
+    When a
+    finisher is executed this way, it now refreshes the expiration timer of the stack
+
+    +2
+    to Martial Arts (Assassin Only)
 
     +20% Increased Attack Speed
 
     +200-250%
     Enhanced Damage
 
-    +20% Bonus to Attack Rating
+    20% Bonus to Attack Rating
 
-    Adds 3-14 Cold Damage
+    +8-15% to Cold Skill Damage
 
-    Prevent
-    Monster Heal'
+    +8-15%
+    to Lightning Skill Damage
+
+    +8-15% to Fire Skill Damage
+
+    7% Life Stolen
+    Per Hit
+
+    Prevent Monster Heal'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 3
-  recomendedItems: Superior Feral Claws
+  recomendedItems: Feral Claws with +3 to Assassins Skills

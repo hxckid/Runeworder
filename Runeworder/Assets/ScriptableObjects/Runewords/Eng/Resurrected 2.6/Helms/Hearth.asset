@@ -35,7 +35,9 @@ MonoBehaviour:
     Cold Resist +40-60%
 
     Cold
-    Absorb +10-15%'
+    Absorb +10-15%
+
+    Cannot Be Frozen'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6

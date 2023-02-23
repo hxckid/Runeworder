@@ -25,46 +25,50 @@ MonoBehaviour:
   reqLevel: 67
   statsDesc: 'Werewolf strikes grant Mark for 180 seconds
 
-
     Mark of the Wolf:
 
-    +20%
+    30%
     Bonus to Attack Rating
 
     Increase Maximum Life 40%
 
-    Werebear strikes
-    grant Mark for 180 seconds
+    
 
+    Werebear
+    strikes grant Mark for 180 seconds
 
     Mark of the Bear:
 
-    +25% Attack Speed
-
-    +25%
-    Chance of Crushing Blow
+    +25% Attack
+    Speed
 
     Physical Damage Received Reduced by 20%
 
+    
 
-    +5
-    to Shape Shifting Skills (Druid only)
+    +5 to Shape
+    Shifting Skills (Druid Only)
 
     +50-80% Enhanced Defense
 
-    +10
-    to Strength
+    +25% Chance
+    of Crushing Blow
+
+    +10 to Strength
 
     +10 to Vitality
 
-    All Resistances +10
+    All Resistance
+    +10
 
-    Cannot be Frozen'
+    Cannot Be Frozen'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   hasRunes: 2
-  recomendedItems: 'Superior Wolf Head
+  recomendedItems: 'Cap
 
-    Waiting for more info!'
+    Superior Slayer Guard
+
+    Superior Wolf Head'

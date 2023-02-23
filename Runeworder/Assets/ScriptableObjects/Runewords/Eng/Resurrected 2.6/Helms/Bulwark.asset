@@ -39,7 +39,8 @@ MonoBehaviour:
 
     Damage Reduced by 7
 
-    Physical Damage Received Reduced by 10-15%'
+    Physical Damage Received Reduced by
+    15%'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6

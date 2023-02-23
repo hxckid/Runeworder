@@ -23,16 +23,9 @@ MonoBehaviour:
   weaponBases: 
   subType: 3 Socket Armor
   reqLevel: 39
-  statsDesc: '+50% Faster Run/Walk
-
-    +20% Increased Attack Speed
-
-    +20% Faster
-    Hit Recovery
-
-    +10 to Dexterity
-
-    50% Slower Stamina Drain'
+  statsDesc: "+65% Faster Run/Walk\r\n+40% Increased Attack Speed\r\n20% Faster Hit
+    Recovery\r\n+6 to  Evade\r\n+10 to Dexterity\r\nAll Resistances +10\r\n50% Slower
+    Stamina Drain\r"
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6
