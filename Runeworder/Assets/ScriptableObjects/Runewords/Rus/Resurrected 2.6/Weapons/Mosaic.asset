@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Mosaic
   m_EditorClassIdentifier: 
   runewordName: "\u041C\u043E\u0437\u0430\u0439\u043A\u0430"
-  runesSequence: '''MalGulThul'''
-  runes: 160000001800000009000000
+  runesSequence: '''MalGulAmn'''
+  runes: 16000000180000000a000000
   sprites:
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
-  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 02000000
   subType: 3 Socket Claws
