@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
+using System.Xml.Serialization;
+using System.IO;
 
 public class RunewordsController : MonoBehaviour
 {
@@ -28,6 +30,11 @@ public class RunewordsController : MonoBehaviour
         AppManager.OnLanguageChanged += InitDB;
         InitDB(AppManager.instance.currentLanguage);
         lastPressed = "All";
+
+        //string filePath = Application.dataPath + "/Runewords.xml";
+        //RunewordSerializer serializer = new RunewordSerializer();
+        //serializer.SaveRunewordsToXml(runewordsDBRus.runewords, filePath);
+        //Debug.Log($"Saved here: {filePath}");
     }
 
     private void InitDB(Languages lang)
@@ -452,5 +459,16 @@ public class RunewordsController : MonoBehaviour
                 status.text = "Все оружие";
                 break;
         }
+    }
+}
+
+public class RunewordSerializer
+{
+    public void SaveRunewordsToXml(List<Runeword_SO> runewords, string filePath)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(List<Runeword_SO>));
+        FileStream stream = new FileStream(filePath, FileMode.Create);
+        serializer.Serialize(stream, runewords);
+        stream.Close();
     }
 }
