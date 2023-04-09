@@ -17,6 +17,7 @@ public class RunewordsController : MonoBehaviour
     public GameObject runewordPrefab;
     public GameObject uiParent;
     public Text status;
+    public Color defaultRuneColor;
 
     List<GameObject> runewordsToShow;
     string lastPressed = string.Empty;
@@ -322,7 +323,7 @@ public class RunewordsController : MonoBehaviour
                         break;
                 }
 
-                lc.runes[i].color = Color.gray;
+                lc.runes[i].color = defaultRuneColor;
                 foreach (var rune in userRunes.hasRunes)
                 {
                     if (rune == rw.runes[i])
