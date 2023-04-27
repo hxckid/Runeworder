@@ -14,15 +14,20 @@ public class RunewordsController : MonoBehaviour
     public RunewordsDB_SO runewordsDBEng;
     public RunewordsDB_SO runewordsDBRus;
     public RunewordsDB_SO workflowDB;
+    public RunewordsDB_SO customSearchDB;
     public GameObject runewordPrefab;
     public GameObject uiParent;
     public Text status;
     public Color defaultRuneColor;
-
-    List<GameObject> runewordsToShow;
+    public Dropdown socketsDropdown;
+    public Dropdown typeDropdown;
+    public List<GameObject> runewordsToShow;
+    
     string lastPressed = string.Empty;
     bool toggle = false;
     RunewordsDB_SO currentDB;
+    int lastSocketSearch;
+    string lastTypeSearch;
 
     private void Start()
     {
@@ -31,6 +36,8 @@ public class RunewordsController : MonoBehaviour
         AppManager.OnLanguageChanged += InitDB;
         InitDB(AppManager.instance.currentLanguage);
         lastPressed = "All";
+        lastSocketSearch = 0;
+        lastTypeSearch = "None";
 
         //string filePath = Application.dataPath + "/Runewords.xml";
         //RunewordSerializer serializer = new RunewordSerializer();
@@ -84,6 +91,31 @@ public class RunewordsController : MonoBehaviour
         {
             FillRunewordList();
         }
+    }
+
+    public void CustomSearch()
+    {
+        ClearCustomSearchDB();
+        lastSocketSearch = Int32.Parse(socketsDropdown.options[socketsDropdown.value].text); 
+        lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
+        
+        FilterRunewords(lastTypeSearch);
+
+        foreach (var rw in workflowDB.runewords)
+        {
+            if (rw.runes.Count == lastSocketSearch)
+            {
+                customSearchDB.runewords.Add(rw);
+            }
+        }
+        ClearWorkflowDB();
+        foreach (var rw in customSearchDB.runewords)
+        {
+            workflowDB.runewords.Add(rw);
+        }
+
+        ClearRunewordList();
+        FillRunewordList();
     }
 
     public void FilterRunewords(string type)
@@ -258,6 +290,11 @@ public class RunewordsController : MonoBehaviour
     private void ClearWorkflowDB()
     {
         workflowDB.runewords.Clear();
+    }
+
+    private void ClearCustomSearchDB()
+    {
+        customSearchDB.runewords.Clear();
     }
 
     private void ClearRunewordList()
