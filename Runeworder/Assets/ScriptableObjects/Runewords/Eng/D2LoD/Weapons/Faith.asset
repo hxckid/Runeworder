@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 08000000
-  subType: '4 Socket Missile Weapons
-
-'
+  subType: 4 Socket Missile Weapons
   reqLevel: 65
   statsDesc: 'Level 12-15 Fanaticism Aura When Equipped (varies)
 
@@ -53,11 +51,11 @@ MonoBehaviour:
     75% Extra Gold From Monsters
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 2
   recomendedItems: 'Superior Grand Matron Bow
 
     Great Bow (Mercenary)'

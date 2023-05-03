@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 02000000
-  subType: "3 Socket \u041A\u043E\u0433\u0442\u0438\n"
+  subType: 3 Socket Claws
   reqLevel: 57
   statsDesc: "\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
     9% \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0443\u043C\u0435\u043D\u0438\u0435
@@ -41,6 +41,6 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 2
   recomendedItems: "\u041F\u0440\u0435\u0432\u043E\u0441\u0445\u043E\u0434\u043D\u044B\u0435
     \u0417\u0432\u0435\u0440\u0438\u043D\u044B\u0435 \u041A\u043E\u0433\u0442\u0438"

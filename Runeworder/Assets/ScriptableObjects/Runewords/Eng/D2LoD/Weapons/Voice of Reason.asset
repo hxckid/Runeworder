@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0d00000006000000
-  subType: '4 Socket Swords/Maces
-
-'
+  subType: 4 Socket Swords, Maces
   reqLevel: 43
   statsDesc: '15% Chance To Cast Level 13 Frozen Orb On Striking
 
@@ -56,7 +54,7 @@ MonoBehaviour:
     To Light Radius
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

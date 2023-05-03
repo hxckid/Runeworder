@@ -20,9 +20,7 @@ MonoBehaviour:
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 07000000
-  subType: '2 Socket Melee Weapons
-
-'
+  subType: 2 Socket Melee Weapons
   reqLevel: 25
   statsDesc: '35% Enhanced Damage
 

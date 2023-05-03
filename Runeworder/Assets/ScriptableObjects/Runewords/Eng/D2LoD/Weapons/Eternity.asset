@@ -23,9 +23,7 @@ MonoBehaviour:
   - {fileID: 7436760131401412462, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 07000000
-  subType: '5 Socket Melee Weapons
-
-'
+  subType: 5 Socket Melee Weapons
   reqLevel: 63
   statsDesc: 'Indestructible
 

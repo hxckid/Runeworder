@@ -21,7 +21,8 @@ MonoBehaviour:
   - {fileID: -1196169550335143571, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 4 Socket BodyArmor
+  weaponBases: 
+  subType: 4 Socket Armor
   reqLevel: 63
   statsDesc: '+2 To All Skills
 
@@ -51,7 +52,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: 'Superior Archon Plate
 
     Superior Dusk Shroud'

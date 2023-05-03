@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 3 Socket BodyArmor
+  weaponBases: 
+  subType: 3 Socket Armor
   reqLevel: 47
   statsDesc: '+40% Faster Hit Recovery
 
@@ -53,5 +54,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: Superior Mage Plate

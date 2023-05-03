@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: -8930640299231052059, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0f000000
-  subType: "4 Socket \u041E\u0440\u0443\u0436\u0438\u0435\n"
+  subType: 4 Socket Weapons
   reqLevel: 43
   statsDesc: "+25% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0430\u0442\u0430\u043A\u0438\r\n+(160-210)%
     \u043A \u0443\u0440\u043E\u043D\u0443\r\n+(50-80)% \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443

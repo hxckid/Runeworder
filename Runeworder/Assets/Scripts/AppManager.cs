@@ -77,7 +77,12 @@ public class AppManager : MonoBehaviour
                 buttonsText[36].text = "Name:";
                 buttonsText[37].text = "Sockets:";
                 buttonsText[38].text = "Type:";
-
+                buttonsText[39].text = "Find";
+                buttonsText[40].text = "Back";
+                buttonsText[41].text = "All Runewords";
+                buttonsText[42].text = "Non-Ladder Only";
+                buttonsText[43].text = "Ladder Only";
+                buttonsText[44].text = "Ladder Runewords Settings:";
                 break;
 
             case Languages.Ru:
@@ -125,7 +130,12 @@ public class AppManager : MonoBehaviour
                 buttonsText[36].text = "Название:";
                 buttonsText[37].text = "Гнезда:";
                 buttonsText[38].text = "Тип:";
-
+                buttonsText[39].text = "Найти";
+                buttonsText[40].text = "Назад";
+                buttonsText[41].text = "Все рунворды";
+                buttonsText[42].text = "Только Не-Ладдер";
+                buttonsText[43].text = "Только Ладдер";
+                buttonsText[44].text = "Настройки для Ладдера:";
                 break;
         }
     }

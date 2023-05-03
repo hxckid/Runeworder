@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 2 Socket Helms
   reqLevel: 13
   statsDesc: '+50% Enhanced Defense
@@ -42,5 +43,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: Cap

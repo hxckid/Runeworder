@@ -21,9 +21,7 @@ MonoBehaviour:
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0f000000
-  subType: '3 Socket Weapons
-
-'
+  subType: 3 Socket Weapons
   reqLevel: 49
   statsDesc: 'Hit Causes Monster To Flee 25%
 

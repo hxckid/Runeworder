@@ -23,9 +23,7 @@ MonoBehaviour:
   - {fileID: 304334863325100338, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 010000000900000005000000
-  subType: '5 Socket Axes/Polearms/Hammers
-
-'
+  subType: 5 Socket Axes, Polearms, Hammers
   reqLevel: 67
   statsDesc: '5% Chance To Cast Level 18 Volcano On Striking
 
@@ -58,5 +56,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 2
   recomendedItems: Superior Berserker Axe

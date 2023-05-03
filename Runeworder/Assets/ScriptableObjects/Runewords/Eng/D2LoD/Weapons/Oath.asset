@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: 5455931690302879806, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0d0000000100000006000000
-  subType: '4 Socket Swords/Axes/Maces
-
-'
+  subType: 4 Socket Swords, Axes, Maces
   reqLevel: 49
   statsDesc: '30% Chance To Cast Level 20 Bone Spirit On Striking
 
@@ -53,7 +51,7 @@ MonoBehaviour:
     Level 17 Iron Golem (14 Charges)
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: -3033762605368871702, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 090000000a000000
-  subType: '4 Socket Polearms/Scepters
-
-'
+  subType: 4 Socket Polearms, Scepters
   reqLevel: 53
   statsDesc: '20% Chance To Cast Level 16 Tornado On Striking
 
@@ -53,7 +51,7 @@ MonoBehaviour:
     Requirements -20%
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

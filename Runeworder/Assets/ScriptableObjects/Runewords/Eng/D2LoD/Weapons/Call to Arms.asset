@@ -23,9 +23,7 @@ MonoBehaviour:
   - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0f000000
-  subType: '5 Socket Weapons
-
-'
+  subType: 5 Socket Weapons
   reqLevel: 51
   statsDesc: '+1 To All Skills
 
@@ -58,7 +56,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 5
+  hasRunes: 4
   recomendedItems: 'Flail
 
     Crystal Sword'

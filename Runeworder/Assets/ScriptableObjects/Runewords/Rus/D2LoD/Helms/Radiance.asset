@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1537613641987167269, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 3 Socket Helms
   reqLevel: 27
   statsDesc: "+75% \u043A \u0437\u0430\u0449\u0438\u0442\u0435\r\n+30 \u043A \u0437\u0430\u0449\u0438\u0442\u0435

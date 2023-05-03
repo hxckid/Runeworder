@@ -22,6 +22,9 @@ public class RunewordsController : MonoBehaviour
     public Dropdown socketsDropdown;
     public Dropdown typeDropdown;
     public List<GameObject> runewordsToShow;
+    public Toggle allRunewordsToggle;
+    public Toggle nonLadderToggle;
+    public Toggle ladderToggle;
     
     string lastPressed = string.Empty;
     bool toggle = false;
@@ -98,6 +101,7 @@ public class RunewordsController : MonoBehaviour
         ClearCustomSearchDB();
         lastSocketSearch = Int32.Parse(socketsDropdown.options[socketsDropdown.value].text); 
         lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
+
         lastTypeSearch = lastTypeSearch == "Все Рунворды" ? "All Runewords" : lastTypeSearch;
         lastTypeSearch = lastTypeSearch == "Все Оружие" ? "All Weapons" : lastTypeSearch;
         lastTypeSearch = lastTypeSearch == "Копья Амазонки" ? "Amazon Spears" : lastTypeSearch;
@@ -121,11 +125,30 @@ public class RunewordsController : MonoBehaviour
         
         FilterRunewords(lastTypeSearch);
 
-        foreach (var rw in workflowDB.runewords)
+        if (allRunewordsToggle.isOn)
         {
-            if (rw.runes.Count == lastSocketSearch)
+            foreach (var rw in workflowDB.runewords)
             {
-                customSearchDB.runewords.Add(rw);
+                if (rw.runes.Count == lastSocketSearch)
+                    customSearchDB.runewords.Add(rw);
+            }
+        }
+        
+        if (nonLadderToggle.isOn)
+        {
+            foreach (var rw in workflowDB.runewords)
+            {
+                if (rw.runes.Count == lastSocketSearch && !rw.isLadder)
+                    customSearchDB.runewords.Add(rw);
+            }
+        }
+
+        if (ladderToggle.isOn)
+        {
+            foreach (var rw in workflowDB.runewords)
+            {
+                if (rw.runes.Count == lastSocketSearch && rw.isLadder)
+                    customSearchDB.runewords.Add(rw);
             }
         }
 

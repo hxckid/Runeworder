@@ -20,9 +20,7 @@ MonoBehaviour:
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0c000000
-  subType: '2 Socket Staves (Not Orbs)
-
-'
+  subType: 2 Socket Staves
   reqLevel: 19
   statsDesc: 'Adds 5-30 Fire Damage
 

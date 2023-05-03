@@ -20,9 +20,7 @@ MonoBehaviour:
   - {fileID: 2174028493023228853, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 07000000
-  subType: '2 Socket Melee Weapons
-
-'
+  subType: 2 Socket Melee Weapons
   reqLevel: 61
   statsDesc: '10% Chance To Cast Level 9 Tornado On Striking
 

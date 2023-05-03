@@ -21,9 +21,7 @@ MonoBehaviour:
   - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0d000000050000000a000000
-  subType: '3 Socket Swords/Hammers/Scepters
-
-'
+  subType: 3 Socket Swords, Hammers, Scepters
   reqLevel: 43
   statsDesc: '20% Chance To Cast Level 15 Decrepify On Striking
 
@@ -50,7 +48,7 @@ MonoBehaviour:
     75% Extra Gold From Monsters
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

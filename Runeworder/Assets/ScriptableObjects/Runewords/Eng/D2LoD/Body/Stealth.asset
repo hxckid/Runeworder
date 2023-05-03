@@ -19,7 +19,8 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 2 Socket BodyArmor
+  weaponBases: 
+  subType: 2 Socket Armor
   reqLevel: 17
   statsDesc: 'Magic Damage Reduced By 3
 
@@ -42,7 +43,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 'Original Rune Words '
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: 'Hard Leather Armor
 
     Leather Armor

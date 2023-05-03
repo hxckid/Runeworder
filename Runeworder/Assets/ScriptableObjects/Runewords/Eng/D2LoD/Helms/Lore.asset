@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 2
+  weaponBases: 
   subType: 2 Socket Helms
   reqLevel: 27
   statsDesc: '+1 To All Skill Levels
@@ -39,7 +40,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: Original Rune Words
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 1
+  hasRunes: 2
   recomendedItems: 'Cap
 
     Superior Slayer Guard

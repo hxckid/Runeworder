@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -2681793855587880821, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 3 Socket BodyArmor
+  weaponBases: 
+  subType: 3 Socket Armor
   reqLevel: 47
   statsDesc: '15% Chance To Cast level 10 Bone Armor When Struck
 

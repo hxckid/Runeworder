@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0c00000006000000
-  subType: '4 Socket Staves/Maces
-
-'
+  subType: 4 Socket Staves, Maces
   reqLevel: 55
   statsDesc: '+3 To All Skills
 
@@ -59,5 +57,5 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 3
+  hasRunes: 4
   recomendedItems: Flail

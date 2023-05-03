@@ -21,7 +21,8 @@ MonoBehaviour:
   - {fileID: 9044945195962155230, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 4 Socket BodyArmor
+  weaponBases: 
+  subType: 4 Socket Armor
   reqLevel: 59
   statsDesc: '20% Chance To Cast Level 15 Chilling Armor when Struck
 
@@ -52,7 +53,7 @@ MonoBehaviour:
     +1 To Light Radius
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

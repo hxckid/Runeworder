@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -8855056840675280816, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
+  weaponBases: 
   subType: '3 Socket Shields
 
 '

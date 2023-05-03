@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 7256167803517260690, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 3
+  weaponBases: 
   subType: 3 Socket Shields
   reqLevel: 61
   statsDesc: '20% Chance to Cast Level 18 Venom When Struck
@@ -50,7 +51,7 @@ MonoBehaviour:
     by 7
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

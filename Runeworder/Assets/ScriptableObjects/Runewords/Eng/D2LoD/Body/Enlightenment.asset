@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: 1763416088095558982, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 3 Socket BodyArmor
+  weaponBases: 
+  subType: 3 Socket Armor
   reqLevel: 45
   statsDesc: '5% Chance To Cast Level 15 Blaze When Struck
 
@@ -43,5 +44,5 @@ MonoBehaviour:
   classItem: 7
   gameVersion: 1.11
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 2
+  hasRunes: 3
   recomendedItems: Superior Mage Plate

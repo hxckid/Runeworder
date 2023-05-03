@@ -19,7 +19,8 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -6094098005360472568, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 2 Socket BodyArmor
+  weaponBases: 
+  subType: 2 Socket Armor
   reqLevel: 17
   statsDesc: "+25% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0445\u043E\u0434\u044C\u0431\u044B
     \u0438 \u0431\u0435\u0433\u0430\r\n+25% \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438
@@ -35,7 +36,7 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 'Original Rune Words '
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: "\u041F\u043B\u043E\u0442\u043D\u044B\u0439 \u041A\u043E\u0436\u0430\u043D\u044B\u0439
     \u0414\u043E\u0441\u043F\u0435\u0445\n\u041A\u043E\u0436\u0430\u043D\u044B\u0439
     \u0414\u043E\u0441\u043F\u0435\u0445\n\u0421\u0442\u0435\u0433\u0430\u043D\u044B\u0439

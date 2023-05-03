@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: -961032850552321521, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0a000000
-  subType: "4 Socket \u0421\u043A\u0438\u043F\u0435\u0442\u0440\u044B\n"
+  subType: 4 Socket Scepters
   reqLevel: 21
   statsDesc: "+60% \u043A \u0443\u0440\u043E\u043D\u0443\r\n+10 \u043A \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u043C\u0443
     \u0443\u0440\u043E\u043D\u0443\r\n-25% \u043A \u0437\u0430\u0449\u0438\u0442\u0435

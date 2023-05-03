@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 1
-  subType: 3 Socket BodyArmor
+  weaponBases: 
+  subType: 3 Socket Armor
   reqLevel: 25
   statsDesc: "\u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C
     3% \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0443\u043C\u0435\u043D\u0438\u0435

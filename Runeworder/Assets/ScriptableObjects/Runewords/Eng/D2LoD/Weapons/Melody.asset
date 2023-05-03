@@ -21,9 +21,7 @@ MonoBehaviour:
   - {fileID: -5447233517892204522, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 08000000
-  subType: '3 Socket Missile Weapons
-
-'
+  subType: 3 Socket Missile Weapons
   reqLevel: 39
   statsDesc: '+50% Enhanced Damage
 

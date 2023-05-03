@@ -23,9 +23,7 @@ MonoBehaviour:
   - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0d00000001000000
-  subType: '5 Socket Swords/Axes
-
-'
+  subType: 5 Socket Swords, Axes
   reqLevel: 59
   statsDesc: '35% Chance To Cast Level 15 Venom On Striking
 
@@ -57,7 +55,7 @@ MonoBehaviour:
     +10-15 Life After Each Kill (varies)
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}

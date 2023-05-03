@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 5332741692669887357, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0f000000
-  subType: "5 Socket \u041E\u0440\u0443\u0436\u0438\u0435\n"
+  subType: 5 Socket Weapons
   reqLevel: 51
   statsDesc: "+1 \u043A\u043E \u0432\u0441\u0435\u043C \u0443\u043C\u0435\u043D\u0438\u044F\u043C\r\n+40%
     \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0430\u0442\u0430\u043A\u0438\r\n+(240-290)%
@@ -43,6 +43,6 @@ MonoBehaviour:
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 5
+  hasRunes: 4
   recomendedItems: "\u041A\u0438\u0441\u0442\u0435\u043D\u044C\n\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439
     \u041C\u0435\u0447"

@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: -8278776621803994759, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0f000000
-  subType: '4 Socket Weapons
-
-'
+  subType: 4 Socket Weapons
   reqLevel: 65
   statsDesc: '100% Chance To Cast level 40 Blaze When You Level-up
 
@@ -52,9 +50,9 @@ MonoBehaviour:
     (varies)
 
 '
-  isLadder: 1
+  isLadder: 0
   classItem: 0
   gameVersion: 1.10
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
-  hasRunes: 0
+  hasRunes: 2
   recomendedItems: Superior Phase Blade

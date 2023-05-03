@@ -20,9 +20,7 @@ MonoBehaviour:
   - {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
   runewordType: 0
   weaponBases: 0e000000
-  subType: '2 Socket Wand
-
-'
+  subType: 2 Socket Wands
   reqLevel: 35
   statsDesc: 'Hit Causes Monster To Flee 25%
 
