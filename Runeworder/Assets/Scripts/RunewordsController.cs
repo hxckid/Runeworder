@@ -89,7 +89,7 @@ public class RunewordsController : MonoBehaviour
         }
         else
         {
-            FillRunewordList();
+            FillRunewordList(workflowDB);
         }
     }
 
@@ -108,14 +108,14 @@ public class RunewordsController : MonoBehaviour
                 customSearchDB.runewords.Add(rw);
             }
         }
+
         ClearWorkflowDB();
         foreach (var rw in customSearchDB.runewords)
         {
             workflowDB.runewords.Add(rw);
         }
 
-        ClearRunewordList();
-        FillRunewordList();
+        FillRunewordList(customSearchDB);
     }
 
     public void FilterRunewords(string type)
@@ -284,36 +284,14 @@ public class RunewordsController : MonoBehaviour
         else
             Localize(type);
         
-        FillRunewordList();
+        FillRunewordList(workflowDB);
     }
-
-    private void ClearWorkflowDB()
+    
+    private void FillRunewordList(RunewordsDB_SO dbToFillFrom)
     {
-        workflowDB.runewords.Clear();
-    }
-
-    private void ClearCustomSearchDB()
-    {
-        customSearchDB.runewords.Clear();
-    }
-
-    private void ClearRunewordList()
-    {
-        if (runewordsToShow.Count > 0)
-        {
-            foreach (var rw in runewordsToShow)
-            {
-                Destroy(rw);
-            }
-            runewordsToShow.Clear();
-        }
-    }
-
-    private void FillRunewordList()
-    {
-        ClearRunewordList();
+        ClearRunewordsList();
         int odd = 1;
-        foreach (var rw in workflowDB.runewords)
+        foreach (var rw in dbToFillFrom.runewords)
         {
             rw.hasRunes = 0;
             ListController lc = runewordPrefab.GetComponent<ListController>();
@@ -384,17 +362,17 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    currentDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
+                    workflowDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
-                    currentDB.runewords.Sort((a, b) =>
+                    workflowDB.runewords.Sort((a, b) =>
                     {
                         int result = a.hasRunes.CompareTo(b.hasRunes);
                         return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
                     });
                     break;
                 case "Level":
-                    currentDB.runewords.Sort((a, b) =>
+                    workflowDB.runewords.Sort((a, b) =>
                     {
                         int result = a.reqLevel.CompareTo(b.reqLevel);
                         return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
@@ -407,17 +385,17 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    currentDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
+                    workflowDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
                     break;
                 case "Runes":
-                    currentDB.runewords.Sort((b, a) =>
+                    workflowDB.runewords.Sort((b, a) =>
                     {
                         int result = a.hasRunes.CompareTo(b.hasRunes);
                         return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
                     });
                     break;
                 case "Level":
-                    currentDB.runewords.Sort((b, a) =>
+                    workflowDB.runewords.Sort((b, a) =>
                     {
                         int result = a.reqLevel.CompareTo(b.reqLevel);
                         return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
@@ -426,7 +404,29 @@ public class RunewordsController : MonoBehaviour
             }
         }
         toggle = !toggle;
-        FilterRunewords(lastPressed);
+        FillRunewordList(workflowDB);
+    }
+    
+    private void ClearWorkflowDB()
+    {
+        workflowDB.runewords.Clear();
+    }
+
+    private void ClearCustomSearchDB()
+    {
+        customSearchDB.runewords.Clear();
+    }
+
+    private void ClearRunewordsList()
+    {
+        if (runewordsToShow.Count > 0)
+        {
+            foreach (var rw in runewordsToShow)
+            {
+                Destroy(rw);
+            }
+            runewordsToShow.Clear();
+        }
     }
 
     private void Localize(string type)
@@ -498,6 +498,8 @@ public class RunewordsController : MonoBehaviour
                 break;
         }
     }
+
+    
 }
 
 public class RunewordSerializer
