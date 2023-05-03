@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     public GameObject runeUIPrefab;
     public RunesSprites_SO runesSprites;
     public UserRunes_SO userRunes;
+    public Dropdown typeDropdown;
 
     [SerializeField] List<GameObject> runesUI;
 
@@ -57,6 +58,29 @@ public class UIController : MonoBehaviour
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesEn), runesUI.IndexOf(rune));
                     }
+
+                    typeDropdown.options.Clear();
+                    typeDropdown.captionText.text = "All Runewords";
+                    typeDropdown.options.Add(new Dropdown.OptionData("All Runewords"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("All Weapons"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Amazon Spears"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Armors"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Axes"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Claws"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Clubs"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Daggers"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Hammers"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Helms"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Maces"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Melee Weapons"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Missile Weapons"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Polearms"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Scepters"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Spears"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Staves (Not Orbs)"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Swords"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Wands"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Shields"));
                     break;
                 case Languages.Ru:
                     foreach (var rune in runesUI)
@@ -64,6 +88,29 @@ public class UIController : MonoBehaviour
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesRu), runesUI.IndexOf(rune));
                     }
+
+                    typeDropdown.options.Clear();
+                    typeDropdown.captionText.text = "Все Рунворды";
+                    typeDropdown.options.Add(new Dropdown.OptionData("Все Рунворды"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Все Оружие"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Копья Амазонки"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Броня"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Топоры"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Когти"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Дубины"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Кинжалы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Молоты"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Шлемы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Булавы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие ближнего боя"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие дальнего боя"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Древковое оружие"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Скипетры"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Копья"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Двуручные Посохи (Не Сферы)"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Мечи"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Жезлы Некроманта"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Щиты"));
                     break;
             }
         }

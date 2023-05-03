@@ -98,6 +98,26 @@ public class RunewordsController : MonoBehaviour
         ClearCustomSearchDB();
         lastSocketSearch = Int32.Parse(socketsDropdown.options[socketsDropdown.value].text); 
         lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
+        lastTypeSearch = lastTypeSearch == "Все Рунворды" ? "All Runewords" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Все Оружие" ? "All Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Копья Амазонки" ? "Amazon Spears" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Броня" ? "Armors" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Топоры" ? "Axes" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Когти" ? "Claws" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Дубины" ? "Clubs" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Кинжалы" ? "Daggers" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Молоты" ? "Hammers" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Шлемы" ? "Helms" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Булавы" ? "Maces" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Оружие ближнего боя" ? "Melee Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Оружие дальнего боя" ? "Missile Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Древковое оружие" ? "Polearms" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Скипетры" ? "Scepters" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Копья" ? "Spears" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Двуручные Посохи (Не Сферы)" ? "Staves (Not Orbs)" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Мечи" ? "Swords" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Жезлы Некроманта" ? "Wands" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Щиты" ? "Shields" : lastTypeSearch;
         
         FilterRunewords(lastTypeSearch);
 
@@ -498,8 +518,6 @@ public class RunewordsController : MonoBehaviour
                 break;
         }
     }
-
-    
 }
 
 public class RunewordSerializer

@@ -24,8 +24,7 @@ public class AppManager : MonoBehaviour
     public Languages currentLanguage;
     public List<Text> buttonsText;
     public Text langText;
-    Text[] links;
-
+    
     UserData userData;
     string json;
     string key = "UserData";
@@ -49,7 +48,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[0].text = "Reset";
                 buttonsText[1].text = "Show Runewords";
                 buttonsText[2].text = "Back to Runes";
-                buttonsText[3].text = "Search";
+                buttonsText[3].text = "Custom";
                 buttonsText[4].text = "Weapons";
                 buttonsText[5].text = "Armors";
                 buttonsText[6].text = "Helms";
@@ -74,6 +73,11 @@ public class AppManager : MonoBehaviour
                     $"But right now you can help us leaving a feedback on Google Play Store and drop there some stars! " +
                     $"We highly appreciate your trust and your feedback let us growth to ubers level!" +
                     $"We wish you a best possible loot and a good day!\n\nSee you in Sanctuary!\n\n\n\n\nSincerely yours, Sisyphean Labor Team.";
+                buttonsText[35].text = "We are searching for:";
+                buttonsText[36].text = "Name:";
+                buttonsText[37].text = "Sockets:";
+                buttonsText[38].text = "Type:";
+
                 break;
 
             case Languages.Ru:
@@ -82,7 +86,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[0].text = "Сброс";
                 buttonsText[1].text = "Найти рунворды";
                 buttonsText[2].text = "Назад к рунам";
-                buttonsText[3].text = "Поиск";
+                buttonsText[3].text = "Ручной";
                 buttonsText[4].text = "Оружие";
                 buttonsText[5].text = "Броня";
                 buttonsText[6].text = "Шлемы";
@@ -117,6 +121,11 @@ public class AppManager : MonoBehaviour
                     $"Но прямо сейчас вы можете помочь нам, оставив отзыв в Google Play Store и поставив нам несколько звездочек! " +
                     $"Мы очень ценим ваше доверие, и ваши отзывы позволяют нам расти до убер уровня!" +
                     $" Желаем вам наилучшего лута и хорошего дня!\n\nДо встречи в Санктуарии!\n\n\n\n\nИскренне Ваша, команда Sisyphean Labor.";
+                buttonsText[35].text = "Мы ищем:";
+                buttonsText[36].text = "Название:";
+                buttonsText[37].text = "Гнезда:";
+                buttonsText[38].text = "Тип:";
+
                 break;
         }
     }
