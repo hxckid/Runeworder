@@ -411,7 +411,7 @@ public class RunewordsController : MonoBehaviour
                     workflowDB.runewords.Sort((a, b) =>
                     {
                         int result = a.hasRunes.CompareTo(b.hasRunes);
-                        return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
+                        return result == 0 ? a.runes.Count.CompareTo(b.runes.Count) : result;
                     });
                     break;
                 case "Level":
@@ -434,7 +434,7 @@ public class RunewordsController : MonoBehaviour
                     workflowDB.runewords.Sort((b, a) =>
                     {
                         int result = a.hasRunes.CompareTo(b.hasRunes);
-                        return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
+                        return result == 0 ? a.runes.Count.CompareTo(b.runes.Count) : result;
                     });
                     break;
                 case "Level":
