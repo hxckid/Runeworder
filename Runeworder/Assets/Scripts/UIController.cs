@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     public GameObject runeUIPrefab;
     public RunesSprites_SO runesSprites;
     public UserRunes_SO userRunes;
+    public Dropdown socketsDropdown;
     public Dropdown typeDropdown;
 
     [SerializeField] List<GameObject> runesUI;
@@ -59,6 +60,15 @@ public class UIController : MonoBehaviour
                         text.text = Enum.GetName(typeof(RunesEn), runesUI.IndexOf(rune));
                     }
 
+                    socketsDropdown.options.Clear();
+                    socketsDropdown.captionText.text = "All";
+                    socketsDropdown.options.Add(new Dropdown.OptionData("All"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("6"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("5"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("4"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("3"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("2"));
+
                     typeDropdown.options.Clear();
                     typeDropdown.captionText.text = "All Runewords";
                     typeDropdown.options.Add(new Dropdown.OptionData("All Runewords"));
@@ -88,6 +98,15 @@ public class UIController : MonoBehaviour
                         Text text = rune.GetComponentInChildren<Text>();
                         text.text = Enum.GetName(typeof(RunesRu), runesUI.IndexOf(rune));
                     }
+
+                    socketsDropdown.options.Clear();
+                    socketsDropdown.captionText.text = "Все";
+                    socketsDropdown.options.Add(new Dropdown.OptionData("Все"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("6"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("5"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("4"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("3"));
+                    socketsDropdown.options.Add(new Dropdown.OptionData("2"));
 
                     typeDropdown.options.Clear();
                     typeDropdown.captionText.text = "Все Рунворды";

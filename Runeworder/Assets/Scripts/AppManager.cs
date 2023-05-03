@@ -79,7 +79,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[38].text = "Type:";
                 buttonsText[39].text = "Find";
                 buttonsText[40].text = "Back";
-                buttonsText[41].text = "All Runewords";
+                buttonsText[41].text = "Both Ladder and Non";
                 buttonsText[42].text = "Non-Ladder Only";
                 buttonsText[43].text = "Ladder Only";
                 buttonsText[44].text = "Ladder Runewords Settings:";
@@ -132,7 +132,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[38].text = "Тип:";
                 buttonsText[39].text = "Найти";
                 buttonsText[40].text = "Назад";
-                buttonsText[41].text = "Все рунворды";
+                buttonsText[41].text = "Ладдер и Не-Ладдер";
                 buttonsText[42].text = "Только Не-Ладдер";
                 buttonsText[43].text = "Только Ладдер";
                 buttonsText[44].text = "Настройки для Ладдера:";

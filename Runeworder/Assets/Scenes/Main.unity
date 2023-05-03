@@ -333,6 +333,7 @@ MonoBehaviour:
   runeUIPrefab: {fileID: 5731730575425651543, guid: 51964c5b4662f1644a3231f12e75ae8c, type: 3}
   runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
+  socketsDropdown: {fileID: 782215781}
   typeDropdown: {fileID: 1670923128}
   runesUI: []
 --- !u!114 &47835034
@@ -1148,6 +1149,7 @@ MonoBehaviour:
   - {fileID: 588620881}
   - {fileID: 553035105}
   - {fileID: 613414957}
+  - {fileID: 1581670410}
   langText: {fileID: 1319346797}
 --- !u!1 &149384708
 GameObject:
@@ -3806,7 +3808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: All Runewords
+  m_Text: Both Ladder and Non
 --- !u!222 &588620882
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5503,6 +5505,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: All
+      m_Image: {fileID: 0}
     - m_Text: 6
       m_Image: {fileID: 0}
     - m_Text: 5

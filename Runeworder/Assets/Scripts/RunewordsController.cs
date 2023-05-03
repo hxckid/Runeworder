@@ -99,7 +99,16 @@ public class RunewordsController : MonoBehaviour
     public void CustomSearch()
     {
         ClearCustomSearchDB();
-        lastSocketSearch = Int32.Parse(socketsDropdown.options[socketsDropdown.value].text); 
+        string numOfSockets = socketsDropdown.options[socketsDropdown.value].text;
+        if (numOfSockets == "All" || numOfSockets == "Все")
+        {
+            lastSocketSearch = 0;
+        }
+        else
+        {
+            lastSocketSearch = Int32.Parse(numOfSockets); 
+        }
+
         lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
 
         lastTypeSearch = lastTypeSearch == "Все Рунворды" ? "All Runewords" : lastTypeSearch;
@@ -125,30 +134,61 @@ public class RunewordsController : MonoBehaviour
         
         FilterRunewords(lastTypeSearch);
 
-        if (allRunewordsToggle.isOn)
+        if (lastSocketSearch != 0)
         {
-            foreach (var rw in workflowDB.runewords)
+            if (allRunewordsToggle.isOn)
             {
-                if (rw.runes.Count == lastSocketSearch)
-                    customSearchDB.runewords.Add(rw);
+                foreach (var rw in workflowDB.runewords)
+                {
+                    if (rw.runes.Count == lastSocketSearch)
+                        customSearchDB.runewords.Add(rw);
+                }
             }
-        }
-        
-        if (nonLadderToggle.isOn)
-        {
-            foreach (var rw in workflowDB.runewords)
-            {
-                if (rw.runes.Count == lastSocketSearch && !rw.isLadder)
-                    customSearchDB.runewords.Add(rw);
-            }
-        }
 
-        if (ladderToggle.isOn)
-        {
-            foreach (var rw in workflowDB.runewords)
+            if (nonLadderToggle.isOn)
             {
-                if (rw.runes.Count == lastSocketSearch && rw.isLadder)
+                foreach (var rw in workflowDB.runewords)
+                {
+                    if (rw.runes.Count == lastSocketSearch && !rw.isLadder)
+                        customSearchDB.runewords.Add(rw);
+                }
+            }
+
+            if (ladderToggle.isOn)
+            {
+                foreach (var rw in workflowDB.runewords)
+                {
+                    if (rw.runes.Count == lastSocketSearch && rw.isLadder)
+                        customSearchDB.runewords.Add(rw);
+                }
+            }
+        }
+        else
+        {
+            if (allRunewordsToggle.isOn)
+            {
+                foreach (var rw in workflowDB.runewords)
+                {
                     customSearchDB.runewords.Add(rw);
+                }
+            }
+
+            if (nonLadderToggle.isOn)
+            {
+                foreach (var rw in workflowDB.runewords)
+                {
+                    if (!rw.isLadder)
+                        customSearchDB.runewords.Add(rw);
+                }
+            }
+
+            if (ladderToggle.isOn)
+            {
+                foreach (var rw in workflowDB.runewords)
+                {
+                    if (rw.isLadder)
+                        customSearchDB.runewords.Add(rw);
+                }
             }
         }
 
