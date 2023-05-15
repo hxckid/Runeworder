@@ -142,7 +142,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[44].text = "Настройки для Ладдера:";
                 buttonsText[45].text = "Назад";
                 buttonsText[46].text = "Помощь и Информация";
-                buttonsText[47].text = $"Привет!\n\nWe, Sisyfean Labor team, would like to express our heartfelt gratitude for your trust and support in using our application!\nTo make the app even better, we have created a Telegram group where you can share your feedback and suggestions. Your thoughts will help us to improve and provide you with the best companion app for Diablo 2 Resurrected!";
+                buttonsText[47].text = $"Привет!\n\nМы, команда SisyfeanLabor, чрезвычайно признательны Вам за использование нашего приложения, за Ваше доверие и поддержку!\nЧтобы сделать приложение еще лучше, мы добавили группу в Telegram, где вы сможете оставлять свои комментарии и пожелания. Основываясь на Ваших отзывах, мы попробуем сделать самое лучшее приложение-компаньон для Diablo 2 Resurrected!";
                 buttonsText[48].text = "Открыть Telegram";
                 break;
         }
