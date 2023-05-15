@@ -23,19 +23,21 @@ MonoBehaviour:
   weaponBases: 
   subType: 3 Socket Helms
   reqLevel: 35
-  statsDesc: '+20% Faster Hit Recovery
+  statsDesc: 'Level 1  Cleansing Aura When Equipped
 
-    +75-100% Enhanced Defense
+    +20% Faster Hit Recovery
 
-    +10
-    to Vitality
+    +75-100%
+    Enhanced Defense
+
+    +10 to Vitality
 
     Increase Maximum Life 5%
 
-    Poison Resist +40-60%
-
     Poison
-    Length Reduced by 75%'
+    Resist +40-60%
+
+    Poison Length Reduced by 75%'
   isLadder: 1
   classItem: 0
   gameVersion: Resurrected 2.6
