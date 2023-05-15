@@ -83,6 +83,10 @@ public class AppManager : MonoBehaviour
                 buttonsText[42].text = "Non-Ladder Only";
                 buttonsText[43].text = "Ladder Only";
                 buttonsText[44].text = "Ladder Runewords Settings:";
+                buttonsText[45].text = "Back";
+                buttonsText[46].text = "Help and Information";
+                buttonsText[47].text = $"Hello!\n\nWe, Sisyfean Labor team, would like to express our heartfelt gratitude for your trust and support in using our application!\nTo make the app even better, we have created a Telegram group where you can share your feedback and suggestions. Your thoughts will help us to improve and provide you with the best companion app for Diablo 2 Resurrected!";
+                buttonsText[48].text = "Join Telegram";
                 break;
 
             case Languages.Ru:
@@ -136,6 +140,10 @@ public class AppManager : MonoBehaviour
                 buttonsText[42].text = "Только Не-Ладдер";
                 buttonsText[43].text = "Только Ладдер";
                 buttonsText[44].text = "Настройки для Ладдера:";
+                buttonsText[45].text = "Назад";
+                buttonsText[46].text = "Помощь и Информация";
+                buttonsText[47].text = $"Привет!\n\nWe, Sisyfean Labor team, would like to express our heartfelt gratitude for your trust and support in using our application!\nTo make the app even better, we have created a Telegram group where you can share your feedback and suggestions. Your thoughts will help us to improve and provide you with the best companion app for Diablo 2 Resurrected!";
+                buttonsText[48].text = "Открыть Telegram";
                 break;
         }
     }
@@ -234,6 +242,11 @@ public class AppManager : MonoBehaviour
                 AppManager.instance.gameState = GameState.Tooltip;
                 break;
         }
+    }
+
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
     }
 }
 
