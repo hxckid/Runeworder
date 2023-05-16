@@ -12,6 +12,7 @@ public class UIController : MonoBehaviour
     public UserRunes_SO userRunes;
     public Dropdown socketsDropdown;
     public Dropdown typeDropdown;
+    public GameObject donationPanel;
 
     [SerializeField] List<GameObject> runesUI;
 
@@ -20,6 +21,15 @@ public class UIController : MonoBehaviour
         runesUI = new List<GameObject>();
         InitRunes();
         AppManager.OnLanguageChanged += Localize;
+        AppManager.OnLanguageChanged += ShowDonationPanel;
+    }
+
+    private void ShowDonationPanel(Languages languages)
+    {
+        if (languages == Languages.Ru)
+            donationPanel.SetActive(true);
+        else
+            donationPanel.SetActive(false);
     }
 
     void InitRunes()

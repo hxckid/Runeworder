@@ -84,9 +84,11 @@ public class AppManager : MonoBehaviour
                 buttonsText[43].text = "Ladder Only";
                 buttonsText[44].text = "Ladder Runewords Settings:";
                 buttonsText[45].text = "Back";
-                buttonsText[46].text = "Help and Information";
-                buttonsText[47].text = $"Hello!\n\nWe, Sisyfean Labor team, would like to express our heartfelt gratitude for your trust and support in using our application!\nTo make the app even better, we have created a Telegram group where you can share your feedback and suggestions. Your thoughts will help us to improve and provide you with the best companion app for Diablo 2 Resurrected!";
-                buttonsText[48].text = "Join Telegram";
+                buttonsText[46].text = "Support the Developer";
+                buttonsText[47].text = $"We, Sisyphean Labour team, would like to thank you for your trust and support in using our application!\n\n" +
+                    $"We would be grateful if you could take a moment to leave a rating or review on the Google Play Store. Your feedback helps others " +
+                    $"discover our app and supports its ongoing development. Thank you!";
+                buttonsText[48].text = "Google Play Store";
                 break;
 
             case Languages.Ru:
@@ -141,9 +143,11 @@ public class AppManager : MonoBehaviour
                 buttonsText[43].text = "Только Ладдер";
                 buttonsText[44].text = "Настройки для Ладдера:";
                 buttonsText[45].text = "Назад";
-                buttonsText[46].text = "Помощь и Информация";
-                buttonsText[47].text = $"Привет!\n\nМы, команда SisyfeanLabor, чрезвычайно признательны Вам за использование нашего приложения, за Ваше доверие и поддержку!\nЧтобы сделать приложение еще лучше, мы добавили группу в Telegram, где вы сможете оставлять свои комментарии и пожелания. Основываясь на Ваших отзывах, мы попробуем сделать самое лучшее приложение-компаньон для Diablo 2 Resurrected!";
-                buttonsText[48].text = "Открыть Telegram";
+                buttonsText[46].text = "Поддержать разарботчика";
+                buttonsText[47].text = $"Мы хотели бы поблагодарить Вас за доверие и поддержку нашего приложения и " +
+                    $"были бы очень признательны, если бы у вас нашлось время поставить нам оценку или написать отзыв в магазине Google Play. " +
+                    $"\n\nВаш отзыв поможет другим узнать об этом приложении и поддержит его развитие. Спасибо!";
+                buttonsText[48].text = "Google Play Store";
                 break;
         }
     }

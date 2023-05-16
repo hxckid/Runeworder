@@ -13,8 +13,24 @@ public class BannerAd : MonoBehaviour
     private void Start()
     {
         Advertisement.Banner.SetPosition(bannerPosition);
-        StartCoroutine(LoadBannerAfterTime(bannerLoadDelay));
-        //LoadBanner();
+        if (AppManager.instance.currentLanguage == Languages.En)
+        {
+            StartCoroutine(LoadBannerAfterTime(bannerLoadDelay));
+        } 
+        AppManager.OnLanguageChanged += SwitchBannerShow;
+    }
+
+    private void SwitchBannerShow(Languages languages)
+    {
+        switch (languages)
+        {
+            case Languages.En:
+                LoadBanner();
+                break;
+            case Languages.Ru:
+                HideBanner();
+                break;
+        }
     }
 
     private IEnumerator LoadBannerAfterTime(float delay)
@@ -73,7 +89,7 @@ public class BannerAd : MonoBehaviour
         Debug.Log("Banner Shown");
     }
 
-    public void HideBannerAd()
+    public void HideBanner()
     {
         Advertisement.Banner.Hide();
     }
