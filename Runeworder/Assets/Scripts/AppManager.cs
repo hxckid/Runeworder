@@ -32,6 +32,29 @@ public class AppManager : MonoBehaviour
 
     public delegate void LanguageHandler(Languages languages);
     public static event LanguageHandler OnLanguageChanged;
+    
+    private void OnEnable()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance == this)
+            Destroy(gameObject);
+
+        RuneController.OnRuneToggleChanged += SaveUserData;
+        json = PlayerPrefs.GetString(key);
+        userData = JsonUtility.FromJson<UserData>(json);
+        userRunes.hasRunes.Clear();
+        userRunes.hasRunes = new List<RunesEn>(userData.runes);
+        gameState = GameState.Runes;
+        switch (Application.systemLanguage)
+        {
+            case SystemLanguage.Belarusian:
+            case SystemLanguage.Russian:
+            case SystemLanguage.Ukrainian:
+                ChangeLanguage();
+                break;
+        }
+    }
 
     public void ChangeLanguage()
     {
@@ -89,6 +112,7 @@ public class AppManager : MonoBehaviour
                     $"We would be grateful if you could take a moment to leave a rating or review on the Google Play Store. Your feedback helps others " +
                     $"discover our app and supports its ongoing development. Thank you!";
                 buttonsText[48].text = "Google Play Store";
+                buttonsText[49].text = "Our e-mail: sisyfeanlabor@gmail.com";
                 break;
 
             case Languages.Ru:
@@ -143,34 +167,12 @@ public class AppManager : MonoBehaviour
                 buttonsText[43].text = "Только Ладдер";
                 buttonsText[44].text = "Настройки для Ладдера:";
                 buttonsText[45].text = "Назад";
-                buttonsText[46].text = "Поддержать разарботчика";
+                buttonsText[46].text = "Поддержать разработчика";
                 buttonsText[47].text = $"Мы хотели бы поблагодарить Вас за доверие и поддержку нашего приложения и " +
                     $"были бы очень признательны, если бы у вас нашлось время поставить нам оценку или написать отзыв в магазине Google Play. " +
                     $"\n\nВаш отзыв поможет другим узнать об этом приложении и поддержит его развитие. Спасибо!";
                 buttonsText[48].text = "Google Play Store";
-                break;
-        }
-    }
-
-    private void OnEnable()
-    {
-        if (instance == null)
-            instance = this;
-        else if (instance == this)
-            Destroy(gameObject);
-
-        RuneController.OnRuneToggleChanged += SaveUserData;
-        json = PlayerPrefs.GetString(key);
-        userData = JsonUtility.FromJson<UserData>(json);
-        userRunes.hasRunes.Clear();
-        userRunes.hasRunes = new List<RunesEn>(userData.runes);
-        gameState = GameState.Runes;
-        switch (Application.systemLanguage)
-        {
-            case SystemLanguage.Belarusian:
-            case SystemLanguage.Russian:
-            case SystemLanguage.Ukrainian:
-                ChangeLanguage();
+                buttonsText[49].text = "Наша почта: sisyfeanlabor@gmail.com";
                 break;
         }
     }

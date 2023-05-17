@@ -8,24 +8,22 @@ public class BannerAd : MonoBehaviour
     [SerializeField] BannerPosition bannerPosition;
 
     [SerializeField] string androidAdUnitId = "Banner_Android";
-    [SerializeField] float bannerLoadDelay = 2f;
+    [SerializeField] float bannerLoadDelay = 1f;
 
     private void Start()
     {
-        Advertisement.Banner.SetPosition(bannerPosition);
-        if (AppManager.instance.currentLanguage == Languages.En)
-        {
-            StartCoroutine(LoadBannerAfterTime(bannerLoadDelay));
-        } 
         AppManager.OnLanguageChanged += SwitchBannerShow;
+        Advertisement.Banner.SetPosition(bannerPosition);
+
+        SwitchBannerShow(AppManager.instance.currentLanguage); 
     }
 
-    private void SwitchBannerShow(Languages languages)
+    private void SwitchBannerShow(Languages curLang)
     {
-        switch (languages)
+        switch (curLang)
         {
             case Languages.En:
-                LoadBanner();
+                StartCoroutine(LoadBannerAfterTime(bannerLoadDelay));
                 break;
             case Languages.Ru:
                 HideBanner();

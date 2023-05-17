@@ -100,14 +100,11 @@ public class RunewordsController : MonoBehaviour
     {
         ClearCustomSearchDB();
         string numOfSockets = socketsDropdown.options[socketsDropdown.value].text;
+
         if (numOfSockets == "All" || numOfSockets == "Все")
-        {
             lastSocketSearch = 0;
-        }
         else
-        {
             lastSocketSearch = Int32.Parse(numOfSockets); 
-        }
 
         lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
 
@@ -136,67 +133,39 @@ public class RunewordsController : MonoBehaviour
 
         if (lastSocketSearch != 0)
         {
-            if (allRunewordsToggle.isOn)
+            foreach (var rw in workflowDB.runewords)
             {
-                foreach (var rw in workflowDB.runewords)
-                {
-                    if (rw.runes.Count == lastSocketSearch)
-                        customSearchDB.runewords.Add(rw);
-                }
-            }
-
-            if (nonLadderToggle.isOn)
-            {
-                foreach (var rw in workflowDB.runewords)
-                {
-                    if (rw.runes.Count == lastSocketSearch && !rw.isLadder)
-                        customSearchDB.runewords.Add(rw);
-                }
-            }
-
-            if (ladderToggle.isOn)
-            {
-                foreach (var rw in workflowDB.runewords)
-                {
-                    if (rw.runes.Count == lastSocketSearch && rw.isLadder)
-                        customSearchDB.runewords.Add(rw);
-                }
+                if (rw.runes.Count == lastSocketSearch && (allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
+                    customSearchDB.runewords.Add(rw);
             }
         }
         else
         {
-            if (allRunewordsToggle.isOn)
+            foreach (var rw in workflowDB.runewords)
             {
-                foreach (var rw in workflowDB.runewords)
-                {
+                if ((allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
                     customSearchDB.runewords.Add(rw);
-                }
-            }
-
-            if (nonLadderToggle.isOn)
-            {
-                foreach (var rw in workflowDB.runewords)
-                {
-                    if (!rw.isLadder)
-                        customSearchDB.runewords.Add(rw);
-                }
-            }
-
-            if (ladderToggle.isOn)
-            {
-                foreach (var rw in workflowDB.runewords)
-                {
-                    if (rw.isLadder)
-                        customSearchDB.runewords.Add(rw);
-                }
             }
         }
 
         ClearWorkflowDB();
         foreach (var rw in customSearchDB.runewords)
-        {
             workflowDB.runewords.Add(rw);
+        
+        string ladderText = string.Empty;
+        string socketText = lastSocketSearch == 0 ? "2-6" : lastSocketSearch.ToString();
+        string typeText = AppManager.instance.currentLanguage == Languages.En ? lastTypeSearch : typeDropdown.options[typeDropdown.value].text;
+        switch (AppManager.instance.currentLanguage)
+        {
+            case Languages.En:
+                ladderText = allRunewordsToggle.isOn ? "Both" : nonLadderToggle.isOn ? "Non-Ladder Only" : "Ladder Only";
+                break;
+            case Languages.Ru:
+                ladderText = allRunewordsToggle.isOn ? "Оба" : nonLadderToggle.isOn ? "Не-Ладдер" : "Ладдер";
+                break;
         }
+
+        status.text = $"({workflowDB.runewords.Count}) {typeText}/{socketText}*/{ladderText}";
 
         FillRunewordList(customSearchDB);
     }
@@ -205,165 +174,39 @@ public class RunewordsController : MonoBehaviour
     {
         ClearWorkflowDB();
 
-        switch (type)
+        var filters = new Dictionary<string, Func<Runeword_SO, bool>>()
         {
-            case "Armors":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.runewordType == RunewordType.Armor)
-                    {
-                        workflowDB.runewords.Add(rw);
-                    }
-                }
-                break;
-            case "Helms":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.runewordType == RunewordType.Helms)
-                    {
-                        workflowDB.runewords.Add(rw);
-                    }
-                }
-                break;
-            case "Shields":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.runewordType == RunewordType.Shields)
-                    {
-                        workflowDB.runewords.Add(rw);
-                    }
-                }
-                break;
-            case "All Runewords":
-                foreach (var rw in currentDB.runewords)
-                {
-                    workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Patch":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.gameVersion == "Resurrected 2.6")
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Amazon Spears":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Amazon") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Axes":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Axes") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Claws":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Claws") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Clubs":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Clubs") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Daggers":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Daggers") && rw.runes.Count <= 3 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 3)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Hammers":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Hammers") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Maces":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Maces") && rw.runes.Count <= 5 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 5)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Melee Weapons":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (!rw.subType.Contains("Missile") && !rw.subType.Contains("Armor") && !rw.subType.Contains("Helms") && !rw.subType.Contains("Shields"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Missile Weapons":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Missile") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Melee"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Polearms":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Polearms") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Scepters":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Scepters") && rw.runes.Count <= 5 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 5)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Spears":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Spears") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Staves (Not Orbs)":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Staves") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Swords":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Swords") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "Wands":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.subType.Contains("Wands") && rw.runes.Count <= 2 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 2)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
-            case "All Weapons":
-                foreach (var rw in currentDB.runewords)
-                {
-                    if (rw.runewordType == RunewordType.Weapons)
-                        workflowDB.runewords.Add(rw);
-                }
-                break;
+            { "Armors", rw => rw.runewordType == RunewordType.Armor },
+            { "Helms", rw => rw.runewordType == RunewordType.Helms },
+            { "Shields", rw => rw.runewordType == RunewordType.Shields },
+            { "All Runewords", rw => true },
+            { "Patch", rw => rw.gameVersion == "Resurrected 2.6" },
+            { "Amazon Spears", rw => rw.subType.Contains("Amazon") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Axes", rw => rw.subType.Contains("Axes") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Claws", rw => (rw.subType.Contains("Claws") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 3 },
+            { "Clubs", rw => (rw.subType.Contains("Clubs") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 3 },
+            { "Daggers", rw => (rw.subType.Contains("Daggers") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 3 },
+            { "Hammers", rw => rw.subType.Contains("Hammers") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Maces", rw => (rw.subType.Contains("Maces") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 5 },
+            { "Melee Weapons", rw => !rw.subType.Contains("Missile") && !rw.subType.Contains("Armor") && !rw.subType.Contains("Helms") && !rw.subType.Contains("Shields") },
+            { "Missile Weapons", rw => rw.subType.Contains("Missile") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Melee")) },
+            { "Polearms", rw => rw.subType.Contains("Polearms") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Scepters", rw => (rw.subType.Contains("Scepters") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 5 },
+            { "Spears", rw => rw.subType.Contains("Spears") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Staves (Not Orbs)", rw => (rw.subType.Contains("Staves") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Swords", rw => (rw.subType.Contains("Swords") || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
+            { "Wands", rw => (rw.subType.Contains("Wands") && rw.runes.Count <= 2 || rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile") && rw.runes.Count <= 2) },
+            { "All Weapons", rw => (rw.runewordType == RunewordType.Weapons) }
+        };
+
+        if (filters.TryGetValue(type, out var filter))
+        {
+            workflowDB.runewords.AddRange(currentDB.runewords.Where(filter));
         }
-        
+
         lastPressed = type;
         if (AppManager.instance.currentLanguage == Languages.En)
-            status.text = lastPressed;
+            status.text = $"({workflowDB.runewords.Count}) {lastPressed}";
         else
             Localize(type);
         
@@ -514,71 +357,30 @@ public class RunewordsController : MonoBehaviour
 
     private void Localize(string type)
     {
+        status.text = $"({workflowDB.runewords.Count}) ";
         switch (type)
         {
-            case "Armors":
-                status.text = "Броня";
-                break;
-            case "Helms":
-                status.text = "Шлемы";
-                break;
-            case "Shields":
-                status.text = "Щиты";
-                break;
-            case "All Runewords":
-                status.text = "Все Рунворды";
-                break;
-            case "Patch":
-                status.text = "Патч 2.6";
-                break;
-            case "Amazon Spears":
-                status.text = "Копья Амазонки";
-                break;
-            case "Axes":
-                status.text = "Топоры";
-                break;
-            case "Claws":
-                status.text = "Когти";
-                break;
-            case "Clubs":
-                status.text = "Дубины";
-                break;
-            case "Daggers":
-                status.text = "Кинжалы";
-                break;
-            case "Hammers":
-                status.text = "Молоты";
-                break;
-            case "Maces":
-                status.text = "Булавы";
-                break;
-            case "Melee Weapons":
-                status.text = "Оружие ближнего боя";
-                break;
-            case "Missile Weapons":
-                status.text = "Оружие дальнего боя";
-                break;
-            case "Polearms":
-                status.text = "Древковое оружие";
-                break;
-            case "Scepters":
-                status.text = "Скипетры";
-                break;
-            case "Spears":
-                status.text = "Копья";
-                break;
-            case "Staves (Not Orbs)":
-                status.text = "Двуручные Посохи (Не Сферы)";
-                break;
-            case "Swords":
-                status.text = "Мечи";
-                break;
-            case "Wands":
-                status.text = "Жезлы Некроманта";
-                break;
-            case "All Weapons":
-                status.text = "Все оружие";
-                break;
+            case "Armors": status.text += "Броня";  break;
+            case "Helms": status.text += "Шлемы"; break;
+            case "Shields": status.text += "Щиты"; break;
+            case "All Runewords": status.text += "Все Рунворды"; break;
+            case "Patch": status.text += "Патч 2.6"; break;
+            case "Amazon Spears": status.text += "Копья Амазонки"; break;
+            case "Axes": status.text += "Топоры"; break;
+            case "Claws": status.text += "Когти"; break;
+            case "Clubs": status.text += "Дубины"; break;
+            case "Daggers": status.text += "Кинжалы"; break;
+            case "Hammers": status.text += "Молоты"; break;
+            case "Maces": status.text += "Булавы"; break;
+            case "Melee Weapons": status.text += "Оружие ближнего боя"; break;
+            case "Missile Weapons": status.text += "Оружие дальнего боя"; break;
+            case "Polearms": status.text += "Древковое оружие"; break;
+            case "Scepters": status.text += "Скипетры"; break;
+            case "Spears": status.text += "Копья"; break;
+            case "Staves (Not Orbs)": status.text += "Двуручные Посохи (Не Сферы)"; break;
+            case "Swords": status.text += "Мечи"; break;
+            case "Wands": status.text += "Жезлы Некроманта"; break;
+            case "All Weapons": status.text += "Все оружие"; break;
         }
     }
 }

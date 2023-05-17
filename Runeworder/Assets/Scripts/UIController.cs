@@ -18,10 +18,12 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        runesUI = new List<GameObject>();
-        InitRunes();
         AppManager.OnLanguageChanged += Localize;
         AppManager.OnLanguageChanged += ShowDonationPanel;
+
+        runesUI = new List<GameObject>();
+        InitRunes();
+        ShowDonationPanel(AppManager.instance.currentLanguage);
     }
 
     private void ShowDonationPanel(Languages languages)
