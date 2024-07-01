@@ -10,7 +10,7 @@ public class ButtonsBehaviour : MonoBehaviour
     public Color32 normal;
     public Color32 highlighted;
 
-    public void MarkButtonAsActive(int number)
+    public void HighlightAndRenameButton(int number)
     {
         foreach (var btn in buttons)
         {
@@ -19,10 +19,15 @@ public class ButtonsBehaviour : MonoBehaviour
 
         buttons[number].gameObject.GetComponent<Image>().color = highlighted;
 
-        if (number == 5 || number == 6)
+        if (number >= 5 && number <= 10)
         {
-            buttons[5].gameObject.GetComponent<Image>().color = highlighted;
-            buttons[6].gameObject.GetComponent<Image>().color = highlighted;
+            buttons[11].gameObject.GetComponent<Image>().color = highlighted;
+            Text buttonText = buttons[number].GetComponentInChildren<Text>();
+            if (buttonText != null)
+            {
+                buttons[11].GetComponentInChildren<Text>().text = buttonText.text;
+            }
         }
     }
 }
+

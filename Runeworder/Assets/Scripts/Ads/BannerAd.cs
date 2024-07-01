@@ -15,10 +15,10 @@ public class BannerAd : MonoBehaviour
         AppManager.OnLanguageChanged += SwitchBannerShow;
         Advertisement.Banner.SetPosition(bannerPosition);
 
-        SwitchBannerShow(AppManager.instance.currentLanguage); 
+        SwitchBannerShow(AppManager.instance.currentLanguage, androidAdUnitId); 
     }
 
-    private void SwitchBannerShow(Languages curLang)
+    private void SwitchBannerShow(Languages curLang, string ver)
     {
         switch (curLang)
         {

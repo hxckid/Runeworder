@@ -10,9 +10,13 @@ using System.IO;
 
 public class RunewordsController : MonoBehaviour
 {
+    public Text langText;
+    public Dropdown verDrop;
     public UserRunes_SO userRunes;
     public RunewordsDB_SO runewordsDBEng;
     public RunewordsDB_SO runewordsDBRus;
+    public RunewordsDB_SO d2LodDBEng;
+    public RunewordsDB_SO d2LodDBRus;
     public RunewordsDB_SO workflowDB;
     public RunewordsDB_SO customSearchDB;
     public GameObject runewordPrefab;
@@ -37,7 +41,7 @@ public class RunewordsController : MonoBehaviour
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
         AppManager.OnLanguageChanged += InitDB;
-        InitDB(AppManager.instance.currentLanguage);
+        InitDB(AppManager.instance.currentLanguage, "Resurrected");
         lastPressed = "All";
         lastSocketSearch = 0;
         lastTypeSearch = "None";
@@ -48,15 +52,28 @@ public class RunewordsController : MonoBehaviour
         //Debug.Log($"Saved here: {filePath}");
     }
 
-    private void InitDB(Languages lang)
+    public void ChangeGameVersion()
+    {
+        Languages currentLanguage = langText.text == "RUS" ? Languages.En : Languages.Ru;
+        string currentVersion = verDrop.options[verDrop.value].text;
+        InitDB(currentLanguage, currentVersion);
+    }
+
+    private void InitDB(Languages lang, string ver)
     {
         switch (lang)
         {
             case Languages.En:
-                currentDB = runewordsDBEng;
+                if (ver == "Resurrected")
+                    currentDB = runewordsDBEng;
+                else
+                    currentDB = d2LodDBEng;
                 break;
             case Languages.Ru:
-                currentDB = runewordsDBRus;
+                if (ver == "Resurrected")
+                    currentDB = runewordsDBRus;
+                else
+                    currentDB = d2LodDBRus;
                 break;
         }
     }
@@ -180,7 +197,11 @@ public class RunewordsController : MonoBehaviour
             { "Helms", rw => rw.runewordType == RunewordType.Helms },
             { "Shields", rw => rw.runewordType == RunewordType.Shields },
             { "All Runewords", rw => true },
-            { "Patch", rw => rw.gameVersion == "Resurrected 2.6" },
+            { "2.6", rw => rw.gameVersion == "Resurrected 2.6" },
+            { "2.4", rw => rw.gameVersion == "Resurrected 2.4" },
+            { "1.11", rw => rw.gameVersion == "1.11" },
+            { "1.10", rw => rw.gameVersion == "1.10" },
+            { "Original", rw => rw.gameVersion == "Original Rune Words" },
             { "Amazon Spears", rw => rw.subType.Contains("Amazon") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
             { "Axes", rw => rw.subType.Contains("Axes") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
             { "Claws", rw => (rw.subType.Contains("Claws") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 3 },
@@ -360,11 +381,15 @@ public class RunewordsController : MonoBehaviour
         status.text = $"({workflowDB.runewords.Count}) ";
         switch (type)
         {
-            case "Armors": status.text += "Броня";  break;
+            case "Armors": status.text += "Броня"; break;
             case "Helms": status.text += "Шлемы"; break;
             case "Shields": status.text += "Щиты"; break;
             case "All Runewords": status.text += "Все Рунворды"; break;
-            case "Patch": status.text += "Патч 2.6"; break;
+            case "2.4": status.text += "Патч 2.4"; break;
+            case "2.6": status.text += "Патч 2.6"; break;
+            case "1.11": status.text += "Повелитель Разрушений 1.11 и старше"; break;
+            case "1.10": status.text += "Повелитель Разрушений 1.10 и старше"; break;
+            case "Original": status.text += "Оригинальные Рунворды (до 1.10)"; break;
             case "Amazon Spears": status.text += "Копья Амазонки"; break;
             case "Axes": status.text += "Топоры"; break;
             case "Claws": status.text += "Когти"; break;
@@ -383,6 +408,7 @@ public class RunewordsController : MonoBehaviour
             case "All Weapons": status.text += "Все оружие"; break;
         }
     }
+
 }
 
 public class RunewordSerializer

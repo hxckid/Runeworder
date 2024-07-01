@@ -24,13 +24,14 @@ public class AppManager : MonoBehaviour
     public Languages currentLanguage;
     public List<Text> buttonsText;
     public Text langText;
+    public Dropdown verDrop;
     
     UserData userData;
     string json;
     string key = "UserData";
     GameObject txt;
 
-    public delegate void LanguageHandler(Languages languages);
+    public delegate void LanguageHandler(Languages languages, string ver);
     public static event LanguageHandler OnLanguageChanged;
     
     private void OnEnable()
@@ -58,16 +59,14 @@ public class AppManager : MonoBehaviour
 
     public void ChangeLanguage()
     {
-        if (currentLanguage == Languages.Ru)
-            currentLanguage = Languages.En;
-        else
-            currentLanguage = Languages.Ru;
+        currentLanguage = (currentLanguage == Languages.Ru) ? Languages.En : Languages.Ru;
+        string currentVersion = verDrop.options[verDrop.value].text;
 
         switch (currentLanguage)
         {
             case Languages.En:
                 langText.text = "RUS";
-                OnLanguageChanged?.Invoke(Languages.En);
+                OnLanguageChanged?.Invoke(Languages.En, currentVersion);
                 buttonsText[0].text = "Reset";
                 buttonsText[1].text = "Show Runewords";
                 buttonsText[2].text = "Back to Runes";
@@ -113,11 +112,15 @@ public class AppManager : MonoBehaviour
                     $"discover our app and supports its ongoing development. Thank you!";
                 buttonsText[48].text = "Google Play Store";
                 buttonsText[49].text = "Our e-mail: sisyfeanlabor@gmail.com";
+                buttonsText[50].text = "Patch 2.4";
+                buttonsText[51].text = "LoD >= 1.11";
+                buttonsText[52].text = "LoD >= 1.10";
+                buttonsText[54].text = "All";
                 break;
 
             case Languages.Ru:
                 langText.text = "ENG";
-                OnLanguageChanged?.Invoke(Languages.Ru);
+                OnLanguageChanged?.Invoke(Languages.Ru, currentVersion);
                 buttonsText[0].text = "Сброс";
                 buttonsText[1].text = "Найти рунворды";
                 buttonsText[2].text = "Назад к рунам";
@@ -173,6 +176,11 @@ public class AppManager : MonoBehaviour
                     $"\n\nВаш отзыв поможет другим узнать об этом приложении и поддержит его развитие. Спасибо!";
                 buttonsText[48].text = "Google Play Store";
                 buttonsText[49].text = "Наша почта: sisyfeanlabor@gmail.com";
+                buttonsText[50].text = "Патч 2.4";
+                buttonsText[51].text = "LoD >= 1.11";
+                buttonsText[52].text = "LoD >= 1.10";
+                buttonsText[53].text = "Оригинал";
+                buttonsText[54].text = "Все";
                 break;
         }
     }

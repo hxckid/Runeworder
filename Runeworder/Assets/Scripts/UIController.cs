@@ -23,10 +23,10 @@ public class UIController : MonoBehaviour
 
         runesUI = new List<GameObject>();
         InitRunes();
-        ShowDonationPanel(AppManager.instance.currentLanguage);
+        ShowDonationPanel(AppManager.instance.currentLanguage, string.Empty);
     }
 
-    private void ShowDonationPanel(Languages languages)
+    private void ShowDonationPanel(Languages languages, string ver)
     {
         if (languages == Languages.Ru)
             donationPanel.SetActive(true);
@@ -56,10 +56,10 @@ public class UIController : MonoBehaviour
                 }
             }
         }
-        Localize(AppManager.instance.currentLanguage);
+        Localize(AppManager.instance.currentLanguage, "Resurrected");
     }
 
-    public void Localize(Languages lang)
+    public void Localize(Languages lang, string ver)
     {
         if (runesUI.Count > 0)
         {
