@@ -102,7 +102,7 @@ TextureImporter:
       213: -4501304641669350739
     second: Runes_32
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -119,10 +119,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -131,9 +133,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -161,6 +163,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -172,6 +176,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -184,6 +189,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -196,6 +202,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -208,6 +215,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -220,6 +228,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -928,9 +937,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Runes_0: 2174028493023228853
+      Runes_1: -1563776502169514624
+      Runes_10: -7153237468517531963
+      Runes_11: 1763416088095558982
+      Runes_12: -6072647406737386784
+      Runes_13: 9044945195962155230
+      Runes_14: -1939689127886735697
+      Runes_15: 373982053409767258
+      Runes_16: 5455931690302879806
+      Runes_17: 8853478984470228912
+      Runes_18: 8105461410332785109
+      Runes_19: -8930640299231052059
+      Runes_2: 4631235684313111012
+      Runes_20: -3237508240721149647
+      Runes_21: -2681793855587880821
+      Runes_22: -8855056840675280816
+      Runes_23: 6028218691396609969
+      Runes_24: -3033762605368871702
+      Runes_25: 602322258887530144
+      Runes_26: 5332741692669887357
+      Runes_27: 7256167803517260690
+      Runes_28: 7436760131401412462
+      Runes_29: -1196169550335143571
+      Runes_3: -5447233517892204522
+      Runes_30: -8278776621803994759
+      Runes_31: 304334863325100338
+      Runes_32: -4501304641669350739
+      Runes_4: -6094098005360472568
+      Runes_5: 1537613641987167269
+      Runes_6: -961032850552321521
+      Runes_7: -8708938175695389349
+      Runes_8: -7791188130444010090
+      Runes_9: -1502972803651985057
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
