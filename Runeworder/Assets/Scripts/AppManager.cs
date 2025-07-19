@@ -44,6 +44,13 @@ public class AppManager : MonoBehaviour
         RuneController.OnRuneToggleChanged += SaveUserData;
         json = PlayerPrefs.GetString(key);
         userData = JsonUtility.FromJson<UserData>(json);
+        if (userData == null)
+        {
+            userData = new UserData(new List<RunesEn>());
+            json = JsonUtility.ToJson(userData);
+            PlayerPrefs.SetString(key, json);
+            PlayerPrefs.Save();
+        }
         userRunes.hasRunes.Clear();
         userRunes.hasRunes = new List<RunesEn>(userData.runes);
         gameState = GameState.Runes;
@@ -225,8 +232,9 @@ public class AppManager : MonoBehaviour
                         instance.gameState = GameState.Runes;
                         break;
                     case GameState.Tooltip:
-                        GameObject go = FindObjectOfType<TooltipController>().gameObject;
-                        Destroy(go);
+                        GameObject go = FindFirstObjectByType<TooltipController>()?.gameObject;
+                        if (go != null)
+                            Destroy(go);
                         instance.gameState = GameState.Runewords;
                         break;
                 }
