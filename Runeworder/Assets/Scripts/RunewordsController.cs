@@ -29,6 +29,7 @@ public class RunewordsController : MonoBehaviour
     public Toggle allRunewordsToggle;
     public Toggle nonLadderToggle;
     public Toggle ladderToggle;
+    public Toggle completedOnlyToggle;
     
     string lastPressed = string.Empty;
     bool toggle = false;
@@ -41,15 +42,49 @@ public class RunewordsController : MonoBehaviour
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
         AppManager.OnLanguageChanged += InitDB;
+        RuneController.OnRuneToggleChanged += OnRuneStateChanged;
         InitDB(AppManager.instance.currentLanguage, "Resurrected");
         lastPressed = "All";
         lastSocketSearch = 0;
         lastTypeSearch = "None";
+        
+        // ѕересчитываем количество собранных рун при запуске
+        RecalculateCollectedRunes();
 
         //string filePath = Application.dataPath + "/Runewords.xml";
         //RunewordSerializer serializer = new RunewordSerializer();
         //serializer.SaveRunewordsToXml(runewordsDBRus.runewords, filePath);
         //Debug.Log($"Saved here: {filePath}");
+    }
+
+    /// <summary>
+    /// ѕровер€ет, полностью ли собрано рунное слово (все руны собраны)
+    /// </summary>
+    /// <param name="runeword">–унное слово дл€ проверки</param>
+    /// <returns>true если все руны собраны, false если нет</returns>
+    private bool IsRunewordCompleted(Runeword_SO runeword)
+    {
+        return runeword.runes.Count == runeword.hasRunes;
+    }
+    
+    /// <summary>
+    /// ѕересчитывает количество собранных рун дл€ всех рунных слов в текущей базе данных
+    /// </summary>
+    public void RecalculateCollectedRunes()
+    {
+        if (currentDB == null) return;
+        
+        foreach (var runeword in currentDB.runewords)
+        {
+            runeword.hasRunes = 0;
+            foreach (var rune in runeword.runes)
+            {
+                if (userRunes.hasRunes.Contains(rune))
+                {
+                    runeword.hasRunes++;
+                }
+            }
+        }
     }
 
     public void ChangeGameVersion()
@@ -76,6 +111,9 @@ public class RunewordsController : MonoBehaviour
                     currentDB = d2LodDBRus;
                 break;
         }
+        
+        // ѕересчитываем количество собранных рун после смены базы данных
+        RecalculateCollectedRunes();
     }
 
     public void FilterLast()
@@ -94,6 +132,10 @@ public class RunewordsController : MonoBehaviour
         {
             if (rw.runewordName.ToUpper().Contains(runewordName.text.ToUpper()))
             {
+                // ѕровер€ем галочку "только завершенные"
+                if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
+                    continue;
+                    
                 workflowDB.runewords.Add(rw);
                 status.text = $"{runewordName.text} ({workflowDB.runewords.Count}):";
                 found = true;
@@ -153,7 +195,13 @@ public class RunewordsController : MonoBehaviour
             foreach (var rw in workflowDB.runewords)
             {
                 if (rw.runes.Count == lastSocketSearch && (allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
+                {
+                    // ѕровер€ем галочку "только завершенные"
+                    if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
+                        continue;
+                        
                     customSearchDB.runewords.Add(rw);
+                }
             }
         }
         else
@@ -161,7 +209,13 @@ public class RunewordsController : MonoBehaviour
             foreach (var rw in workflowDB.runewords)
             {
                 if ((allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
+                {
+                    // ѕровер€ем галочку "только завершенные"
+                    if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
+                        continue;
+                        
                     customSearchDB.runewords.Add(rw);
+                }
             }
         }
 
@@ -223,6 +277,12 @@ public class RunewordsController : MonoBehaviour
         if (filters.TryGetValue(type, out var filter))
         {
             workflowDB.runewords.AddRange(currentDB.runewords.Where(filter));
+        }
+
+        // ѕримен€ем фильтр "только завершенные" если галочка активна
+        if (completedOnlyToggle.isOn)
+        {
+            workflowDB.runewords.RemoveAll(rw => !IsRunewordCompleted(rw));
         }
 
         lastPressed = type;
@@ -409,6 +469,27 @@ public class RunewordsController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// ќбработчик изменени€ состо€ни€ рун
+    /// </summary>
+    /// <param name="rune">»змененна€ руна</param>
+    /// <param name="isOn">Ќовое состо€ние</param>
+    private void OnRuneStateChanged(RunesEn rune, bool isOn)
+    {
+        // ѕересчитываем количество собранных рун
+        RecalculateCollectedRunes();
+        
+        // ≈сли есть активный фильтр, перезапускаем его
+        if (!string.IsNullOrEmpty(lastPressed) && lastPressed != "None")
+        {
+            FilterLast();
+        }
+    }
+    
+    private void OnDestroy()
+    {
+        RuneController.OnRuneToggleChanged -= OnRuneStateChanged;
+    }
 }
 
 public class RunewordSerializer

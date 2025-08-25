@@ -12,6 +12,7 @@ public class UIController : MonoBehaviour
     public UserRunes_SO userRunes;
     public Dropdown socketsDropdown;
     public Dropdown typeDropdown;
+    public Toggle completedOnlyToggle;
     public GameObject donationPanel;
 
     [SerializeField] List<GameObject> runesUI;
@@ -24,6 +25,15 @@ public class UIController : MonoBehaviour
         runesUI = new List<GameObject>();
         InitRunes();
         ShowDonationPanel(AppManager.instance.currentLanguage, string.Empty);
+        
+        // Инициализация текста для Toggle "только завершенные"
+        if (completedOnlyToggle != null)
+        {
+            if (AppManager.instance.currentLanguage == Languages.En)
+                completedOnlyToggle.GetComponentInChildren<Text>().text = "Completed Only";
+            else
+                completedOnlyToggle.GetComponentInChildren<Text>().text = "Только завершенные";
+        }
     }
 
     private void ShowDonationPanel(Languages languages, string ver)
@@ -103,6 +113,12 @@ public class UIController : MonoBehaviour
                     typeDropdown.options.Add(new Dropdown.OptionData("Swords"));
                     typeDropdown.options.Add(new Dropdown.OptionData("Wands"));
                     typeDropdown.options.Add(new Dropdown.OptionData("Shields"));
+                    
+                    // Локализация для Toggle "только завершенные"
+                    if (completedOnlyToggle != null)
+                    {
+                        completedOnlyToggle.GetComponentInChildren<Text>().text = "Completed Only";
+                    }
                     break;
                 case Languages.Ru:
                     foreach (var rune in runesUI)
@@ -142,6 +158,12 @@ public class UIController : MonoBehaviour
                     typeDropdown.options.Add(new Dropdown.OptionData("Мечи"));
                     typeDropdown.options.Add(new Dropdown.OptionData("Жезлы Некроманта"));
                     typeDropdown.options.Add(new Dropdown.OptionData("Щиты"));
+                    
+                    // Локализация для Toggle "только завершенные"
+                    if (completedOnlyToggle != null)
+                    {
+                        completedOnlyToggle.GetComponentInChildren<Text>().text = "Только завершенные";
+                    }
                     break;
             }
         }
@@ -152,6 +174,19 @@ public class UIController : MonoBehaviour
         foreach (var rune in runesUI)
         {
             rune.GetComponent<Toggle>().isOn = false;
+        }
+    }
+    
+    /// <summary>
+    /// Обработчик изменения состояния Toggle "только завершенные"
+    /// </summary>
+    public void OnCompletedOnlyToggleChanged()
+    {
+        // Находим RunewordsController и перезапускаем последний фильтр
+        var runewordsController = FindObjectOfType<RunewordsController>();
+        if (runewordsController != null)
+        {
+            runewordsController.FilterLast();
         }
     }
 }
