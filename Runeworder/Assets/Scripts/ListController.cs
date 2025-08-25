@@ -24,8 +24,8 @@ public class ListController : MonoBehaviour
     private void Awake()
     {
         btn.onClick.AddListener(ShowTooltip);
-        parent = FindObjectOfType<Canvas>();
-        ressurectedColor = new Color32(236,140,24,255);
+        parent = FindFirstObjectByType<Canvas>();
+        ressurectedColor = new Color32(236, 140, 24, 255);
     }
 
     private void ShowTooltip()
@@ -107,7 +107,7 @@ public class ListController : MonoBehaviour
             if (tc.rwType.text.Contains("Claws"))
                 tc.rwType.text = tc.rwType.text.Replace("Claws", "Когти");
             if (tc.rwType.text.Contains("Clubs"))
-                tc.rwType.text = tc.rwType.text.Replace("Clubs", "Дубинки");
+                tc.rwType.text = tc.rwType.text.Replace("Clubs", "Дубины");
             if (tc.rwType.text.Contains("Daggers"))
                 tc.rwType.text = tc.rwType.text.Replace("Daggers", "Кинжалы");
             if (tc.rwType.text.Contains("Hammers"))
@@ -119,19 +119,19 @@ public class ListController : MonoBehaviour
             if (tc.rwType.text.Contains("Missile Weapons"))
                 tc.rwType.text = tc.rwType.text.Replace("Missile Weapons", "Оружие дальнего боя");
             if (tc.rwType.text.Contains("Polearms"))
-                tc.rwType.text = tc.rwType.text.Replace("Polearms", "Древковое Оружие");
+                tc.rwType.text = tc.rwType.text.Replace("Polearms", "Древковое оружие");
             if (tc.rwType.text.Contains("Scepters"))
                 tc.rwType.text = tc.rwType.text.Replace("Scepters", "Скипетры");
             if (tc.rwType.text.Contains("Spears"))
                 tc.rwType.text = tc.rwType.text.Replace("Spears", "Копья");
             if (tc.rwType.text.Contains("Staves"))
-                tc.rwType.text = tc.rwType.text.Replace("Staves", "Двуручные Посохи");
+                tc.rwType.text = tc.rwType.text.Replace("Staves", "Посохи");
             if (tc.rwType.text.Contains("Swords"))
                 tc.rwType.text = tc.rwType.text.Replace("Swords", "Мечи");
             if (tc.rwType.text.Contains("Wands"))
-                tc.rwType.text = tc.rwType.text.Replace("Wands", "Жезлы Некроманта");
+                tc.rwType.text = tc.rwType.text.Replace("Wands", "Жезлы");
             if (tc.rwType.text.Contains("Weapons"))
-                tc.rwType.text = tc.rwType.text.Replace("Weapons", "Любое оружие");
+                tc.rwType.text = tc.rwType.text.Replace("Weapons", "Оружие");
 
             tc.rwLevel.text = $"Требуемый уровень: {runeword.reqLevel}";
             if (runeword.gameVersion.Contains("Resurrected"))
@@ -146,7 +146,7 @@ public class ListController : MonoBehaviour
                     tc.rwClass.text = tc.rwClass.text.Replace("Amazon", "Амазонка");
                     break;
                 case "Класс: Assassin":
-                    tc.rwClass.text = tc.rwClass.text.Replace("Assassin", "Убийца");
+                    tc.rwClass.text = tc.rwClass.text.Replace("Assassin", "Ассасин");
                     break;
                 case "Класс: Barbarian":
                     tc.rwClass.text = tc.rwClass.text.Replace("Barbarian", "Варвар");
@@ -166,9 +166,9 @@ public class ListController : MonoBehaviour
             }
 
             if (runeword.gameVersion.Contains("1.10") || runeword.gameVersion.Contains("1.11"))
-                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion} + (LoD)";
+                tc.rwVersion.text = $"Версия игры:: {runeword.gameVersion} + (LoD)";
             else
-                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}";
+                tc.rwVersion.text = $"Версия игры:: {runeword.gameVersion}";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
     }
