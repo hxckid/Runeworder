@@ -337,6 +337,7 @@ MonoBehaviour:
   userRunes: {fileID: 11400000, guid: 80e1bd6ec6e4ed344a3132a02afbdd8f, type: 2}
   socketsDropdown: {fileID: 782215781}
   typeDropdown: {fileID: 1670923128}
+  completedOnlyToggle: {fileID: 641123564}
   donationPanel: {fileID: 600851198}
   runesUI: []
 --- !u!114 &47835034
@@ -370,6 +371,7 @@ MonoBehaviour:
   allRunewordsToggle: {fileID: 1946422630}
   nonLadderToggle: {fileID: 908873528}
   ladderToggle: {fileID: 1828883421}
+  completedOnlyToggle: {fileID: 641123564}
 --- !u!114 &47835035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,8 +914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: -0.5}
-  m_SizeDelta: {x: -28, y: -3}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103360796
 MonoBehaviour:
@@ -937,10 +939,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3a86c6d822885974e879c1d038d51837, type: 3}
-    m_FontSize: 35
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -948,7 +950,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Completed Runewords Only
+  m_Text: Completed Only
 --- !u!222 &103360797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5077,7 +5079,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 47835033}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: OnCompletedOnlyToggleChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &656342274
 GameObject:
@@ -9933,10 +9947,10 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 265, y: 80}
+  m_CellSize: {x: 250, y: 80}
   m_Spacing: {x: 0, y: 0}
-  m_Constraint: 0
-  m_ConstraintCount: 2
+  m_Constraint: 1
+  m_ConstraintCount: 4
 --- !u!114 &1188238985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9957,7 +9971,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eeac626229e6f104fada841164e7bb5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90b3b17a2eb603e40863570bf4fe298c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14946,7 +14960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -50}
+  m_AnchoredPosition: {x: 250, y: -50}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783645537
@@ -14962,14 +14976,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09cf87887f18e484781f3fb005e92378, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b67ffe5366a669b4aa6e058dfd5eb058, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16852,14 +16866,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33734334, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.29215908, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09cf87887f18e484781f3fb005e92378, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e9efcd739fe2ab47a7d530977820fec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
