@@ -235,7 +235,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Runes_0
+      name: El
       rect:
         serializedVersion: 2
         x: 150
@@ -243,7 +243,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_1
+      name: Eld
       rect:
         serializedVersion: 2
         x: 199
@@ -264,7 +264,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_2
+      name: Tir
       rect:
         serializedVersion: 2
         x: 248
@@ -285,7 +285,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_3
+      name: Nef
       rect:
         serializedVersion: 2
         x: 3
@@ -306,7 +306,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_4
+      name: Eth
       rect:
         serializedVersion: 2
         x: 52
@@ -327,7 +327,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_5
+      name: Ith
       rect:
         serializedVersion: 2
         x: 101
@@ -348,7 +348,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_6
+      name: Tal
       rect:
         serializedVersion: 2
         x: 150
@@ -369,7 +369,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_7
+      name: Ral
       rect:
         serializedVersion: 2
         x: 199
@@ -390,7 +390,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_8
+      name: Ort
       rect:
         serializedVersion: 2
         x: 248
@@ -411,7 +411,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_9
+      name: Thul
       rect:
         serializedVersion: 2
         x: 3
@@ -432,7 +432,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_10
+      name: Amn
       rect:
         serializedVersion: 2
         x: 52
@@ -453,7 +453,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,7 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_11
+      name: Sol
       rect:
         serializedVersion: 2
         x: 101
@@ -474,7 +474,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,7 +487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_12
+      name: Shael
       rect:
         serializedVersion: 2
         x: 150
@@ -495,7 +495,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_13
+      name: Dol
       rect:
         serializedVersion: 2
         x: 199
@@ -516,7 +516,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,7 +529,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_14
+      name: Hel
       rect:
         serializedVersion: 2
         x: 248
@@ -537,7 +537,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,7 +550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_15
+      name: Io
       rect:
         serializedVersion: 2
         x: 3
@@ -558,7 +558,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -571,7 +571,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_16
+      name: Lum
       rect:
         serializedVersion: 2
         x: 52
@@ -579,7 +579,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,7 +592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_17
+      name: Ko
       rect:
         serializedVersion: 2
         x: 101
@@ -600,7 +600,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,7 +613,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_18
+      name: Fal
       rect:
         serializedVersion: 2
         x: 150
@@ -621,7 +621,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,7 +634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_19
+      name: Lem
       rect:
         serializedVersion: 2
         x: 199
@@ -642,7 +642,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,7 +655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_20
+      name: Pul
       rect:
         serializedVersion: 2
         x: 248
@@ -663,7 +663,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -676,7 +676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_21
+      name: Um
       rect:
         serializedVersion: 2
         x: 3
@@ -684,7 +684,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,7 +697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_22
+      name: Mal
       rect:
         serializedVersion: 2
         x: 52
@@ -705,7 +705,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -718,7 +718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_23
+      name: Ist
       rect:
         serializedVersion: 2
         x: 101
@@ -726,7 +726,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -739,7 +739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_24
+      name: Gul
       rect:
         serializedVersion: 2
         x: 150
@@ -747,7 +747,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_25
+      name: Vex
       rect:
         serializedVersion: 2
         x: 199
@@ -768,7 +768,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -781,7 +781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_26
+      name: Om
       rect:
         serializedVersion: 2
         x: 248
@@ -789,7 +789,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -802,7 +802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_27
+      name: Lo
       rect:
         serializedVersion: 2
         x: 3
@@ -810,7 +810,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -823,7 +823,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_28
+      name: Sur
       rect:
         serializedVersion: 2
         x: 52
@@ -831,7 +831,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -844,7 +844,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_29
+      name: Ber
       rect:
         serializedVersion: 2
         x: 101
@@ -852,7 +852,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -865,7 +865,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_30
+      name: Jah
       rect:
         serializedVersion: 2
         x: 150
@@ -873,7 +873,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -886,7 +886,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_31
+      name: Cham
       rect:
         serializedVersion: 2
         x: 199
@@ -894,7 +894,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -907,7 +907,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Runes_32
+      name: Zod
       rect:
         serializedVersion: 2
         x: 248
@@ -915,7 +915,7 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -938,39 +938,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Runes_0: 2174028493023228853
-      Runes_1: -1563776502169514624
-      Runes_10: -7153237468517531963
-      Runes_11: 1763416088095558982
-      Runes_12: -6072647406737386784
-      Runes_13: 9044945195962155230
-      Runes_14: -1939689127886735697
-      Runes_15: 373982053409767258
-      Runes_16: 5455931690302879806
-      Runes_17: 8853478984470228912
-      Runes_18: 8105461410332785109
-      Runes_19: -8930640299231052059
-      Runes_2: 4631235684313111012
-      Runes_20: -3237508240721149647
-      Runes_21: -2681793855587880821
-      Runes_22: -8855056840675280816
-      Runes_23: 6028218691396609969
-      Runes_24: -3033762605368871702
-      Runes_25: 602322258887530144
-      Runes_26: 5332741692669887357
-      Runes_27: 7256167803517260690
-      Runes_28: 7436760131401412462
-      Runes_29: -1196169550335143571
-      Runes_3: -5447233517892204522
-      Runes_30: -8278776621803994759
-      Runes_31: 304334863325100338
-      Runes_32: -4501304641669350739
-      Runes_4: -6094098005360472568
-      Runes_5: 1537613641987167269
-      Runes_6: -961032850552321521
-      Runes_7: -8708938175695389349
-      Runes_8: -7791188130444010090
-      Runes_9: -1502972803651985057
+      Amn: -7153237468517531963
+      Ber: -1196169550335143571
+      Cham: 304334863325100338
+      Dol: 9044945195962155230
+      El: 2174028493023228853
+      Eld: -1563776502169514624
+      Eth: -6094098005360472568
+      Fal: 8105461410332785109
+      Gul: -3033762605368871702
+      Hel: -1939689127886735697
+      Io: 373982053409767258
+      Ist: 6028218691396609969
+      Ith: 1537613641987167269
+      Jah: -8278776621803994759
+      Ko: 8853478984470228912
+      Lem: -8930640299231052059
+      Lo: 7256167803517260690
+      Lum: 5455931690302879806
+      Mal: -8855056840675280816
+      Nef: -5447233517892204522
+      Om: 5332741692669887357
+      Ort: -7791188130444010090
+      Pul: -3237508240721149647
+      Ral: -8708938175695389349
+      Shael: -6072647406737386784
+      Sol: 1763416088095558982
+      Sur: 7436760131401412462
+      Tal: -961032850552321521
+      Thul: -1502972803651985057
+      Tir: 4631235684313111012
+      Um: -2681793855587880821
+      Vex: 602322258887530144
+      Zod: -4501304641669350739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
