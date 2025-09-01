@@ -781,7 +781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Om
+      name: Ohm
       rect:
         serializedVersion: 2
         x: 248
@@ -958,7 +958,7 @@ TextureImporter:
       Lum: 5455931690302879806
       Mal: -8855056840675280816
       Nef: -5447233517892204522
-      Om: 5332741692669887357
+      Ohm: 5332741692669887357
       Ort: -7791188130444010090
       Pul: -3237508240721149647
       Ral: -8708938175695389349

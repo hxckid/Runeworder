@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runeType: 1
   runeIcon: {fileID: -1563776502169514624, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: '+75% Damage to Undead
+
+    +50 to Attack Rating Against Undead'
+  armorBonus: '15% Slower Stamina Drain
+
+'
+  helmetBonus: '15% Slower Stamina Drain
+
+'
+  shieldBonus: '7% Increased Chance of Blocking
+
+'
   runeLevel: 11
   craftingRunes: 000000000000000000000000
   craftingGems: []
-  runeBonuses: "\u041E\u0440\u0443\u0436\u0438\u0435: +75% \u0443\u0440\u043E\u043D\u0430
-    \u043F\u043E \u043D\u0435\u0436\u0438\u0442\u0438, +50 \u043A \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0443
-    \u0430\u0442\u0430\u043A\u0438 \u043F\u0440\u043E\u0442\u0438\u0432 \u043D\u0435\u0436\u0438\u0442\u0438\r\n\u0411\u0440\u043E\u043D\u044F/\u0448\u043B\u0435\u043C\u044B:
-    \u0412\u044B\u043D\u043E\u0441\u043B\u0438\u0432\u043E\u0441\u0442\u044C \u0441\u043D\u0438\u0436\u0430\u0435\u0442\u0441\u044F
-    \u043D\u0430 15% \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435\r\n\u0429\u0438\u0442\u044B:
-    \u0412\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u044C 7% \u0437\u0430\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C
-    \u0443\u0434\u0430\u0440"

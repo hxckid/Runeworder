@@ -10,6 +10,7 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public Image checkmark;
     public Text runeName;
     public RunesEn rune;
+    public GameObject runeInfoPanelPrefab;
 
     public delegate void RuneHandler(RunesEn rune, bool isOn);
     public static event RuneHandler OnRuneToggleChanged;
@@ -72,10 +73,31 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     void OnLongPress()
     {
         // Метод для длинного тапа - показываем информацию о руне
-        var runeInfoPanel = FindObjectOfType<RuneInfoPanel>();
-        if (runeInfoPanel != null)
+        if (runeInfoPanelPrefab != null)
         {
-            runeInfoPanel.ShowRuneInfo(rune);
+            // Находим главный Canvas
+            Canvas mainCanvas = FindObjectOfType<Canvas>();
+            if (mainCanvas != null)
+            {
+                GameObject runeInfoPanelInstance = Instantiate(runeInfoPanelPrefab, mainCanvas.transform);
+                var runeInfoPanelComponent = runeInfoPanelInstance.GetComponent<RuneInfoPanel>();
+                if (runeInfoPanelComponent != null)
+                {
+                    runeInfoPanelComponent.ShowRuneInfo(rune);
+                }
+                else
+                {
+                    Debug.LogWarning("Компонент RuneInfoPanel не найден на объекте!");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Canvas не найден в сцене!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("RuneInfoPanelPrefab не назначен в RuneController!");
         }
     }
 }

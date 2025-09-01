@@ -9,16 +9,22 @@ public class Rune_SO : ScriptableObject
     public RunesEn runeType;
     public Sprite runeIcon;
     
+    [Header("Bonuses")]
+    [TextArea(3, 5)]
+    public string weaponBonus;
+    [TextArea(3, 5)]
+    public string armorBonus;
+    [TextArea(3, 5)]
+    public string helmetBonus;
+    [TextArea(3, 5)]
+    public string shieldBonus;
+    
     [Header("Level")]
     public int runeLevel;
     
     [Header("Crafting Recipe")]
     public List<RunesEn> craftingRunes = new List<RunesEn>();
     public List<Gem_SO> craftingGems = new List<Gem_SO>();
-    
-    [Header("Bonuses")]
-    [TextArea(5, 10)]
-    public string runeBonuses;
     
     private void OnValidate()
     {
@@ -38,7 +44,7 @@ public class Rune_SO : ScriptableObject
         
         // Переименовываем только если имя файла не совпадает с новым именем
         // и если это не "New Rune" (файл только что создан)
-        if (name != newName && name != "New Rune 1")
+        if (name != newName)
         {
             name = newName;
             

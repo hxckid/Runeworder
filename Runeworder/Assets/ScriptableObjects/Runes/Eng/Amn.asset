@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0396dda8d772774b922c5926931ec60, type: 3}
+  m_Name: Amn
+  m_EditorClassIdentifier: 
+  runeType: 10
+  runeIcon: {fileID: -7153237468517531963, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: 7% Life Stolen per Hit
+  armorBonus: Attacker Takes Damage of 14
+  helmetBonus: Attacker Takes Damage of 14
+  shieldBonus: Attacker Takes Damage of 14
+  runeLevel: 25
+  craftingRunes: 090000000900000009000000
+  craftingGems: []

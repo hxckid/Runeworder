@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eec293b0882a92d47b85f3c25e5f7184, type: 3}
-  m_Name: Gems Database
+  m_Name: GemsDB
   m_EditorClassIdentifier: 
   gems:
   - {fileID: 11400000, guid: 00c48729195cc3a4f82633da6e50b85b, type: 2}

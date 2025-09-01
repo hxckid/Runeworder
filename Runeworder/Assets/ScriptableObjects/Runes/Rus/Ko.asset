@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0396dda8d772774b922c5926931ec60, type: 3}
+  m_Name: Ko
+  m_EditorClassIdentifier: 
+  runeType: 17
+  runeIcon: {fileID: 8853478984470228912, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: "+10 \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438"
+  armorBonus: "+10 \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438"
+  helmetBonus: "+10 \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438"
+  shieldBonus: "+10 \u043A \u043B\u043E\u0432\u043A\u043E\u0441\u0442\u0438"
+  runeLevel: 39
+  craftingRunes: 100000001000000010000000
+  craftingGems:
+  - {fileID: 11400000, guid: 91bf07fde050f1f4488d06c059d1fcb0, type: 2}

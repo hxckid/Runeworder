@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0396dda8d772774b922c5926931ec60, type: 3}
+  m_Name: Io
+  m_EditorClassIdentifier: 
+  runeType: 15
+  runeIcon: {fileID: 373982053409767258, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: +10 to Vitality
+  armorBonus: +10 to Vitality
+  helmetBonus: +10 to Vitality
+  shieldBonus: +10 to Vitality
+  runeLevel: 35
+  craftingRunes: 0e0000000e0000000e000000
+  craftingGems:
+  - {fileID: 11400000, guid: 5f4b25c7af5c3f5479ca0fa4068b1400, type: 2}

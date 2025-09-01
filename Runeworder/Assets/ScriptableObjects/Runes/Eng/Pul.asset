@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0396dda8d772774b922c5926931ec60, type: 3}
+  m_Name: Pul
+  m_EditorClassIdentifier: 
+  runeType: 20
+  runeIcon: {fileID: -3237508240721149647, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: '+75% Damage to Demons
+
+    +100 to Attack Rating Against Demons'
+  armorBonus: +30% Enhanced Defense
+  helmetBonus: +30% Enhanced Defense
+  shieldBonus: +30% Enhanced Defense
+  runeLevel: 45
+  craftingRunes: 130000001300000013000000
+  craftingGems:
+  - {fileID: 11400000, guid: fa27646482feb0e4ca02370d04fb1213, type: 2}

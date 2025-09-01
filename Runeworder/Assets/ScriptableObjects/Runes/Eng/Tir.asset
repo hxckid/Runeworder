@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runeType: 2
   runeIcon: {fileID: 4631235684313111012, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: +2 to Mana after each Kill
+  armorBonus: +2 to Mana after each Kill
+  helmetBonus: +2 to Mana after each Kill
+  shieldBonus: +2 to Mana after each Kill
   runeLevel: 13
   craftingRunes: 010000000100000001000000
   craftingGems: []
-  runeBonuses: "\u041E\u0440\u0443\u0436\u0438\u0435: +2 \u043A \u043C\u0430\u043D\u0435
-    \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435\r\n\u0411\u0440\u043E\u043D\u044F/\u0448\u043B\u0435\u043C\u044B/\u0449\u0438\u0442\u044B:
-    +2 \u043A \u043C\u0430\u043D\u0435 \u043F\u0440\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0435"

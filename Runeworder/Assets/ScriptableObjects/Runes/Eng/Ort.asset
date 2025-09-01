@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0396dda8d772774b922c5926931ec60, type: 3}
+  m_Name: Ort
+  m_EditorClassIdentifier: 
+  runeType: 8
+  runeIcon: {fileID: -7791188130444010090, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  weaponBonus: Adds 1-50 Lightning Damage
+  armorBonus: Lightning Resist +30%
+  helmetBonus: Lightning Resist +30%
+  shieldBonus: Lightning Resist +35%
+  runeLevel: 21
+  craftingRunes: 070000000700000007000000
+  craftingGems: []
