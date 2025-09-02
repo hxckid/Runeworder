@@ -183,7 +183,7 @@ public class UIController : MonoBehaviour
     public void OnCompletedOnlyToggleChanged()
     {
         // Находим RunewordsController и перезапускаем последний фильтр
-        var runewordsController = FindObjectOfType<RunewordsController>();
+        var runewordsController = FindFirstObjectByType<RunewordsController>();
         if (runewordsController != null)
         {
             runewordsController.FilterLast();

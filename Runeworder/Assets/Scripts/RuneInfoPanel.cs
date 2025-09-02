@@ -97,15 +97,6 @@ public class RuneInfoPanel : MonoBehaviour
         currentDB = (language == Languages.En) ? runesDBEng : runesDBRus;
     }
     
-    void Update()
-    {
-        // Закрываем панель по нажатию Escape
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            HidePanel();
-        }
-    }
-    
     public void ShowRuneInfo(RunesEn runeType)
     {
         if (currentDB == null)
@@ -162,13 +153,13 @@ public class RuneInfoPanel : MonoBehaviour
     {
         if (AppManager.instance.currentLanguage == Languages.En)
         {
-            return runeType.ToString();
+            return "Rune " + runeType.ToString();
         }
         else
         {
             // Используем существующий enum RunesRu для русских названий
             int runeIndex = (int)runeType;
-            return Enum.GetName(typeof(RunesRu), runeIndex);
+            return "Руна " + Enum.GetName(typeof(RunesRu), runeIndex);
         }
     }
     
@@ -224,11 +215,11 @@ public class RuneInfoPanel : MonoBehaviour
     {
         if (AppManager.instance.currentLanguage == Languages.En)
         {
-            return "Socketable Items: ";
+            return "Can Be Inserted Into Socketed Items ";
         }
         else
         {
-            return "Вставляемые предметы: ";
+            return "Можно вставить в гнездо ";
         }
     }
     
@@ -252,7 +243,7 @@ public class RuneInfoPanel : MonoBehaviour
         }
         else
         {
-            return "Доспехи: ";
+            return "Броня: ";
         }
     }
     
@@ -264,7 +255,7 @@ public class RuneInfoPanel : MonoBehaviour
         }
         else
         {
-            return "Шлем: ";
+            return "Шлемы: ";
         }
     }
     
@@ -276,7 +267,7 @@ public class RuneInfoPanel : MonoBehaviour
         }
         else
         {
-            return "Щит: ";
+            return "Щиты: ";
         }
     }
     
@@ -373,8 +364,8 @@ public class RuneInfoPanel : MonoBehaviour
         RectTransform textRect = textObj.GetComponent<RectTransform>();
         textRect.anchorMin = new Vector2(0.5f, 0.5f);
         textRect.anchorMax = new Vector2(0.5f, 0.5f);
-        textRect.sizeDelta = new Vector2(200, 50);
-        textRect.anchoredPosition = new Vector2(0, -97.8f);
+        textRect.sizeDelta = new Vector2(200, 150);
+        textRect.anchoredPosition = new Vector2(0, -147.8f);
     }
     
     private void CreateGemElement(Transform parent, Gem_SO gem)
@@ -409,8 +400,8 @@ public class RuneInfoPanel : MonoBehaviour
         TextMeshProUGUI textComponent = textObj.AddComponent<TextMeshProUGUI>();
         textComponent.text = GetGemDisplayName(gem);
         textComponent.font = GetBlizzardFont();
-        textComponent.fontSize = 45f; // Размер шрифта для названий камней
-        textComponent.enableAutoSizing = true; // Включаем AutoSize
+        textComponent.fontSize = 56f; // Размер шрифта для названий камней
+        textComponent.enableAutoSizing = false; // Включаем AutoSize
         textComponent.fontSizeMin = 40f; // Минимальный размер шрифта
         textComponent.fontSizeMax = 72f; // Максимальный размер шрифта
         textComponent.color = Color.white;
@@ -419,8 +410,8 @@ public class RuneInfoPanel : MonoBehaviour
         RectTransform textRect = textObj.GetComponent<RectTransform>();
         textRect.anchorMin = new Vector2(0.5f, 0.5f);
         textRect.anchorMax = new Vector2(0.5f, 0.5f);
-        textRect.sizeDelta = new Vector2(365, 135); // Новые размеры для названий камней
-        textRect.anchoredPosition = new Vector2(0, -97.8f);
+        textRect.sizeDelta = new Vector2(390, 135); // Новые размеры для названий камней
+        textRect.anchoredPosition = new Vector2(0, -149f);
     }
     
     private string GetGemDisplayName(Gem_SO gem)
@@ -443,11 +434,11 @@ public class RuneInfoPanel : MonoBehaviour
         {
             switch (quality)
             {
-                case GemQuality.Chipped: return "Осколок";
-                case GemQuality.Flawed: return "Треснутый";
+                case GemQuality.Chipped: return "Треснутый";
+                case GemQuality.Flawed: return "Мутный";
                 case GemQuality.Normal: return "";
                 case GemQuality.Flawless: return "Безупречный";
-                case GemQuality.Perfect: return "Совершенный";
+                case GemQuality.Perfect: return "Идеальный";
                 default: return quality.ToString();
             }
         }
@@ -464,7 +455,7 @@ public class RuneInfoPanel : MonoBehaviour
             switch (type)
             {
                 case GemType.Amethyst: return "Аметист";
-                case GemType.Diamond: return "Алмаз";
+                case GemType.Diamond: return "Бриллиант";
                 case GemType.Emerald: return "Изумруд";
                 case GemType.Ruby: return "Рубин";
                 case GemType.Sapphire: return "Сапфир";

@@ -225,7 +225,7 @@ public class AppManager : MonoBehaviour
                         instance.gameState = GameState.Runes;
                         break;
                     case GameState.Tooltip:
-                        GameObject go = FindObjectOfType<TooltipController>().gameObject;
+                        GameObject go = FindFirstObjectByType<TooltipController>().gameObject;
                         Destroy(go);
                         instance.gameState = GameState.Runewords;
                         break;

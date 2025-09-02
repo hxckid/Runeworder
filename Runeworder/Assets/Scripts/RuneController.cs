@@ -76,7 +76,7 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if (runeInfoPanelPrefab != null)
         {
             // Находим главный Canvas
-            Canvas mainCanvas = FindObjectOfType<Canvas>();
+            Canvas mainCanvas = FindFirstObjectByType<Canvas>();
             if (mainCanvas != null)
             {
                 GameObject runeInfoPanelInstance = Instantiate(runeInfoPanelPrefab, mainCanvas.transform);

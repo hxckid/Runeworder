@@ -29,7 +29,7 @@ public class Rune_SO : ScriptableObject
     private void OnValidate()
     {
         // Автоматически устанавливаем спрайт руны при создании или изменении типа
-        var runesSprites = FindObjectOfType<UIController>()?.runesSprites;
+        var runesSprites = FindFirstObjectByType<UIController>()?.runesSprites;
         if (runesSprites != null && runesSprites.sprites != null)
         {
             int runeIndex = (int)runeType;
