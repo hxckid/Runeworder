@@ -48,7 +48,7 @@ public class RuneInfoPanel : MonoBehaviour
         if (font != null) return font;
         #endif
         
-        Debug.LogWarning("Не удалось найти шрифт Blizzard, используется шрифт по умолчанию");
+
         return null;
     }
     
@@ -78,21 +78,10 @@ public class RuneInfoPanel : MonoBehaviour
         armorBonus = transform.Find("armorBonus")?.GetComponent<TextMeshProUGUI>();
         helmetBonus = transform.Find("helmetBonus")?.GetComponent<TextMeshProUGUI>();
         shieldBonus = transform.Find("shieldBonus")?.GetComponent<TextMeshProUGUI>();
-        socketableItems = transform.Find("SocketableItems")?.GetComponent<TextMeshProUGUI>();
+        socketableItems = transform.Find("Can Be Inserted Into Socketed Items")?.GetComponent<TextMeshProUGUI>();
         closeButton = transform.Find("CloseBtn")?.GetComponent<Button>();
         
-        // Проверяем, что все элементы найдены
-        if (runeIcon == null) Debug.LogWarning("RuneIcon не найден в префабе");
-        if (runeName == null) Debug.LogWarning("runeName не найден в префабе");
-        if (runeLevel == null) Debug.LogWarning("runeLevel не найден в префабе");
-        if (runeRecipe == null) Debug.LogWarning("Rune Recipe не найден в префабе");
-        if (recipePanel == null) Debug.LogWarning("Recipe панель не найдена в префабе");
-        if (weaponBonus == null) Debug.LogWarning("weaponBonus не найден в префабе");
-        if (armorBonus == null) Debug.LogWarning("armorBonus не найден в префабе");
-        if (helmetBonus == null) Debug.LogWarning("helmetBonus не найден в префабе");
-        if (shieldBonus == null) Debug.LogWarning("shieldBonus не найден в префабе");
-        if (socketableItems == null) Debug.LogWarning("SocketableItems не найден в префабе");
-        if (closeButton == null) Debug.LogWarning("CloseBtn не найден в префабе");
+
     }
     
     void SetupCloseButton()
@@ -455,8 +444,8 @@ public class RuneInfoPanel : MonoBehaviour
             switch (quality)
             {
                 case GemQuality.Chipped: return "Осколок";
-                case GemQuality.Flawed: return "Трещина";
-                case GemQuality.Normal: return "Обычный";
+                case GemQuality.Flawed: return "Треснутый";
+                case GemQuality.Normal: return "";
                 case GemQuality.Flawless: return "Безупречный";
                 case GemQuality.Perfect: return "Совершенный";
                 default: return quality.ToString();

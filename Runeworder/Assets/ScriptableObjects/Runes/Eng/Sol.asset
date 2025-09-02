@@ -19,5 +19,6 @@ MonoBehaviour:
   helmetBonus: Damage Reduced by 7
   shieldBonus: Damage Reduced by 7
   runeLevel: 27
-  craftingRunes: 
-  craftingGems: []
+  craftingRunes: 0a0000000a0000000a000000
+  craftingGems:
+  - {fileID: 11400000, guid: 00c48729195cc3a4f82633da6e50b85b, type: 2}
