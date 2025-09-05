@@ -179,7 +179,6 @@ MonoBehaviour:
   checkmark: {fileID: 5731730575470913667}
   runeName: {fileID: 5731730575619601773}
   rune: 32
-  runeInfoPanelPrefab: {fileID: 840318933106401207, guid: 06ee13cd1361a974fadd416773ab8a79, type: 3}
 --- !u!1 &5731730575470913669
 GameObject:
   m_ObjectHideFlags: 0

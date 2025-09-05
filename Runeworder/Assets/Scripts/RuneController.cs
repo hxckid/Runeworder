@@ -10,10 +10,11 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public Image checkmark;
     public Text runeName;
     public RunesEn rune;
-    public GameObject runeInfoPanelPrefab;
 
     public delegate void RuneHandler(RunesEn rune, bool isOn);
     public static event RuneHandler OnRuneToggleChanged;
+    public delegate void RuneLongTapHandler(RunesEn rune);
+    public static event RuneLongTapHandler OnLongTapRune;
 
     Toggle toggle;
     private float longPressTime = 0.5f;
@@ -72,32 +73,34 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     void OnLongPress()
     {
-        // Метод для длинного тапа - показываем информацию о руне
-        if (runeInfoPanelPrefab != null)
-        {
-            // Находим главный Canvas
-            Canvas mainCanvas = FindFirstObjectByType<Canvas>();
-            if (mainCanvas != null)
-            {
-                GameObject runeInfoPanelInstance = Instantiate(runeInfoPanelPrefab, mainCanvas.transform);
-                var runeInfoPanelComponent = runeInfoPanelInstance.GetComponent<RuneInfoPanel>();
-                if (runeInfoPanelComponent != null)
-                {
-                    runeInfoPanelComponent.ShowRuneInfo(rune);
-                }
-                else
-                {
-                    Debug.LogWarning("Компонент RuneInfoPanel не найден на объекте!");
-                }
-            }
-            else
-            {
-                Debug.LogWarning("Canvas не найден в сцене!");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("RuneInfoPanelPrefab не назначен в RuneController!");
-        }
+        OnLongTapRune?.Invoke(rune);
+
+        //// Метод для длинного тапа - показываем информацию о руне
+        //if (runeInfoPanel != null)
+        //{
+        //    // Находим главный Canvas
+        //    Canvas mainCanvas = FindFirstObjectByType<Canvas>();
+        //    if (mainCanvas != null)
+        //    {
+        //        GameObject runeInfoPanelInstance = Instantiate(runeInfoPanel, mainCanvas.transform);
+        //        var runeInfoPanelComponent = runeInfoPanelInstance.GetComponent<RuneInfoPanel>();
+        //        if (runeInfoPanelComponent != null)
+        //        {
+        //            runeInfoPanelComponent.ShowRuneInfo(rune);
+        //        }
+        //        else
+        //        {
+        //            Debug.LogWarning("Компонент RuneInfoPanel не найден на объекте!");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Debug.LogWarning("Canvas не найден в сцене!");
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.LogWarning("RuneInfoPanelPrefab не назначен в RuneController!");
+        //}
     }
 }
