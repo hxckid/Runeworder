@@ -10,7 +10,6 @@ public class RuneTooltipController : MonoBehaviour
     public GameObject runeInfoPanel;
     public Image runeIcon;
     public TextMeshProUGUI runeName;
-    public TextMeshProUGUI CanBeInsertedLabel;
     public TextMeshProUGUI weaponsBonus;
     public TextMeshProUGUI armorsBonus;
     public TextMeshProUGUI helmsBonus;
@@ -67,7 +66,6 @@ public class RuneTooltipController : MonoBehaviour
         // Заполняем UI данными руны
         if (runeIcon != null) runeIcon.sprite = rune.runeIcon;
         if (runeName != null) runeName.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Rune {runeType}" : $"Руна {Enum.GetName(typeof(RunesRu), (int)runeType).ToString()}";
-        if (CanBeInsertedLabel != null) CanBeInsertedLabel.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Can Be Inserted Into Socketed Items" : $"Можно Вставить в Гнездо";
         if (weaponsBonus != null) weaponsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Weapons: {rune.weaponBonus}" : $"Оружие: {rune.weaponBonus}";
         if (armorsBonus != null) armorsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Armors: {rune.armorBonus}" : $"Броня: {rune.armorBonus}";
         if (helmsBonus != null) helmsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Helms: {rune.helmetBonus}" : $"Шлемы: {rune.helmetBonus}";

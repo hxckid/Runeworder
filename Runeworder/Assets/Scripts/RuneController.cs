@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -38,7 +39,7 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             if (Time.time - pressStartTime >= longPressTime)
             {
                 isLongPress = true;
-                OnLongPress();
+                OnLongTap();
             }
         }
     }
@@ -71,36 +72,14 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         }
     }
 
-    void OnLongPress()
+    void OnLongTap()
     {
         OnLongTapRune?.Invoke(rune);
+    }
 
-        //// Метод для длинного тапа - показываем информацию о руне
-        //if (runeInfoPanel != null)
-        //{
-        //    // Находим главный Canvas
-        //    Canvas mainCanvas = FindFirstObjectByType<Canvas>();
-        //    if (mainCanvas != null)
-        //    {
-        //        GameObject runeInfoPanelInstance = Instantiate(runeInfoPanel, mainCanvas.transform);
-        //        var runeInfoPanelComponent = runeInfoPanelInstance.GetComponent<RuneInfoPanel>();
-        //        if (runeInfoPanelComponent != null)
-        //        {
-        //            runeInfoPanelComponent.ShowRuneInfo(rune);
-        //        }
-        //        else
-        //        {
-        //            Debug.LogWarning("Компонент RuneInfoPanel не найден на объекте!");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Debug.LogWarning("Canvas не найден в сцене!");
-        //    }
-        //}
-        //else
-        //{
-        //    Debug.LogWarning("RuneInfoPanelPrefab не назначен в RuneController!");
-        //}
+    public void OnTooltipRuneTap(Image runeImage)
+    {
+        Enum.TryParse<RunesEn>(runeImage.sprite.name, out RunesEn runeTapped);
+        OnLongTapRune?.Invoke(runeTapped);
     }
 }
