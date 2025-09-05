@@ -44,134 +44,14 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables:
-    - {fileID: 2800000, guid: 9c73dde31ccd2884a85de784c9fb534d, type: 3}
-    - {fileID: 2800000, guid: 646f66a921c21a3469f8e4b1abfc29fe, type: 3}
-    - {fileID: 2800000, guid: 65ca59ac3cda75843b04949e54515226, type: 3}
-    - {fileID: 2800000, guid: 47c39b4bedb54e64db683b5a51452f54, type: 3}
-    - {fileID: 2800000, guid: aec5411441421724eaabfc9d4e498ace, type: 3}
-    - {fileID: 2800000, guid: 9e6da30a4f3c8734ca019e7aaf37a5ec, type: 3}
-    - {fileID: 2800000, guid: d436284d78d2dcf48ae368284d0bd96e, type: 3}
-    - {fileID: 2800000, guid: 9a33f07e0deee0d4382263fe392b1a56, type: 3}
-    - {fileID: 2800000, guid: 79ba838abfcc9b34ea69038a38e319c5, type: 3}
-    - {fileID: 2800000, guid: 89e785f126f4003409ad092117825f54, type: 3}
-    - {fileID: 2800000, guid: 1de1b8041324f514eb11f9eca05fb389, type: 3}
-    - {fileID: 2800000, guid: 99419101969a6074e9bfbc6ea4637991, type: 3}
-    - {fileID: 2800000, guid: ce003c795955eef48b55c341d000dfda, type: 3}
-    - {fileID: 2800000, guid: ed7a74d2e78155d448dd6adf1f5eeaec, type: 3}
-    - {fileID: 2800000, guid: 29817d2680a110b48adc3db5fb57be29, type: 3}
-    - {fileID: 2800000, guid: 4f28288059fc7874cb968cb3f40ecfde, type: 3}
-    - {fileID: 2800000, guid: d53fcf09bdddad14cb3c66c9714c44e9, type: 3}
-    - {fileID: 2800000, guid: 04bd151027ab80f42b4cf047e940f828, type: 3}
-    - {fileID: 2800000, guid: 3a07002e4fb088c4f8eb78a54c946521, type: 3}
-    - {fileID: 2800000, guid: 568949e35c0952243941d70acef81fb2, type: 3}
-    - {fileID: 2800000, guid: 3a39c747a9b22694b8fdcf05671dd824, type: 3}
-    - {fileID: 2800000, guid: f52856825c58c6c4485efca6c3d8d303, type: 3}
-    - {fileID: 2800000, guid: a437f1df006267a4396ac5d5b79975d4, type: 3}
-    - {fileID: 2800000, guid: fd7f398ce1982a64e846de142f08d33b, type: 3}
-    - {fileID: 2800000, guid: cc9df086ad131e24f98a2d8c739fe150, type: 3}
-    - {fileID: 2800000, guid: a44dd997cf5ba724380f337f31d7b510, type: 3}
-    - {fileID: 2800000, guid: 1b1b005fad89a984ea319ccdca5f8c2e, type: 3}
-    - {fileID: 2800000, guid: 95e27a861611fed4f821028efb70b7df, type: 3}
-    - {fileID: 2800000, guid: d8c8009d987baf64590f0a7108c9a6fa, type: 3}
-    - {fileID: 2800000, guid: a5632626c43c5a142885b986b6ec66f8, type: 3}
+    packables: []
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys:
-    - 04bd151027ab80f42b4cf047e940f828: 21300000
-    - 4f28288059fc7874cb968cb3f40ecfde: 21300000
-    - 99419101969a6074e9bfbc6ea4637991: 21300000
-    - 89e785f126f4003409ad092117825f54: 21300000
-    - f52856825c58c6c4485efca6c3d8d303: 21300000
-    - ed7a74d2e78155d448dd6adf1f5eeaec: 21300000
-    - 568949e35c0952243941d70acef81fb2: 21300000
-    - 9c73dde31ccd2884a85de784c9fb534d: 21300000
-    - 1de1b8041324f514eb11f9eca05fb389: 21300000
-    - aec5411441421724eaabfc9d4e498ace: 21300000
-    - a5632626c43c5a142885b986b6ec66f8: 21300000
-    - 29817d2680a110b48adc3db5fb57be29: 21300000
-    - cc9df086ad131e24f98a2d8c739fe150: 21300000
-    - 95e27a861611fed4f821028efb70b7df: 21300000
-    - 3a39c747a9b22694b8fdcf05671dd824: 21300000
-    - a44dd997cf5ba724380f337f31d7b510: 21300000
-    - d53fcf09bdddad14cb3c66c9714c44e9: 21300000
-    - ce003c795955eef48b55c341d000dfda: 21300000
-    - 646f66a921c21a3469f8e4b1abfc29fe: 21300000
-    - 9e6da30a4f3c8734ca019e7aaf37a5ec: 21300000
-    - 79ba838abfcc9b34ea69038a38e319c5: 21300000
-    - 47c39b4bedb54e64db683b5a51452f54: 21300000
-    - fd7f398ce1982a64e846de142f08d33b: 21300000
-    - 65ca59ac3cda75843b04949e54515226: 21300000
-    - d436284d78d2dcf48ae368284d0bd96e: 21300000
-    - d8c8009d987baf64590f0a7108c9a6fa: 21300000
-    - 3a07002e4fb088c4f8eb78a54c946521: 21300000
-    - 9a33f07e0deee0d4382263fe392b1a56: 21300000
-    - 1b1b005fad89a984ea319ccdca5f8c2e: 21300000
-    - a437f1df006267a4396ac5d5b79975d4: 21300000
+    packedSpriteRenderDataKeys: []
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites:
-  - {fileID: 21300000, guid: 04bd151027ab80f42b4cf047e940f828, type: 3}
-  - {fileID: 21300000, guid: 4f28288059fc7874cb968cb3f40ecfde, type: 3}
-  - {fileID: 21300000, guid: 99419101969a6074e9bfbc6ea4637991, type: 3}
-  - {fileID: 21300000, guid: 89e785f126f4003409ad092117825f54, type: 3}
-  - {fileID: 21300000, guid: f52856825c58c6c4485efca6c3d8d303, type: 3}
-  - {fileID: 21300000, guid: ed7a74d2e78155d448dd6adf1f5eeaec, type: 3}
-  - {fileID: 21300000, guid: 568949e35c0952243941d70acef81fb2, type: 3}
-  - {fileID: 21300000, guid: 9c73dde31ccd2884a85de784c9fb534d, type: 3}
-  - {fileID: 21300000, guid: 1de1b8041324f514eb11f9eca05fb389, type: 3}
-  - {fileID: 21300000, guid: aec5411441421724eaabfc9d4e498ace, type: 3}
-  - {fileID: 21300000, guid: a5632626c43c5a142885b986b6ec66f8, type: 3}
-  - {fileID: 21300000, guid: 29817d2680a110b48adc3db5fb57be29, type: 3}
-  - {fileID: 21300000, guid: cc9df086ad131e24f98a2d8c739fe150, type: 3}
-  - {fileID: 21300000, guid: 95e27a861611fed4f821028efb70b7df, type: 3}
-  - {fileID: 21300000, guid: 3a39c747a9b22694b8fdcf05671dd824, type: 3}
-  - {fileID: 21300000, guid: a44dd997cf5ba724380f337f31d7b510, type: 3}
-  - {fileID: 21300000, guid: d53fcf09bdddad14cb3c66c9714c44e9, type: 3}
-  - {fileID: 21300000, guid: ce003c795955eef48b55c341d000dfda, type: 3}
-  - {fileID: 21300000, guid: 646f66a921c21a3469f8e4b1abfc29fe, type: 3}
-  - {fileID: 21300000, guid: 9e6da30a4f3c8734ca019e7aaf37a5ec, type: 3}
-  - {fileID: 21300000, guid: 79ba838abfcc9b34ea69038a38e319c5, type: 3}
-  - {fileID: 21300000, guid: 47c39b4bedb54e64db683b5a51452f54, type: 3}
-  - {fileID: 21300000, guid: fd7f398ce1982a64e846de142f08d33b, type: 3}
-  - {fileID: 21300000, guid: 65ca59ac3cda75843b04949e54515226, type: 3}
-  - {fileID: 21300000, guid: d436284d78d2dcf48ae368284d0bd96e, type: 3}
-  - {fileID: 21300000, guid: d8c8009d987baf64590f0a7108c9a6fa, type: 3}
-  - {fileID: 21300000, guid: 3a07002e4fb088c4f8eb78a54c946521, type: 3}
-  - {fileID: 21300000, guid: 9a33f07e0deee0d4382263fe392b1a56, type: 3}
-  - {fileID: 21300000, guid: 1b1b005fad89a984ea319ccdca5f8c2e, type: 3}
-  - {fileID: 21300000, guid: a437f1df006267a4396ac5d5b79975d4, type: 3}
-  m_PackedSpriteNamesToIndex:
-  - flawlesstopaz
-  - flawlessruby
-  - flawedtopaz
-  - flawedruby
-  - nruby
-  - flawlessdiamond
-  - ndiamond
-  - chippedamethyst
-  - flawedsaphire
-  - chippedsaphire
-  - perfecttopaz
-  - flawlessemerald
-  - perfectamethyst
-  - perfectruby
-  - nemerald
-  - perfectdiamond
-  - flawlesssaphire
-  - flawlessamethyst
-  - chippeddiamond
-  - chippedtopaz
-  - flawedemerald
-  - chippedruby
-  - ntopaz
-  - chippedemerald
-  - flawedamethyst
-  - perfectsaphire
-  - namethyst
-  - flaweddiamond
-  - perfectemerald
-  - nsaphire
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
   m_RenderDataMap: {}
   m_Tag: Gems
   m_IsVariant: 0

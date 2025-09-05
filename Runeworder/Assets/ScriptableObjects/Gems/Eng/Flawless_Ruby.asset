@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gemType: 3
   gemQuality: 3
-  gemSprite: {fileID: 21300000, guid: 4f28288059fc7874cb968cb3f40ecfde, type: 3}
+  gemSprite: {fileID: 6824810528304333694, guid: 090c80bec877a36488886872d7ee21a0, type: 3}
