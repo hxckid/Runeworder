@@ -125,7 +125,7 @@ public class RuneTooltipController : MonoBehaviour
         {
             gemQuality = gem_SO.gemQuality switch
             {
-                GemQuality.Chipped => "Треснувший",
+                GemQuality.Chipped => "Надколотый",
                 GemQuality.Flawed => "Мутный",
                 GemQuality.Normal => "",
                 GemQuality.Flawless => "Безупречный",
