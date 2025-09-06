@@ -79,7 +79,7 @@ public class RuneController : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     public void OnTooltipRuneTap(Image runeImage)
     {
-        Enum.TryParse<RunesEn>(runeImage.sprite.name, out RunesEn runeTapped);
+        Enum.TryParse<RunesEn>(runeImage.sprite.name.Split('_')[1], out RunesEn runeTapped);
         OnLongTapRune?.Invoke(runeTapped);
     }
 }

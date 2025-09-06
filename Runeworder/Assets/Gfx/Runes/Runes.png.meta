@@ -235,7 +235,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: El
+      name: Rune_El
       rect:
         serializedVersion: 2
         x: 150
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eld
+      name: Rune_Eld
       rect:
         serializedVersion: 2
         x: 199
@@ -279,12 +279,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tir
+      name: Rune_Tir
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 246
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -301,7 +301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nef
+      name: Rune_Nef
       rect:
         serializedVersion: 2
         x: 3
@@ -323,7 +323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eth
+      name: Rune_Eth
       rect:
         serializedVersion: 2
         x: 52
@@ -345,7 +345,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ith
+      name: Rune_Ith
       rect:
         serializedVersion: 2
         x: 101
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tal
+      name: Rune_Tal
       rect:
         serializedVersion: 2
         x: 150
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ral
+      name: Rune_Ral
       rect:
         serializedVersion: 2
         x: 199
@@ -411,12 +411,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ort
+      name: Rune_Ort
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 197
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -433,7 +433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thul
+      name: Rune_Thul
       rect:
         serializedVersion: 2
         x: 3
@@ -455,7 +455,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amn
+      name: Rune_Amn
       rect:
         serializedVersion: 2
         x: 52
@@ -477,7 +477,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sol
+      name: Rune_Sol
       rect:
         serializedVersion: 2
         x: 101
@@ -499,7 +499,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shael
+      name: Rune_Shael
       rect:
         serializedVersion: 2
         x: 150
@@ -521,7 +521,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dol
+      name: Rune_Dol
       rect:
         serializedVersion: 2
         x: 199
@@ -543,12 +543,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hel
+      name: Rune_Hel
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 148
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -565,7 +565,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Io
+      name: Rune_Io
       rect:
         serializedVersion: 2
         x: 3
@@ -587,7 +587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lum
+      name: Rune_Lum
       rect:
         serializedVersion: 2
         x: 52
@@ -609,7 +609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ko
+      name: Rune_Ko
       rect:
         serializedVersion: 2
         x: 101
@@ -631,7 +631,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fal
+      name: Rune_Fal
       rect:
         serializedVersion: 2
         x: 150
@@ -653,7 +653,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lem
+      name: Rune_Lem
       rect:
         serializedVersion: 2
         x: 199
@@ -675,12 +675,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pul
+      name: Rune_Pul
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 99
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -697,7 +697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Um
+      name: Rune_Um
       rect:
         serializedVersion: 2
         x: 3
@@ -719,7 +719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mal
+      name: Rune_Mal
       rect:
         serializedVersion: 2
         x: 52
@@ -741,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ist
+      name: Rune_Ist
       rect:
         serializedVersion: 2
         x: 101
@@ -763,7 +763,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gul
+      name: Rune_Gul
       rect:
         serializedVersion: 2
         x: 150
@@ -785,7 +785,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vex
+      name: Rune_Vex
       rect:
         serializedVersion: 2
         x: 199
@@ -807,12 +807,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ohm
+      name: Rune_Ohm
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 50
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -829,7 +829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lo
+      name: Rune_Lo
       rect:
         serializedVersion: 2
         x: 3
@@ -851,7 +851,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sur
+      name: Rune_Sur
       rect:
         serializedVersion: 2
         x: 52
@@ -873,7 +873,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ber
+      name: Rune_Ber
       rect:
         serializedVersion: 2
         x: 101
@@ -895,7 +895,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jah
+      name: Rune_Jah
       rect:
         serializedVersion: 2
         x: 150
@@ -917,7 +917,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cham
+      name: Rune_Cham
       rect:
         serializedVersion: 2
         x: 199
@@ -939,12 +939,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zod
+      name: Rune_Zod
       rect:
         serializedVersion: 2
-        x: 248
+        x: 247
         y: 1
-        width: 44
+        width: 45
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -974,39 +974,40 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Amn: -7153237468517531963
-      Ber: -1196169550335143571
-      Cham: 304334863325100338
-      Dol: 9044945195962155230
-      El: 2174028493023228853
-      Eld: -1563776502169514624
-      Eth: -6094098005360472568
-      Fal: 8105461410332785109
-      Gul: -3033762605368871702
-      Hel: -1939689127886735697
-      Io: 373982053409767258
-      Ist: 6028218691396609969
-      Ith: 1537613641987167269
-      Jah: -8278776621803994759
-      Ko: 8853478984470228912
-      Lem: -8930640299231052059
-      Lo: 7256167803517260690
-      Lum: 5455931690302879806
-      Mal: -8855056840675280816
-      Nef: -5447233517892204522
-      Ohm: 5332741692669887357
-      Ort: -7791188130444010090
-      Pul: -3237508240721149647
-      Ral: -8708938175695389349
-      Shael: -6072647406737386784
-      Sol: 1763416088095558982
-      Sur: 7436760131401412462
-      Tal: -961032850552321521
-      Thul: -1502972803651985057
-      Tir: 4631235684313111012
-      Um: -2681793855587880821
-      Vex: 602322258887530144
-      Zod: -4501304641669350739
+      Rune_: -6094098005360472568
+      Rune_Amn: -7153237468517531963
+      Rune_Ber: -1196169550335143571
+      Rune_Cham: 304334863325100338
+      Rune_Dol: 9044945195962155230
+      Rune_El: 2174028493023228853
+      Rune_Eld: -1563776502169514624
+      Rune_Eth: -6094098005360472568
+      Rune_Fal: 8105461410332785109
+      Rune_Gul: -3033762605368871702
+      Rune_Hel: -1939689127886735697
+      Rune_Io: 373982053409767258
+      Rune_Ist: 6028218691396609969
+      Rune_Ith: 1537613641987167269
+      Rune_Jah: -8278776621803994759
+      Rune_Ko: 8853478984470228912
+      Rune_Lem: -8930640299231052059
+      Rune_Lo: 7256167803517260690
+      Rune_Lum: 5455931690302879806
+      Rune_Mal: -8855056840675280816
+      Rune_Nef: -5447233517892204522
+      Rune_Ohm: 5332741692669887357
+      Rune_Ort: -7791188130444010090
+      Rune_Pul: -3237508240721149647
+      Rune_Ral: -8708938175695389349
+      Rune_Shael: -6072647406737386784
+      Rune_Sol: 1763416088095558982
+      Rune_Sur: 7436760131401412462
+      Rune_Tal: -961032850552321521
+      Rune_Thul: -1502972803651985057
+      Rune_Tir: 4631235684313111012
+      Rune_Um: -2681793855587880821
+      Rune_Vex: 602322258887530144
+      Rune_Zod: -4501304641669350739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

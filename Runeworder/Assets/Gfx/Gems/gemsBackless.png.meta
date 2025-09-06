@@ -203,7 +203,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fla
+      name: Gem_fla
       rect:
         serializedVersion: 2
         x: 207
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pa
+      name: Gem_pa
       rect:
         serializedVersion: 2
         x: 272
@@ -247,7 +247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ca
+      name: Gem_ca
       rect:
         serializedVersion: 2
         x: 12
@@ -269,7 +269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fa
+      name: Gem_fa
       rect:
         serializedVersion: 2
         x: 75
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: a
+      name: Gem_a
       rect:
         serializedVersion: 2
         x: 142
@@ -313,7 +313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ct
+      name: Gem_ct
       rect:
         serializedVersion: 2
         x: 12
@@ -335,7 +335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ft
+      name: Gem_ft
       rect:
         serializedVersion: 2
         x: 75
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: t
+      name: Gem_t
       rect:
         serializedVersion: 2
         x: 142
@@ -379,7 +379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flt
+      name: Gem_flt
       rect:
         serializedVersion: 2
         x: 207
@@ -401,7 +401,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pt
+      name: Gem_pt
       rect:
         serializedVersion: 2
         x: 272
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ce
+      name: Gem_ce
       rect:
         serializedVersion: 2
         x: 12
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fe
+      name: Gem_fe
       rect:
         serializedVersion: 2
         x: 75
@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e
+      name: Gem_e
       rect:
         serializedVersion: 2
         x: 142
@@ -489,7 +489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fle
+      name: Gem_fle
       rect:
         serializedVersion: 2
         x: 207
@@ -511,7 +511,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pe
+      name: Gem_pe
       rect:
         serializedVersion: 2
         x: 272
@@ -533,7 +533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cs
+      name: Gem_cs
       rect:
         serializedVersion: 2
         x: 12
@@ -555,7 +555,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fs
+      name: Gem_fs
       rect:
         serializedVersion: 2
         x: 75
@@ -577,7 +577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: s
+      name: Gem_s
       rect:
         serializedVersion: 2
         x: 142
@@ -599,7 +599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fls
+      name: Gem_fls
       rect:
         serializedVersion: 2
         x: 207
@@ -621,7 +621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ps
+      name: Gem_ps
       rect:
         serializedVersion: 2
         x: 272
@@ -643,7 +643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cr
+      name: Gem_cr
       rect:
         serializedVersion: 2
         x: 12
@@ -665,7 +665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fr
+      name: Gem_fr
       rect:
         serializedVersion: 2
         x: 75
@@ -687,7 +687,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: r
+      name: Gem_r
       rect:
         serializedVersion: 2
         x: 142
@@ -709,7 +709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flr
+      name: Gem_flr
       rect:
         serializedVersion: 2
         x: 207
@@ -731,7 +731,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pr
+      name: Gem_pr
       rect:
         serializedVersion: 2
         x: 272
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cd
+      name: Gem_cd
       rect:
         serializedVersion: 2
         x: 12
@@ -775,7 +775,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fd
+      name: Gem_fd
       rect:
         serializedVersion: 2
         x: 75
@@ -797,7 +797,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: d
+      name: Gem_d
       rect:
         serializedVersion: 2
         x: 142
@@ -819,7 +819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fld
+      name: Gem_fld
       rect:
         serializedVersion: 2
         x: 207
@@ -841,7 +841,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pd
+      name: Gem_pd
       rect:
         serializedVersion: 2
         x: 272
@@ -876,37 +876,37 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      a: -1757026887919104990
-      ca: 2801021983676550577
-      cd: -6009071873705503929
-      ce: 5407256150743836800
-      cr: -5085508616685813592
-      cs: 5904488691140190062
-      ct: -4733566490790126026
-      d: 1943506551521908007
-      e: -1751888888399000215
-      fa: 9130222170829774250
-      fd: 770002101727319728
-      fe: -6557743850603408918
-      fla: 3978478569345406587
-      fld: 8203621943250359635
-      fle: 5485242849314142112
-      flr: 6824810528304333694
-      fls: 7419256575283770605
-      flt: 6903400711178110546
-      fr: 39102620745890122
-      fs: -2824800227930156896
-      ft: 3197733177492829336
+      Gem_a: -1757026887919104990
+      Gem_ca: 2801021983676550577
+      Gem_cd: -6009071873705503929
+      Gem_ce: 5407256150743836800
+      Gem_cr: -5085508616685813592
+      Gem_cs: 5904488691140190062
+      Gem_ct: -4733566490790126026
+      Gem_d: 1943506551521908007
+      Gem_e: -1751888888399000215
+      Gem_fa: 9130222170829774250
+      Gem_fd: 770002101727319728
+      Gem_fe: -6557743850603408918
+      Gem_fla: 3978478569345406587
+      Gem_fld: 8203621943250359635
+      Gem_fle: 5485242849314142112
+      Gem_flr: 6824810528304333694
+      Gem_fls: 7419256575283770605
+      Gem_flt: 6903400711178110546
+      Gem_fr: 39102620745890122
+      Gem_fs: -2824800227930156896
+      Gem_ft: 3197733177492829336
+      Gem_pa: 1352158719299827024
+      Gem_pd: 6303329357953213680
+      Gem_pe: 3436643267839131648
+      Gem_pr: 9043805734535272105
+      Gem_ps: 458284800671031607
+      Gem_pt: 2236948511995983215
+      Gem_r: 421134438492075723
+      Gem_s: -7680401063468678543
+      Gem_t: -3097107820655019852
       gemsBackless_0: -1086306532839290510
-      pa: 1352158719299827024
-      pd: 6303329357953213680
-      pe: 3436643267839131648
-      pr: 9043805734535272105
-      ps: 458284800671031607
-      pt: 2236948511995983215
-      r: 421134438492075723
-      s: -7680401063468678543
-      t: -3097107820655019852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

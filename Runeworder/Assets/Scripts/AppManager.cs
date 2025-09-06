@@ -115,6 +115,7 @@ public class AppManager : MonoBehaviour
                 buttonsText[50].text = "Patch 2.4";
                 buttonsText[51].text = "LoD >= 1.11";
                 buttonsText[52].text = "LoD >= 1.10";
+                buttonsText[53].text = "Original";
                 buttonsText[54].text = "All";
                 break;
 

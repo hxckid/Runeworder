@@ -306,7 +306,7 @@ public class RunewordsController : MonoBehaviour
             if (odd % 2 == 0)
                 lc.background.color = Color.red;
             else
-                lc.background.color = Color.white;
+                lc.background.color = Color.gray;
             odd++;
 
             lc.runewordName.text = rw.runewordName;
