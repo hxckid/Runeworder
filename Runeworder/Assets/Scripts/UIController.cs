@@ -25,15 +25,6 @@ public class UIController : MonoBehaviour
         runesUI = new List<GameObject>();
         InitRunes();
         ShowDonationPanel(AppManager.instance.currentLanguage, string.Empty);
-        
-        // Инициализация текста для Toggle "только завершенные"
-        if (completedOnlyToggle != null)
-        {
-            if (AppManager.instance.currentLanguage == Languages.En)
-                completedOnlyToggle.GetComponentInChildren<Text>().text = "Completed Only";
-            else
-                completedOnlyToggle.GetComponentInChildren<Text>().text = "Только завершенные";
-        }
     }
 
     private void ShowDonationPanel(Languages languages, string ver)
@@ -114,11 +105,6 @@ public class UIController : MonoBehaviour
                     typeDropdown.options.Add(new Dropdown.OptionData("Wands"));
                     typeDropdown.options.Add(new Dropdown.OptionData("Shields"));
                     
-                    // Локализация для Toggle "только завершенные"
-                    if (completedOnlyToggle != null)
-                    {
-                        completedOnlyToggle.GetComponentInChildren<Text>().text = "Completed Only";
-                    }
                     break;
                 case Languages.Ru:
                     foreach (var rune in runesUI)

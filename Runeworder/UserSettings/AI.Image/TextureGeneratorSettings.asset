@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0355ba069dae4d24bf2e318d15442628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Image::Unity.AI.Image.Services.SessionPersistence.TextureGeneratorSettings
+  m_Session:
+    settings:
+      lastSelectedModels:
+        serializedData:
+        - key: 0
+          value:
+            rid: 3524866231534617306
+        - key: 1
+          value:
+            rid: 3524866231534617307
+        - key: 2
+          value:
+            rid: 3524866231534617308
+        - key: 3
+          value:
+            rid: 3524866231534617309
+        - key: 4
+          value:
+            rid: 3524866231534617310
+        - key: 5
+          value:
+            rid: 3524866231534617311
+      previewSettings:
+        sizeFactor: 2
+  references:
+    version: 2
+    RefIds:
+    - rid: 3524866231534617306
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 94c4260f-b988-40e7-b3d3-435b9f449bd0
+    - rid: 3524866231534617307
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 94c4260f-b988-40e7-b3d3-435b9f449bd0
+    - rid: 3524866231534617308
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 94c4260f-b988-40e7-b3d3-435b9f449bd0
+    - rid: 3524866231534617309
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 2d2d53fc-e209-4853-a358-738191781d9c
+    - rid: 3524866231534617310
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 
+    - rid: 3524866231534617311
+      type: {class: ModelSelection, ns: Unity.AI.Image.Services.Stores.States, asm: Unity.AI.Image}
+      data:
+        modelID: 072fd6c7-1a92-4d41-b504-c46546b0dd28

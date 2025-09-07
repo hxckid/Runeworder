@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -23,6 +24,7 @@ public class AppManager : MonoBehaviour
     public GameObject runewordsBtn;
     public Languages currentLanguage;
     public List<Text> buttonsText;
+    public List<TextMeshProUGUI> textMeshText;
     public Text langText;
     public Dropdown verDrop;
     
@@ -65,7 +67,7 @@ public class AppManager : MonoBehaviour
         switch (currentLanguage)
         {
             case Languages.En:
-                langText.text = "RUS";
+                langText.text = "ENG";
                 OnLanguageChanged?.Invoke(Languages.En, currentVersion);
                 buttonsText[0].text = "Reset";
                 buttonsText[1].text = "Show Runewords";
@@ -117,10 +119,14 @@ public class AppManager : MonoBehaviour
                 buttonsText[52].text = "LoD >= 1.10";
                 buttonsText[53].text = "Original";
                 buttonsText[54].text = "All";
+                buttonsText[55].text = "Completed Only";
+                buttonsText[56].text = "Tip: Long-press any Rune to see its recipe and details";
+
+                textMeshText[0].text = "Cube Recipes";
                 break;
 
             case Languages.Ru:
-                langText.text = "ENG";
+                langText.text = "РУС";
                 OnLanguageChanged?.Invoke(Languages.Ru, currentVersion);
                 buttonsText[0].text = "Сброс";
                 buttonsText[1].text = "Найти рунворды";
@@ -182,6 +188,10 @@ public class AppManager : MonoBehaviour
                 buttonsText[52].text = "LoD >= 1.10";
                 buttonsText[53].text = "Оригинал";
                 buttonsText[54].text = "Все";
+                buttonsText[55].text = "Только Завершенные";
+                buttonsText[56].text = "Подсказка: Долгое нажатие на руну покажет её рецепт и свойства";
+
+                textMeshText[0].text = "Рецепты Куба";
                 break;
         }
     }
