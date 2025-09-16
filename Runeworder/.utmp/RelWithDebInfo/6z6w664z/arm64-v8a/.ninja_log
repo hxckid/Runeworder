@@ -1,5 +1,5 @@
 # ninja log v5
-1	82	7788982594997502	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	819f9b60c8841732
-82	153	7788982595629083	C:/repos/Runeworder/Runeworder/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z6w664z/obj/arm64-v8a/libswappywrapper.so	e6888f3f45c14260
-1	96	7789003981992817	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	819f9b60c8841732
-96	180	7789003982698019	C:/repos/Runeworder/Runeworder/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z6w664z/obj/arm64-v8a/libswappywrapper.so	e6888f3f45c14260
+1	226	7789886263396017	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	819f9b60c8841732
+227	405	7789886264852766	C:/repos/Runeworder/Runeworder/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z6w664z/obj/arm64-v8a/libswappywrapper.so	e6888f3f45c14260
+1	84	7789887399500376	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	819f9b60c8841732
+84	164	7789887400177493	C:/repos/Runeworder/Runeworder/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6z6w664z/obj/arm64-v8a/libswappywrapper.so	e6888f3f45c14260

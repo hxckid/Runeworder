@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -21,6 +22,7 @@ public class RuneTooltipController : MonoBehaviour
     public GameObject runeSecond;
     public GameObject runeThird;
     public GameObject gem;
+    public GameObject langImage;
 
     [Header("Databases")]
     public RunesDB_SO runesDBEng;
@@ -30,6 +32,15 @@ public class RuneTooltipController : MonoBehaviour
     private List<GameObject> runesInRecipe = new List<GameObject>();
     private Image runeFirstImage, runeSecondImage, runeThirdImage, gemImage;
     private TextMeshProUGUI runeFirstText, runeSecondText, runeThirdText, gemText;
+
+    [Header("Language Flip Animation")]
+    [SerializeField] private float langFlipDuration = 0.25f;
+    [SerializeField] private AnimationCurve langFlipCurve = null;
+    private Coroutine langFlipCoroutine;
+
+    public enum RotationAxis { X, Y, Z }
+    [Header("Axis Settings")]
+    [SerializeField] private RotationAxis langFlipAxis = RotationAxis.Z;
 
     private void Start()
     {
@@ -51,11 +62,86 @@ public class RuneTooltipController : MonoBehaviour
         runeSecondText = runeSecond.GetComponentInChildren<TextMeshProUGUI>(true);
         runeThirdText = runeThird.GetComponentInChildren<TextMeshProUGUI>(true);
         gemText = gem.GetComponentInChildren<TextMeshProUGUI>(true);
+
+        // Инициализируем кривую по умолчанию, если не задана в инспекторе
+        if (langFlipCurve == null)
+        {
+            langFlipCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+        }
+
+        // Устанавливаем начальный поворот языка без анимации
+        InitializeLangImageRotation();
     }
 
     void OnLanguageChanged(Languages language, string version)
     {
         currentDB = (language == Languages.En) ? runesDBEng : runesDBRus;
+        RotateLangImage();
+    }
+
+    private void RotateLangImage()
+    {
+        if (langImage == null) return;
+        RectTransform rt = langImage.transform as RectTransform;
+        if (rt == null) return;
+
+        float targetAngle = (AppManager.instance.currentLanguage == Languages.Ru) ? 180f : 0f;
+        float currentAngle = GetAxisAngle(rt, langFlipAxis);
+
+        if (langFlipCoroutine != null)
+        {
+            StopCoroutine(langFlipCoroutine);
+        }
+        langFlipCoroutine = StartCoroutine(AnimateLangFlip(rt, currentAngle, targetAngle, langFlipDuration, langFlipAxis));
+    }
+
+    private void InitializeLangImageRotation()
+    {
+        if (langImage == null) return;
+        RectTransform rt = langImage.transform as RectTransform;
+        if (rt == null) return;
+        float targetAngle = (AppManager.instance.currentLanguage == Languages.Ru) ? 180f : 0f;
+        SetAxisAngle(rt, langFlipAxis, targetAngle);
+    }
+
+    private IEnumerator AnimateLangFlip(RectTransform rectTransform, float startAngle, float endAngle, float duration, RotationAxis axis)
+    {
+        float elapsed = 0f;
+        float delta = Mathf.DeltaAngle(startAngle, endAngle);
+        float baseAngle = startAngle;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            float curvedT = langFlipCurve.Evaluate(t);
+            float angle = baseAngle + delta * curvedT;
+            SetAxisAngle(rectTransform, axis, angle);
+            yield return null;
+        }
+        SetAxisAngle(rectTransform, axis, endAngle);
+        langFlipCoroutine = null;
+    }
+
+    private static float GetAxisAngle(RectTransform rectTransform, RotationAxis axis)
+    {
+        switch (axis)
+        {
+            case RotationAxis.X: return rectTransform.localEulerAngles.x;
+            case RotationAxis.Y: return rectTransform.localEulerAngles.y;
+            default: return rectTransform.localEulerAngles.z;
+        }
+    }
+
+    private static void SetAxisAngle(RectTransform rectTransform, RotationAxis axis, float angle)
+    {
+        Vector3 eulers = rectTransform.localEulerAngles;
+        switch (axis)
+        {
+            case RotationAxis.X: eulers.x = angle; break;
+            case RotationAxis.Y: eulers.y = angle; break;
+            default: eulers.z = angle; break;
+        }
+        rectTransform.localEulerAngles = eulers;
     }
 
     void FillRuneInfo(RunesEn runeType)
@@ -67,9 +153,9 @@ public class RuneTooltipController : MonoBehaviour
         if (runeIcon != null) runeIcon.sprite = rune.runeIcon;
         if (runeName != null) runeName.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Rune {runeType}" : $"Руна {Enum.GetName(typeof(RunesRu), (int)runeType).ToString()}";
         if (weaponsBonus != null) weaponsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Weapons: {rune.weaponBonus}" : $"Оружие: {rune.weaponBonus}";
-        if (armorsBonus != null) armorsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Armors: {rune.armorBonus}" : $"Броня: {rune.armorBonus}";
-        if (helmsBonus != null) helmsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Helms: {rune.helmetBonus}" : $"Шлемы: {rune.helmetBonus}";
-        if (shieldsBonus != null) shieldsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Shields: {rune.shieldBonus}" : $"Щиты: {rune.shieldBonus}";
+        if (armorsBonus != null) armorsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"  Armor: {rune.armorBonus}" : $"Броня: {rune.armorBonus}";
+        if (helmsBonus != null) helmsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"  Helms: {rune.helmetBonus}" : $"Шлемы: {rune.helmetBonus}";
+        if (shieldsBonus != null) shieldsBonus.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Shields: {rune.shieldBonus}" : $" Щиты: {rune.shieldBonus}";
         if (runeLevel != null) runeLevel.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Required Level: {rune.runeLevel.ToString()}" : $"Требуемый уровень: {rune.runeLevel.ToString()}";
         if (runeRecipeLabel != null) runeRecipeLabel.text = (AppManager.instance.currentLanguage == Languages.En) ? $"Rune Recipe" : $"Рецепт Руны";
 

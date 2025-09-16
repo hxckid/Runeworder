@@ -114,8 +114,8 @@ public class UIController : MonoBehaviour
                     }
 
                     socketsDropdown.options.Clear();
-                    socketsDropdown.captionText.text = "Все";
-                    socketsDropdown.options.Add(new Dropdown.OptionData("Все"));
+                    socketsDropdown.captionText.text = "Р’СЃРµ";
+                    socketsDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("6"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("5"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("4"));
@@ -123,32 +123,32 @@ public class UIController : MonoBehaviour
                     socketsDropdown.options.Add(new Dropdown.OptionData("2"));
 
                     typeDropdown.options.Clear();
-                    typeDropdown.captionText.text = "Все Рунворды";
-                    typeDropdown.options.Add(new Dropdown.OptionData("Все Рунворды"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Все Оружие"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Копья Амазонки"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Броня"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Топоры"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Когти"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Дубины"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Кинжалы"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Молоты"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Шлемы"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Булавы"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие ближнего боя"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие дальнего боя"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Древковое оружие"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Скипетры"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Копья"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Двуручные Посохи (Не Сферы)"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Мечи"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Жезлы Некроманта"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Щиты"));
-                    
-                    // Локализация для Toggle "только завершенные"
+                    typeDropdown.captionText.text = "Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹";
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ РћСЂСѓР¶РёРµ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРїСЊСЏ РђРјР°Р·РѕРЅРєРё"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р‘СЂРѕРЅСЏ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РўРѕРїРѕСЂС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРіС‚Рё"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р”СѓР±РёРЅС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РљРёРЅР¶Р°Р»С‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РњРѕР»РѕС‚С‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РЁР»РµРјС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р‘СѓР»Р°РІС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РћСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РћСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р”СЂРµРІРєРѕРІРѕРµ РѕСЂСѓР¶РёРµ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РЎРєРёРїРµС‚СЂС‹"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРїСЊСЏ"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р”РІСѓСЂСѓС‡РЅС‹Рµ РџРѕСЃРѕС…Рё (РќРµ РЎС„РµСЂС‹)"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("РњРµС‡Рё"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р–РµР·Р»С‹ РќРµРєСЂРѕРјР°РЅС‚Р°"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Р©РёС‚С‹"));
+
+                    // Р›РѕРєР°Р»РёР·Р°С†РёСЏ РґР»СЏ Toggle "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ"
                     if (completedOnlyToggle != null)
                     {
-                        completedOnlyToggle.GetComponentInChildren<Text>().text = "Только завершенные";
+                        completedOnlyToggle.GetComponentInChildren<Text>().text = "РўРѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ";
                     }
                     break;
             }
@@ -164,11 +164,11 @@ public class UIController : MonoBehaviour
     }
     
     /// <summary>
-    /// Обработчик изменения состояния Toggle "только завершенные"
+    /// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Toggle "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
     /// </summary>
     public void OnCompletedOnlyToggleChanged()
     {
-        // Находим RunewordsController и перезапускаем последний фильтр
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ RunewordsController пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var runewordsController = FindFirstObjectByType<RunewordsController>();
         if (runewordsController != null)
         {
@@ -186,7 +186,7 @@ public enum RunesEn
 
 public enum RunesRu
 {
-    Эл, Элд, Тир, Неф, Эт, Ит, Тал, Рал, Орт, Тул, Амн,
-    Сол, Шаэл, Дол, Хел, Ио, Лум, Ко, Фал, Лем, Пул, Ум,
-    Мал, Ист, Гул, Векс, Ом, Ло, Сур, Бер, Джа, Чам, Зод
+    Р­Р», Р­Р»Рґ, РўРёСЂ, РќРµС„, Р­С‚, РС‚, РўР°Р», Р Р°Р», РћСЂС‚, РўСѓР», РђРјРЅ,
+    РЎРѕР», РЁР°СЌР», Р”РѕР», РҐРµР», РРѕ, Р›СѓРј, РљРѕ, Р¤Р°Р», Р›РµРј, РџСѓР», РЈРј,
+    РњР°Р», РСЃС‚, Р“СѓР», Р’РµРєСЃ, РћРј, Р›Рѕ, РЎСѓСЂ, Р‘РµСЂ, Р”Р¶Р°, Р§Р°Рј, Р—РѕРґ
 }
