@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
-  m_Name: VigilanceR
+  m_Name: Vigilance
   m_EditorClassIdentifier: Assembly-CSharp::Runeword_SO
   runewordName: "\u0411\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C"
   runesSequence: '''DolGul'''

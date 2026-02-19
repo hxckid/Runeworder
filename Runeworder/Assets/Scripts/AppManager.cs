@@ -31,6 +31,9 @@ public class AppManager : MonoBehaviour
     UserData userData;
     string json;
     string key = "UserData";
+    string favoritesKey = "FavoriteRunewords";
+    UserFavorites userFavorites;
+    string favoritesJson;
     GameObject txt;
 
     public delegate void LanguageHandler(Languages languages, string ver);
@@ -45,9 +48,29 @@ public class AppManager : MonoBehaviour
 
         RuneController.OnRuneToggleChanged += SaveUserData;
         json = PlayerPrefs.GetString(key);
-        userData = JsonUtility.FromJson<UserData>(json);
-        userRunes.hasRunes.Clear();
-        userRunes.hasRunes = new List<RunesEn>(userData.runes);
+        if (!string.IsNullOrEmpty(json))
+        {
+            userData = JsonUtility.FromJson<UserData>(json);
+            userRunes.hasRunes.Clear();
+            userRunes.hasRunes = new List<RunesEn>(userData.runes);
+        }
+        else
+        {
+            userData = new UserData(new List<RunesEn>());
+            userRunes.hasRunes.Clear();
+        }
+        
+        // Load favorite runewords
+        favoritesJson = PlayerPrefs.GetString(favoritesKey);
+        if (!string.IsNullOrEmpty(favoritesJson))
+        {
+            userFavorites = JsonUtility.FromJson<UserFavorites>(favoritesJson);
+        }
+        else
+        {
+            userFavorites = new UserFavorites();
+        }
+        
         gameState = GameState.Runes;
         switch (Application.systemLanguage)
         {
@@ -253,6 +276,58 @@ public class AppManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    public bool IsRunewordFavorite(string runewordName)
+    {
+        if (string.IsNullOrEmpty(runewordName))
+            return false;
+            
+        if (userFavorites == null)
+            userFavorites = new UserFavorites();
+
+        if (userFavorites.favoriteRunewords == null)
+            userFavorites.favoriteRunewords = new List<string>();
+
+        return userFavorites.favoriteRunewords.Contains(runewordName);
+    }
+
+    public void ToggleFavoriteRuneword(string runewordName)
+    {
+        if (userFavorites == null)
+            userFavorites = new UserFavorites();
+
+        if (userFavorites.favoriteRunewords == null)
+            userFavorites.favoriteRunewords = new List<string>();
+
+        if (userFavorites.favoriteRunewords.Contains(runewordName))
+        {
+            userFavorites.favoriteRunewords.Remove(runewordName);
+        }
+        else
+        {
+            userFavorites.favoriteRunewords.Add(runewordName);
+        }
+
+        SaveFavoriteRunewords();
+    }
+
+    private void SaveFavoriteRunewords()
+    {
+        favoritesJson = JsonUtility.ToJson(userFavorites);
+        PlayerPrefs.SetString(favoritesKey, favoritesJson);
+        PlayerPrefs.Save();
+    }
+
+    /// <summary>
+    /// Clears all favorite runewords from storage
+    /// </summary>
+    public void ClearFavoriteRunewords()
+    {
+        userFavorites = new UserFavorites();
+        PlayerPrefs.DeleteKey(favoritesKey);
+        PlayerPrefs.Save();
+        Debug.Log("[AppManager] All favorite runewords cleared");
+    }
+
     public void SetGameState(string state)
     {
         switch (state)
@@ -283,5 +358,16 @@ public class UserData
     public UserData(List<RunesEn> list)
     {
         runes = new List<RunesEn>(list);
+    }
+}
+
+[Serializable]
+public class UserFavorites
+{
+    [SerializeField] public List<string> favoriteRunewords;
+
+    public UserFavorites()
+    {
+        favoriteRunewords = new List<string>();
     }
 }

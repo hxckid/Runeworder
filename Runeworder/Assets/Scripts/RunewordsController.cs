@@ -10,6 +10,8 @@ using System.IO;
 
 public class RunewordsController : MonoBehaviour
 {
+    public static RunewordsController instance;
+
     public Text langText;
     public Dropdown verDrop;
     public UserRunes_SO userRunes;
@@ -39,6 +41,7 @@ public class RunewordsController : MonoBehaviour
 
     private void Start()
     {
+        instance = this;
         runewordsToShow = new List<GameObject>();
         runewordsToShow.Clear();
         AppManager.OnLanguageChanged += InitDB;
@@ -239,7 +242,7 @@ public class RunewordsController : MonoBehaviour
 
         status.text = $"({workflowDB.runewords.Count}) {typeText}/{socketText}*/{ladderText}";
 
-        ApplyDefaultSort(workflowDB);
+        ApplyDefaultSort(customSearchDB);
         FillRunewordList(customSearchDB);
     }
 
@@ -362,17 +365,47 @@ public class RunewordsController : MonoBehaviour
                 lc.runeword = rw;
             }
             GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
+            ListController lcInstance = inst.GetComponent<ListController>();
+            if (lcInstance != null)
+            {
+                lcInstance.UpdateStarVisibility();
+            }
             runewordsToShow.Add(inst);
         }
     }
 
+    public void RefreshCurrentList()
+    {
+        // Refresh the current list display to update star visibility
+        if (!string.IsNullOrEmpty(lastPressed) && lastPressed != "None")
+        {
+            FilterLast();
+        }
+    }
+
     /// <summary>
-    /// Applies default sort by required level (lowest to highest). Sets toggle so Level button correctly toggles to descending on first click.
+    /// Returns comparison result for favorites-first ordering. Use: if (CompareFavoritesFirst(a, b) != 0) return result;
+    /// When a is favorite and b is not: returns -1 (a first). When b is favorite and a is not: returns 1 (b first).
+    /// </summary>
+    private static int CompareFavoritesFirst(Runeword_SO a, Runeword_SO b)
+    {
+        bool aIsFavorite = AppManager.instance.IsRunewordFavorite(a.name);
+        bool bIsFavorite = AppManager.instance.IsRunewordFavorite(b.name);
+        if (aIsFavorite && !bIsFavorite) return -1;
+        if (!aIsFavorite && bIsFavorite) return 1;
+        return 0;
+    }
+
+    /// <summary>
+    /// Applies default sort: favorites first, then by required level (lowest to highest). Sets toggle so Level button correctly toggles to descending on first click.
     /// </summary>
     private void ApplyDefaultSort(RunewordsDB_SO db)
     {
         db.runewords.Sort((a, b) =>
         {
+            int fav = CompareFavoritesFirst(a, b);
+            if (fav != 0) return fav;
+            
             int result = a.reqLevel.CompareTo(b.reqLevel);
             return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
         });
@@ -386,11 +419,18 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    workflowDB.runewords.Sort((b, a) => a.runewordName.CompareTo(b.runewordName));
+                    workflowDB.runewords.Sort((a, b) =>
+                    {
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
+                        return b.runewordName.CompareTo(a.runewordName); // Descending
+                    });
                     break;
                 case "Runes":
                     workflowDB.runewords.Sort((a, b) =>
                     {
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
                         int result = a.hasRunes.CompareTo(b.hasRunes);
                         return result == 0 ? a.runes.Count.CompareTo(b.runes.Count) : result;
                     });
@@ -398,6 +438,8 @@ public class RunewordsController : MonoBehaviour
                 case "Level":
                     workflowDB.runewords.Sort((a, b) =>
                     {
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
                         int result = a.reqLevel.CompareTo(b.reqLevel);
                         return result == 0 ? a.runewordName.CompareTo(b.runewordName) : result;
                     });
@@ -409,19 +451,28 @@ public class RunewordsController : MonoBehaviour
             switch (type)
             {
                 case "Name":
-                    workflowDB.runewords.Sort((a, b) => a.runewordName.CompareTo(b.runewordName));
+                    workflowDB.runewords.Sort((a, b) =>
+                    {
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
+                        return a.runewordName.CompareTo(b.runewordName); // Ascending
+                    });
                     break;
                 case "Runes":
-                    workflowDB.runewords.Sort((b, a) =>
+                    workflowDB.runewords.Sort((a, b) =>
                     {
-                        int result = a.hasRunes.CompareTo(b.hasRunes);
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
+                        int result = b.hasRunes.CompareTo(a.hasRunes); // Descending (more runes first)
                         return result == 0 ? a.runes.Count.CompareTo(b.runes.Count) : result;
                     });
                     break;
                 case "Level":
-                    workflowDB.runewords.Sort((b, a) =>
+                    workflowDB.runewords.Sort((a, b) =>
                     {
-                        int result = a.reqLevel.CompareTo(b.reqLevel);
+                        int fav = CompareFavoritesFirst(a, b);
+                        if (fav != 0) return fav;
+                        int result = b.reqLevel.CompareTo(a.reqLevel); // Descending (higher level first)
                         return result == 0 ? b.runewordName.CompareTo(a.runewordName) : result;
                     });
                     break;
@@ -462,6 +513,7 @@ public class RunewordsController : MonoBehaviour
             case "Helms": status.text += "Шлемы"; break;
             case "Shields": status.text += "Щиты"; break;
             case "All Runewords": status.text += "Все Рунворды"; break;
+            case "Reign of the Warlock": status.text += "Reign of the Warlock"; break;
             case "2.4": status.text += "Патч 2.4"; break;
             case "2.6": status.text += "Патч 2.6"; break;
             case "1.11": status.text += "Повелитель Разрушений 1.11 и старше"; break;

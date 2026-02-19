@@ -14,18 +14,30 @@ public class ListController : MonoBehaviour
     public Text reqLevel;
     public Text type;
     public Button btn;
+    public Image star;
 
     public Canvas parent;
     public GameObject tooltip;
     public GameObject tooltipRune;
 
     Color ressurectedColor;
+    Color rotwcolor;
 
     private void Awake()
     {
         btn.onClick.AddListener(ShowTooltip);
         parent = FindFirstObjectByType<Canvas>();
         ressurectedColor = new Color32(236, 140, 24, 255);
+        rotwcolor = new Color32(209, 11, 160, 255);
+    }
+
+    public void UpdateStarVisibility()
+    {
+        if (star != null && runeword != null)
+        {
+            bool isFavorite = AppManager.instance.IsRunewordFavorite(runeword.name);
+            star.gameObject.SetActive(isFavorite);
+        }
     }
 
     private void ShowTooltip()
@@ -62,6 +74,9 @@ public class ListController : MonoBehaviour
             case "Resurrected 2.4":
             case "Resurrected 2.6":
                 tc.rwVersion.color = ressurectedColor;
+                break;
+            case "Reign Of The Warlock":
+                tc.rwVersion.color = rotwcolor;
                 break;
             case "1.10":
             case "1.11":
@@ -174,5 +189,8 @@ public class ListController : MonoBehaviour
                 tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
+
+        // Initialize star toggle state
+        tc.InitializeStarToggle(runeword);
     }
 }
