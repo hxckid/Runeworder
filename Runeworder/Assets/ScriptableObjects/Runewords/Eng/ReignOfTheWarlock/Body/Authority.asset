@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Authority
+  m_EditorClassIdentifier: Assembly-CSharp::Runeword_SO
+  runewordName: Authority
+  runesSequence: '''HelShaelRal'''
+  runes: 0e0000000c00000007000000
+  sprites:
+  - {fileID: -1939689127886735697, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -6072647406737386784, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -8708938175695389349, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 1
+  weaponBases: 
+  subType: 3 Socket Armor
+  reqLevel: 29
+  statsDesc: '2% Chance to cast level 10 Psychic Ward when struck
+
+    10% Chance
+    to cast level 15 Miasma Chain on striking
+
+    +2 to Warlock Skills
+
+    +20%
+    Faster Hit Recovery
+
+    +40-60% Enhanced Damage
+
+    Fire Resist +30%
+
+    Requirements
+    -15%'
+  isLadder: 0
+  classItem: 8
+  gameVersion: Reign Of The Warlock
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 3
+  recomendedItems: Coming Soon

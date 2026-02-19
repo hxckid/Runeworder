@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd23ca997ce56441adba8daa6a749d9, type: 3}
+  m_Name: Void
+  m_EditorClassIdentifier: Assembly-CSharp::Runeword_SO
+  runewordName: "\uFEFF\uFEFF\u0411\u0435\u0437\u0434\u043D\u0430"
+  runesSequence: '''ThulZodIst'''
+  runes: 090000002000000017000000
+  sprites:
+  - {fileID: -1502972803651985057, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: -4501304641669350739, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  - {fileID: 6028218691396609969, guid: 9b7576fbcadb4cd45a54bf53afc87aee, type: 3}
+  runewordType: 0
+  weaponBases: 04000000
+  subType: 3 Socket Daggers
+  reqLevel: 69
+  statsDesc: "\u041D\u0435 \u0442\u0435\u0440\u044F\u0435\u0442 \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u0438\r\n+2
+    \u043A\u043E \u0432\u0441\u0435\u043C \u0443\u043C\u0435\u043D\u0438\u044F\u043C\r\n+40%
+    \u043A \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F
+    \u0443\u043C\u0435\u043D\u0438\u0439\r\n+3-14 \u0443\u0440\u043E\u043D\u0430
+    \u043E\u0442 \u043B\u044C\u0434\u0430\r\n+(10-15)% \u043A \u0443\u0440\u043E\u043D\u0443
+    \u043E\u0442 \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0443\u043C\u0435\u043D\u0438\u0439\r\n+1-3
+    \u043A \u0443\u043C\u0435\u043D\u0438\u044E \"\u0411\u0435\u0437\u0434\u043D\u0430\"\r\n+(8-12)
+    \u043A\u043E \u0432\u0441\u0435\u043C \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430\u043C\r\n+30%
+    \u043A \u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E\u0441\u0442\u0438 \u043D\u0430\u0439\u0442\u0438
+    \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\r\n\"\u041E\u0434\u0440\u044F\u0445\u043B\u0435\u043D\u0438\u0435\"
+    4-\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F (35/35 \u0437\u0430\u0440\u044F\u0434\u043E\u0432)"
+  isLadder: 0
+  classItem: 0
+  gameVersion: Reign Of The Warlock
+  runesSprites: {fileID: 11400000, guid: 0d624e2dc1903de45b6ce987793464f4, type: 2}
+  hasRunes: 2
+  recomendedItems: Coming Soon

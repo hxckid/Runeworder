@@ -163,12 +163,15 @@ public class ListController : MonoBehaviour
                 case "Класс: Sorceress":
                     tc.rwClass.text = tc.rwClass.text.Replace("Sorceress", "Волшебница");
                     break;
+                case "Класс: Warlock":
+                    tc.rwClass.text = tc.rwClass.text.Replace("Warlock", "Чернокнижник");
+                    break;
             }
 
             if (runeword.gameVersion.Contains("1.10") || runeword.gameVersion.Contains("1.11"))
-                tc.rwVersion.text = $"Версия игры:: {runeword.gameVersion} + (LoD)";
+                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion} + (LoD)";
             else
-                tc.rwVersion.text = $"Версия игры:: {runeword.gameVersion}";
+                tc.rwVersion.text = $"Версия игры: {runeword.gameVersion}";
             tc.bestItemLabel.text = "Лучшие базовые предметы:";
         }
     }

@@ -19,13 +19,13 @@ public class ButtonsBehaviour : MonoBehaviour
 
         buttons[number].gameObject.GetComponent<Image>().color = highlighted;
 
-        if (number >= 5 && number <= 10)
+        if (number >= 5 && number <= 11)
         {
-            buttons[11].gameObject.GetComponent<Image>().color = highlighted;
+            buttons[12].gameObject.GetComponent<Image>().color = highlighted;
             Text buttonText = buttons[number].GetComponentInChildren<Text>();
             if (buttonText != null)
             {
-                buttons[11].GetComponentInChildren<Text>().text = buttonText.text;
+                buttons[12].GetComponentInChildren<Text>().text = buttonText.text;
             }
         }
     }

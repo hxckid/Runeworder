@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: RunewordsDBRus
   m_EditorClassIdentifier: 
   runewords:
+  - {fileID: 11400000, guid: 9dd3b42cfc28fd348bd7a450785f6a43, type: 2}
+  - {fileID: 11400000, guid: a8363f531fcf88e4dbc415af76350dd0, type: 2}
   - {fileID: 11400000, guid: 348187084b0b3a9439ab91a58145e334, type: 2}
   - {fileID: 11400000, guid: d988cb689e55f0c40a938dadb8baf395, type: 2}
   - {fileID: 11400000, guid: d6dc33271a9903d4c870f3e37c30181f, type: 2}
@@ -23,6 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f7846d470bfe6e8459a8f0db8f6ebe9e, type: 2}
   - {fileID: 11400000, guid: 7934d790e3209924ea9eaac4c83a2078, type: 2}
   - {fileID: 11400000, guid: 7e5d1d2f6f5fb2b42be0fc7c8ce2965f, type: 2}
+  - {fileID: 11400000, guid: 00c2e4a10bb217743801c951a6d6a23c, type: 2}
   - {fileID: 11400000, guid: e1b2ada9774dcbb4d9dfe15646419939, type: 2}
   - {fileID: 11400000, guid: 65af54f3e9652cd40b48949be2680374, type: 2}
   - {fileID: 11400000, guid: 7b1d2d0755492044d8ef98e7dac809ef, type: 2}
@@ -49,6 +52,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b4590b9217fe664cac8a3e713fc676b, type: 2}
   - {fileID: 11400000, guid: 366c505465edd1c4c9a4b86afb4ff174, type: 2}
   - {fileID: 11400000, guid: 497e3db20d453624a845cf0196c026d0, type: 2}
+  - {fileID: 11400000, guid: 7616a681bca46fd47b02326daa933e54, type: 2}
   - {fileID: 11400000, guid: abfc9b0e18643bb41a1f1bd746c9a387, type: 2}
   - {fileID: 11400000, guid: 56404336e4b8ea84ba223730672293c6, type: 2}
   - {fileID: 11400000, guid: 4e620bd29f8cd18499cc33fc1ffc7082, type: 2}
@@ -85,6 +89,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4e72e1b09df1444cb2272088c39246b, type: 2}
   - {fileID: 11400000, guid: 9679f930590281541a8830bc66abf6c1, type: 2}
   - {fileID: 11400000, guid: dbef8d3bac8002e4caff6d3e20017706, type: 2}
+  - {fileID: 11400000, guid: 79529071a8230a049bdc76eb0b9db9bf, type: 2}
   - {fileID: 11400000, guid: dc498015d008a3d41bea0fae9f507f5a, type: 2}
   - {fileID: 11400000, guid: 7938163d4f855914f85c9a0760ac12f1, type: 2}
   - {fileID: 11400000, guid: a038d865b6cb0a74e98a39984cd75da0, type: 2}

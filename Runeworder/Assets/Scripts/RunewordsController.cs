@@ -256,6 +256,7 @@ public class RunewordsController : MonoBehaviour
             { "1.11", rw => rw.gameVersion == "1.11" },
             { "1.10", rw => rw.gameVersion == "1.10" },
             { "Original", rw => rw.gameVersion == "Original Rune Words" },
+            { "Reign of the Warlock", rw => rw.gameVersion == "Reign Of The Warlock" },
             { "Amazon Spears", rw => rw.subType.Contains("Amazon") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
             { "Axes", rw => rw.subType.Contains("Axes") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile")) },
             { "Claws", rw => (rw.subType.Contains("Claws") || (rw.subType.Contains("Weapons") && !rw.subType.Contains("Missile"))) && rw.runes.Count <= 3 },
