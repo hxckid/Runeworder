@@ -51,7 +51,7 @@ public class RunewordsController : MonoBehaviour
         lastSocketSearch = 0;
         lastTypeSearch = "None";
         
-        // РџРµСЂРµСЃС‡РёС‚С‹РІР°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕР±СЂР°РЅРЅС‹С… СЂСѓРЅ РїСЂРё Р·Р°РїСѓСЃРєРµ
+        // Пересчитываем количество собранных рун при запуске
         RecalculateCollectedRunes();
 
         //string filePath = Application.dataPath + "/Runewords.xml";
@@ -61,17 +61,17 @@ public class RunewordsController : MonoBehaviour
     }
 
     /// <summary>
-    /// РџСЂРѕРІРµСЂСЏРµС‚, РїРѕР»РЅРѕСЃС‚СЊСЋ Р»Рё СЃРѕР±СЂР°РЅРѕ СЂСѓРЅРЅРѕРµ СЃР»РѕРІРѕ (РІСЃРµ СЂСѓРЅС‹ СЃРѕР±СЂР°РЅС‹)
+    /// Проверяет, полностью ли собрано рунное слово (все руны собраны)
     /// </summary>
-    /// <param name="runeword">Р СѓРЅРЅРѕРµ СЃР»РѕРІРѕ РґР»СЏ РїСЂРѕРІРµСЂРєРё</param>
-    /// <returns>true РµСЃР»Рё РІСЃРµ СЂСѓРЅС‹ СЃРѕР±СЂР°РЅС‹, false РµСЃР»Рё РЅРµС‚</returns>
+    /// <param name="runeword">Рунное слово для проверки</param>
+    /// <returns>true если все руны собраны, false если нет</returns>
     private bool IsRunewordCompleted(Runeword_SO runeword)
     {
         return runeword.runes.Count == runeword.hasRunes;
     }
     
     /// <summary>
-    /// РџРµСЂРµСЃС‡РёС‚С‹РІР°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕР±СЂР°РЅРЅС‹С… СЂСѓРЅ РґР»СЏ РІСЃРµС… СЂСѓРЅРЅС‹С… СЃР»РѕРІ РІ С‚РµРєСѓС‰РµР№ Р±Р°Р·Рµ РґР°РЅРЅС‹С…
+    /// Пересчитывает количество собранных рун для всех рунных слов в текущей базе данных
     /// </summary>
     public void RecalculateCollectedRunes()
     {
@@ -115,7 +115,7 @@ public class RunewordsController : MonoBehaviour
                 break;
         }
         
-        // РџРµСЂРµСЃС‡РёС‚С‹РІР°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕР±СЂР°РЅРЅС‹С… СЂСѓРЅ РїРѕСЃР»Рµ СЃРјРµРЅС‹ Р±Р°Р·С‹ РґР°РЅРЅС‹С…
+        // Пересчитываем количество собранных рун после смены базы данных
         RecalculateCollectedRunes();
     }
 
@@ -135,7 +135,7 @@ public class RunewordsController : MonoBehaviour
         {
             if (rw.runewordName.ToUpper().Contains(runewordName.text.ToUpper()))
             {
-                // РџСЂРѕРІРµСЂСЏРµРј РіР°Р»РѕС‡РєСѓ "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ"
+                // Проверяем галочку "только завершенные"
                 if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
                     continue;
                     
@@ -150,7 +150,7 @@ public class RunewordsController : MonoBehaviour
             if (AppManager.instance.currentLanguage == Languages.En)
                 status.text = $"{runewordName.text} not found!";
             else
-                status.text = $"{runewordName.text} РЅРµ РЅР°Р№РґРµРЅ!";
+                status.text = $"{runewordName.text} не найден!";
         }
         else
         {
@@ -164,33 +164,33 @@ public class RunewordsController : MonoBehaviour
         ClearCustomSearchDB();
         string numOfSockets = socketsDropdown.options[socketsDropdown.value].text;
 
-        if (numOfSockets == "All" || numOfSockets == "Р’СЃРµ")
+        if (numOfSockets == "All" || numOfSockets == "Все")
             lastSocketSearch = 0;
         else
             lastSocketSearch = Int32.Parse(numOfSockets); 
 
         lastTypeSearch = typeDropdown.options[typeDropdown.value].text;
 
-        lastTypeSearch = lastTypeSearch == "Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹" ? "All Runewords" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р’СЃРµ РћСЂСѓР¶РёРµ" ? "All Weapons" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РљРѕРїСЊСЏ РђРјР°Р·РѕРЅРєРё" ? "Amazon Spears" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р‘СЂРѕРЅСЏ" ? "Armors" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РўРѕРїРѕСЂС‹" ? "Axes" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РљРѕРіС‚Рё" ? "Claws" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р”СѓР±РёРЅС‹" ? "Clubs" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РљРёРЅР¶Р°Р»С‹" ? "Daggers" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РњРѕР»РѕС‚С‹" ? "Hammers" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РЁР»РµРјС‹" ? "Helms" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р‘СѓР»Р°РІС‹" ? "Maces" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РћСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ" ? "Melee Weapons" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РћСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ" ? "Missile Weapons" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р”СЂРµРІРєРѕРІРѕРµ РѕСЂСѓР¶РёРµ" ? "Polearms" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РЎРєРёРїРµС‚СЂС‹" ? "Scepters" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РљРѕРїСЊСЏ" ? "Spears" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р”РІСѓСЂСѓС‡РЅС‹Рµ РџРѕСЃРѕС…Рё (РќРµ РЎС„РµСЂС‹)" ? "Staves (Not Orbs)" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "РњРµС‡Рё" ? "Swords" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р–РµР·Р»С‹ РќРµРєСЂРѕРјР°РЅС‚Р°" ? "Wands" : lastTypeSearch;
-        lastTypeSearch = lastTypeSearch == "Р©РёС‚С‹" ? "Shields" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Все Рунворды" ? "All Runewords" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Все Оружие" ? "All Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Копья Амазонки" ? "Amazon Spears" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Броня" ? "Armors" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Топоры" ? "Axes" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Когти" ? "Claws" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Дубины" ? "Clubs" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Кинжалы" ? "Daggers" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Молоты" ? "Hammers" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Шлемы" ? "Helms" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Булавы" ? "Maces" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Оружие ближнего боя" ? "Melee Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Оружие дальнего боя" ? "Missile Weapons" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Древковое оружие" ? "Polearms" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Скипетры" ? "Scepters" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Копья" ? "Spears" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Двуручные Посохи (Не Сферы)" ? "Staves (Not Orbs)" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Мечи" ? "Swords" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Жезлы Некроманта" ? "Wands" : lastTypeSearch;
+        lastTypeSearch = lastTypeSearch == "Щиты" ? "Shields" : lastTypeSearch;
         
         FilterRunewords(lastTypeSearch);
 
@@ -200,7 +200,7 @@ public class RunewordsController : MonoBehaviour
             {
                 if (rw.runes.Count == lastSocketSearch && (allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
                 {
-                    // РџСЂРѕРІРµСЂСЏРµРј РіР°Р»РѕС‡РєСѓ "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ"
+                    // Проверяем галочку "только завершенные"
                     if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
                         continue;
                         
@@ -214,7 +214,7 @@ public class RunewordsController : MonoBehaviour
             {
                 if ((allRunewordsToggle.isOn || (!rw.isLadder && nonLadderToggle.isOn) || (rw.isLadder && ladderToggle.isOn)))
                 {
-                    // РџСЂРѕРІРµСЂСЏРµРј РіР°Р»РѕС‡РєСѓ "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ"
+                    // Проверяем галочку "только завершенные"
                     if (completedOnlyToggle.isOn && !IsRunewordCompleted(rw))
                         continue;
                         
@@ -236,7 +236,7 @@ public class RunewordsController : MonoBehaviour
                 ladderText = allRunewordsToggle.isOn ? "Both" : nonLadderToggle.isOn ? "Non-Ladder Only" : "Ladder Only";
                 break;
             case Languages.Ru:
-                ladderText = allRunewordsToggle.isOn ? "РћР±Р°" : nonLadderToggle.isOn ? "РќРµ-Р›Р°РґРґРµСЂ" : "Р›Р°РґРґРµСЂ";
+                ladderText = allRunewordsToggle.isOn ? "Оба" : nonLadderToggle.isOn ? "Не-Ладдер" : "Ладдер";
                 break;
         }
 
@@ -285,7 +285,7 @@ public class RunewordsController : MonoBehaviour
             workflowDB.runewords.AddRange(currentDB.runewords.Where(filter));
         }
 
-        // РџСЂРёРјРµРЅСЏРµРј С„РёР»СЊС‚СЂ "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ" РµСЃР»Рё РіР°Р»РѕС‡РєР° Р°РєС‚РёРІРЅР°
+        // Применяем фильтр "только завершенные" если галочка активна
         if (completedOnlyToggle.isOn)
         {
             workflowDB.runewords.RemoveAll(rw => !IsRunewordCompleted(rw));
@@ -308,7 +308,8 @@ public class RunewordsController : MonoBehaviour
         foreach (var rw in dbToFillFrom.runewords)
         {
             rw.hasRunes = 0;
-            ListController lc = runewordPrefab.GetComponent<ListController>();
+            GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
+            ListController lc = inst.GetComponent<ListController>();
 
             if (odd % 2 == 0)
                 lc.background.color = Color.red;
@@ -333,20 +334,20 @@ public class RunewordsController : MonoBehaviour
                     case Languages.Ru:
                         RunesRu rus = (RunesRu)rw.runes[i];
                         lc.runes[i].text = rus.ToString();
-                        lc.reqLevel.text = $"РЈСЂРѕРІРµРЅСЊ: {rw.reqLevel}";
+                        lc.reqLevel.text = $"Уровень: {rw.reqLevel}";
                         switch (rw.runewordType)
                         {
                             case RunewordType.Weapons:
-                                lc.type.text = $"РћСЂСѓР¶РёРµ";
+                                lc.type.text = $"Оружие";
                                 break;
                             case RunewordType.Armor:
-                                lc.type.text = $"Р‘СЂРѕРЅСЏ";
+                                lc.type.text = $"Броня";
                                 break;
                             case RunewordType.Helms:
-                                lc.type.text = $"РЁР»РµРјС‹";
+                                lc.type.text = $"Шлемы";
                                 break;
                             case RunewordType.Shields:
-                                lc.type.text = $"Р©РёС‚С‹";
+                                lc.type.text = $"Щиты";
                                 break;
                         }
                         break;
@@ -364,12 +365,7 @@ public class RunewordsController : MonoBehaviour
 
                 lc.runeword = rw;
             }
-            GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
-            ListController lcInstance = inst.GetComponent<ListController>();
-            if (lcInstance != null)
-            {
-                lcInstance.UpdateStarVisibility();
-            }
+            lc.UpdateStarVisibility();
             runewordsToShow.Add(inst);
         }
     }
@@ -509,46 +505,46 @@ public class RunewordsController : MonoBehaviour
         status.text = $"({workflowDB.runewords.Count}) ";
         switch (type)
         {
-            case "Armors": status.text += "Р‘СЂРѕРЅСЏ"; break;
-            case "Helms": status.text += "РЁР»РµРјС‹"; break;
-            case "Shields": status.text += "Р©РёС‚С‹"; break;
-            case "All Runewords": status.text += "Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹"; break;
+            case "Armors": status.text += "Броня"; break;
+            case "Helms": status.text += "Шлемы"; break;
+            case "Shields": status.text += "Щиты"; break;
+            case "All Runewords": status.text += "Все Рунворды"; break;
             case "Reign of the Warlock": status.text += "Reign of the Warlock"; break;
-            case "2.4": status.text += "РџР°С‚С‡ 2.4"; break;
-            case "2.6": status.text += "РџР°С‚С‡ 2.6"; break;
-            case "1.11": status.text += "РџРѕРІРµР»РёС‚РµР»СЊ Р Р°Р·СЂСѓС€РµРЅРёР№ 1.11 Рё СЃС‚Р°СЂС€Рµ"; break;
-            case "1.10": status.text += "РџРѕРІРµР»РёС‚РµР»СЊ Р Р°Р·СЂСѓС€РµРЅРёР№ 1.10 Рё СЃС‚Р°СЂС€Рµ"; break;
-            case "Original": status.text += "РћСЂРёРіРёРЅР°Р»СЊРЅС‹Рµ Р СѓРЅРІРѕСЂРґС‹ (РґРѕ 1.10)"; break;
-            case "Amazon Spears": status.text += "РљРѕРїСЊСЏ РђРјР°Р·РѕРЅРєРё"; break;
-            case "Axes": status.text += "РўРѕРїРѕСЂС‹"; break;
-            case "Claws": status.text += "РљРѕРіС‚Рё"; break;
-            case "Clubs": status.text += "Р”СѓР±РёРЅС‹"; break;
-            case "Daggers": status.text += "РљРёРЅР¶Р°Р»С‹"; break;
-            case "Hammers": status.text += "РњРѕР»РѕС‚С‹"; break;
-            case "Maces": status.text += "Р‘СѓР»Р°РІС‹"; break;
-            case "Melee Weapons": status.text += "РћСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ"; break;
-            case "Missile Weapons": status.text += "РћСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ"; break;
-            case "Polearms": status.text += "Р”СЂРµРІРєРѕРІРѕРµ РѕСЂСѓР¶РёРµ"; break;
-            case "Scepters": status.text += "РЎРєРёРїРµС‚СЂС‹"; break;
-            case "Spears": status.text += "РљРѕРїСЊСЏ"; break;
-            case "Staves (Not Orbs)": status.text += "Р”РІСѓСЂСѓС‡РЅС‹Рµ РџРѕСЃРѕС…Рё (РќРµ РЎС„РµСЂС‹)"; break;
-            case "Swords": status.text += "РњРµС‡Рё"; break;
-            case "Wands": status.text += "Р–РµР·Р»С‹ РќРµРєСЂРѕРјР°РЅС‚Р°"; break;
-            case "All Weapons": status.text += "Р’СЃРµ РѕСЂСѓР¶РёРµ"; break;
+            case "2.4": status.text += "Патч 2.4"; break;
+            case "2.6": status.text += "Патч 2.6"; break;
+            case "1.11": status.text += "Повелитель Разрушений 1.11 и старше"; break;
+            case "1.10": status.text += "Повелитель Разрушений 1.10 и старше"; break;
+            case "Original": status.text += "Оригинальные Рунворды (до 1.10)"; break;
+            case "Amazon Spears": status.text += "Копья Амазонки"; break;
+            case "Axes": status.text += "Топоры"; break;
+            case "Claws": status.text += "Когти"; break;
+            case "Clubs": status.text += "Дубины"; break;
+            case "Daggers": status.text += "Кинжалы"; break;
+            case "Hammers": status.text += "Молоты"; break;
+            case "Maces": status.text += "Булавы"; break;
+            case "Melee Weapons": status.text += "Оружие ближнего боя"; break;
+            case "Missile Weapons": status.text += "Оружие дальнего боя"; break;
+            case "Polearms": status.text += "Древковое оружие"; break;
+            case "Scepters": status.text += "Скипетры"; break;
+            case "Spears": status.text += "Копья"; break;
+            case "Staves (Not Orbs)": status.text += "Двуручные Посохи (Не Сферы)"; break;
+            case "Swords": status.text += "Мечи"; break;
+            case "Wands": status.text += "Жезлы Некроманта"; break;
+            case "All Weapons": status.text += "Все оружие"; break;
         }
     }
 
     /// <summary>
-    /// РћР±СЂР°Р±РѕС‚С‡РёРє РёР·РјРµРЅРµРЅРёСЏ СЃРѕСЃС‚РѕСЏРЅРёСЏ СЂСѓРЅ
+    /// Обработчик изменения состояния рун
     /// </summary>
-    /// <param name="rune">РР·РјРµРЅРµРЅРЅР°СЏ СЂСѓРЅР°</param>
-    /// <param name="isOn">РќРѕРІРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ</param>
+    /// <param name="rune">Измененная руна</param>
+    /// <param name="isOn">Новое состояние</param>
     private void OnRuneStateChanged(RunesEn rune, bool isOn)
     {
-        // РџРµСЂРµСЃС‡РёС‚С‹РІР°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕР±СЂР°РЅРЅС‹С… СЂСѓРЅ
+        // Пересчитываем количество собранных рун
         RecalculateCollectedRunes();
         
-        // Р•СЃР»Рё РµСЃС‚СЊ Р°РєС‚РёРІРЅС‹Р№ С„РёР»СЊС‚СЂ, РїРµСЂРµР·Р°РїСѓСЃРєР°РµРј РµРіРѕ
+        // Если есть активный фильтр, перезапускаем его
         if (!string.IsNullOrEmpty(lastPressed) && lastPressed != "None")
         {
             FilterLast();

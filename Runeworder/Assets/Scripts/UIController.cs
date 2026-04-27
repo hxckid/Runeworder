@@ -40,18 +40,18 @@ public class UIController : MonoBehaviour
         for (int i = 0; i <= 32; i++)
         {
             Sprite sprite = runesSprites.sprites[i];
-            runeUIPrefab.name = name;
-            runeUIPrefab.GetComponent<RuneController>().background.sprite = sprite;
-            runeUIPrefab.GetComponent<RuneController>().checkmark.sprite = sprite;
-            runeUIPrefab.GetComponent<RuneController>().runeName.text = name;
-            runeUIPrefab.GetComponent<RuneController>().rune = (RunesEn)i;
-            runeUIPrefab.GetComponent<Toggle>().isOn = false;
             var runeUI = Instantiate(runeUIPrefab, runesPanel.transform);
             runeUI.name = name;
+            RuneController rc = runeUI.GetComponent<RuneController>();
+            rc.background.sprite = sprite;
+            rc.checkmark.sprite = sprite;
+            rc.runeName.text = name;
+            rc.rune = (RunesEn)i;
+            runeUI.GetComponent<Toggle>().isOn = false;
             runesUI.Add(runeUI);
             foreach (var rune in userRunes.hasRunes)
             {
-                if (rune == runeUI.GetComponent<RuneController>().rune)
+                if (rune == rc.rune)
                 {
                     runeUI.GetComponent<Toggle>().isOn = true;
                 }
@@ -114,8 +114,8 @@ public class UIController : MonoBehaviour
                     }
 
                     socketsDropdown.options.Clear();
-                    socketsDropdown.captionText.text = "Р’СЃРµ";
-                    socketsDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ"));
+                    socketsDropdown.captionText.text = "Все";
+                    socketsDropdown.options.Add(new Dropdown.OptionData("Все"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("6"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("5"));
                     socketsDropdown.options.Add(new Dropdown.OptionData("4"));
@@ -123,32 +123,32 @@ public class UIController : MonoBehaviour
                     socketsDropdown.options.Add(new Dropdown.OptionData("2"));
 
                     typeDropdown.options.Clear();
-                    typeDropdown.captionText.text = "Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹";
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ Р СѓРЅРІРѕСЂРґС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р’СЃРµ РћСЂСѓР¶РёРµ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРїСЊСЏ РђРјР°Р·РѕРЅРєРё"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р‘СЂРѕРЅСЏ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РўРѕРїРѕСЂС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРіС‚Рё"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р”СѓР±РёРЅС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РљРёРЅР¶Р°Р»С‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РњРѕР»РѕС‚С‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РЁР»РµРјС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р‘СѓР»Р°РІС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РћСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РћСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р”СЂРµРІРєРѕРІРѕРµ РѕСЂСѓР¶РёРµ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РЎРєРёРїРµС‚СЂС‹"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РљРѕРїСЊСЏ"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р”РІСѓСЂСѓС‡РЅС‹Рµ РџРѕСЃРѕС…Рё (РќРµ РЎС„РµСЂС‹)"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("РњРµС‡Рё"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р–РµР·Р»С‹ РќРµРєСЂРѕРјР°РЅС‚Р°"));
-                    typeDropdown.options.Add(new Dropdown.OptionData("Р©РёС‚С‹"));
+                    typeDropdown.captionText.text = "Все Рунворды";
+                    typeDropdown.options.Add(new Dropdown.OptionData("Все Рунворды"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Все Оружие"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Копья Амазонки"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Броня"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Топоры"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Когти"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Дубины"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Кинжалы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Молоты"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Шлемы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Булавы"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие ближнего боя"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Оружие дальнего боя"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Древковое оружие"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Скипетры"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Копья"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Двуручные Посохи (Не Сферы)"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Мечи"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Жезлы Некроманта"));
+                    typeDropdown.options.Add(new Dropdown.OptionData("Щиты"));
 
-                    // Р›РѕРєР°Р»РёР·Р°С†РёСЏ РґР»СЏ Toggle "С‚РѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ"
+                    // Локализация для Toggle "только завершенные"
                     if (completedOnlyToggle != null)
                     {
-                        completedOnlyToggle.GetComponentInChildren<Text>().text = "РўРѕР»СЊРєРѕ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ";
+                        completedOnlyToggle.GetComponentInChildren<Text>().text = "Только завершенные";
                     }
                     break;
             }
@@ -164,11 +164,11 @@ public class UIController : MonoBehaviour
     }
     
     /// <summary>
-    /// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Toggle "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+    ///    Toggle " "
     /// </summary>
     public void OnCompletedOnlyToggleChanged()
     {
-        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ RunewordsController пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        //  RunewordsController    
         var runewordsController = FindFirstObjectByType<RunewordsController>();
         if (runewordsController != null)
         {
@@ -186,7 +186,7 @@ public enum RunesEn
 
 public enum RunesRu
 {
-    Р­Р», Р­Р»Рґ, РўРёСЂ, РќРµС„, Р­С‚, РС‚, РўР°Р», Р Р°Р», РћСЂС‚, РўСѓР», РђРјРЅ,
-    РЎРѕР», РЁР°СЌР», Р”РѕР», РҐРµР», РРѕ, Р›СѓРј, РљРѕ, Р¤Р°Р», Р›РµРј, РџСѓР», РЈРј,
-    РњР°Р», РСЃС‚, Р“СѓР», Р’РµРєСЃ, РћРј, Р›Рѕ, РЎСѓСЂ, Р‘РµСЂ, Р”Р¶Р°, Р§Р°Рј, Р—РѕРґ
+    Эл, Элд, Тир, Неф, Эт, Ит, Тал, Рал, Орт, Тул, Амн,
+    Сол, Шаэл, Дол, Хел, Ио, Лум, Ко, Фал, Лем, Пул, Ум,
+    Мал, Ист, Гул, Векс, Ом, Ло, Сур, Бер, Джа, Чам, Зод
 }
