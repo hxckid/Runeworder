@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ListController : MonoBehaviour
+public class ListController : MonoBehaviour, IPoolableUI
 {
     public Runeword_SO runeword;
     public Image background;
@@ -29,6 +29,15 @@ public class ListController : MonoBehaviour
         parent = FindFirstObjectByType<Canvas>();
         ressurectedColor = new Color32(236, 140, 24, 255);
         rotwcolor = new Color32(209, 11, 160, 255);
+
+        if (tooltip != null)
+        {
+            UIObjectPool.Instance.Prewarm(tooltip, 1, parent != null ? parent.transform : null);
+        }
+        if (tooltipRune != null)
+        {
+            UIObjectPool.Instance.Prewarm(tooltipRune, 8, parent != null ? parent.transform : null);
+        }
     }
 
     public void UpdateStarVisibility()
@@ -43,14 +52,25 @@ public class ListController : MonoBehaviour
     private void ShowTooltip()
     {
         AppManager.instance.gameState = GameState.Tooltip;
-        var inst = Instantiate(tooltip, parent.transform);
+        var inst = UIObjectPool.Instance.Get(tooltip, parent.transform);
         TooltipController tc = inst.GetComponent<TooltipController>();
-        Text[] txts = tc.GetComponentsInChildren<Text>();
+        tc.ClearRuneIcons();
+        var tooltipRunes = new List<GameObject>(runeword.sprites.Count);
+
         for (int i = 0; i < runeword.sprites.Count; i++)
         {
-            tooltipRune.GetComponent<Image>().sprite = runeword.sprites[i];
-            Instantiate(tooltipRune, tc.runeIcons.transform);
+            var runeIcon = UIObjectPool.Instance.Get(tooltipRune, tc.runeIcons.transform);
+            var runeImage = runeIcon.GetComponent<Image>();
+            if (runeImage != null)
+            {
+                runeImage.sprite = runeword.sprites[i];
+                runeImage.color = Color.white;
+            }
+
+            tooltipRunes.Add(runeIcon);
         }
+
+        tc.SetActiveIcons(tooltipRunes);
         tc.rwName.text = runeword.runewordName;
         tc.rwSeq.text = runeword.runesSequence;
         tc.rwStats.text = runeword.statsDesc;
@@ -192,5 +212,40 @@ public class ListController : MonoBehaviour
 
         // Initialize star toggle state
         tc.InitializeStarToggle(runeword);
+    }
+
+    public void OnBeforeGetFromPool()
+    {
+        background.color = Color.white;
+        runeword = null;
+
+        if (runewordName != null) runewordName.text = string.Empty;
+        if (reqLevel != null) reqLevel.text = string.Empty;
+        if (type != null) type.text = string.Empty;
+
+        if (star != null)
+        {
+            star.gameObject.SetActive(false);
+        }
+
+        foreach (var rune in runes)
+        {
+            if (rune == null)
+            {
+                continue;
+            }
+
+            rune.text = string.Empty;
+            rune.color = Color.white;
+        }
+    }
+
+    public void OnBeforeReleaseToPool()
+    {
+        runeword = null;
+        if (star != null)
+        {
+            star.gameObject.SetActive(false);
+        }
     }
 }

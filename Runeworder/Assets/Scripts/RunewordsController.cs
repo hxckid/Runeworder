@@ -50,6 +50,8 @@ public class RunewordsController : MonoBehaviour
         lastPressed = "All";
         lastSocketSearch = 0;
         lastTypeSearch = "None";
+
+        UIObjectPool.Instance.Prewarm(runewordPrefab, 16, uiParent.transform);
         
         // Пересчитываем количество собранных рун при запуске
         RecalculateCollectedRunes();
@@ -308,7 +310,7 @@ public class RunewordsController : MonoBehaviour
         foreach (var rw in dbToFillFrom.runewords)
         {
             rw.hasRunes = 0;
-            GameObject inst = Instantiate(runewordPrefab, uiParent.transform);
+            GameObject inst = UIObjectPool.Instance.Get(runewordPrefab, uiParent.transform);
             ListController lc = inst.GetComponent<ListController>();
 
             if (odd % 2 == 0)
@@ -494,7 +496,7 @@ public class RunewordsController : MonoBehaviour
         {
             foreach (var rw in runewordsToShow)
             {
-                Destroy(rw);
+                UIObjectPool.Instance.Release(rw);
             }
             runewordsToShow.Clear();
         }

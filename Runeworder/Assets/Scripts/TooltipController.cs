@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TooltipController : MonoBehaviour
+public class TooltipController : MonoBehaviour, IPoolableUI
 {
     public GameObject runeIcons;
     public Text rwName;
@@ -19,6 +19,7 @@ public class TooltipController : MonoBehaviour
     public Toggle star;
 
     private Runeword_SO currentRuneword;
+    private readonly List<GameObject> activeIcons = new List<GameObject>();
 
     private void Start()
     {
@@ -53,6 +54,44 @@ public class TooltipController : MonoBehaviour
         }
     }
 
+    public void SetActiveIcons(List<GameObject> icons)
+    {
+        activeIcons.Clear();
+        if (icons == null)
+        {
+            return;
+        }
+
+        activeIcons.AddRange(icons);
+    }
+
+    public void ClearRuneIcons()
+    {
+        if (activeIcons.Count == 0)
+        {
+            return;
+        }
+
+        foreach (var icon in activeIcons)
+        {
+            if (icon == null)
+            {
+                continue;
+            }
+
+            var iconImage = icon.GetComponent<Image>();
+            if (iconImage != null)
+            {
+                iconImage.sprite = null;
+                iconImage.color = Color.white;
+            }
+
+            UIObjectPool.Instance.Release(icon);
+        }
+
+        activeIcons.Clear();
+    }
+
     private void OnStarToggleChanged(bool isOn)
     {
         if (AppManager.instance == null)
@@ -79,7 +118,43 @@ public class TooltipController : MonoBehaviour
             star.onValueChanged.RemoveListener(OnStarToggleChanged);
         }
         AppManager.instance.gameState = GameState.Runewords;
-        Destroy(gameObject);
+        if (UIObjectPool.Instance.IsPooledInstance(gameObject))
+        {
+            UIObjectPool.Instance.Release(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void OnBeforeGetFromPool()
+    {
+        gameObject.SetActive(true);
+        rwName.text = string.Empty;
+        rwSeq.text = string.Empty;
+        rwStats.text = string.Empty;
+        rwType.text = string.Empty;
+        rwLevel.text = string.Empty;
+        rwLadder.text = string.Empty;
+        rwClass.text = string.Empty;
+        rwVersion.text = string.Empty;
+        rwItem.text = string.Empty;
+        bestItemLabel.text = string.Empty;
+        rwVersion.color = Color.white;
+        currentRuneword = null;
+    }
+
+    public void OnBeforeReleaseToPool()
+    {
+        if (star != null)
+        {
+            star.onValueChanged.RemoveListener(OnStarToggleChanged);
+            star.isOn = false;
+        }
+
+        ClearRuneIcons();
+        currentRuneword = null;
     }
 
 }

@@ -35,6 +35,7 @@ public class AppManager : MonoBehaviour
     UserFavorites userFavorites;
     string favoritesJson;
     GameObject txt;
+    Coroutine hideQuitTextCoroutine;
 
     public delegate void LanguageHandler(Languages languages, string ver);
     public static event LanguageHandler OnLanguageChanged;
@@ -247,8 +248,13 @@ public class AppManager : MonoBehaviour
                                     quitText.GetComponent<Text>().text = "Нажмите Назад для выхода";
                                     break;
                             }
-                            txt = Instantiate(quitText, runesTab.transform);
-                            Destroy(txt, 4f);
+                            txt = UIObjectPool.Instance.Get(quitText, runesTab.transform);
+                            if (hideQuitTextCoroutine != null)
+                            {
+                                StopCoroutine(hideQuitTextCoroutine);
+                            }
+
+                            hideQuitTextCoroutine = StartCoroutine(HideQuitTextAfterDelay(4f));
                         }
                         break;
                     case GameState.Runewords:
@@ -259,13 +265,42 @@ public class AppManager : MonoBehaviour
                         instance.gameState = GameState.Runes;
                         break;
                     case GameState.Tooltip:
-                        GameObject go = FindFirstObjectByType<TooltipController>().gameObject;
-                        Destroy(go);
+                        TooltipController currentTooltip = FindFirstObjectByType<TooltipController>();
+                        GameObject go = currentTooltip != null ? currentTooltip.gameObject : null;
+                        if (go != null)
+                        {
+                            TooltipController tooltipController = currentTooltip != null ? currentTooltip : go.GetComponent<TooltipController>();
+                            if (tooltipController != null)
+                            {
+                                tooltipController.DestroyTooltip();
+                            }
+                            else if (UIObjectPool.Instance.IsPooledInstance(go))
+                            {
+                                UIObjectPool.Instance.Release(go);
+                            }
+                            else
+                            {
+                                Destroy(go);
+                            }
+                        }
                         instance.gameState = GameState.Runewords;
                         break;
                 }
             }
         }
+    }
+
+    private IEnumerator HideQuitTextAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (txt != null)
+        {
+            UIObjectPool.Instance.Release(txt);
+            txt = null;
+        }
+
+        hideQuitTextCoroutine = null;
     }
 
     private void SaveUserData(RunesEn rune, bool isOn)
